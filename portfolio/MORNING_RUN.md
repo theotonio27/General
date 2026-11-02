@@ -26,6 +26,11 @@ Dashboard: https://claude.ai/artifact/5LBRd9Xqxsr6h62pbRWUM3 (dataset document `
    `{"source": {"kind": "file", "format": "json", "name": "snapshots.json", "url": "/_blob/<new id>"},
      "updated": {"at": "<now, ISO>", "by": "Morning run"}}`.
    Then delete the old blob (Artifact `delete`, `url` = the dashboard, `path` = `<old id>`).
+6b. Company prices (for the Companies page): first copy the dashboard's current
+   `datasets/company_prices` file over `portfolio/company_prices.json`, the same way as in step 2.
+   Then run `python3 fetch_company_prices.py` (it needs the updated `snapshots.json` and
+   `lookthrough.json`). Upload the result and repoint `datasets/company_prices` as in steps 5–6.
+   If it fails, say so, but the ETF prices from step 6 still stand.
 7. Optional backup: commit `portfolio/snapshots.json` with message `Morning prices <date>`
    and try `git push origin claude/great-rubin-48ti85` once. If the push is refused,
    don't retry. Just mention it in the final message.

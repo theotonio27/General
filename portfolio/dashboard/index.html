@@ -160,7 +160,9 @@
   </div>
 
   <div class="mp-page" id="companies" hidden>
+    <p class="mp-take">Since the close on <b data-draw="base-date">—</b>, the companies listed inside your ETFs moved your portfolio by <b data-draw="co-move-eur">—</b> (<b data-draw="co-move-pp">—</b>). Biggest lift: <b data-draw="co-top-up">—</b>. Biggest drag: <b data-draw="co-top-down">—</b>.</p>
     <div class="mp-controls">
+      <label for="mp-base-co">Compare with the close on <select id="mp-base-co" data-draw="base-select" data-source="history" aria-label="Compare with the close on"></select></label>
       <span>Shares only. A company held through several ETFs is added up across them, and share classes such as Alphabet A and C are combined.</span>
     </div>
     <section class="mp-tiles" aria-label="Look-through figures">
@@ -180,25 +182,33 @@
         <span class="mp-tile-note"><span data-draw="co-multi">—</span> held through more than one ETF</span>
       </div>
     </section>
+    <section class="mp-card" id="company-moves">
+      <h2>Which companies moved the portfolio</h2>
+      <p class="mp-note">Each company's contribution to the total change, in percentage points of the starting value: your exposure at the start × the company's price change in euros. Shows the 10 biggest lifts and drags. The two grey bars hold the rest, so all bars add up to the total %.</p>
+      <div class="mp-chart" data-draw="co-chart" data-source="company_moves"></div>
+    </section>
     <section class="mp-card" id="company-list">
-      <h2>Your look-through exposure</h2>
-      <p class="mp-note">Your exposure = value of your position in each ETF × the holding's share of that ETF, added up over every ETF that holds it. Values use the latest close.</p>
+      <h2>Every company</h2>
+      <p class="mp-note">Your exposure = value of your position in each ETF × the company's share of that ETF, added up over every ETF that holds it, at the latest close. Price % is the company's own move in euros. Click a column to sort.</p>
       <div class="mp-wrap">
-        <table class="mp-table" data-source="companies" data-row-key="kind,key">
+        <table class="mp-table" data-source="company_moves" data-row-key="base,key">
           <thead>
             <tr>
-              <th data-field="symbol">Symbol</th>
-              <th data-field="name">Company</th>
-              <th data-field="value">Your exposure</th>
-              <th data-field="share">Of portfolio</th>
-              <th data-field="funds">Through</th>
+              <th data-field="symbol"><button class="mp-sort" data-cosort="symbol">Symbol</button></th>
+              <th data-field="name"><button class="mp-sort" data-cosort="name">Company</button></th>
+              <th data-field="value_now" aria-sort="descending"><button class="mp-sort" data-cosort="value_now">Your exposure</button></th>
+              <th data-field="share" class="mp-hide-narrow"><button class="mp-sort" data-cosort="share">Of portfolio</button></th>
+              <th data-field="ret"><button class="mp-sort" data-cosort="ret">Price % (€)</button></th>
+              <th data-field="d_eur"><button class="mp-sort" data-cosort="d_eur">Change €</button></th>
+              <th data-field="pp"><button class="mp-sort" data-cosort="pp">Contribution pp</button></th>
+              <th data-field="funds" class="mp-hide-narrow"><button class="mp-sort" data-cosort="n_funds">Through</button></th>
             </tr>
           </thead>
           <tbody data-draw="co-body"></tbody>
         </table>
       </div>
     </section>
-    <p class="mp-note">Holdings come from Yahoo Finance's top-10 lists. Where an ETF's own listing has no data, the list comes from another fund tracking the same index, named in each ETF's detail. For swap-based ETFs this shows the index you get the returns of, not the basket the fund legally owns. Bond ETFs are left out: Yahoo publishes no bond holdings for them. The commodity ETF (LYTR) holds no companies.</p>
+    <p class="mp-note">Holdings come from Yahoo Finance's top-10 lists. Where an ETF's own listing has no data, the list comes from another fund tracking the same index, named in each ETF's detail. For swap-based ETFs this shows the index you get the returns of, not the basket the fund legally owns. Company prices are each market's own closes converted to euros at Yahoo's exchange rates; US markets close after the European ETFs, so part of the timing difference lands in the "rest" bar. Bond ETFs are left out: Yahoo publishes no bond holdings for them. The commodity ETF (LYTR) holds no companies.</p>
   </div>
 
   <footer class="mp-foot">
@@ -431,47 +441,54 @@
     tip.style.top = Math.max(8, Math.min(box.height - h - 8, y + 12)) + 'px';
   };
 
-  dash.draw('contrib-chart', (el) => {
-    if (failed(el, 'attribution')) return;
-    const s = mpState();
-    if (!s) { el.replaceChildren(); return; }
-    const card = el;
+  // Diverging bars of contribution in pp, one row per item: {label, d_eur, pp, muted?}.
+  const barChart = (el, rows, { aria, tipLines, onClick }) => {
     let tip = null;
-    const rows = [...s.rows].sort((a, b) => b.pp - a.pp);
     const W = Math.max(280, el.clientWidth);
     const rowH = 22, top = 4;
     const H = top + rows.length * rowH + 4;
-    const svg = d3.create('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`).attr('role', 'img')
-      .attr('aria-label', 'Contribution of each holding in percentage points');
-    // Measure labels so nothing is clipped.
+    const svg = d3.create('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`).attr('role', 'img').attr('aria-label', aria);
     const probe = svg.append('g');
-    const measure = (t) => { const n = probe.append('text').text(t).node(); el.appendChild(svg.node()); const w = n.getComputedTextLength(); n.remove(); return w; };
-    const leftW = Math.max(...rows.map((r) => measure(r.ticker))) + 10;
+    el.appendChild(svg.node());
+    const measure = (t) => { const n = probe.append('text').text(t).node(); const w = n.getComputedTextLength(); n.remove(); return w; };
+    const leftW = Math.max(...rows.map((r) => measure(r.label))) + 10;
     const valTxt = (r) => eurS.format(r.d_eur);
     const valW = Math.max(...rows.map((r) => measure(valTxt(r)))) + 8;
+    probe.remove();
     const ext = d3.max(rows, (r) => Math.abs(r.pp)) || 0.01;
     const x = d3.scaleLinear([-ext, ext], [leftW + valW, W - valW]);
     svg.append('line').attr('x1', x(0)).attr('x2', x(0)).attr('y1', 0).attr('y2', H).attr('stroke', 'var(--cds-chart-axis)');
     const g = svg.append('g').selectAll('g').data(rows).join('g').attr('transform', (r, i) => `translate(0,${top + i * rowH})`);
-    g.attr('class', 'mp-hit').on('click', (event, r) => mpOpenFund(r.ticker));
+    if (onClick) g.attr('class', (r) => (r.muted ? null : 'mp-hit')).on('click', (event, r) => { if (!r.muted) onClick(r); });
     g.append('rect').attr('x', 0).attr('y', 0).attr('width', W).attr('height', rowH).attr('fill', 'transparent');
-    g.append('text').attr('x', 0).attr('y', rowH / 2).attr('dy', '0.35em').attr('class', 'mp-lbl-strong').text((r) => r.ticker);
+    g.append('text').attr('x', 0).attr('y', rowH / 2).attr('dy', '0.35em').attr('class', (r) => (r.muted ? null : 'mp-lbl-strong')).text((r) => r.label);
     g.append('rect')
       .attr('x', (r) => Math.min(x(0), x(r.pp))).attr('y', 4).attr('height', rowH - 8)
       .attr('width', (r) => Math.max(1, Math.abs(x(r.pp) - x(0)))).attr('rx', 2)
-      .attr('fill', (r) => (r.d_eur > 0.005 ? 'var(--color-ok)' : r.d_eur < -0.005 ? 'var(--color-bad)' : 'var(--cds-chart-muted)'));
+      .attr('fill', (r) => (r.muted ? 'var(--cds-chart-muted)' : r.d_eur > 0.005 ? 'var(--color-ok)' : r.d_eur < -0.005 ? 'var(--color-bad)' : 'var(--cds-chart-muted)'));
     g.append('text').attr('y', rowH / 2).attr('dy', '0.35em')
       .attr('x', (r) => (r.pp >= 0 ? x(r.pp) + 4 : x(r.pp) - 4))
       .attr('text-anchor', (r) => (r.pp >= 0 ? 'start' : 'end')).text(valTxt);
-    probe.remove();
-    g.on('pointermove', (event, r) => placeTip(tip, card, event, [
-      [r.ticker + ' · ' + r.name, 'mp-tip-head'],
-      ['Change: ' + eurS.format(r.d_eur) + ' (' + ppS(r.pp) + ')'],
-      ['Price: ' + num(r.p_base) + ' → ' + num(r.p_now) + (r.ret == null ? '' : ' (' + pctS.format(r.ret) + ')')],
-      ['Weight: ' + pct1.format(r.weight) + (r.stale ? ' · last known price' : '')],
-    ])).on('pointerleave', () => { tip.hidden = true; });
+    g.on('pointermove', (event, r) => placeTip(tip, el, event, tipLines(r))).on('pointerleave', () => { tip.hidden = true; });
     el.replaceChildren(svg.node());
     tip = tipFor(el);
+  };
+
+  dash.draw('contrib-chart', (el) => {
+    if (failed(el, 'attribution')) return;
+    const s = mpState();
+    if (!s) { el.replaceChildren(); return; }
+    const rows = [...s.rows].sort((a, b) => b.pp - a.pp).map((r) => ({ ...r, label: r.ticker }));
+    barChart(el, rows, {
+      aria: 'Contribution of each ETF in percentage points',
+      onClick: (r) => mpOpenFund(r.ticker),
+      tipLines: (r) => [
+        [r.ticker + ' · ' + r.name, 'mp-tip-head'],
+        ['Change: ' + eurS.format(r.d_eur) + ' (' + ppS(r.pp) + ')'],
+        ['Price: ' + num(r.p_base) + ' → ' + num(r.p_now) + (r.ret == null ? '' : ' (' + pctS.format(r.ret) + ')')],
+        ['Weight: ' + pct1.format(r.weight) + (r.stale ? ' · last known price' : '')],
+      ],
+    });
   });
 
   dash.draw('history-chart', (el) => {
@@ -646,20 +663,162 @@
   dash.draw('co-count', (el) => { const r = coRows(); el.textContent = r ? String(r.length) : '—'; });
   dash.draw('co-multi', (el) => { const r = coRows(); el.textContent = r ? String(r.filter((x) => x.n_funds > 1).length) : '—'; });
   dash.draw('co-body', (tb) => {
-    const rows = coRows();
-    if (!rows) { tb.replaceChildren(); return; }
-    const max = rows.length ? rows[0].value : 1;
+    const m = coMoves();
+    if (!m) { tb.replaceChildren(); return; }
+    const { key, dir } = mpCoSort;
+    const rows = m.rows.filter((r) => r.kind === 'company').sort((a, b) => {
+      const x = a[key], y = b[key];
+      if (typeof x === 'string') return dir * x.localeCompare(y);
+      return dir * ((x ?? -Infinity) - (y ?? -Infinity));
+    });
+    const max = d3.max(rows, (r) => r.value_now) || 1;
     tb.replaceChildren(...rows.map((r) => {
       const tr = document.createElement('tr');
-      tr.dataset.key = enc(r.kind) + ',' + enc(r.key);
-      const cells = [[r.symbol || '—'], [r.name], [eur.format(r.value)], [pctS.format(r.share).replace('+', '')], [r.funds, 'mp-funds']];
+      tr.dataset.key = enc(r.base) + ',' + enc(r.key);
+      const cells = [
+        [r.symbol || '—'], [r.name], [eur.format(r.value_now)], [pct1.format(r.share), 'mp-hide-narrow'],
+        [r.ret == null ? '—' : pctS.format(r.ret), tone(r.ret)], [eurS.format(r.d_eur), tone(r.d_eur)], [ppS(r.pp), tone(r.d_eur)],
+        [r.funds, 'mp-funds mp-hide-narrow'],
+      ];
       cells.forEach(([text, cls], i) => {
         const td = document.createElement('td');
-        if (i === 2) { const bar = document.createElement('span'); bar.className = 'mp-bar'; bar.style.width = Math.max(2, 48 * r.value / max) + 'px'; td.append(bar, text); } else td.textContent = text;
+        if (i === 2) { const bar = document.createElement('span'); bar.className = 'mp-bar'; bar.style.width = Math.max(2, 48 * r.value_now / max) + 'px'; td.append(bar, text); } else td.textContent = text;
         if (cls) td.className = cls;
         tr.appendChild(td);
       });
       return tr;
     }));
   });
+  dash.calc('company_moves', {
+    title: 'Change by company vs latest close',
+    description: 'For every earlier close (base): each listed company’s exposure at the base × its price change in euros, added up over the ETFs that hold it; plus the rest of the share ETFs and the bond and commodity ETFs, so the rows add up to the portfolio change.',
+    inputs: ['lookthrough', 'snapshots', 'history', 'company_prices', 'attribution'],
+    fn: (lookthrough, snapshots, history, company_prices, attribution) => {
+      if (history.length < 2) return [];
+      const last = history[history.length - 1];
+      const price = new Map(company_prices.map((r) => [r.date + '|' + r.symbol, Number(r.eur)]));
+      const fundValues = (snap) => new Map(snapshots.filter((r) => r.snap === snap).map((r) => [r.ticker, Number(r.qty) * Number(r.price)]));
+      const vNow = fundValues(last.snap);
+      const norm = (name, key) => name.toLowerCase()
+        .replace(/\b(class [a-z]|ordinary shares|units?|adr|ads|non[- ]voting|registered shares|shs)\b.*$/, '')
+        .replace(/[^a-z0-9 ]/g, ' ')
+        .replace(/\b(inc|corp|corporation|co|ltd|limited|plc|sa|ag|nv|se|holdings?|group|the|de|cv|sab|asa|ab|oyj)\b/g, ' ')
+        .replace(/\s+/g, ' ').trim() || key.toLowerCase();
+      const equityFunds = new Set(lookthrough.map((r) => r.fund));
+      const out = [];
+      for (const h of history.slice(0, -1)) {
+        const vBase = fundValues(h.snap);
+        const by = new Map();
+        for (const r of lookthrough) {
+          const id = norm(r.name, r.symbol || r.name);
+          const c = by.get(id) || { key: id, symbols: new Set(), name: r.name, exp: 0, d: 0, priced: 0, value_now: 0, parts: new Map() };
+          const w = Number(r.weight), e = (vBase.get(r.fund) || 0) * w;
+          const pb = price.get(h.date + '|' + r.symbol), pn = price.get(last.date + '|' + r.symbol);
+          if (r.symbol) c.symbols.add(r.symbol);
+          if (r.name.length < c.name.length) c.name = r.name;
+          c.exp += e;
+          if (pb && pn) { c.d += e * (pn / pb - 1); c.priced += e; }
+          const vn = (vNow.get(r.fund) || 0) * w;
+          c.value_now += vn;
+          c.parts.set(r.fund, (c.parts.get(r.fund) || 0) + vn);
+          by.set(id, c);
+        }
+        const fundRows = attribution.filter((r) => r.base === h.snap);
+        const eqMove = fundRows.filter((r) => equityFunds.has(r.ticker)).reduce((t, r) => t + r.d_eur, 0);
+        const otherMove = fundRows.filter((r) => !equityFunds.has(r.ticker)).reduce((t, r) => t + r.d_eur, 0);
+        let listed = 0;
+        for (const c of by.values()) {
+          listed += c.d;
+          out.push({
+            base: h.snap, key: c.key, kind: 'company', symbol: [...c.symbols].join(' / '), name: c.name,
+            value_base: c.exp, value_now: c.value_now, share: last.value ? c.value_now / last.value : 0,
+            ret: c.priced ? c.d / c.priced : null, d_eur: c.d, pp: c.d / h.value * 100,
+            n_funds: c.parts.size,
+            funds: [...c.parts].sort((a, b) => b[1] - a[1]).map(([f, v]) => f + ' ' + Math.round(v).toLocaleString('en-IE') + ' €').join(', '),
+          });
+        }
+        out.push({ base: h.snap, key: '~rest', kind: 'rest', symbol: '', name: 'Rest of your share ETFs (holdings beyond the top 10, timing)', value_base: null, value_now: null, share: null, ret: null, d_eur: eqMove - listed, pp: (eqMove - listed) / h.value * 100, n_funds: null, funds: '' });
+        out.push({ base: h.snap, key: '~other', kind: 'other', symbol: '', name: 'Bond and commodity ETFs', value_base: null, value_now: null, share: null, ret: null, d_eur: otherMove, pp: otherMove / h.value * 100, n_funds: null, funds: '' });
+      }
+      return out;
+    },
+  });
+
+  const coMoves = () => {
+    const m = dash.data('company_moves'), s = mpState();
+    return m.status === 'ok' && s ? { s, rows: m.data.filter((r) => r.base === s.base) } : null;
+  };
+  const coLabel = (r) => r.kind === 'rest' ? 'Rest of share ETFs' : r.kind === 'other' ? 'Bonds & commodity' : (r.symbol.split(' / ')[0] || r.name).slice(0, 14);
+
+  dash.draw('co-chart', (el) => {
+    if (failed(el, 'company_moves')) return;
+    const m = coMoves();
+    if (!m) { el.replaceChildren(); return; }
+    const cos = m.rows.filter((r) => r.kind === 'company').sort((a, b) => b.d_eur - a.d_eur);
+    const ups = cos.filter((r) => r.d_eur > 0.005).slice(0, 10);
+    const downs = cos.filter((r) => r.d_eur < -0.005).slice(-10);
+    const shown = [...ups, ...downs].map((r) => ({ ...r, label: coLabel(r) }));
+    const hiddenSum = cos.filter((r) => !ups.includes(r) && !downs.includes(r)).reduce((t, r) => t + r.d_eur, 0);
+    const rest = m.rows.find((r) => r.kind === 'rest'), other = m.rows.find((r) => r.kind === 'other');
+    const vBase = m.s.total ? m.s.total.v_base : NaN;
+    const restRow = { ...rest, d_eur: rest.d_eur + hiddenSum, pp: (rest.d_eur + hiddenSum) / vBase * 100, label: 'Everything else', muted: true, hiddenSum, restOnly: rest.d_eur };
+    const otherRow = { ...other, label: 'Bonds & commodity', muted: true };
+    barChart(el, [...shown.sort((a, b) => b.pp - a.pp), restRow, otherRow], {
+      aria: 'Contribution of each company in percentage points',
+      tipLines: (r) => r.kind === 'company' ? [
+        [(r.symbol ? r.symbol + ' · ' : '') + r.name, 'mp-tip-head'],
+        ['Change: ' + eurS.format(r.d_eur) + ' (' + ppS(r.pp) + ')'],
+        ['Price in €: ' + (r.ret == null ? 'no price' : pctS.format(r.ret))],
+        ['Exposure at start: ' + eur0.format(r.value_base)],
+        ['Through: ' + r.funds],
+      ] : r.kind === 'rest' ? [
+        ['Everything else in your share ETFs', 'mp-tip-head'],
+        ['Change: ' + eurS.format(r.d_eur) + ' (' + ppS(r.pp) + ')'],
+        ['Smaller moves of listed companies: ' + eurS.format(r.hiddenSum)],
+        ['Holdings beyond the top 10, and timing: ' + eurS.format(r.restOnly)],
+      ] : [
+        ['Bond and commodity ETFs', 'mp-tip-head'],
+        ['Change: ' + eurS.format(r.d_eur) + ' (' + ppS(r.pp) + ')'],
+      ],
+    });
+  });
+
+  const coTotal = (field) => (el) => {
+    const m = coMoves();
+    if (!m) { el.textContent = '—'; return; }
+    const d = m.rows.filter((r) => r.kind === 'company').reduce((t, r) => t + r.d_eur, 0);
+    const tot = dash.data('totals').status === 'ok' ? dash.data('totals').data.find((t) => t.base === m.s.base) : null;
+    const span = document.createElement('span');
+    span.className = tone(d);
+    span.textContent = field === 'eur' ? eurS.format(d) : tot ? ppS(d / tot.v_base * 100) : '—';
+    el.replaceChildren(span);
+  };
+  dash.draw('co-move-eur', coTotal('eur'));
+  dash.draw('co-move-pp', coTotal('pp'));
+  const coExtreme = (name, pick) => dash.draw(name, (el) => {
+    const m = coMoves();
+    const r = m && pick(m.rows.filter((x) => x.kind === 'company').sort((a, b) => a.d_eur - b.d_eur));
+    if (!r) { el.textContent = m ? 'none' : '—'; return; }
+    const span = document.createElement('span');
+    span.className = tone(r.d_eur);
+    span.setAttribute('data-source', 'company_moves');
+    span.setAttribute('data-field', 'd_eur');
+    span.setAttribute('data-where', 'base=' + enc(r.base) + '&key=' + enc(r.key));
+    span.textContent = eurS.format(r.d_eur);
+    el.replaceChildren(r.name + ' ', span, ', ' + ppS(r.pp));
+  });
+  coExtreme('co-top-up', (rows) => rows.filter((r) => r.d_eur > 0.005).pop());
+  coExtreme('co-top-down', (rows) => rows.find((r) => r.d_eur < -0.005));
+
+  window.mpCoSort = { key: 'value_now', dir: -1 };
+  for (const btn of document.querySelectorAll('[data-cosort]')) {
+    btn.addEventListener('click', () => {
+      const key = btn.dataset.cosort;
+      mpCoSort.dir = mpCoSort.key === key ? -mpCoSort.dir : (key === 'symbol' || key === 'name' ? 1 : -1);
+      mpCoSort.key = key;
+      for (const th of document.querySelectorAll('#company-list th')) th.removeAttribute('aria-sort');
+      btn.closest('th')?.setAttribute('aria-sort', mpCoSort.dir > 0 ? 'ascending' : 'descending');
+      dash.draw('co-body');
+    });
+  }
 </script>
