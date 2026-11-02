@@ -10,53 +10,61 @@ is recorded as the source.
 Yahoo only publishes the top 10 holdings, so `coverage` (sum of weights) tells how
 much of each fund is shown.
 
-Needs network access to fc.yahoo.com (login cookie) and query2.finance.yahoo.com.
+Needs curl and network access to fc.yahoo.com (login cookie) and query2.finance.yahoo.com.
 Usage: python3 fetch_holdings.py [--only IS3Q,EUNL]
 """
 from __future__ import annotations
 
 import argparse
 import datetime as dt
-import http.cookiejar
 import json
+import re
 import sys
 import time
 import urllib.parse
-import urllib.request
+import subprocess
+import tempfile
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 SOURCES = HERE / "lookthrough_sources.json"
 OUT = HERE / "lookthrough.json"
-UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+UA = "Mozilla/5.0"
 
 
 class Yahoo:
+    """Yahoo rejects Python's TLS client with 429, so requests go through curl."""
+
     def __init__(self):
-        self.jar = http.cookiejar.CookieJar()
-        self.op = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(self.jar))
-        self.op.addheaders = [("User-Agent", UA)]
-        try:
-            self.op.open("https://fc.yahoo.com/", timeout=20)
-        except urllib.error.HTTPError:
-            pass  # fc.yahoo.com answers 404 but still sets the cookie
-        self.crumb = self.op.open("https://query2.finance.yahoo.com/v1/test/getcrumb", timeout=20).read().decode()
+        self.jar = tempfile.NamedTemporaryFile(prefix="yjar", delete=False).name
+        self._curl("https://fc.yahoo.com/", out=False)  # 404, but sets the A3 cookie
+        for i in range(4):  # Yahoo rate-limits crumb requests; back off and retry
+            self.crumb = self._curl("https://query2.finance.yahoo.com/v1/test/getcrumb").strip()
+            if not self.crumb.startswith("Too Many"):
+                break
+            time.sleep(15 * (i + 1))
         if not self.crumb or "<" in self.crumb or " " in self.crumb:
             raise RuntimeError(f"no crumb: {self.crumb[:80]!r}")
+
+    def _curl(self, url, out=True):
+        cmd = ["curl", "-sS", "-m", "25", "-A", UA, "-b", self.jar, "-c", self.jar, url]
+        r = subprocess.run(cmd + ([] if out else ["-o", "/dev/null"]), capture_output=True, text=True)
+        if r.returncode:
+            raise RuntimeError(r.stderr.strip() or f"curl exit {r.returncode}")
+        return r.stdout
 
     def top_holdings(self, symbol):
         q = urllib.parse.urlencode({"modules": "topHoldings,quoteType", "crumb": self.crumb})
         url = f"https://query2.finance.yahoo.com/v10/finance/quoteSummary/{urllib.parse.quote(symbol)}?{q}"
         for i in range(3):
-            try:
-                j = json.load(self.op.open(url, timeout=20))
+            txt = self._curl(url)
+            if not txt.startswith("Too Many"):
                 break
-            except urllib.error.HTTPError as e:
-                if e.code == 404:
-                    return None
-                if i == 2:
-                    raise
-                time.sleep(2 ** (i + 1))
+            time.sleep(2 ** (i + 1))
+        try:
+            j = json.loads(txt)
+        except ValueError:
+            return None
         res = ((j.get("quoteSummary") or {}).get("result") or [None])[0]
         if not res:
             return None
@@ -64,7 +72,8 @@ class Yahoo:
         rows = []
         for h in th.get("holdings") or []:
             w = (h.get("holdingPercent") or {}).get("raw")
-            if w:
+            name = (h.get("holdingName") or "")
+            if w and not re.search(r"cash fund|money market|cash collateral", name, re.I):
                 rows.append({"symbol": (h.get("symbol") or "").strip(), "name": (h.get("holdingName") or "").strip(), "weight": float(w)})
         return {"rows": rows, "longName": (res.get("quoteType") or {}).get("longName")} if rows else None
 

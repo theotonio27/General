@@ -19,7 +19,7 @@
   .mp-card { position: relative; min-width: 0; display: grid; gap: var(--cds-gap-sm); background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); }
   .mp-card h2 { margin: 0; font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); }
   .mp-note { margin: 0; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); line-height: 1.45; }
-  .mp-chart { min-height: 160px; }
+  .mp-chart { min-height: 160px; position: relative; }
   .mp-chart svg { display: block; overflow: visible; }
   .mp-chart text { fill: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
   .mp-chart .mp-lbl-strong { fill: var(--color-fg); }
@@ -161,11 +161,7 @@
 
   <div class="mp-page" id="companies" hidden>
     <div class="mp-controls">
-      <div class="mp-segs" role="group" aria-label="Show">
-        <button class="mp-seg" data-kind="equity" aria-pressed="true">Shares</button>
-        <button class="mp-seg" data-kind="bond" aria-pressed="false">Bonds</button>
-      </div>
-      <span>A company held through several ETFs is added up across them.</span>
+      <span>Shares only. A company held through several ETFs is added up across them, and share classes such as Alphabet A and C are combined.</span>
     </div>
     <section class="mp-tiles" aria-label="Look-through figures">
       <div class="mp-tile">
@@ -174,7 +170,7 @@
         <span class="mp-tile-note">Your money in the holdings listed below</span>
       </div>
       <div class="mp-tile">
-        <span class="mp-tile-label">Share of these funds covered</span>
+        <span class="mp-tile-label">Share of your equity ETFs covered</span>
         <span class="mp-tile-value" data-draw="co-coverage" data-source="exposure">—</span>
         <span class="mp-tile-note">Yahoo lists only each fund's top 10 holdings</span>
       </div>
@@ -191,8 +187,8 @@
         <table class="mp-table" data-source="companies" data-row-key="kind,key">
           <thead>
             <tr>
-              <th data-field="key">Symbol</th>
-              <th data-field="name">Holding</th>
+              <th data-field="symbol">Symbol</th>
+              <th data-field="name">Company</th>
               <th data-field="value">Your exposure</th>
               <th data-field="share">Of portfolio</th>
               <th data-field="funds">Through</th>
@@ -202,7 +198,7 @@
         </table>
       </div>
     </section>
-    <p class="mp-note">Holdings come from Yahoo Finance's top-10 lists. Where an ETF's own listing has no data, the list comes from another fund tracking the same index, named in each ETF's detail. For swap-based ETFs this shows the index you get the returns of, not the basket the fund legally owns. Bond lines are individual bonds, grouped by Yahoo's symbol or name. The commodity ETF (LYTR) holds no companies.</p>
+    <p class="mp-note">Holdings come from Yahoo Finance's top-10 lists. Where an ETF's own listing has no data, the list comes from another fund tracking the same index, named in each ETF's detail. For swap-based ETFs this shows the index you get the returns of, not the basket the fund legally owns. Bond ETFs are left out: Yahoo publishes no bond holdings for them. The commodity ETF (LYTR) holds no companies.</p>
   </div>
 
   <footer class="mp-foot">
@@ -419,8 +415,10 @@
   };
 
   const tipFor = (card) => {
-    let tip = card.querySelector(':scope > .mp-tip');
-    if (!tip) { tip = document.createElement('div'); tip.className = 'mp-tip'; tip.hidden = true; card.appendChild(tip); }
+    const tip = document.createElement('div');
+    tip.className = 'mp-tip';
+    tip.hidden = true;
+    card.appendChild(tip);
     return tip;
   };
   const placeTip = (tip, card, event, lines) => {
@@ -437,8 +435,8 @@
     if (failed(el, 'attribution')) return;
     const s = mpState();
     if (!s) { el.replaceChildren(); return; }
-    const card = el.closest('.mp-card');
-    const tip = tipFor(card);
+    const card = el;
+    let tip = null;
     const rows = [...s.rows].sort((a, b) => b.pp - a.pp);
     const W = Math.max(280, el.clientWidth);
     const rowH = 22, top = 4;
@@ -473,6 +471,7 @@
       ['Weight: ' + pct1.format(r.weight) + (r.stale ? ' · last known price' : '')],
     ])).on('pointerleave', () => { tip.hidden = true; });
     el.replaceChildren(svg.node());
+    tip = tipFor(el);
   });
 
   dash.draw('history-chart', (el) => {
@@ -480,11 +479,12 @@
     const h = dash.data('history').data.map((r) => ({ ...r, d: new Date(r.date.slice(0, 10) + 'T00:00:00Z') }));
     const s = mpState();
     if (!h.length) { el.replaceChildren(); return; }
-    const card = el.closest('.mp-card');
-    const tip = tipFor(card);
+    const card = el;
+    let tip = null;
     const W = Math.max(260, el.clientWidth), H = 200;
     const svg = d3.create('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`).attr('role', 'img').attr('aria-label', 'Portfolio value at each close');
     el.replaceChildren(svg.node());
+    tip = tipFor(el);
     const [lo, hi] = d3.extent(h, (r) => r.value);
     const pad = Math.max((hi - lo) * 0.15, hi * 0.002);
     const y = d3.scaleLinear([lo - pad, hi + pad], [H - 24, 10]).nice(4);
@@ -537,17 +537,22 @@
       const total = history.length ? history[history.length - 1].value : 0;
       const by = new Map();
       for (const r of exposure) {
-        if (r.kind !== 'equity' && r.kind !== 'bond') continue;
-        const id = r.kind + '|' + r.key;
-        const c = by.get(id) || { kind: r.kind, key: r.key, name: r.name, value: 0, n: 0, parts: [] };
+        if (r.kind !== 'equity') continue;
+        const id = r.name.toLowerCase()
+          .replace(/\b(class [a-z]|ordinary shares|units?|adr|ads|non[- ]voting|registered shares|shs)\b.*$/, '')
+          .replace(/[^a-z0-9 ]/g, ' ')
+          .replace(/\b(inc|corp|corporation|co|ltd|limited|plc|sa|ag|nv|se|holdings?|group|the|de|cv|sab|asa|ab|oyj)\b/g, ' ')
+          .replace(/\s+/g, ' ').trim() || r.key.toLowerCase();
+        const c = by.get(id) || { kind: r.kind, key: id, symbols: new Set(), name: r.name, value: 0, n: 0, parts: new Map() };
+        if (r.symbol) c.symbols.add(r.symbol);
+        if (r.name.length < c.name.length) c.name = r.name;
         c.value += r.value;
-        c.n += 1;
-        c.parts.push({ fund: r.fund, value: r.value });
+        c.parts.set(r.fund, (c.parts.get(r.fund) || 0) + r.value);
         by.set(id, c);
       }
       return [...by.values()].map((c) => ({
-        kind: c.kind, key: c.key, name: c.name, value: c.value, share: total ? c.value / total : 0, n_funds: c.n,
-        funds: c.parts.sort((a, b) => b.value - a.value).map((p) => p.fund + ' ' + Math.round(p.value).toLocaleString('en-IE') + ' €').join(', '),
+        kind: c.kind, key: c.key, symbol: [...c.symbols].join(' / '), name: c.name, value: c.value, share: total ? c.value / total : 0, n_funds: c.parts.size,
+        funds: [...c.parts].sort((a, b) => b[1] - a[1]).map(([f, v]) => f + ' ' + Math.round(v).toLocaleString('en-IE') + ' €').join(', '),
       })).sort((a, b) => b.value - a.value);
     },
   });
@@ -576,10 +581,7 @@
   dash.onData(() => {
     const f = dash.params().fund;
     for (const el of document.querySelectorAll('#fund')) el.hidden = !f;
-    const kind = dash.params().kind || 'equity';
-    for (const b of document.querySelectorAll('.mp-seg')) b.setAttribute('aria-pressed', String(b.dataset.kind === kind));
   });
-  for (const b of document.querySelectorAll('.mp-seg')) b.addEventListener('click', () => dash.setParams({ kind: b.dataset.kind }));
 
   const fundRows = () => {
     const e = dash.data('exposure'), f = dash.params().fund;
@@ -600,7 +602,13 @@
   dash.draw('fund-coverage', (el) => {
     const rows = fundRows();
     if (!rows) { el.textContent = dash.data('exposure').status === 'ok' ? '' : '—'; return; }
-    if (!rows.length) { el.textContent = dash.params().fund === 'LYTR' ? 'This ETF holds commodity futures, not companies.' : 'Yahoo has no holdings list for this ETF or for a fund tracking the same index.'; return; }
+    if (!rows.length) {
+      const f = dash.params().fund;
+      el.textContent = f === 'LYTR' ? 'This ETF holds commodity futures, not companies.'
+        : ['IS3K', 'IS3C', 'PRAR', 'EMBH', 'QDVY', 'IBCD', 'EUNA', 'TRDE'].includes(f) ? 'This is a bond ETF. Yahoo Finance publishes no bond holdings, so its contents can\u2019t be shown yet.'
+        : 'Yahoo has no holdings list for this ETF or for a fund tracking the same index.';
+      return;
+    }
     el.textContent = 'These top ' + rows.length + ' holdings make up ' + pct1.format(rows.reduce((t, r) => t + r.weight, 0)) + ' of the fund.';
   });
   dash.draw('fund-source', (el) => {
@@ -623,12 +631,12 @@
 
   const coRows = () => {
     const c = dash.data('companies');
-    return c.status === 'ok' ? c.data.filter((r) => r.kind === (dash.params().kind || 'equity')) : null;
+    return c.status === 'ok' ? c.data : null;
   };
   const kindFunds = () => {
     const e = dash.data('exposure'), s = mpState(), snap = dash.data('snapshots');
     if (e.status !== 'ok' || !s || snap.status !== 'ok') return null;
-    const kind = dash.params().kind || 'equity';
+    const kind = 'equity';
     const funds = new Set(e.data.filter((r) => r.kind === kind).map((r) => r.fund));
     const value = snap.data.filter((x) => x.snap === s.now.snap && funds.has(x.ticker)).reduce((t, x) => t + Number(x.qty) * Number(x.price), 0);
     return { value, shown: e.data.filter((r) => r.kind === kind).reduce((t, r) => t + r.value, 0) };
@@ -644,7 +652,7 @@
     tb.replaceChildren(...rows.map((r) => {
       const tr = document.createElement('tr');
       tr.dataset.key = enc(r.kind) + ',' + enc(r.key);
-      const cells = [[r.key.length > 14 ? '—' : r.key], [r.name], [eur.format(r.value)], [pctS.format(r.share).replace('+', '')], [r.funds, 'mp-funds']];
+      const cells = [[r.symbol || '—'], [r.name], [eur.format(r.value)], [pctS.format(r.share).replace('+', '')], [r.funds, 'mp-funds']];
       cells.forEach(([text, cls], i) => {
         const td = document.createElement('td');
         if (i === 2) { const bar = document.createElement('span'); bar.className = 'mp-bar'; bar.style.width = Math.max(2, 48 * r.value / max) + 'px'; td.append(bar, text); } else td.textContent = text;

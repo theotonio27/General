@@ -1,0 +1,2096 @@
+{
+ "note": "Top holdings per fund from Yahoo Finance. weight is the share of the fund (0-1). proxy=true means taken from another fund tracking the same index.",
+ "updated": "2026-11-02T19:10:47+00:00",
+ "rows": [
+  {
+   "fund": "IS3Q",
+   "kind": "equity",
+   "symbol": "MSFT",
+   "name": "Microsoft Corp",
+   "weight": 0.064155,
+   "source": "IS3Q.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "IS3Q",
+   "kind": "equity",
+   "symbol": "AAPL",
+   "name": "Apple Inc",
+   "weight": 0.058139,
+   "source": "IS3Q.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "IS3Q",
+   "kind": "equity",
+   "symbol": "NVDA",
+   "name": "NVIDIA Corp",
+   "weight": 0.05412,
+   "source": "IS3Q.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "IS3Q",
+   "kind": "equity",
+   "symbol": "META",
+   "name": "Meta Platforms Inc Class A",
+   "weight": 0.042172,
+   "source": "IS3Q.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "IS3Q",
+   "kind": "equity",
+   "symbol": "V",
+   "name": "Visa Inc Class A",
+   "weight": 0.03437,
+   "source": "IS3Q.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "IS3Q",
+   "kind": "equity",
+   "symbol": "ASML.AS",
+   "name": "ASML Holding NV",
+   "weight": 0.032404,
+   "source": "IS3Q.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "IS3Q",
+   "kind": "equity",
+   "symbol": "LLY",
+   "name": "Eli Lilly and Co",
+   "weight": 0.025089,
+   "source": "IS3Q.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "IS3Q",
+   "kind": "equity",
+   "symbol": "LRCX",
+   "name": "Lam Research Corp",
+   "weight": 0.021198,
+   "source": "IS3Q.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "IS3Q",
+   "kind": "equity",
+   "symbol": "MA",
+   "name": "Mastercard Inc Class A",
+   "weight": 0.01971,
+   "source": "IS3Q.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "IS3Q",
+   "kind": "equity",
+   "symbol": "TJX",
+   "name": "TJX Companies Inc",
+   "weight": 0.0189,
+   "source": "IS3Q.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "EXI2",
+   "kind": "equity",
+   "symbol": "AAPL",
+   "name": "Apple Inc",
+   "weight": 0.08324,
+   "source": "EXI2.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "EXI2",
+   "kind": "equity",
+   "symbol": "MSFT",
+   "name": "Microsoft Corp",
+   "weight": 0.082228,
+   "source": "EXI2.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "EXI2",
+   "kind": "equity",
+   "symbol": "NVDA",
+   "name": "NVIDIA Corp",
+   "weight": 0.080481,
+   "source": "EXI2.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "EXI2",
+   "kind": "equity",
+   "symbol": "AMZN",
+   "name": "Amazon.com Inc",
+   "weight": 0.062226,
+   "source": "EXI2.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "EXI2",
+   "kind": "equity",
+   "symbol": "2330.TW",
+   "name": "Taiwan Semiconductor Manufacturing Co Ltd",
+   "weight": 0.047856,
+   "source": "EXI2.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "EXI2",
+   "kind": "equity",
+   "symbol": "GOOGL",
+   "name": "Alphabet Inc Class A",
+   "weight": 0.045455,
+   "source": "EXI2.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "EXI2",
+   "kind": "equity",
+   "symbol": "AVGO",
+   "name": "Broadcom Inc",
+   "weight": 0.042436,
+   "source": "EXI2.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "EXI2",
+   "kind": "equity",
+   "symbol": "META",
+   "name": "Meta Platforms Inc Class A",
+   "weight": 0.040689,
+   "source": "EXI2.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "EXI2",
+   "kind": "equity",
+   "symbol": "GOOG",
+   "name": "Alphabet Inc Class C",
+   "weight": 0.036463,
+   "source": "EXI2.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "EXI2",
+   "kind": "equity",
+   "symbol": "MU",
+   "name": "Micron Technology Inc",
+   "weight": 0.030608,
+   "source": "EXI2.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "XDWT",
+   "kind": "equity",
+   "symbol": "NVDA",
+   "name": "NVIDIA Corp",
+   "weight": 0.182568,
+   "source": "XDWT.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "XDWT",
+   "kind": "equity",
+   "symbol": "AAPL",
+   "name": "Apple Inc",
+   "weight": 0.170087,
+   "source": "XDWT.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "XDWT",
+   "kind": "equity",
+   "symbol": "MSFT",
+   "name": "Microsoft Corp",
+   "weight": 0.125858,
+   "source": "XDWT.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "XDWT",
+   "kind": "equity",
+   "symbol": "AVGO",
+   "name": "Broadcom Inc",
+   "weight": 0.055193,
+   "source": "XDWT.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "XDWT",
+   "kind": "equity",
+   "symbol": "MU",
+   "name": "Micron Technology Inc",
+   "weight": 0.041829,
+   "source": "XDWT.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "XDWT",
+   "kind": "equity",
+   "symbol": "AMD",
+   "name": "Advanced Micro Devices Inc",
+   "weight": 0.034698,
+   "source": "XDWT.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "XDWT",
+   "kind": "equity",
+   "symbol": "ASML.AS",
+   "name": "ASML Holding NV",
+   "weight": 0.024484,
+   "source": "XDWT.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "XDWT",
+   "kind": "equity",
+   "symbol": "INTC",
+   "name": "Intel Corp",
+   "weight": 0.018385,
+   "source": "XDWT.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "XDWT",
+   "kind": "equity",
+   "symbol": "CSCO",
+   "name": "Cisco Systems Inc",
+   "weight": 0.014751,
+   "source": "XDWT.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "XDWT",
+   "kind": "equity",
+   "symbol": "LRCX",
+   "name": "Lam Research Corp",
+   "weight": 0.014285,
+   "source": "XDWT.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "AUM5",
+   "kind": "equity",
+   "symbol": "NVDA",
+   "name": "NVIDIA Corp",
+   "weight": 0.083701,
+   "source": "IVV",
+   "proxy": true,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "AUM5",
+   "kind": "equity",
+   "symbol": "AAPL",
+   "name": "Apple Inc",
+   "weight": 0.073605,
+   "source": "IVV",
+   "proxy": true,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "AUM5",
+   "kind": "equity",
+   "symbol": "MSFT",
+   "name": "Microsoft Corp",
+   "weight": 0.057679,
+   "source": "IVV",
+   "proxy": true,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "AUM5",
+   "kind": "equity",
+   "symbol": "AMZN",
+   "name": "Amazon.com Inc",
+   "weight": 0.037037,
+   "source": "IVV",
+   "proxy": true,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "AUM5",
+   "kind": "equity",
+   "symbol": "GOOGL",
+   "name": "Alphabet Inc Class A",
+   "weight": 0.030578,
+   "source": "IVV",
+   "proxy": true,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "AUM5",
+   "kind": "equity",
+   "symbol": "AVGO",
+   "name": "Broadcom Inc",
+   "weight": 0.025304,
+   "source": "IVV",
+   "proxy": true,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "AUM5",
+   "kind": "equity",
+   "symbol": "GOOG",
+   "name": "Alphabet Inc Class C",
+   "weight": 0.024528,
+   "source": "IVV",
+   "proxy": true,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "AUM5",
+   "kind": "equity",
+   "symbol": "META",
+   "name": "Meta Platforms Inc Class A",
+   "weight": 0.024218,
+   "source": "IVV",
+   "proxy": true,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "AUM5",
+   "kind": "equity",
+   "symbol": "MU",
+   "name": "Micron Technology Inc",
+   "weight": 0.018218,
+   "source": "IVV",
+   "proxy": true,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "AUM5",
+   "kind": "equity",
+   "symbol": "TSLA",
+   "name": "Tesla Inc",
+   "weight": 0.015144,
+   "source": "IVV",
+   "proxy": true,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "LYP6",
+   "kind": "equity",
+   "symbol": "ASML.AS",
+   "name": "ASML Holding NV",
+   "weight": 0.046856,
+   "source": "LYP6.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "LYP6",
+   "kind": "equity",
+   "symbol": "HSBA.L",
+   "name": "HSBC Holdings PLC",
+   "weight": 0.02278,
+   "source": "LYP6.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "LYP6",
+   "kind": "equity",
+   "symbol": "ROP.SW",
+   "name": "Roche Holding AG Ordinary Shares new",
+   "weight": 0.019568,
+   "source": "LYP6.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "LYP6",
+   "kind": "equity",
+   "symbol": "NOVN.SW",
+   "name": "Novartis AG Registered Shares",
+   "weight": 0.01827,
+   "source": "LYP6.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "LYP6",
+   "kind": "equity",
+   "symbol": "SHEL.L",
+   "name": "Shell PLC",
+   "weight": 0.017569,
+   "source": "LYP6.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "LYP6",
+   "kind": "equity",
+   "symbol": "AZN.L",
+   "name": "AstraZeneca PLC",
+   "weight": 0.016937,
+   "source": "LYP6.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "LYP6",
+   "kind": "equity",
+   "symbol": "NESN.SW",
+   "name": "Nestle SA",
+   "weight": 0.01566,
+   "source": "LYP6.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "LYP6",
+   "kind": "equity",
+   "symbol": "SIE.DE",
+   "name": "Siemens AG",
+   "weight": 0.015615,
+   "source": "LYP6.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "LYP6",
+   "kind": "equity",
+   "symbol": "SAN.MC",
+   "name": "Banco Santander SA",
+   "weight": 0.014165,
+   "source": "LYP6.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "LYP6",
+   "kind": "equity",
+   "symbol": "SAP.DE",
+   "name": "SAP SE",
+   "weight": 0.014061,
+   "source": "LYP6.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "LYMS",
+   "kind": "equity",
+   "symbol": "NVDA",
+   "name": "NVIDIA Corp",
+   "weight": 0.083274,
+   "source": "QQQ",
+   "proxy": true,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "LYMS",
+   "kind": "equity",
+   "symbol": "AAPL",
+   "name": "Apple Inc",
+   "weight": 0.073534,
+   "source": "QQQ",
+   "proxy": true,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "LYMS",
+   "kind": "equity",
+   "symbol": "MSFT",
+   "name": "Microsoft Corp",
+   "weight": 0.057623,
+   "source": "QQQ",
+   "proxy": true,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "LYMS",
+   "kind": "equity",
+   "symbol": "MU",
+   "name": "Micron Technology Inc",
+   "weight": 0.050245,
+   "source": "QQQ",
+   "proxy": true,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "LYMS",
+   "kind": "equity",
+   "symbol": "AMD",
+   "name": "Advanced Micro Devices Inc",
+   "weight": 0.041714,
+   "source": "QQQ",
+   "proxy": true,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "LYMS",
+   "kind": "equity",
+   "symbol": "AMZN",
+   "name": "Amazon.com Inc",
+   "weight": 0.04066,
+   "source": "QQQ",
+   "proxy": true,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "LYMS",
+   "kind": "equity",
+   "symbol": "META",
+   "name": "Meta Platforms Inc Class A",
+   "weight": 0.032626,
+   "source": "QQQ",
+   "proxy": true,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "LYMS",
+   "kind": "equity",
+   "symbol": "GOOGL",
+   "name": "Alphabet Inc Class A",
+   "weight": 0.030548,
+   "source": "QQQ",
+   "proxy": true,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "LYMS",
+   "kind": "equity",
+   "symbol": "GOOG",
+   "name": "Alphabet Inc Class C",
+   "weight": 0.028494,
+   "source": "QQQ",
+   "proxy": true,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "LYMS",
+   "kind": "equity",
+   "symbol": "TSLA",
+   "name": "Tesla Inc",
+   "weight": 0.028201,
+   "source": "QQQ",
+   "proxy": true,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "DBXJ",
+   "kind": "equity",
+   "symbol": "8306.T",
+   "name": "Mitsubishi UFJ Financial Group Inc",
+   "weight": 0.046925,
+   "source": "DBXJ.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "DBXJ",
+   "kind": "equity",
+   "symbol": "7203.T",
+   "name": "Toyota Motor Corp",
+   "weight": 0.032891,
+   "source": "DBXJ.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "DBXJ",
+   "kind": "equity",
+   "symbol": "8035.T",
+   "name": "Tokyo Electron Ltd",
+   "weight": 0.031183,
+   "source": "DBXJ.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "DBXJ",
+   "kind": "equity",
+   "symbol": "8316.T",
+   "name": "Sumitomo Mitsui Financial Group Inc",
+   "weight": 0.029972,
+   "source": "DBXJ.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "DBXJ",
+   "kind": "equity",
+   "symbol": "6857.T",
+   "name": "Advantest Corp",
+   "weight": 0.029782,
+   "source": "DBXJ.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "DBXJ",
+   "kind": "equity",
+   "symbol": "6501.T",
+   "name": "Hitachi Ltd",
+   "weight": 0.028826,
+   "source": "DBXJ.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "DBXJ",
+   "kind": "equity",
+   "symbol": "9984.T",
+   "name": "SoftBank Group Corp",
+   "weight": 0.028344,
+   "source": "DBXJ.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "DBXJ",
+   "kind": "equity",
+   "symbol": "6098.T",
+   "name": "Recruit Holdings Co Ltd",
+   "weight": 0.026431,
+   "source": "DBXJ.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "DBXJ",
+   "kind": "equity",
+   "symbol": "6758.T",
+   "name": "Sony Group Corp",
+   "weight": 0.02596,
+   "source": "DBXJ.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "DBXJ",
+   "kind": "equity",
+   "symbol": "285A.T",
+   "name": "Kioxia Holdings Corp Ordinary Shares",
+   "weight": 0.024717,
+   "source": "DBXJ.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "79U0",
+   "kind": "equity",
+   "symbol": "NVDA",
+   "name": "NVIDIA Corp",
+   "weight": 0.083701,
+   "source": "IVV",
+   "proxy": true,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "79U0",
+   "kind": "equity",
+   "symbol": "AAPL",
+   "name": "Apple Inc",
+   "weight": 0.073605,
+   "source": "IVV",
+   "proxy": true,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "79U0",
+   "kind": "equity",
+   "symbol": "MSFT",
+   "name": "Microsoft Corp",
+   "weight": 0.057679,
+   "source": "IVV",
+   "proxy": true,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "79U0",
+   "kind": "equity",
+   "symbol": "AMZN",
+   "name": "Amazon.com Inc",
+   "weight": 0.037037,
+   "source": "IVV",
+   "proxy": true,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "79U0",
+   "kind": "equity",
+   "symbol": "GOOGL",
+   "name": "Alphabet Inc Class A",
+   "weight": 0.030578,
+   "source": "IVV",
+   "proxy": true,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "79U0",
+   "kind": "equity",
+   "symbol": "AVGO",
+   "name": "Broadcom Inc",
+   "weight": 0.025304,
+   "source": "IVV",
+   "proxy": true,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "79U0",
+   "kind": "equity",
+   "symbol": "GOOG",
+   "name": "Alphabet Inc Class C",
+   "weight": 0.024528,
+   "source": "IVV",
+   "proxy": true,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "79U0",
+   "kind": "equity",
+   "symbol": "META",
+   "name": "Meta Platforms Inc Class A",
+   "weight": 0.024218,
+   "source": "IVV",
+   "proxy": true,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "79U0",
+   "kind": "equity",
+   "symbol": "MU",
+   "name": "Micron Technology Inc",
+   "weight": 0.018218,
+   "source": "IVV",
+   "proxy": true,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "79U0",
+   "kind": "equity",
+   "symbol": "TSLA",
+   "name": "Tesla Inc",
+   "weight": 0.015144,
+   "source": "IVV",
+   "proxy": true,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "LEMA",
+   "kind": "equity",
+   "symbol": "2330.TW",
+   "name": "Taiwan Semiconductor Manufacturing Co Ltd",
+   "weight": 0.155727,
+   "source": "EEM",
+   "proxy": true,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "LEMA",
+   "kind": "equity",
+   "symbol": "005930.KQ",
+   "name": "Samsung Electronics Co Ltd",
+   "weight": 0.075262,
+   "source": "EEM",
+   "proxy": true,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "LEMA",
+   "kind": "equity",
+   "symbol": "000660.KQ",
+   "name": "SK hynix Inc",
+   "weight": 0.058797,
+   "source": "EEM",
+   "proxy": true,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "LEMA",
+   "kind": "equity",
+   "symbol": "0700.HK",
+   "name": "Tencent Holdings Ltd",
+   "weight": 0.027337,
+   "source": "EEM",
+   "proxy": true,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "LEMA",
+   "kind": "equity",
+   "symbol": "9988.HK",
+   "name": "Alibaba Group Holding Ltd Ordinary Shares",
+   "weight": 0.018488,
+   "source": "EEM",
+   "proxy": true,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "LEMA",
+   "kind": "equity",
+   "symbol": "2454.TW",
+   "name": "MediaTek Inc",
+   "weight": 0.018096,
+   "source": "EEM",
+   "proxy": true,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "LEMA",
+   "kind": "equity",
+   "symbol": "005935",
+   "name": "Samsung Electronics Co Ltd Participating Preferred",
+   "weight": 0.009393,
+   "source": "EEM",
+   "proxy": true,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "LEMA",
+   "kind": "equity",
+   "symbol": "2308.TW",
+   "name": "Delta Electronics Inc",
+   "weight": 0.009379,
+   "source": "EEM",
+   "proxy": true,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "LEMA",
+   "kind": "equity",
+   "symbol": "00939",
+   "name": "China Construction Bank Corp Class H",
+   "weight": 0.008548,
+   "source": "EEM",
+   "proxy": true,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "LEMA",
+   "kind": "equity",
+   "symbol": "2317.TW",
+   "name": "Hon Hai Precision Industry Co Ltd",
+   "weight": 0.007861,
+   "source": "EEM",
+   "proxy": true,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "PRAJ",
+   "kind": "equity",
+   "symbol": "8306.T",
+   "name": "Mitsubishi UFJ Financial Group Inc",
+   "weight": 0.043333,
+   "source": "PRAJ.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "PRAJ",
+   "kind": "equity",
+   "symbol": "7203.T",
+   "name": "Toyota Motor Corp",
+   "weight": 0.028125,
+   "source": "PRAJ.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "PRAJ",
+   "kind": "equity",
+   "symbol": "8035.T",
+   "name": "Tokyo Electron Ltd",
+   "weight": 0.02756,
+   "source": "PRAJ.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "PRAJ",
+   "kind": "equity",
+   "symbol": "8316.T",
+   "name": "Sumitomo Mitsui Financial Group Inc",
+   "weight": 0.027091,
+   "source": "PRAJ.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "PRAJ",
+   "kind": "equity",
+   "symbol": "6857.T",
+   "name": "Advantest Corp",
+   "weight": 0.026225,
+   "source": "PRAJ.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "PRAJ",
+   "kind": "equity",
+   "symbol": "6501.T",
+   "name": "Hitachi Ltd",
+   "weight": 0.025779,
+   "source": "PRAJ.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "PRAJ",
+   "kind": "equity",
+   "symbol": "6758.T",
+   "name": "Sony Group Corp",
+   "weight": 0.023462,
+   "source": "PRAJ.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "PRAJ",
+   "kind": "equity",
+   "symbol": "9984.T",
+   "name": "SoftBank Group Corp",
+   "weight": 0.02285,
+   "source": "PRAJ.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "PRAJ",
+   "kind": "equity",
+   "symbol": "6098.T",
+   "name": "Recruit Holdings Co Ltd",
+   "weight": 0.022693,
+   "source": "PRAJ.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "PRAJ",
+   "kind": "equity",
+   "symbol": "8411.T",
+   "name": "Mizuho Financial Group Inc",
+   "weight": 0.022067,
+   "source": "PRAJ.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "EUNL",
+   "kind": "equity",
+   "symbol": "NVDA",
+   "name": "NVIDIA Corp",
+   "weight": 0.05788,
+   "source": "EUNL.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "EUNL",
+   "kind": "equity",
+   "symbol": "AAPL",
+   "name": "Apple Inc",
+   "weight": 0.053919,
+   "source": "EUNL.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "EUNL",
+   "kind": "equity",
+   "symbol": "MSFT",
+   "name": "Microsoft Corp",
+   "weight": 0.039901,
+   "source": "EUNL.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "EUNL",
+   "kind": "equity",
+   "symbol": "AMZN",
+   "name": "Amazon.com Inc",
+   "weight": 0.026591,
+   "source": "EUNL.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "EUNL",
+   "kind": "equity",
+   "symbol": "GOOGL",
+   "name": "Alphabet Inc Class A",
+   "weight": 0.022256,
+   "source": "EUNL.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "EUNL",
+   "kind": "equity",
+   "symbol": "META",
+   "name": "Meta Platforms Inc Class A",
+   "weight": 0.017567,
+   "source": "EUNL.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "EUNL",
+   "kind": "equity",
+   "symbol": "GOOG",
+   "name": "Alphabet Inc Class C",
+   "weight": 0.017559,
+   "source": "EUNL.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "EUNL",
+   "kind": "equity",
+   "symbol": "AVGO",
+   "name": "Broadcom Inc",
+   "weight": 0.017498,
+   "source": "EUNL.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "EUNL",
+   "kind": "equity",
+   "symbol": "MU",
+   "name": "Micron Technology Inc",
+   "weight": 0.013261,
+   "source": "EUNL.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "EUNL",
+   "kind": "equity",
+   "symbol": "TSLA",
+   "name": "Tesla Inc",
+   "weight": 0.01119,
+   "source": "EUNL.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "WELK",
+   "kind": "equity",
+   "symbol": "JPM",
+   "name": "JPMorgan Chase & Co",
+   "weight": 0.071913,
+   "source": "WELK.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "WELK",
+   "kind": "equity",
+   "symbol": "V",
+   "name": "Visa Inc Class A",
+   "weight": 0.051886,
+   "source": "WELK.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "WELK",
+   "kind": "equity",
+   "symbol": "MA",
+   "name": "Mastercard Inc Class A",
+   "weight": 0.037861,
+   "source": "WELK.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "WELK",
+   "kind": "equity",
+   "symbol": "BAC",
+   "name": "Bank of America Corp",
+   "weight": 0.028037,
+   "source": "WELK.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "WELK",
+   "kind": "equity",
+   "symbol": "HSBA.L",
+   "name": "HSBC Holdings PLC",
+   "weight": 0.026143,
+   "source": "WELK.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "WELK",
+   "kind": "equity",
+   "symbol": "8306.T",
+   "name": "Mitsubishi UFJ Financial Group Inc",
+   "weight": 0.022446,
+   "source": "WELK.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "WELK",
+   "kind": "equity",
+   "symbol": "RY",
+   "name": "Royal Bank of Canada",
+   "weight": 0.02152,
+   "source": "WELK.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "WELK",
+   "kind": "equity",
+   "symbol": "GS",
+   "name": "The Goldman Sachs Group Inc",
+   "weight": 0.020799,
+   "source": "WELK.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "WELK",
+   "kind": "equity",
+   "symbol": "WFC",
+   "name": "Wells Fargo & Co",
+   "weight": 0.020534,
+   "source": "WELK.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "WELK",
+   "kind": "equity",
+   "symbol": "MS",
+   "name": "Morgan Stanley",
+   "weight": 0.016958,
+   "source": "WELK.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "XDWI",
+   "kind": "equity",
+   "symbol": "CAT",
+   "name": "Caterpillar Inc",
+   "weight": 0.038132,
+   "source": "XDWI.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "XDWI",
+   "kind": "equity",
+   "symbol": "GE",
+   "name": "GE Aerospace",
+   "weight": 0.033087,
+   "source": "XDWI.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "XDWI",
+   "kind": "equity",
+   "symbol": "GEV",
+   "name": "GE Vernova Inc",
+   "weight": 0.026082,
+   "source": "XDWI.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "XDWI",
+   "kind": "equity",
+   "symbol": "RTX",
+   "name": "RTX Corp",
+   "weight": 0.025514,
+   "source": "XDWI.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "XDWI",
+   "kind": "equity",
+   "symbol": "SIE.DE",
+   "name": "Siemens AG",
+   "weight": 0.023102,
+   "source": "XDWI.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "XDWI",
+   "kind": "equity",
+   "symbol": "SU.PA",
+   "name": "Schneider Electric SE",
+   "weight": 0.018615,
+   "source": "XDWI.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "XDWI",
+   "kind": "equity",
+   "symbol": "ETN",
+   "name": "Eaton Corp PLC",
+   "weight": 0.017028,
+   "source": "XDWI.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "XDWI",
+   "kind": "equity",
+   "symbol": "DE",
+   "name": "Deere & Co",
+   "weight": 0.016645,
+   "source": "XDWI.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "XDWI",
+   "kind": "equity",
+   "symbol": "RR.L",
+   "name": "Rolls-Royce Holdings PLC",
+   "weight": 0.016544,
+   "source": "XDWI.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "XDWI",
+   "kind": "equity",
+   "symbol": "UNP",
+   "name": "Union Pacific Corp",
+   "weight": 0.016495,
+   "source": "XDWI.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "EBUY",
+   "kind": "equity",
+   "symbol": "CRWD",
+   "name": "CrowdStrike Holdings Inc Class A",
+   "weight": 0.045213,
+   "source": "EBUY.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "EBUY",
+   "kind": "equity",
+   "symbol": "PANW",
+   "name": "Palo Alto Networks Inc",
+   "weight": 0.042926,
+   "source": "EBUY.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "EBUY",
+   "kind": "equity",
+   "symbol": "MRVL",
+   "name": "Marvell Technology Inc",
+   "weight": 0.039637,
+   "source": "EBUY.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "EBUY",
+   "kind": "equity",
+   "symbol": "AMD",
+   "name": "Advanced Micro Devices Inc",
+   "weight": 0.038942,
+   "source": "EBUY.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "EBUY",
+   "kind": "equity",
+   "symbol": "ANET",
+   "name": "Arista Networks Inc",
+   "weight": 0.038025,
+   "source": "EBUY.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "EBUY",
+   "kind": "equity",
+   "symbol": "CRM",
+   "name": "Salesforce Inc",
+   "weight": 0.033327,
+   "source": "EBUY.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "EBUY",
+   "kind": "equity",
+   "symbol": "SAP.DE",
+   "name": "SAP SE",
+   "weight": 0.030688,
+   "source": "EBUY.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "EBUY",
+   "kind": "equity",
+   "symbol": "MA",
+   "name": "Mastercard Inc Class A",
+   "weight": 0.02993,
+   "source": "EBUY.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "EBUY",
+   "kind": "equity",
+   "symbol": "MSFT",
+   "name": "Microsoft Corp",
+   "weight": 0.029635,
+   "source": "EBUY.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "EBUY",
+   "kind": "equity",
+   "symbol": "V",
+   "name": "Visa Inc Class A",
+   "weight": 0.029432,
+   "source": "EBUY.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "EFRW",
+   "kind": "equity",
+   "symbol": "MRNA",
+   "name": "Moderna Inc",
+   "weight": 0.002924,
+   "source": "EFRW.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "EFRW",
+   "kind": "equity",
+   "symbol": "ILMN",
+   "name": "Illumina Inc",
+   "weight": 0.002764,
+   "source": "EFRW.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "EFRW",
+   "kind": "equity",
+   "symbol": "P",
+   "name": "Everpure Inc Class A",
+   "weight": 0.00274,
+   "source": "EFRW.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "EFRW",
+   "kind": "equity",
+   "symbol": "CRWD",
+   "name": "CrowdStrike Holdings Inc Class A",
+   "weight": 0.002623,
+   "source": "EFRW.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "EFRW",
+   "kind": "equity",
+   "symbol": "RVTY",
+   "name": "Revvity Inc",
+   "weight": 0.002542,
+   "source": "EFRW.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "EFRW",
+   "kind": "equity",
+   "symbol": "DDOG",
+   "name": "Datadog Inc Class A",
+   "weight": 0.002503,
+   "source": "EFRW.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "EFRW",
+   "kind": "equity",
+   "symbol": "A",
+   "name": "Agilent Technologies Inc",
+   "weight": 0.002451,
+   "source": "EFRW.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "EFRW",
+   "kind": "equity",
+   "symbol": "PANW",
+   "name": "Palo Alto Networks Inc",
+   "weight": 0.002441,
+   "source": "EFRW.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "EFRW",
+   "kind": "equity",
+   "symbol": "AMD",
+   "name": "Advanced Micro Devices Inc",
+   "weight": 0.002417,
+   "source": "EFRW.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "EFRW",
+   "kind": "equity",
+   "symbol": "MTD",
+   "name": "Mettler-Toledo International Inc",
+   "weight": 0.00241,
+   "source": "EFRW.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "AMEL",
+   "kind": "equity",
+   "symbol": "NU",
+   "name": "Nu Holdings Ltd Ordinary Shares Class A",
+   "weight": 0.074723,
+   "source": "ILF",
+   "proxy": true,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "AMEL",
+   "kind": "equity",
+   "symbol": "ITUB",
+   "name": "Itau Unibanco Holding SA ADR",
+   "weight": 0.071514,
+   "source": "ILF",
+   "proxy": true,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "AMEL",
+   "kind": "equity",
+   "symbol": "VALE",
+   "name": "Vale SA ADR",
+   "weight": 0.071045,
+   "source": "ILF",
+   "proxy": true,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "AMEL",
+   "kind": "equity",
+   "symbol": "GMEXICOB.MX",
+   "name": "Grupo Mexico SAB de CV Class B",
+   "weight": 0.061035,
+   "source": "ILF",
+   "proxy": true,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "AMEL",
+   "kind": "equity",
+   "symbol": "PBR",
+   "name": "Petroleo Brasileiro SA Petrobras ADR",
+   "weight": 0.060184,
+   "source": "ILF",
+   "proxy": true,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "AMEL",
+   "kind": "equity",
+   "symbol": "GFNORTEO.MX",
+   "name": "Grupo Financiero Banorte SAB de CV Class O",
+   "weight": 0.040152,
+   "source": "ILF",
+   "proxy": true,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "AMEL",
+   "kind": "equity",
+   "symbol": "BAP",
+   "name": "Credicorp Ltd",
+   "weight": 0.04001,
+   "source": "ILF",
+   "proxy": true,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "AMEL",
+   "kind": "equity",
+   "symbol": "FEMSAUBD.MX",
+   "name": "Fomento Economico Mexicano SAB de CV Units Cons. Of 1 Shs-B- And 4 Shs-D-",
+   "weight": 0.03087,
+   "source": "ILF",
+   "proxy": true,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "AMEL",
+   "kind": "equity",
+   "symbol": "BBD",
+   "name": "Bank Bradesco SA ADR",
+   "weight": 0.030502,
+   "source": "ILF",
+   "proxy": true,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "LKOR",
+   "kind": "equity",
+   "symbol": "000660.KQ",
+   "name": "SK hynix Inc",
+   "weight": 0.237204,
+   "source": "EWY",
+   "proxy": true,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "LKOR",
+   "kind": "equity",
+   "symbol": "005930.KQ",
+   "name": "Samsung Electronics Co Ltd",
+   "weight": 0.227762,
+   "source": "EWY",
+   "proxy": true,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "LKOR",
+   "kind": "equity",
+   "symbol": "402340.KQ",
+   "name": "SK Square",
+   "weight": 0.031131,
+   "source": "EWY",
+   "proxy": true,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "LKOR",
+   "kind": "equity",
+   "symbol": "009150.KQ",
+   "name": "Samsung Electro-Mechanics Co Ltd",
+   "weight": 0.027325,
+   "source": "EWY",
+   "proxy": true,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "LKOR",
+   "kind": "equity",
+   "symbol": "105560.KQ",
+   "name": "KB Financial Group Inc",
+   "weight": 0.019215,
+   "source": "EWY",
+   "proxy": true,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "LKOR",
+   "kind": "equity",
+   "symbol": "055550.KQ",
+   "name": "Shinhan Financial Group Co Ltd",
+   "weight": 0.015585,
+   "source": "EWY",
+   "proxy": true,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "LKOR",
+   "kind": "equity",
+   "symbol": "005380.KQ",
+   "name": "Hyundai Motor Co",
+   "weight": 0.014609,
+   "source": "EWY",
+   "proxy": true,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "LKOR",
+   "kind": "equity",
+   "symbol": "086790.KQ",
+   "name": "Hana Financial Group Inc",
+   "weight": 0.012992,
+   "source": "EWY",
+   "proxy": true,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "LKOR",
+   "kind": "equity",
+   "symbol": "034020.KQ",
+   "name": "Doosan Enerbility Co Ltd",
+   "weight": 0.012604,
+   "source": "EWY",
+   "proxy": true,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "LKOR",
+   "kind": "equity",
+   "symbol": "012450.KQ",
+   "name": "Hanwha Aerospace Co Ltd",
+   "weight": 0.011865,
+   "source": "EWY",
+   "proxy": true,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "VGWD",
+   "kind": "equity",
+   "symbol": "005930.KQ",
+   "name": "Samsung Electronics Co Ltd",
+   "weight": 0.021212,
+   "source": "VGWD.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "VGWD",
+   "kind": "equity",
+   "symbol": "JPM",
+   "name": "JPMorgan Chase & Co",
+   "weight": 0.020487,
+   "source": "VGWD.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "VGWD",
+   "kind": "equity",
+   "symbol": "XOM",
+   "name": "ExxonMobil Holdings Corp",
+   "weight": 0.015527,
+   "source": "VGWD.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "VGWD",
+   "kind": "equity",
+   "symbol": "JNJ",
+   "name": "Johnson & Johnson",
+   "weight": 0.014776,
+   "source": "VGWD.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "VGWD",
+   "kind": "equity",
+   "symbol": "ABBV",
+   "name": "AbbVie Inc",
+   "weight": 0.010739,
+   "source": "VGWD.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "VGWD",
+   "kind": "equity",
+   "symbol": "CSCO",
+   "name": "Cisco Systems Inc",
+   "weight": 0.009843,
+   "source": "VGWD.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "VGWD",
+   "kind": "equity",
+   "symbol": "CVX",
+   "name": "Chevron Corp",
+   "weight": 0.008781,
+   "source": "VGWD.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "VGWD",
+   "kind": "equity",
+   "symbol": "MRK",
+   "name": "Merck & Co Inc",
+   "weight": 0.008328,
+   "source": "VGWD.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "VGWD",
+   "kind": "equity",
+   "symbol": "BAC",
+   "name": "Bank of America Corp",
+   "weight": 0.00817,
+   "source": "VGWD.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "VGWD",
+   "kind": "equity",
+   "symbol": "HSBA.L",
+   "name": "HSBC Holdings PLC",
+   "weight": 0.007909,
+   "source": "VGWD.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "SEC0",
+   "kind": "equity",
+   "symbol": "AMD",
+   "name": "Advanced Micro Devices Inc",
+   "weight": 0.089134,
+   "source": "SEC0.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "SEC0",
+   "kind": "equity",
+   "symbol": "MU",
+   "name": "Micron Technology Inc",
+   "weight": 0.077243,
+   "source": "SEC0.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "SEC0",
+   "kind": "equity",
+   "symbol": "2330.TW",
+   "name": "Taiwan Semiconductor Manufacturing Co Ltd",
+   "weight": 0.072137,
+   "source": "SEC0.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "SEC0",
+   "kind": "equity",
+   "symbol": "NVDA",
+   "name": "NVIDIA Corp",
+   "weight": 0.07133,
+   "source": "SEC0.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "SEC0",
+   "kind": "equity",
+   "symbol": "AVGO",
+   "name": "Broadcom Inc",
+   "weight": 0.065812,
+   "source": "SEC0.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "SEC0",
+   "kind": "equity",
+   "symbol": "INTC",
+   "name": "Intel Corp",
+   "weight": 0.052808,
+   "source": "SEC0.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "SEC0",
+   "kind": "equity",
+   "symbol": "000660.KQ",
+   "name": "SK hynix Inc",
+   "weight": 0.049838,
+   "source": "SEC0.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "SEC0",
+   "kind": "equity",
+   "symbol": "LRCX",
+   "name": "Lam Research Corp",
+   "weight": 0.043586,
+   "source": "SEC0.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "SEC0",
+   "kind": "equity",
+   "symbol": "ASML.AS",
+   "name": "ASML Holding NV",
+   "weight": 0.042123,
+   "source": "SEC0.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "SEC0",
+   "kind": "equity",
+   "symbol": "AMAT",
+   "name": "Applied Materials Inc",
+   "weight": 0.042053,
+   "source": "SEC0.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "RARE1",
+   "kind": "equity",
+   "symbol": "AAL.L",
+   "name": "Anglo American PLC",
+   "weight": 0.036288,
+   "source": "RARE.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "RARE1",
+   "kind": "equity",
+   "symbol": "MP",
+   "name": "MP Materials Corp Ordinary Shares - Class A",
+   "weight": 0.034075,
+   "source": "RARE.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "RARE1",
+   "kind": "equity",
+   "symbol": "MDKA.JK",
+   "name": "PT Merdeka Copper Gold Tbk",
+   "weight": 0.033531,
+   "source": "RARE.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "RARE1",
+   "kind": "equity",
+   "symbol": "IMP.JO",
+   "name": "Impala Platinum Holdings Ltd",
+   "weight": 0.032593,
+   "source": "RARE.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "RARE1",
+   "kind": "equity",
+   "symbol": "LYC.AX",
+   "name": "Lynas Rare Earths Ltd",
+   "weight": 0.032327,
+   "source": "RARE.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "RARE1",
+   "kind": "equity",
+   "symbol": "NPH.JO",
+   "name": "Northam Platinum Holdings Ltd",
+   "weight": 0.031766,
+   "source": "RARE.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "RARE1",
+   "kind": "equity",
+   "symbol": "000629.SZ",
+   "name": "Pangang Group Vanadium & Titanium Resources Co Ltd Class A",
+   "weight": 0.023446,
+   "source": "RARE.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "RARE1",
+   "kind": "equity",
+   "symbol": "3993.HK",
+   "name": "CMOC Group Ltd Class H",
+   "weight": 0.023213,
+   "source": "RARE.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "RARE1",
+   "kind": "equity",
+   "symbol": "086520.KQ",
+   "name": "Ecopro Co Ltd",
+   "weight": 0.022861,
+   "source": "RARE.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "RARE1",
+   "kind": "equity",
+   "symbol": "600392.SS",
+   "name": "Shenghe Resources Holding Co Ltd Class A",
+   "weight": 0.022047,
+   "source": "RARE.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "VUAA",
+   "kind": "equity",
+   "symbol": "NVDA",
+   "name": "NVIDIA Corp",
+   "weight": 0.083871,
+   "source": "VUAA.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "VUAA",
+   "kind": "equity",
+   "symbol": "AAPL",
+   "name": "Apple Inc",
+   "weight": 0.073754,
+   "source": "VUAA.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "VUAA",
+   "kind": "equity",
+   "symbol": "MSFT",
+   "name": "Microsoft Corp",
+   "weight": 0.057796,
+   "source": "VUAA.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "VUAA",
+   "kind": "equity",
+   "symbol": "AMZN",
+   "name": "Amazon.com Inc",
+   "weight": 0.037112,
+   "source": "VUAA.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "VUAA",
+   "kind": "equity",
+   "symbol": "GOOGL",
+   "name": "Alphabet Inc Class A",
+   "weight": 0.030672,
+   "source": "VUAA.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "VUAA",
+   "kind": "equity",
+   "symbol": "AVGO",
+   "name": "Broadcom Inc",
+   "weight": 0.025355,
+   "source": "VUAA.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "VUAA",
+   "kind": "equity",
+   "symbol": "GOOG",
+   "name": "Alphabet Inc Class C",
+   "weight": 0.024545,
+   "source": "VUAA.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "VUAA",
+   "kind": "equity",
+   "symbol": "META",
+   "name": "Meta Platforms Inc Class A",
+   "weight": 0.024267,
+   "source": "VUAA.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "VUAA",
+   "kind": "equity",
+   "symbol": "MU",
+   "name": "Micron Technology Inc",
+   "weight": 0.018254,
+   "source": "VUAA.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  },
+  {
+   "fund": "VUAA",
+   "kind": "equity",
+   "symbol": "TSLA",
+   "name": "Tesla Inc",
+   "weight": 0.015174,
+   "source": "VUAA.DE",
+   "proxy": false,
+   "asOf": "2026-11-02"
+  }
+ ]
+}

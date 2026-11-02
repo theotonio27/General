@@ -29,7 +29,14 @@ Dashboard: https://claude.ai/artifact/5LBRd9Xqxsr6h62pbRWUM3 (dataset document `
 7. Optional backup: commit `portfolio/snapshots.json` with message `Morning prices <date>`
    and try `git push origin claude/great-rubin-48ti85` once. If the push is refused,
    don't retry. Just mention it in the final message.
-8. Final message (this becomes the push notification): the script's `summary` line and
+8. Monthly holdings refresh: only on the first weekday run of a month (today's
+   day-of-month <= 3 and no `datasets/lookthrough` `updated.at` in this month).
+   - Run `python3 fetch_holdings.py` (needs fc.yahoo.com). If it exits non-zero, skip this step and say why.
+   - Upload `portfolio/lookthrough.json` as an asset, then `update` `datasets/lookthrough`
+     the same way as step 6: new `source.url`, `name` = `lookthrough.json`, `updated`.
+     Then delete the old blob.
+   - Mention any fund whose report shows `n: 0` that had holdings before.
+9. Final message (this becomes the push notification): the script's `summary` line and
    any unpriced tickers.
 
 When you trade, update the quantity in `holdings.json` (or ask Claude to). The next
