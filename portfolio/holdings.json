@@ -1,0 +1,280 @@
+{
+  "source": "Trading 212 screenshots, 2026-11-02",
+  "currency": "EUR",
+  "note": "price = Trading 212 screenshot price on 2026-11-02 (reference only). yahoo = verified Yahoo Finance symbol (EUR quote).",
+  "holdings": [
+    {
+      "ticker": "IS3Q",
+      "name": "iShares Edge MSCI World Quality Factor",
+      "yahoo": "IS3Q.DE",
+      "qty": 300.91408859,
+      "avgCost": 64.52,
+      "price": 80.43,
+      "verified": true
+    },
+    {
+      "ticker": "EXI2",
+      "name": "iShares Dow Jones Global Titans 50",
+      "yahoo": "EXI2.DE",
+      "qty": 178.22120682,
+      "avgCost": 85.84,
+      "price": 113.85,
+      "verified": true
+    },
+    {
+      "ticker": "IS3K",
+      "name": "iShares High Yield Corporate Bond Dist",
+      "yahoo": "IS3K.DE",
+      "qty": 250.91427146,
+      "avgCost": 78.27,
+      "price": 76.11,
+      "verified": true
+    },
+    {
+      "ticker": "XDWT",
+      "name": "Xtrackers MSCI World Information Technology",
+      "yahoo": "XDWT.DE",
+      "qty": 135.2772907,
+      "avgCost": 85.68,
+      "price": 124.7,
+      "verified": true
+    },
+    {
+      "ticker": "AUM5",
+      "name": "Amundi S&P 500 ETF (Acc)",
+      "yahoo": "AUM5.DE",
+      "qty": 102.84319097,
+      "avgCost": 132.88,
+      "price": 135.84,
+      "verified": true
+    },
+    {
+      "ticker": "LYP6",
+      "name": "Amundi Stoxx Europe 600",
+      "yahoo": "LYP6.DE",
+      "qty": 27.60362725,
+      "avgCost": 314.94,
+      "price": 321.15,
+      "verified": true
+    },
+    {
+      "ticker": "LYMS",
+      "name": "Amundi Nasdaq-100 II",
+      "yahoo": "LYMS.DE",
+      "qty": 81.20783633,
+      "avgCost": 104.41,
+      "price": 103.3,
+      "verified": true
+    },
+    {
+      "ticker": "IS3C",
+      "name": "iShares J.P. Morgan USD EM Bond",
+      "yahoo": "IS3C.DE",
+      "qty": 119.64658656,
+      "avgCost": 68.34,
+      "price": 65.08,
+      "verified": true
+    },
+    {
+      "ticker": "PRAR",
+      "name": "Amundi Prime Euro Govies",
+      "yahoo": "PRAR.DE",
+      "qty": 352.97666994,
+      "avgCost": 17.99,
+      "price": 17.66,
+      "verified": true
+    },
+    {
+      "ticker": "EMBH",
+      "name": "Amundi USD Emerging Markets Govt Bond",
+      "yahoo": "EMBHI.MI",
+      "qty": 97.18389138,
+      "avgCost": 65.49,
+      "price": 64.1,
+      "verified": true,
+      "symbolNote": "Milan line; EUR-hedged Dist share class matched the screenshot price within 0.2%."
+    },
+    {
+      "ticker": "DBXJ",
+      "name": "Xtrackers MSCI Japan (Acc)",
+      "yahoo": "DBXJ.DE",
+      "qty": 46.36938789,
+      "avgCost": 79.4,
+      "price": 104.57,
+      "verified": true
+    },
+    {
+      "ticker": "79U0",
+      "name": "Amundi S&P 500 II EUR Hedged",
+      "yahoo": "79U0.MU",
+      "qty": 21.75604258,
+      "avgCost": 208.95,
+      "price": 209.25,
+      "verified": true,
+      "symbolNote": "Only thin regional quotes exist (Munich/Dusseldorf); price can lag. Send the ISIN for a better line."
+    },
+    {
+      "ticker": "QDVY",
+      "name": "iShares Floating Rate Bond Dist",
+      "yahoo": "QDVY.DE",
+      "qty": 797.54105592,
+      "avgCost": 4.59,
+      "price": 4.53,
+      "verified": true
+    },
+    {
+      "ticker": "IBCD",
+      "name": "iShares Corporate Bond Dist",
+      "yahoo": "IBCD.DE",
+      "qty": 40.02339196,
+      "avgCost": 92.29,
+      "price": 87.06,
+      "verified": true
+    },
+    {
+      "ticker": "LEMA",
+      "name": "Amundi MSCI Emerging Markets",
+      "yahoo": "LEMA.DE",
+      "qty": 48.9993703,
+      "avgCost": 72.65,
+      "price": 71.09,
+      "verified": true
+    },
+    {
+      "ticker": "PRAJ",
+      "name": "Amundi Prime Japan",
+      "yahoo": "PRAJ.DE",
+      "qty": 64.06361287,
+      "avgCost": 37.09,
+      "price": 37.4,
+      "verified": true
+    },
+    {
+      "ticker": "EUNL",
+      "name": "iShares Core MSCI World Acc",
+      "yahoo": "EUNL.DE",
+      "qty": 16.0150169,
+      "avgCost": 81.36,
+      "price": 129.54,
+      "verified": true
+    },
+    {
+      "ticker": "EUNA",
+      "name": "iShares Global Aggregate Bond Acc",
+      "yahoo": "EUNA.DE",
+      "qty": 277.34755157,
+      "avgCost": 4.53,
+      "price": 4.9,
+      "verified": true
+    },
+    {
+      "ticker": "LYTR",
+      "name": "Amundi Bloomberg Equal-weight Commodity ex-Agri",
+      "yahoo": "LYTR.DE",
+      "qty": 32.529594,
+      "avgCost": 36.43,
+      "price": 37.25,
+      "verified": true
+    },
+    {
+      "ticker": "WELK",
+      "name": "Amundi S&P Global Financials ESG",
+      "yahoo": "WELK.DE",
+      "qty": 59.20603116,
+      "avgCost": 20.03,
+      "price": 20.39,
+      "verified": true
+    },
+    {
+      "ticker": "XDWI",
+      "name": "Xtrackers MSCI World Industrials",
+      "yahoo": "XDWI.DE",
+      "qty": 15.99436111,
+      "avgCost": 74.15,
+      "price": 74.16,
+      "verified": true
+    },
+    {
+      "ticker": "EBUY",
+      "name": "Amundi MSCI Digital Economy and Metaverse",
+      "yahoo": "EBUY.DE",
+      "qty": 56.12132212,
+      "avgCost": 21.1,
+      "price": 21.04,
+      "verified": true
+    },
+    {
+      "ticker": "EFRW",
+      "name": "iShares S&P 500 Equal Weight",
+      "yahoo": "EFRW.DE",
+      "qty": 184.97650501,
+      "avgCost": 6.24,
+      "price": 6.37,
+      "verified": true
+    },
+    {
+      "ticker": "AMEL",
+      "name": "Amundi MSCI Emerging Markets Latin America",
+      "yahoo": "AMEL.DE",
+      "qty": 53.77545528,
+      "avgCost": 22.04,
+      "price": 20.45,
+      "verified": true
+    },
+    {
+      "ticker": "TRDE",
+      "name": "Invesco US Treasury Bond 7-10 Year",
+      "yahoo": "TRDE.DE",
+      "qty": 33.4081848,
+      "avgCost": 30.53,
+      "price": 29.24,
+      "verified": true
+    },
+    {
+      "ticker": "LKOR",
+      "name": "Amundi MSCI Korea (Acc)",
+      "yahoo": "LKOR.DE",
+      "qty": 2.53157589,
+      "avgCost": 163.93,
+      "price": 156.28,
+      "verified": true
+    },
+    {
+      "ticker": "VGWD",
+      "name": "Vanguard FTSE All-World High Dividend Yield",
+      "yahoo": "VGWD.DE",
+      "qty": 4.6160962,
+      "avgCost": 54.05,
+      "price": 83.22,
+      "verified": true
+    },
+    {
+      "ticker": "SEC0",
+      "name": "iShares MSCI Global Semiconductors",
+      "yahoo": "SEC0.DE",
+      "qty": 11.32246376,
+      "avgCost": 17.66,
+      "price": 15.78,
+      "verified": true
+    },
+    {
+      "ticker": "RARE1",
+      "name": "WisdomTree Energy Transition Metals",
+      "yahoo": "RARE.DE",
+      "qty": 3.90392593,
+      "avgCost": 54.02,
+      "price": 39.12,
+      "verified": true,
+      "symbolNote": "Yahoo names it WisdomTree Strategic Metals and Rare Earths Miners (USD Acc); matched within 0.3%."
+    },
+    {
+      "ticker": "VUAA",
+      "name": "Vanguard S&P 500 Acc",
+      "yahoo": "VUAA.DE",
+      "qty": 0.39588281,
+      "avgCost": 126.3,
+      "price": 131.39,
+      "verified": true
+    }
+  ]
+}

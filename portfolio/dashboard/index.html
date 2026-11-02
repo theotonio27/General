@@ -1,0 +1,423 @@
+<meta name="dash-one-writer">
+<style>
+  .mp { display: grid; gap: var(--cds-gap-lg); font-family: var(--font-anthropic-sans); font-variant-numeric: tabular-nums; }
+  .mp-head { display: grid; gap: var(--cds-gap-sm); }
+  .mp-title { margin: 0; font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); text-wrap: balance; }
+  .mp-take { margin: 0; font-size: var(--cds-font-size-body); max-width: 70ch; line-height: 1.5; }
+  .mp .mp-take b { font-weight: 600; }
+  .mp-controls { display: flex; flex-wrap: wrap; align-items: center; gap: var(--cds-gap-sm) var(--cds-gap-md); color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+  .mp-controls label { display: inline-flex; align-items: center; gap: var(--cds-gap-xs); }
+  .mp-controls select { font: inherit; color: var(--color-fg); background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-xs) var(--cds-pad-sm); }
+  .mp-tiles { display: grid; gap: var(--cds-gap-md); grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr)); }
+  .mp-tile { display: grid; gap: var(--cds-gap-xs); align-content: start; background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-md) var(--cds-pad-lg); }
+  .mp-tile-label { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+  .mp-tile-value { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); line-height: 1.15; }
+  .mp-tile-note { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+  .mp-up { color: var(--color-ok); }
+  .mp-down { color: var(--color-bad); }
+  .mp-grid { display: grid; gap: var(--cds-gap-md); grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr)); align-items: start; }
+  .mp-card { position: relative; min-width: 0; display: grid; gap: var(--cds-gap-sm); background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); }
+  .mp-card h2 { margin: 0; font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); }
+  .mp-note { margin: 0; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); line-height: 1.45; }
+  .mp-chart { min-height: 160px; }
+  .mp-chart svg { display: block; overflow: visible; }
+  .mp-chart text { fill: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+  .mp-chart .mp-lbl-strong { fill: var(--color-fg); }
+  .mp-tip { position: absolute; z-index: 2; pointer-events: none; background: var(--cds-surface-popover); border: 1px solid var(--cds-border); border-radius: var(--cds-radius); box-shadow: var(--cds-shadow-popover); padding: var(--cds-pad-xs) var(--cds-pad-sm); font-size: var(--cds-font-size-caption); line-height: 1.45; max-width: 16rem; }
+  .mp-tip-head { color: var(--cds-text-secondary); }
+  .mp-wrap { overflow: auto; max-height: 34rem; }
+  .mp-table { width: 100%; border-collapse: collapse; font-size: var(--cds-font-size-caption); }
+  .mp-table th, .mp-table td { padding: var(--cds-pad-xs) var(--cds-pad-sm); text-align: right; white-space: nowrap; border-bottom: 1px solid var(--color-border-line); }
+  .mp-table th:nth-child(-n+2), .mp-table td:nth-child(-n+2) { text-align: left; }
+  .mp-table td:nth-child(2) { white-space: normal; min-width: 12rem; }
+  .mp-table th { position: sticky; top: 0; background: var(--color-panel); z-index: 1; }
+  .mp-sort { font: inherit; font-weight: var(--cds-font-weight-medium); color: var(--color-fg-muted); background: none; border: 0; padding: 0; cursor: pointer; }
+  .mp-sort:hover, .mp-sort:focus-visible { color: var(--color-fg); }
+  th[aria-sort] .mp-sort { color: var(--color-fg); }
+  th[aria-sort="ascending"] .mp-sort::after { content: " ↑"; }
+  th[aria-sort="descending"] .mp-sort::after { content: " ↓"; }
+  .mp-stale { color: var(--color-warn); }
+  .mp-foot { display: grid; gap: var(--cds-gap-xs); }
+  [data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
+  [data-dash-source-state=empty] { color: transparent; }
+  .mp-failed { display: flex; align-items: center; justify-content: center; gap: var(--cds-gap-xs); min-height: 160px; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+  .mp-failed::before { content: ""; width: .375rem; height: .375rem; border-radius: 50%; background: var(--color-bad); }
+  @media (max-width: 40rem) { .mp-hide-narrow { display: none; } }
+</style>
+
+<div class="mp">
+  <header class="mp-head" id="summary">
+    <h1 class="mp-title">Morning Portfolio Tracker</h1>
+    <p class="mp-take">Since the close on <b data-draw="base-date">—</b>, your ETFs <span data-draw="verb">—</span> <b data-draw="d-eur">—</b> (<b data-draw="d-pct">—</b>). Biggest lift: <b data-draw="top-up">—</b>. Biggest drag: <b data-draw="top-down">—</b>.</p>
+    <div class="mp-controls">
+      <label for="mp-base">Compare with the close on <select id="mp-base" data-draw="base-select" data-source="history" aria-label="Compare with the close on"></select></label>
+      <span>Latest close: <b data-draw="now-date">—</b></span>
+    </div>
+  </header>
+
+  <section class="mp-tiles" id="figures" aria-label="Headline figures">
+    <div class="mp-tile">
+      <span class="mp-tile-label">Portfolio value</span>
+      <span class="mp-tile-value" data-draw="v-now">—</span>
+      <span class="mp-tile-note">30 ETFs at the latest close</span>
+    </div>
+    <div class="mp-tile">
+      <span class="mp-tile-label">Change in €</span>
+      <span class="mp-tile-value" data-draw="tile-eur">—</span>
+      <span class="mp-tile-note">From price moves only</span>
+    </div>
+    <div class="mp-tile">
+      <span class="mp-tile-label">Change in %</span>
+      <span class="mp-tile-value" data-draw="tile-pct">—</span>
+      <span class="mp-tile-note"><span data-draw="n-up">—</span> up, <span data-draw="n-down">—</span> down</span>
+    </div>
+    <div class="mp-tile">
+      <span class="mp-tile-label">Buys and sells</span>
+      <span class="mp-tile-value" data-draw="flows">—</span>
+      <span class="mp-tile-note">Value added by trades, not counted as performance</span>
+    </div>
+  </section>
+
+  <section class="mp-grid">
+    <div class="mp-card" id="drivers">
+      <h2>What moved the portfolio</h2>
+      <p class="mp-note">Each holding's contribution to the total change, in percentage points of the starting value. The bars add up to the total %.</p>
+      <div class="mp-chart" data-draw="contrib-chart" data-source="attribution"></div>
+    </div>
+    <div class="mp-card" id="value">
+      <h2>Portfolio value by close</h2>
+      <p class="mp-note">Total value of the 30 ETFs at each daily close. Buys and sells change it too.</p>
+      <div class="mp-chart" data-draw="history-chart" data-source="history"></div>
+    </div>
+  </section>
+
+  <section class="mp-card" id="holdings">
+    <h2>Every holding</h2>
+    <p class="mp-note">Change between the two closes, using the quantity held at the start. Click a column to sort.</p>
+    <div class="mp-wrap">
+      <table class="mp-table" data-source="attribution" data-row-key="base,ticker">
+        <thead>
+          <tr>
+            <th data-field="ticker"><button class="mp-sort" data-sort="ticker">Ticker</button></th>
+            <th data-field="name"><button class="mp-sort" data-sort="name">Name</button></th>
+            <th data-field="weight" class="mp-hide-narrow"><button class="mp-sort" data-sort="weight">Weight</button></th>
+            <th data-field="p_base" class="mp-hide-narrow"><button class="mp-sort" data-sort="p_base">Start price</button></th>
+            <th data-field="p_now" class="mp-hide-narrow"><button class="mp-sort" data-sort="p_now">Latest price</button></th>
+            <th data-field="ret"><button class="mp-sort" data-sort="ret">Price %</button></th>
+            <th data-field="d_eur" aria-sort="descending"><button class="mp-sort" data-sort="d_eur">Change €</button></th>
+            <th data-field="pp"><button class="mp-sort" data-sort="pp">Contribution pp</button></th>
+          </tr>
+        </thead>
+        <tbody data-draw="table-body"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer class="mp-foot">
+    <p class="mp-note">How it is worked out: change in € = quantity held at the start × (latest close − start close). Change in % = total change in € ÷ portfolio value at the start. Contribution = a holding's change in € ÷ portfolio value at the start, so the contributions add up to the total %. Buys and sells = latest value − start value − change from prices.</p>
+    <p class="mp-note">Prices are daily closing prices in EUR from Yahoo Finance, collected every weekday morning. Quantities come from your Trading 212 positions on 2 Nov 2026. 79U0 is priced on the Munich exchange, where it trades thinly, so its price can lag. A price marked "last known" could not be fetched that day and is carried forward.</p>
+  </footer>
+</div>
+
+<script>
+  dash.calc('history', {
+    title: 'Portfolio value by close',
+    description: 'Sum of quantity × close price for each daily snapshot.',
+    inputs: ['snapshots'],
+    fn: (snapshots) => {
+      const by = new Map();
+      for (const r of snapshots) {
+        const s = by.get(r.snap) || { snap: r.snap, date: r.date, value: 0, stale: 0 };
+        s.value += Number(r.qty) * Number(r.price);
+        if (r.stale === true || r.stale === 'true') s.stale += 1;
+        by.set(r.snap, s);
+      }
+      return [...by.values()].sort((a, b) => (a.date < b.date ? -1 : a.date > b.date ? 1 : a.snap < b.snap ? -1 : 1))
+        .map((s) => ({ ...s, value: Math.round(s.value * 100) / 100 }));
+    },
+  });
+
+  dash.calc('attribution', {
+    title: 'Change by holding vs latest close',
+    description: 'For every earlier close (base): quantity at base × (latest close − base close), its % of the base portfolio value, and price return.',
+    inputs: ['snapshots', 'history'],
+    fn: (snapshots, history) => {
+      if (history.length < 2) return [];
+      const now = history[history.length - 1].snap;
+      const at = (snap) => new Map(snapshots.filter((r) => r.snap === snap).map((r) => [r.ticker, r]));
+      const latest = at(now);
+      const vNow = history[history.length - 1].value;
+      const out = [];
+      for (const h of history.slice(0, -1)) {
+        const base = at(h.snap);
+        for (const t of new Set([...base.keys(), ...latest.keys()])) {
+          const b = base.get(t), n = latest.get(t);
+          const q = b ? Number(b.qty) : 0;
+          const pb = b ? Number(b.price) : null, pn = n ? Number(n.price) : null;
+          const dEur = pb != null && pn != null ? q * (pn - pb) : 0;
+          out.push({
+            base: h.snap, ticker: t, name: (n || b).name,
+            weight: n ? Number(n.qty) * pn / vNow : 0,
+            p_base: pb, p_now: pn,
+            ret: pb && pn != null ? pn / pb - 1 : null,
+            d_eur: dEur, pp: dEur / h.value * 100,
+            stale: !!n && (n.stale === true || n.stale === 'true'),
+          });
+        }
+      }
+      return out;
+    },
+  });
+
+  dash.calc('totals', {
+    title: 'Portfolio change vs latest close',
+    description: 'For every earlier close (base): change from prices in € and %, buys and sells, and how many holdings rose or fell.',
+    inputs: ['attribution', 'history'],
+    fn: (attribution, history) => {
+      if (history.length < 2) return [];
+      const last = history[history.length - 1];
+      return history.slice(0, -1).map((h) => {
+        const rows = attribution.filter((r) => r.base === h.snap);
+        const dEur = rows.reduce((s, r) => s + r.d_eur, 0);
+        return {
+          base: h.snap, now: last.snap, v_base: h.value, v_now: last.value,
+          d_eur: dEur, d_pct: dEur / h.value,
+          flows: last.value - h.value - dEur,
+          n_up: rows.filter((r) => r.d_eur > 0.005).length,
+          n_down: rows.filter((r) => r.d_eur < -0.005).length,
+        };
+      });
+    },
+  });
+
+  const eur = new Intl.NumberFormat('en-IE', { style: 'currency', currency: 'EUR' });
+  const eurS = new Intl.NumberFormat('en-IE', { style: 'currency', currency: 'EUR', signDisplay: 'exceptZero' });
+  const eur0 = new Intl.NumberFormat('en-IE', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 });
+  const pctS = new Intl.NumberFormat('en-IE', { style: 'percent', minimumFractionDigits: 2, maximumFractionDigits: 2, signDisplay: 'exceptZero' });
+  const pct1 = new Intl.NumberFormat('en-IE', { style: 'percent', minimumFractionDigits: 1, maximumFractionDigits: 1 });
+  const ppS = (v) => (v > 0 ? '+' : v < 0 ? '−' : '') + Math.abs(v).toFixed(2) + ' pp';
+  const num = (v) => (v == null ? '—' : v.toLocaleString('en-IE', { minimumFractionDigits: 2, maximumFractionDigits: 4 }));
+  const day = (iso) => d3.utcFormat('%a %-d %b %Y')(new Date(iso.slice(0, 10) + 'T00:00:00Z'));
+  const tone = (v) => (v > 0.005 ? 'mp-up' : v < -0.005 ? 'mp-down' : '');
+  const enc = (v) => encodeURIComponent(v);
+
+  // The comparison the reader picked, or the close before the latest one.
+  window.mpState = () => {
+    const h = dash.data('history'), a = dash.data('attribution'), t = dash.data('totals');
+    if (h.status !== 'ok' || a.status !== 'ok' || t.status !== 'ok' || h.data.length < 2) return null;
+    const bases = h.data.slice(0, -1).map((s) => s.snap);
+    const picked = dash.params().base;
+    const base = bases.includes(picked) ? picked : bases[bases.length - 1];
+    return {
+      base, history: h.data, now: h.data[h.data.length - 1],
+      total: t.data.find((r) => r.base === base),
+      rows: a.data.filter((r) => r.base === base),
+    };
+  };
+
+  const mark = (el, text, attrs, cls) => {
+    const span = document.createElement('span');
+    span.textContent = text;
+    for (const [k, v] of Object.entries(attrs || {})) span.setAttribute(k, v);
+    if (cls) span.className = cls;
+    el.replaceChildren(span);
+  };
+  const totalDraw = (name, field, fmt, toned) => dash.draw(name, (el) => {
+    const s = mpState();
+    if (!s || !s.total) { el.textContent = '—'; return; }
+    const v = s.total[field];
+    mark(el, fmt(v), { 'data-source': 'totals', 'data-field': field, 'data-where': 'base=' + enc(s.base) }, toned ? tone(v) : '');
+  });
+
+  totalDraw('d-eur', 'd_eur', (v) => eurS.format(v), true);
+  totalDraw('d-pct', 'd_pct', (v) => pctS.format(v), true);
+  totalDraw('tile-eur', 'd_eur', (v) => eurS.format(v), true);
+  totalDraw('tile-pct', 'd_pct', (v) => pctS.format(v), true);
+  totalDraw('v-now', 'v_now', (v) => eur.format(v), false);
+  totalDraw('flows', 'flows', (v) => (Math.abs(v) < 0.5 ? eur0.format(0) : eurS.format(v)), false);
+  totalDraw('n-up', 'n_up', (v) => String(v), false);
+  totalDraw('n-down', 'n_down', (v) => String(v), false);
+
+  dash.draw('verb', (el) => {
+    const s = mpState();
+    el.textContent = !s || !s.total ? '—' : s.total.d_eur > 0.005 ? 'rose by' : s.total.d_eur < -0.005 ? 'fell by' : 'moved by';
+  });
+  dash.draw('base-date', (el) => {
+    const s = mpState();
+    if (!s) { el.textContent = '—'; return; }
+    mark(el, day(s.base), { 'data-source': 'history', 'data-field': 'date', 'data-where': 'snap=' + enc(s.base) });
+  });
+  dash.draw('now-date', (el) => {
+    const h = dash.data('history');
+    if (h.status !== 'ok' || !h.data.length) { el.textContent = '—'; return; }
+    const last = h.data[h.data.length - 1];
+    mark(el, day(last.date), { 'data-source': 'history', 'data-field': 'date', 'data-where': 'snap=' + enc(last.snap) });
+  });
+  const extreme = (name, pick) => dash.draw(name, (el) => {
+    const s = mpState();
+    const r = s && pick([...s.rows].sort((a, b) => a.d_eur - b.d_eur));
+    if (!r) { el.textContent = s ? 'none' : '—'; return; }
+    const span = document.createElement('span');
+    span.className = tone(r.d_eur);
+    span.setAttribute('data-source', 'attribution');
+    span.setAttribute('data-field', 'd_eur');
+    span.setAttribute('data-where', 'base=' + enc(r.base) + '&ticker=' + enc(r.ticker));
+    span.textContent = eurS.format(r.d_eur);
+    el.replaceChildren(r.ticker + ' ', span, ', ' + ppS(r.pp));
+  });
+  extreme('top-up', (rows) => rows.filter((r) => r.d_eur > 0.005).pop());
+  extreme('top-down', (rows) => rows.find((r) => r.d_eur < -0.005));
+
+  dash.draw('base-select', (sel) => {
+    const h = dash.data('history');
+    const s = mpState();
+    if (h.status !== 'ok' || h.data.length < 2) { sel.replaceChildren(new Option('—', '')); sel.disabled = true; return; }
+    const opts = h.data.slice(0, -1).reverse().map((r, i) => new Option(day(r.date) + (i === 0 ? ' (previous close)' : ''), r.snap));
+    sel.replaceChildren(...opts);
+    sel.disabled = false;
+    sel.value = s ? s.base : opts[0].value;
+    sel.onchange = () => dash.setParams({ base: sel.value });
+  });
+
+  // Sorting the holdings table.
+  window.mpSort = { key: 'd_eur', dir: -1 };
+  for (const btn of document.querySelectorAll('.mp-sort')) {
+    btn.addEventListener('click', () => {
+      const key = btn.dataset.sort;
+      mpSort.dir = mpSort.key === key ? -mpSort.dir : (key === 'ticker' || key === 'name' ? 1 : -1);
+      mpSort.key = key;
+      for (const th of document.querySelectorAll('.mp-table th')) th.removeAttribute('aria-sort');
+      btn.closest('th')?.setAttribute('aria-sort', mpSort.dir > 0 ? 'ascending' : 'descending');
+      dash.draw('table-body');
+    });
+  }
+
+  dash.draw('table-body', (tb) => {
+    const s = mpState();
+    if (!s) { tb.replaceChildren(); return; }
+    const { key, dir } = mpSort;
+    const rows = [...s.rows].sort((a, b) => {
+      const x = a[key], y = b[key];
+      if (typeof x === 'string') return dir * x.localeCompare(y);
+      return dir * ((x ?? -Infinity) - (y ?? -Infinity));
+    });
+    tb.replaceChildren(...rows.map((r) => {
+      const tr = document.createElement('tr');
+      tr.dataset.key = enc(r.base) + ',' + enc(r.ticker);
+      const cells = [
+        [r.ticker], [r.name + (r.stale ? ' (last known)' : ''), r.stale ? 'mp-stale' : ''],
+        [pct1.format(r.weight), 'mp-hide-narrow'], [num(r.p_base), 'mp-hide-narrow'], [num(r.p_now), 'mp-hide-narrow'],
+        [r.ret == null ? '—' : pctS.format(r.ret), tone(r.ret)], [eurS.format(r.d_eur), tone(r.d_eur)], [ppS(r.pp), tone(r.d_eur)],
+      ];
+      tr.replaceChildren(...cells.map(([text, cls]) => {
+        const td = document.createElement('td');
+        td.textContent = text;
+        if (cls) td.className = cls;
+        return td;
+      }));
+      return tr;
+    }));
+  });
+
+  const failed = (el, id) => {
+    const st = dash.data(id).status;
+    if (st === 'error') { const d = document.createElement('div'); d.className = 'mp-failed'; d.textContent = 'Failed to load'; el.replaceChildren(d); return true; }
+    if (st !== 'ok') { el.replaceChildren(); return true; }
+    return false;
+  };
+
+  const tipFor = (card) => {
+    let tip = card.querySelector(':scope > .mp-tip');
+    if (!tip) { tip = document.createElement('div'); tip.className = 'mp-tip'; tip.hidden = true; card.appendChild(tip); }
+    return tip;
+  };
+  const placeTip = (tip, card, event, lines) => {
+    tip.replaceChildren(...lines.map(([t, cls]) => { const d = document.createElement('div'); d.textContent = t; if (cls) d.className = cls; return d; }));
+    tip.hidden = false;
+    const box = card.getBoundingClientRect();
+    const x = event.clientX - box.left, y = event.clientY - box.top;
+    const w = tip.offsetWidth, h = tip.offsetHeight;
+    tip.style.left = Math.max(8, Math.min(box.width - w - 8, x + 12)) + 'px';
+    tip.style.top = Math.max(8, Math.min(box.height - h - 8, y + 12)) + 'px';
+  };
+
+  dash.draw('contrib-chart', (el) => {
+    if (failed(el, 'attribution')) return;
+    const s = mpState();
+    if (!s) { el.replaceChildren(); return; }
+    const card = el.closest('.mp-card');
+    const tip = tipFor(card);
+    const rows = [...s.rows].sort((a, b) => b.pp - a.pp);
+    const W = Math.max(280, el.clientWidth);
+    const rowH = 22, top = 4;
+    const H = top + rows.length * rowH + 4;
+    const svg = d3.create('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`).attr('role', 'img')
+      .attr('aria-label', 'Contribution of each holding in percentage points');
+    // Measure labels so nothing is clipped.
+    const probe = svg.append('g');
+    const measure = (t) => { const n = probe.append('text').text(t).node(); el.appendChild(svg.node()); const w = n.getComputedTextLength(); n.remove(); return w; };
+    const leftW = Math.max(...rows.map((r) => measure(r.ticker))) + 10;
+    const valTxt = (r) => eurS.format(r.d_eur);
+    const valW = Math.max(...rows.map((r) => measure(valTxt(r)))) + 8;
+    const ext = d3.max(rows, (r) => Math.abs(r.pp)) || 0.01;
+    const x = d3.scaleLinear([-ext, ext], [leftW + valW, W - valW]);
+    svg.append('line').attr('x1', x(0)).attr('x2', x(0)).attr('y1', 0).attr('y2', H).attr('stroke', 'var(--cds-chart-axis)');
+    const g = svg.append('g').selectAll('g').data(rows).join('g').attr('transform', (r, i) => `translate(0,${top + i * rowH})`);
+    g.append('rect').attr('x', leftW).attr('y', 0).attr('width', W - leftW).attr('height', rowH).attr('fill', 'transparent');
+    g.append('text').attr('x', 0).attr('y', rowH / 2).attr('dy', '0.35em').attr('class', 'mp-lbl-strong').text((r) => r.ticker);
+    g.append('rect')
+      .attr('x', (r) => Math.min(x(0), x(r.pp))).attr('y', 4).attr('height', rowH - 8)
+      .attr('width', (r) => Math.max(1, Math.abs(x(r.pp) - x(0)))).attr('rx', 2)
+      .attr('fill', (r) => (r.d_eur > 0.005 ? 'var(--color-ok)' : r.d_eur < -0.005 ? 'var(--color-bad)' : 'var(--cds-chart-muted)'));
+    g.append('text').attr('y', rowH / 2).attr('dy', '0.35em')
+      .attr('x', (r) => (r.pp >= 0 ? x(r.pp) + 4 : x(r.pp) - 4))
+      .attr('text-anchor', (r) => (r.pp >= 0 ? 'start' : 'end')).text(valTxt);
+    probe.remove();
+    g.on('pointermove', (event, r) => placeTip(tip, card, event, [
+      [r.ticker + ' · ' + r.name, 'mp-tip-head'],
+      ['Change: ' + eurS.format(r.d_eur) + ' (' + ppS(r.pp) + ')'],
+      ['Price: ' + num(r.p_base) + ' → ' + num(r.p_now) + (r.ret == null ? '' : ' (' + pctS.format(r.ret) + ')')],
+      ['Weight: ' + pct1.format(r.weight) + (r.stale ? ' · last known price' : '')],
+    ])).on('pointerleave', () => { tip.hidden = true; });
+    el.replaceChildren(svg.node());
+  });
+
+  dash.draw('history-chart', (el) => {
+    if (failed(el, 'history')) return;
+    const h = dash.data('history').data.map((r) => ({ ...r, d: new Date(r.date.slice(0, 10) + 'T00:00:00Z') }));
+    const s = mpState();
+    if (!h.length) { el.replaceChildren(); return; }
+    const card = el.closest('.mp-card');
+    const tip = tipFor(card);
+    const W = Math.max(260, el.clientWidth), H = 200;
+    const svg = d3.create('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`).attr('role', 'img').attr('aria-label', 'Portfolio value at each close');
+    el.replaceChildren(svg.node());
+    const [lo, hi] = d3.extent(h, (r) => r.value);
+    const pad = Math.max((hi - lo) * 0.15, hi * 0.002);
+    const y = d3.scaleLinear([lo - pad, hi + pad], [H - 24, 10]).nice(4);
+    const yTicks = y.ticks(4);
+    const tmp = svg.append('g');
+    const left = Math.max(...yTicks.map((t) => tmp.append('text').text(eur0.format(t)).node().getComputedTextLength())) + 10;
+    tmp.remove();
+    const x = h.length > 1 ? d3.scaleUtc(d3.extent(h, (r) => r.d), [left + 6, W - 10]) : () => (left + W) / 2;
+    svg.append('g').selectAll('line').data(yTicks).join('line').attr('x1', left).attr('x2', W).attr('y1', y).attr('y2', y).attr('stroke', 'var(--cds-chart-grid)');
+    svg.append('g').selectAll('text').data(yTicks).join('text').attr('x', left - 6).attr('y', y).attr('dy', '0.35em').attr('text-anchor', 'end').text((t) => eur0.format(t));
+    const xt = h.length > 1 ? x.ticks(Math.min(h.length, Math.floor(W / 90))) : [h[0].d];
+    svg.append('g').selectAll('text').data(xt).join('text').attr('x', x).attr('y', H - 6).attr('text-anchor', 'middle').text(d3.utcFormat('%-d %b'));
+    const id = 'mp-grad-' + Math.random().toString(36).slice(2);
+    const grad = svg.append('defs').append('linearGradient').attr('id', id).attr('x1', 0).attr('x2', 0).attr('y1', 0).attr('y2', 1);
+    [[0, .26], [.25, .16], [.5, .08], [.75, .03], [1, 0]].forEach(([o, a]) => grad.append('stop').attr('offset', o).attr('style', `stop-color:${dash.colors[0]};stop-opacity:${a}`));
+    if (h.length > 1) {
+      svg.append('path').datum(h).attr('fill', `url(#${id})`).attr('d', d3.area().x((r) => x(r.d)).y0(H - 24).y1((r) => y(r.value)));
+      svg.append('path').datum(h).attr('fill', 'none').attr('stroke', dash.colors[0]).attr('stroke-width', 2).attr('stroke-linejoin', 'round').attr('stroke-linecap', 'round')
+        .attr('d', d3.line().x((r) => x(r.d)).y((r) => y(r.value)));
+    }
+    svg.append('g').selectAll('circle').data(h).join('circle').attr('cx', (r) => x(r.d)).attr('cy', (r) => y(r.value))
+      .attr('r', (r) => (s && (r.snap === s.base || r.snap === s.now.snap) ? 4.5 : 3))
+      .attr('fill', (r) => (s && r.snap === s.base ? 'var(--color-panel)' : dash.colors[0])).attr('stroke', dash.colors[0]).attr('stroke-width', 2);
+    const near = (event) => { const [mx] = d3.pointer(event, svg.node()); const sx = mx * W / svg.node().getBoundingClientRect().width; return h.reduce((a, b) => (Math.abs(x(b.d) - sx) < Math.abs(x(a.d) - sx) ? b : a)); };
+    svg.append('rect').attr('x', left).attr('y', 0).attr('width', W - left).attr('height', H).attr('fill', 'transparent')
+      .on('pointermove', (event) => { const r = near(event); placeTip(tip, card, event, [[day(r.date), 'mp-tip-head'], ['Value: ' + eur.format(r.value)]].concat(r.stale ? [[r.stale + ' price(s) carried forward']] : [])); })
+      .on('pointerleave', () => { tip.hidden = true; });
+  });
+</script>
