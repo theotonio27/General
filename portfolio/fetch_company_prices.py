@@ -26,6 +26,7 @@ from zoneinfo import ZoneInfo
 HERE = Path(__file__).resolve().parent
 LOOK, SNAPS, OUT = HERE / "lookthrough.json", HERE / "snapshots.json", HERE / "company_prices.json"
 UA = {"User-Agent": "Mozilla/5.0"}
+TOP_N = 600
 SUBUNITS = {"GBp": ("GBP", 100), "GBX": ("GBP", 100), "ZAc": ("ZAR", 100), "ILA": ("ILS", 100)}
 
 
@@ -66,7 +67,15 @@ def on_or_before(bars, date):
 def main():
     look = json.loads(LOOK.read_text())["rows"]
     dates = sorted({r["date"] for r in json.loads(SNAPS.read_text())["rows"]})
-    syms = sorted({r["symbol"] for r in look if r["symbol"]})
+    # Only the companies that make up most of your exposure: the rest of the move stays in "Everything else".
+    snaps = json.loads(SNAPS.read_text())["rows"]
+    last = max(r["date"] for r in snaps)
+    pos = {r["ticker"]: r["qty"] * r["price"] for r in snaps if r["date"] == last}
+    exp = {}
+    for r in look:
+        if r.get("kind", "equity") == "equity" and r.get("symbol"):
+            exp[r["symbol"]] = exp.get(r["symbol"], 0) + pos.get(r["fund"], 0) * r["weight"]
+    syms = sorted(sorted(exp, key=exp.get, reverse=True)[:TOP_N])
     window = (dt.date.today() - dt.timedelta(days=28)).isoformat()
     todo = [d for d in dates if d >= window]
 

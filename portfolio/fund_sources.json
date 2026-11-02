@@ -1,0 +1,238 @@
+{
+  "note": "Where each ETF's full holdings come from. provider: ishares (product id), amundi (ISIN, own composition), dws (ISIN), yahoo (top-10 fallback). proxy=true means the list is another fund tracking the same index: used for swap-based funds (to show index exposure) and where the provider's site is blocked.",
+  "funds": [
+    {
+      "ticker": "IS3Q",
+      "kind": "equity",
+      "provider": "ishares",
+      "id": "270054",
+      "label": "iShares Edge MSCI World Quality Factor (IWQU)"
+    },
+    {
+      "ticker": "EXI2",
+      "kind": "equity",
+      "provider": "ishares",
+      "id": "251769",
+      "label": "iShares Dow Jones Global Titans 50 (EXI2)",
+      "site": "de"
+    },
+    {
+      "ticker": "IS3K",
+      "kind": "bond",
+      "provider": "ishares",
+      "id": "258128",
+      "label": "iShares $ Short Duration High Yield Corp Bond (IS3K)"
+    },
+    {
+      "ticker": "XDWT",
+      "kind": "equity",
+      "provider": "dws",
+      "id": "IE00BM67HT60",
+      "label": "Xtrackers MSCI World Information Technology 1C"
+    },
+    {
+      "ticker": "AUM5",
+      "kind": "equity",
+      "provider": "ishares",
+      "id": "253743",
+      "proxy": true,
+      "why": "swap-based; index exposure from iShares Core S&P 500 (CSPX)",
+      "label": "iShares Core S&P 500 (CSPX)"
+    },
+    {
+      "ticker": "LYP6",
+      "kind": "equity",
+      "provider": "amundi",
+      "id": "LU0908500753",
+      "label": "Amundi Core Stoxx Europe 600 Acc"
+    },
+    {
+      "ticker": "LYMS",
+      "kind": "equity",
+      "provider": "ishares",
+      "id": "253741",
+      "proxy": true,
+      "why": "swap-based; index exposure from iShares Nasdaq 100 (CNDX)",
+      "label": "iShares Nasdaq 100 (CNDX)"
+    },
+    {
+      "ticker": "IS3C",
+      "kind": "bond",
+      "provider": "ishares",
+      "id": "254531",
+      "label": "iShares J.P. Morgan $ EM Bond EUR Hedged (IS3C)"
+    },
+    {
+      "ticker": "PRAR",
+      "kind": "bond",
+      "provider": "amundi",
+      "id": "LU1931975152",
+      "label": "Amundi Prime Euro Government Bond"
+    },
+    {
+      "ticker": "EMBH",
+      "kind": "bond",
+      "provider": "amundi",
+      "id": "LU1686830909",
+      "label": "Amundi USD Emerging Markets Government Bond (same fund, unhedged share class)"
+    },
+    {
+      "ticker": "DBXJ",
+      "kind": "equity",
+      "provider": "dws",
+      "id": "LU0274209740",
+      "label": "Xtrackers MSCI Japan 1C"
+    },
+    {
+      "ticker": "79U0",
+      "kind": "equity",
+      "provider": "ishares",
+      "id": "253743",
+      "proxy": true,
+      "why": "swap-based; index exposure from iShares Core S&P 500 (CSPX)",
+      "label": "iShares Core S&P 500 (CSPX)"
+    },
+    {
+      "ticker": "QDVY",
+      "kind": "bond",
+      "provider": "ishares",
+      "id": "288500",
+      "label": "iShares $ Floating Rate Bond (QDVY)"
+    },
+    {
+      "ticker": "IBCD",
+      "kind": "bond",
+      "provider": "ishares",
+      "id": "251832",
+      "label": "iShares $ Corp Bond (IBCD)"
+    },
+    {
+      "ticker": "LEMA",
+      "kind": "equity",
+      "provider": "ishares",
+      "id": "251858",
+      "proxy": true,
+      "why": "index exposure from iShares MSCI EM (IEMA)",
+      "label": "iShares MSCI EM (IEMA)"
+    },
+    {
+      "ticker": "PRAJ",
+      "kind": "equity",
+      "provider": "amundi",
+      "id": "LU2089238385",
+      "label": "Amundi Prime Japan"
+    },
+    {
+      "ticker": "EUNL",
+      "kind": "equity",
+      "provider": "ishares",
+      "id": "251882",
+      "label": "iShares Core MSCI World (EUNL)"
+    },
+    {
+      "ticker": "EUNA",
+      "kind": "bond",
+      "provider": "ishares",
+      "id": "291770",
+      "label": "iShares Core Global Aggregate Bond EUR Hedged (AGGH)"
+    },
+    {
+      "ticker": "LYTR",
+      "kind": "commodity",
+      "provider": "none",
+      "label": "Commodity futures through a swap: no companies"
+    },
+    {
+      "ticker": "WELK",
+      "kind": "equity",
+      "provider": "amundi",
+      "id": "IE000KYX7IP4",
+      "label": "Amundi S&P World Financials Screened"
+    },
+    {
+      "ticker": "XDWI",
+      "kind": "equity",
+      "provider": "dws",
+      "id": "IE00BM67HV82",
+      "label": "Xtrackers MSCI World Industrials 1C"
+    },
+    {
+      "ticker": "EBUY",
+      "kind": "equity",
+      "provider": "amundi",
+      "id": "LU2023678282",
+      "label": "Amundi fund LU2023678282"
+    },
+    {
+      "ticker": "EFRW",
+      "kind": "equity",
+      "provider": "ishares",
+      "id": "341947",
+      "label": "iShares S&P 500 Equal Weight EUR Hedged (EFRW)"
+    },
+    {
+      "ticker": "AMEL",
+      "kind": "equity",
+      "provider": "ishares",
+      "id": "251856",
+      "proxy": true,
+      "why": "swap-based; index exposure from iShares MSCI EM Latin America (LTAM)",
+      "label": "iShares MSCI EM Latin America (LTAM)"
+    },
+    {
+      "ticker": "TRDE",
+      "kind": "bond",
+      "provider": "ishares",
+      "id": "251716",
+      "proxy": true,
+      "why": "Invesco's data site is blocked; iShares $ Treasury Bond 7-10yr (IBTM) holds the same kind of bonds",
+      "label": "iShares $ Treasury Bond 7-10yr (IBTM)"
+    },
+    {
+      "ticker": "LKOR",
+      "kind": "equity",
+      "provider": "ishares",
+      "id": "253733",
+      "proxy": true,
+      "why": "swap-based; index exposure from iShares MSCI Korea (CSKR)",
+      "label": "iShares MSCI Korea (CSKR)"
+    },
+    {
+      "ticker": "VGWD",
+      "kind": "equity",
+      "provider": "yahoo",
+      "try": [
+        "VGWD.DE",
+        "VHYL.L"
+      ],
+      "why": "Vanguard's site is blocked; Yahoo's top 10 only",
+      "label": "Yahoo Finance top 10"
+    },
+    {
+      "ticker": "SEC0",
+      "kind": "equity",
+      "provider": "ishares",
+      "id": "319084",
+      "label": "iShares MSCI Global Semiconductors (SEC0)"
+    },
+    {
+      "ticker": "RARE1",
+      "kind": "equity",
+      "provider": "yahoo",
+      "try": [
+        "RARE.DE"
+      ],
+      "why": "WisdomTree's site blocks automated downloads; Yahoo's top 10 only",
+      "label": "Yahoo Finance top 10"
+    },
+    {
+      "ticker": "VUAA",
+      "kind": "equity",
+      "provider": "ishares",
+      "id": "253743",
+      "proxy": true,
+      "why": "Vanguard's site is blocked; same index as iShares Core S&P 500 (CSPX)",
+      "label": "iShares Core S&P 500 (CSPX)"
+    }
+  ]
+}

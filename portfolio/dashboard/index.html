@@ -163,7 +163,11 @@
     <p class="mp-take">Since the close on <b data-draw="base-date">—</b>, the companies listed inside your ETFs moved your portfolio by <b data-draw="co-move-eur">—</b> (<b data-draw="co-move-pp">—</b>). Biggest lift: <b data-draw="co-top-up">—</b>. Biggest drag: <b data-draw="co-top-down">—</b>.</p>
     <div class="mp-controls">
       <label for="mp-base-co">Compare with the close on <select id="mp-base-co" data-draw="base-select" data-source="history" aria-label="Compare with the close on"></select></label>
-      <span>Shares only. A company held through several ETFs is added up across them, and share classes such as Alphabet A and C are combined.</span>
+      <div class="mp-segs" role="group" aria-label="Show">
+        <button class="mp-seg" data-kind="equity" aria-pressed="true">Shares</button>
+        <button class="mp-seg" data-kind="bond" aria-pressed="false">Bonds</button>
+      </div>
+      <span>A company held through several ETFs is added up across them, and share classes such as Alphabet A and C are combined.</span>
     </div>
     <section class="mp-tiles" aria-label="Look-through figures">
       <div class="mp-tile">
@@ -172,19 +176,19 @@
         <span class="mp-tile-note">Your money in the holdings listed below</span>
       </div>
       <div class="mp-tile">
-        <span class="mp-tile-label">Share of your equity ETFs covered</span>
+        <span class="mp-tile-label">Covered by holdings data</span>
         <span class="mp-tile-value" data-draw="co-coverage" data-source="exposure">—</span>
-        <span class="mp-tile-note">Yahoo lists only each fund's top 10 holdings</span>
+        <span class="mp-tile-note">Of the ETFs shown in this view</span>
       </div>
       <div class="mp-tile">
-        <span class="mp-tile-label">Holdings listed</span>
+        <span class="mp-tile-label">Companies or issuers</span>
         <span class="mp-tile-value" data-draw="co-count" data-source="companies">—</span>
         <span class="mp-tile-note"><span data-draw="co-multi">—</span> held through more than one ETF</span>
       </div>
     </section>
     <section class="mp-card" id="company-moves">
       <h2>Which companies moved the portfolio</h2>
-      <p class="mp-note">Each company's contribution to the total change, in percentage points of the starting value: your exposure at the start × the company's price change in euros. Shows the 10 biggest lifts and drags. The two grey bars hold the rest, so all bars add up to the total %.</p>
+      <p class="mp-note">Each company's contribution to the total change, in percentage points of the starting value: your exposure at the start × the company's price change in euros. Shows the 10 biggest lifts and drags. The two grey bars hold the rest, so all bars add up to the total %. Prices are tracked for the 600 companies that make up about 92% of your share exposure.</p>
       <div class="mp-chart" data-draw="co-chart" data-source="company_moves"></div>
     </section>
     <section class="mp-card" id="company-list">
@@ -208,7 +212,24 @@
         </table>
       </div>
     </section>
-    <p class="mp-note">Holdings come from Yahoo Finance's top-10 lists. Where an ETF's own listing has no data, the list comes from another fund tracking the same index, named in each ETF's detail. For swap-based ETFs this shows the index you get the returns of, not the basket the fund legally owns. Company prices are each market's own closes converted to euros at Yahoo's exchange rates; US markets close after the European ETFs, so part of the timing difference lands in the "rest" bar. Bond ETFs are left out: Yahoo publishes no bond holdings for them. The commodity ETF (LYTR) holds no companies.</p>
+    <section class="mp-card" id="bond-list" hidden>
+      <h2>Bond issuers</h2>
+      <p class="mp-note">Your exposure to each issuer through your bond ETFs: value of your position in each ETF × the issuer's share of that ETF, added up over the ETFs. Government bonds are grouped by country. Bond prices aren't tracked, so the bond ETFs' daily move shows as one bar on the chart above.</p>
+      <div class="mp-wrap">
+        <table class="mp-table" data-source="companies" data-row-key="kind,key">
+          <thead>
+            <tr>
+              <th data-field="name">Issuer</th>
+              <th data-field="value">Your exposure</th>
+              <th data-field="share">Of portfolio</th>
+              <th data-field="funds">Through</th>
+            </tr>
+          </thead>
+          <tbody data-draw="bond-body"></tbody>
+        </table>
+      </div>
+    </section>
+    <p class="mp-note">Holdings are the full lists published by iShares, Amundi and Xtrackers. Swap-based ETFs (AUM5, 79U0, LYMS, AMEL, LKOR) legally hold an unrelated basket, so they show the holdings of an iShares fund tracking the same index: the companies whose returns you get. LEMA uses iShares MSCI EM, VUAA uses iShares Core S&P 500 (Vanguard's site can't be reached) and TRDE uses iShares $ Treasury 7-10yr (Invesco's data can't be reached). VGWD and RARE1 show only Yahoo Finance's top 10 holdings. iShares caps its download at about 20,000 lines, so EUNA covers 74% of the fund. EBUY uses Amundi's current list for that fund, which Amundi now calls Global Memory Chips. The commodity ETF (LYTR) holds no companies. Company prices are taken at the Xetra close (17:30 Frankfurt) and converted to euros at Yahoo's rates; Asian markets close earlier, so part of the Asian ETFs' move lands in "Everything else". That bar also holds the companies whose prices aren't tracked, and the day-to-day gap between an ETF's market price and the value of what it holds (often 0.1–0.3%).</p>
   </div>
 
   <footer class="mp-foot">
@@ -532,14 +553,14 @@
   });
   dash.calc('exposure', {
     title: 'Your exposure to each fund holding',
-    description: 'For each ETF top holding: value of your position at the latest close × the holding’s share of the fund.',
+    description: 'For each holding of each ETF: value of your position at the latest close × the holding’s share of the fund.',
     inputs: ['lookthrough', 'snapshots', 'history'],
     fn: (lookthrough, snapshots, history) => {
       if (!history.length) return [];
       const now = history[history.length - 1].snap;
       const pos = new Map(snapshots.filter((r) => r.snap === now).map((r) => [r.ticker, Number(r.qty) * Number(r.price)]));
       return lookthrough.map((r) => {
-        const key = (r.symbol || r.name).toUpperCase();
+        const key = r.key || (r.symbol || r.name).toUpperCase();
         return { fund: r.fund, key, symbol: r.symbol, name: r.name, kind: r.kind, weight: Number(r.weight),
                  value: (pos.get(r.fund) || 0) * Number(r.weight), source: r.source, proxy: r.proxy === true || r.proxy === 'true' };
       });
@@ -554,15 +575,10 @@
       const total = history.length ? history[history.length - 1].value : 0;
       const by = new Map();
       for (const r of exposure) {
-        if (r.kind !== 'equity') continue;
-        const id = r.name.toLowerCase()
-          .replace(/\b(class [a-z]|ordinary shares|units?|adr|ads|non[- ]voting|registered shares|shs)\b.*$/, '')
-          .replace(/[^a-z0-9 ]/g, ' ')
-          .replace(/\b(inc|corp|corporation|co|ltd|limited|plc|sa|ag|nv|se|holdings?|group|the|de|cv|sab|asa|ab|oyj)\b/g, ' ')
-          .replace(/\s+/g, ' ').trim() || r.key.toLowerCase();
-        const c = by.get(id) || { kind: r.kind, key: id, symbols: new Set(), name: r.name, value: 0, n: 0, parts: new Map() };
+        if (r.kind !== 'equity' && r.kind !== 'bond') continue;
+        const id = r.kind + '|' + r.key;
+        const c = by.get(id) || { kind: r.kind, key: r.key, symbols: new Set(), name: r.name, value: 0, n: 0, parts: new Map() };
         if (r.symbol) c.symbols.add(r.symbol);
-        if (r.name.length < c.name.length) c.name = r.name;
         c.value += r.value;
         c.parts.set(r.fund, (c.parts.get(r.fund) || 0) + r.value);
         by.set(id, c);
@@ -594,10 +610,15 @@
       if (tr) openFund(decodeURIComponent(tr.dataset.key.split(',')[1]));
     });
   }
+  for (const b of document.querySelectorAll('.mp-seg')) b.addEventListener('click', () => dash.setParams({ kind: b.dataset.kind }));
   for (const b of document.querySelectorAll('[data-close-fund]')) b.addEventListener('click', () => dash.setParams({ fund: null }));
   dash.onData(() => {
     const f = dash.params().fund;
     for (const el of document.querySelectorAll('#fund')) el.hidden = !f;
+    const kind = dash.params().kind || 'equity';
+    for (const b of document.querySelectorAll('.mp-seg')) b.setAttribute('aria-pressed', String(b.dataset.kind === kind));
+    for (const el of document.querySelectorAll('#company-moves, #company-list')) el.hidden = kind !== 'equity';
+    for (const el of document.querySelectorAll('#bond-list')) el.hidden = kind !== 'bond';
   });
 
   const fundRows = () => {
@@ -622,16 +643,16 @@
     if (!rows.length) {
       const f = dash.params().fund;
       el.textContent = f === 'LYTR' ? 'This ETF holds commodity futures, not companies.'
-        : ['IS3K', 'IS3C', 'PRAR', 'EMBH', 'QDVY', 'IBCD', 'EUNA', 'TRDE'].includes(f) ? 'This is a bond ETF. Yahoo Finance publishes no bond holdings, so its contents can\u2019t be shown yet.'
-        : 'Yahoo has no holdings list for this ETF or for a fund tracking the same index.';
+        : 'No holdings list is available for this ETF.';
       return;
     }
-    el.textContent = 'These top ' + rows.length + ' holdings make up ' + pct1.format(rows.reduce((t, r) => t + r.weight, 0)) + ' of the fund.';
+    const cov = rows.reduce((t, r) => t + r.weight, 0);
+    el.textContent = rows.length + ' ' + (rows[0].kind === 'bond' ? 'issuers' : 'holdings') + ', making up ' + pct1.format(cov) + ' of the fund' + (cov < 0.9 ? ' (only part of the list is published).' : '.');
   });
   dash.draw('fund-source', (el) => {
     const rows = fundRows();
     if (!rows || !rows.length) { el.textContent = ''; return; }
-    el.textContent = rows[0].proxy ? 'List taken from ' + rows[0].source + ', which tracks the same or a very similar index.' : 'List from Yahoo Finance (' + rows[0].source + ').';
+    el.textContent = rows[0].proxy ? 'Holdings of ' + rows[0].source + ', a fund tracking the same index.' : 'Source: ' + rows[0].source + '.';
   });
   dash.draw('fund-holdings', (tb) => {
     const rows = fundRows();
@@ -648,12 +669,12 @@
 
   const coRows = () => {
     const c = dash.data('companies');
-    return c.status === 'ok' ? c.data : null;
+    return c.status === 'ok' ? c.data.filter((r) => r.kind === (dash.params().kind || 'equity')) : null;
   };
   const kindFunds = () => {
     const e = dash.data('exposure'), s = mpState(), snap = dash.data('snapshots');
     if (e.status !== 'ok' || !s || snap.status !== 'ok') return null;
-    const kind = 'equity';
+    const kind = dash.params().kind || 'equity';
     const funds = new Set(e.data.filter((r) => r.kind === kind).map((r) => r.fund));
     const value = snap.data.filter((x) => x.snap === s.now.snap && funds.has(x.ticker)).reduce((t, x) => t + Number(x.qty) * Number(x.price), 0);
     return { value, shown: e.data.filter((r) => r.kind === kind).reduce((t, r) => t + r.value, 0) };
@@ -704,18 +725,18 @@
         .replace(/[^a-z0-9 ]/g, ' ')
         .replace(/\b(inc|corp|corporation|co|ltd|limited|plc|sa|ag|nv|se|holdings?|group|the|de|cv|sab|asa|ab|oyj)\b/g, ' ')
         .replace(/\s+/g, ' ').trim() || key.toLowerCase();
-      const equityFunds = new Set(lookthrough.map((r) => r.fund));
+      const equityFunds = new Set(lookthrough.filter((r) => r.kind === 'equity').map((r) => r.fund));
       const out = [];
       for (const h of history.slice(0, -1)) {
         const vBase = fundValues(h.snap);
         const by = new Map();
         for (const r of lookthrough) {
-          const id = norm(r.name, r.symbol || r.name);
+          if (r.kind !== 'equity') continue;
+          const id = r.key || norm(r.name, r.symbol || r.name);
           const c = by.get(id) || { key: id, symbols: new Set(), name: r.name, exp: 0, d: 0, priced: 0, value_now: 0, parts: new Map() };
           const w = Number(r.weight), e = (vBase.get(r.fund) || 0) * w;
           const pb = price.get(h.date + '|' + r.symbol), pn = price.get(last.date + '|' + r.symbol);
           if (r.symbol) c.symbols.add(r.symbol);
-          if (r.name.length < c.name.length) c.name = r.name;
           c.exp += e;
           if (pb && pn) { c.d += e * (pn / pb - 1); c.priced += e; }
           const vn = (vNow.get(r.fund) || 0) * w;
@@ -737,7 +758,7 @@
             funds: [...c.parts].sort((a, b) => b[1] - a[1]).map(([f, v]) => f + ' ' + Math.round(v).toLocaleString('en-IE') + ' €').join(', '),
           });
         }
-        out.push({ base: h.snap, key: '~rest', kind: 'rest', symbol: '', name: 'Rest of your share ETFs (holdings beyond the top 10, timing)', value_base: null, value_now: null, share: null, ret: null, d_eur: eqMove - listed, pp: (eqMove - listed) / h.value * 100, n_funds: null, funds: '' });
+        out.push({ base: h.snap, key: '~rest', kind: 'rest', symbol: '', name: 'Rest of your share ETFs (smaller holdings, timing)', value_base: null, value_now: null, share: null, ret: null, d_eur: eqMove - listed, pp: (eqMove - listed) / h.value * 100, n_funds: null, funds: '' });
         out.push({ base: h.snap, key: '~other', kind: 'other', symbol: '', name: 'Bond and commodity ETFs', value_base: null, value_now: null, share: null, ret: null, d_eur: otherMove, pp: otherMove / h.value * 100, n_funds: null, funds: '' });
       }
       return out;
@@ -775,7 +796,7 @@
         ['Everything else in your share ETFs', 'mp-tip-head'],
         ['Change: ' + eurS.format(r.d_eur) + ' (' + ppS(r.pp) + ')'],
         ['Smaller moves of listed companies: ' + eurS.format(r.hiddenSum)],
-        ['Holdings beyond the top 10, and timing: ' + eurS.format(r.restOnly)],
+        ['Untracked holdings, time zones and ETF pricing: ' + eurS.format(r.restOnly)],
       ] : [
         ['Bond and commodity ETFs', 'mp-tip-head'],
         ['Change: ' + eurS.format(r.d_eur) + ' (' + ppS(r.pp) + ')'],
@@ -821,4 +842,21 @@
       dash.draw('co-body');
     });
   }
+  dash.draw('bond-body', (tb) => {
+    const c = dash.data('companies');
+    if (c.status !== 'ok') { tb.replaceChildren(); return; }
+    const rows = c.data.filter((r) => r.kind === 'bond');
+    const max = rows.length ? rows[0].value : 1;
+    tb.replaceChildren(...rows.map((r) => {
+      const tr = document.createElement('tr');
+      tr.dataset.key = enc(r.kind) + ',' + enc(r.key);
+      [[r.name], [eur.format(r.value)], [pct1.format(r.share)], [r.funds, 'mp-funds']].forEach(([text, cls], i) => {
+        const td = document.createElement('td');
+        if (i === 1) { const bar = document.createElement('span'); bar.className = 'mp-bar'; bar.style.width = Math.max(2, 48 * r.value / max) + 'px'; td.append(bar, text); } else td.textContent = text;
+        if (cls) td.className = cls;
+        tr.appendChild(td);
+      });
+      return tr;
+    }));
+  });
 </script>
