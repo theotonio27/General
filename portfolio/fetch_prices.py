@@ -176,7 +176,9 @@ def main():
         res = attribute(rows, order[-2], order[-1])
         out.update(base=res["base"], v_now=round(res["v_now"], 2), d_eur=round(res["d_eur"], 2),
                    d_pct=round(res["d_pct"] * 100, 3), summary=summary_line(res))
-    out["new"] = rows != snaps["rows"]
+    key = lambda r: (r["snap"], r["ticker"])
+    out["new"] = sorted(rows, key=key) != sorted(snaps["rows"], key=key)
+    rows = sorted(rows, key=lambda r: (r["date"], r["ticker"]))
     if not out["new"]:
         print(json.dumps(out, indent=2, ensure_ascii=False))
         print(f"No new close since {date}.", file=sys.stderr)

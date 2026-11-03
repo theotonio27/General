@@ -25,7 +25,7 @@ Dashboard: https://claude.ai/artifact/5LBRd9Xqxsr6h62pbRWUM3 (dataset document `
    nested `data` key:
    `{"source": {"kind": "file", "format": "json", "name": "snapshots.json", "url": "/_blob/<new id>"},
      "updated": {"at": "<now, ISO>", "by": "Morning run"}}`.
-   Then delete the old blob (Artifact `delete`, `url` = the dashboard, `path` = `<old id>`).
+   Don't delete the old blob (unattended runs aren't allowed to); a later manual session cleans up.
 6b. Company prices (for the Companies page): first copy the dashboard's current
    `datasets/company_prices` file over `portfolio/company_prices.json`, the same way as in step 2.
    Then run `python3 fetch_company_prices.py` (it needs the updated `snapshots.json` and
@@ -43,7 +43,7 @@ Dashboard: https://claude.ai/artifact/5LBRd9Xqxsr6h62pbRWUM3 (dataset document `
      (re-run with `--only` the other funds) and say which one failed.
    - Then run `python3 fetch_company_prices.py` again (the top 600 companies may have changed).
    - Upload `lookthrough.json` and `company_prices.json` as assets and repoint `datasets/lookthrough`
-     and `datasets/company_prices` as in step 6. Then delete the old blobs.
+     and `datasets/company_prices` as in step 6.
 9. Final message (this becomes the push notification): the script's `summary` line and
    any unpriced tickers.
 
