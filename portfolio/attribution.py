@@ -17,10 +17,11 @@ from __future__ import annotations
 
 
 def snaps_in_order(rows):
-    """Snapshot ids, oldest first (a same-day screenshot sorts before that day's close)."""
+    """Snapshot ids, oldest first. On the same date: screenshot, then close, then live prices."""
+    rank = {"screenshot": 0, "close": 1, "live": 2}
     seen = {}
     for r in rows:
-        seen.setdefault(r["snap"], (r["date"], 0 if r["kind"] == "screenshot" else 1))
+        seen.setdefault(r["snap"], (r["date"], rank.get(r["kind"], 1)))
     return [s for s, _ in sorted(seen.items(), key=lambda kv: kv[1])]
 
 

@@ -55,9 +55,12 @@ def xetra_close(date):
     return int(dt.datetime.combine(dt.date.fromisoformat(date), dt.time(17, 30), ZoneInfo("Europe/Berlin")).timestamp())
 
 
+LIVE_DATES = set()  # dates of a "live" snapshot: priced now instead of at the Xetra close
+
+
 def on_or_before(bars, date):
-    """Last price traded by the Xetra close on `date`."""
-    cut, best = xetra_close(date), None
+    """Last price traded by the Xetra close on `date` (or by now, for live prices)."""
+    cut, best = (int(time.time()) if date in LIVE_DATES else xetra_close(date)), None
     for t, c in bars:
         if t <= cut:
             best = c
@@ -66,7 +69,10 @@ def on_or_before(bars, date):
 
 def main():
     look = json.loads(LOOK.read_text())["rows"]
-    dates = sorted({r["date"] for r in json.loads(SNAPS.read_text())["rows"]})
+    snap_rows = json.loads(SNAPS.read_text())["rows"]
+    dates = sorted({r["date"] for r in snap_rows})
+    LIVE_DATES.update(r["date"] for r in snap_rows if r["kind"] == "live" and
+                      not any(c["date"] == r["date"] and c["kind"] == "close" for c in snap_rows))
     # Only the companies that make up most of your exposure: the rest of the move stays in "Everything else".
     snaps = json.loads(SNAPS.read_text())["rows"]
     last = max(r["date"] for r in snaps)

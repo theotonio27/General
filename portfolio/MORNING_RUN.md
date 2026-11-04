@@ -47,6 +47,23 @@ Dashboard: https://claude.ai/artifact/5LBRd9Xqxsr6h62pbRWUM3 (dataset document `
 9. Final message (this becomes the push notification): the script's `summary` line and
    any unpriced tickers.
 
+## Live refresh (the dashboard's "Atualizar" button)
+
+The scheduled task "Portfolio refresh now" has no schedule; the dashboard's button starts it.
+Keep it quick (the page waits for it) and touch nothing else:
+
+1. Get the code as in step 1, and the current history and company prices from the dashboard as
+   in steps 2 and 6b (`datasets/snapshots` and `datasets/company_prices`; note both versions).
+2. `cd portfolio && python3 fetch_prices.py --live`. It stores any new close and, while a market
+   session is newer than the latest close, current prices as a "live" snapshot. Exit 3: stop and
+   report. Exit 4 can't happen in this mode unless nothing changed: then stop.
+3. `python3 -m unittest test_attribution` must pass.
+4. `python3 fetch_company_prices.py` (it prices the live date at the current moment).
+5. Upload `snapshots.json` and `company_prices.json` as assets and repoint `datasets/snapshots` and
+   `datasets/company_prices` (pinned with `if_version`, fields at the top level of `data`,
+   `updated.by` = "Atualizar button").
+6. No git commit, no deleting old assets. Final message: the script's `summary` line.
+
 When you trade, update the quantity in `holdings.json` (or ask Claude to). The next
 morning's snapshot uses the new quantities. The dashboard shows the trade under
 "Buys and sells", so it isn't counted as performance.

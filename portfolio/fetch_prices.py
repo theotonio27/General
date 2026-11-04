@@ -5,6 +5,8 @@ Usage:
     python3 fetch_prices.py            # fetch, append to snapshots.json, print summary
     python3 fetch_prices.py --dry-run  # fetch and print, write nothing
     python3 fetch_prices.py --resolve  # check/repair Yahoo symbols in holdings.json only
+    python3 fetch_prices.py --live     # also store current prices as a "live" snapshot (the dashboard's
+                                       # Atualizar button); the next stored close replaces it
 
 Needs network access to query1/query2.finance.yahoo.com. Standard library only.
 Exit codes: 2 more than MAX_MISSING tickers unpriced, 3 Yahoo unreachable,
@@ -98,6 +100,37 @@ def resolve(h, ref_price, tol=0.05):
     return None, None
 
 
+def live_rows(hold, close_rows, close_date):
+    """Current Xetra prices (Yahoo regularMarketPrice), dated by when they traded.
+
+    Only returned when they are newer than the latest stored close; otherwise that close
+    already is the latest price."""
+    now = dt.datetime.now(dt.timezone.utc)
+    got = {}
+    for h in hold["holdings"]:
+        try:
+            m = get_json(f"https://query1.finance.yahoo.com/v8/finance/chart/{urllib.parse.quote(h['yahoo'])}?range=1d&interval=5m")["chart"]["result"][0]["meta"]
+        except Exception:  # noqa: BLE001
+            continue
+        if m.get("currency") != "EUR" or not m.get("regularMarketPrice") or not m.get("regularMarketTime"):
+            continue
+        tz = dt.timezone(dt.timedelta(seconds=m.get("gmtoffset", 0)))
+        got[h["ticker"]] = (dt.datetime.fromtimestamp(m["regularMarketTime"], tz).date().isoformat(), float(m["regularMarketPrice"]))
+    if not got:
+        return []
+    day = Counter(d for d, _ in got.values()).most_common(1)[0][0]
+    if day <= close_date:
+        return []
+    out = []
+    for h in hold["holdings"]:
+        g = got.get(h["ticker"])
+        fresh = bool(g and g[0] == day)
+        price = g[1] if fresh else close_rows[h["ticker"]]["price"]
+        out.append({"snap": "live", "date": day, "kind": "live", "asOf": now.isoformat(timespec="seconds"),
+                    "ticker": h["ticker"], "name": h["name"], "qty": h["qty"], "price": round(price, 4), "stale": not fresh})
+    return out
+
+
 def load(path, default):
     return json.loads(path.read_text()) if path.exists() else default
 
@@ -107,6 +140,7 @@ def main():
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--resolve", action="store_true")
     ap.add_argument("--date", help="backfill the close of this YYYY-MM-DD instead of the latest one")
+    ap.add_argument("--live", action="store_true", help="add current prices as a 'live' snapshot")
     args = ap.parse_args()
 
     try:  # fail fast when the network policy blocks Yahoo, instead of retrying every symbol
@@ -169,16 +203,23 @@ def main():
         new.append({"snap": date, "date": date, "kind": "close", "ticker": h["ticker"], "name": h["name"],
                     "qty": h["qty"], "price": round(price, 4), "stale": stale})
 
-    rows = [r for r in rows if r["snap"] != date] + new
-    order = snaps_in_order(rows)
+    # A stored close supersedes live prices of that day or earlier.
+    rows = [r for r in rows if r["snap"] != date and not (r["kind"] == "live" and r["date"] <= date)] + new
     out = {"date": date, "missing": missing}
+    if args.live:
+        rows = [r for r in rows if r["kind"] != "live"]
+        live = live_rows(hold, {r["ticker"]: r for r in new}, date)
+        if live:
+            rows += live
+            out.update(live=live[0]["date"], asOf=live[0]["asOf"])
+    order = snaps_in_order(rows)
     if len(order) >= 2:
         res = attribute(rows, order[-2], order[-1])
         out.update(base=res["base"], v_now=round(res["v_now"], 2), d_eur=round(res["d_eur"], 2),
                    d_pct=round(res["d_pct"] * 100, 3), summary=summary_line(res))
     key = lambda r: (r["snap"], r["ticker"])
     out["new"] = sorted(rows, key=key) != sorted(snaps["rows"], key=key)
-    rows = sorted(rows, key=lambda r: (r["date"], r["ticker"]))
+    rows = sorted(rows, key=lambda r: (r["date"], r["kind"] == "live", r["ticker"]))
     if not out["new"]:
         print(json.dumps(out, indent=2, ensure_ascii=False))
         print(f"No new close since {date}.", file=sys.stderr)

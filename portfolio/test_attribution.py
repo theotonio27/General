@@ -51,5 +51,13 @@ class Attribution(unittest.TestCase):
         self.assertAlmostEqual(res["flows"], 10 * 131.39, places=4)
 
 
+class LiveOrdering(unittest.TestCase):
+    def test_live_sorts_after_close_of_same_and_earlier_days(self):
+        rows = [{"snap": "live", "date": "2026-11-04", "kind": "live"},
+                {"snap": "2026-11-04", "date": "2026-11-04", "kind": "close"},
+                {"snap": "2026-11-03", "date": "2026-11-03", "kind": "close"}]
+        self.assertEqual(snaps_in_order(rows), ["2026-11-03", "2026-11-04", "live"])
+
+
 if __name__ == "__main__":
     unittest.main()
