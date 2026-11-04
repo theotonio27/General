@@ -8,6 +8,14 @@
   .mp-controls { display: flex; flex-wrap: wrap; align-items: center; gap: var(--cds-gap-sm) var(--cds-gap-md); color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
   .mp-controls label { display: inline-flex; align-items: center; gap: var(--cds-gap-xs); }
   .mp-controls select { font: inherit; color: var(--color-fg); background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-xs) var(--cds-pad-sm); }
+  .mp-refresh { display: flex; flex-wrap: wrap; align-items: center; gap: var(--cds-gap-sm) var(--cds-gap-md); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+  .mp-refresh-btn { font: inherit; font-size: var(--cds-font-size-body); font-weight: var(--cds-font-weight-medium); color: var(--color-bg); background: var(--color-fg); border: 1px solid var(--color-fg); border-radius: var(--cds-radius); padding: var(--cds-pad-xs) var(--cds-pad-md); cursor: pointer; }
+  .mp-refresh-btn:hover, .mp-refresh-btn:focus-visible { opacity: .85; }
+  .mp-refresh-btn:disabled { opacity: .5; cursor: progress; }
+  .mp-refresh-msg[data-state="running"]::before { content: ""; display: inline-block; width: .5rem; height: .5rem; margin-right: var(--cds-gap-xs); border-radius: 50%; background: var(--color-warn); vertical-align: middle; }
+  .mp-refresh-msg[data-state="failed"] { color: var(--color-bad); }
+  @media (prefers-reduced-motion: no-preference) { .mp-refresh-msg[data-state="running"]::before { animation: mp-pulse var(--cds-dur-slow) var(--cds-ease-out) infinite alternate; } }
+  @keyframes mp-pulse { from { opacity: 1; } to { opacity: .25; } }
   .mp-tiles { display: grid; gap: var(--cds-gap-md); grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr)); }
   .mp-tile { display: grid; gap: var(--cds-gap-xs); align-content: start; background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-md) var(--cds-pad-lg); }
   .mp-tile-label { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
@@ -68,7 +76,15 @@
     <p class="mp-take">Since the close on <b data-draw="base-date">—</b>, your ETFs <span data-draw="verb">—</span> <b data-draw="d-eur">—</b> (<b data-draw="d-pct">—</b>). Biggest lift: <b data-draw="top-up">—</b>. Biggest drag: <b data-draw="top-down">—</b>.</p>
     <div class="mp-controls">
       <label for="mp-base">Compare with the close on <select id="mp-base" data-draw="base-select" data-source="history" aria-label="Compare with the close on"></select></label>
-      <span>Latest close: <b data-draw="now-date">—</b></span>
+      <span>Latest prices: <b data-draw="now-date">—</b></span>
+    </div>
+    <div class="mp-refresh" id="refresh">
+      <button class="mp-refresh-btn" data-refresh>Atualizar</button>
+      <span class="mp-refresh-msg" data-state="idle">Fetches the latest prices now and compares them with the previous close (takes about 1–2 minutes).</span>
+      <span class="mp-refresh-msg" data-state="running" hidden>Updating: fetching the latest prices in the cloud, about 1–2 minutes. The page updates by itself.</span>
+      <span class="mp-refresh-msg" data-state="done" hidden>Updated with the latest prices.</span>
+      <span class="mp-refresh-msg" data-state="failed" hidden>The update didn't finish. Try again in a minute.</span>
+      <span class="mp-refresh-msg" data-state="slow" hidden>Still running in the cloud. The new prices appear here when it finishes, or the next time you open the page.</span>
     </div>
   </header>
 
@@ -241,17 +257,18 @@
 <script>
   dash.calc('history', {
     title: 'Portfolio value by close',
-    description: 'Sum of quantity × close price for each daily snapshot.',
+    description: 'Sum of quantity × price for each daily close, and for the live prices fetched by the Atualizar button.',
     inputs: ['snapshots'],
     fn: (snapshots) => {
       const by = new Map();
       for (const r of snapshots) {
-        const s = by.get(r.snap) || { snap: r.snap, date: r.date, value: 0, stale: 0 };
+        const s = by.get(r.snap) || { snap: r.snap, date: r.date, kind: r.kind, asOf: r.asOf || '', value: 0, stale: 0 };
         s.value += Number(r.qty) * Number(r.price);
         if (r.stale === true || r.stale === 'true') s.stale += 1;
         by.set(r.snap, s);
       }
-      return [...by.values()].sort((a, b) => (a.date < b.date ? -1 : a.date > b.date ? 1 : a.snap < b.snap ? -1 : 1))
+      const rank = { screenshot: 0, close: 1, live: 2 };
+      return [...by.values()].sort((a, b) => (a.date < b.date ? -1 : a.date > b.date ? 1 : (rank[a.kind] ?? 1) - (rank[b.kind] ?? 1)))
         .map((s) => ({ ...s, value: Math.round(s.value * 100) / 100 }));
     },
   });
@@ -370,7 +387,9 @@
     const h = dash.data('history');
     if (h.status !== 'ok' || !h.data.length) { el.textContent = '—'; return; }
     const last = h.data[h.data.length - 1];
-    mark(el, day(last.date), { 'data-source': 'history', 'data-field': 'date', 'data-where': 'snap=' + enc(last.snap) });
+    const live = last.kind === 'live' && last.asOf;
+    const t = live ? new Date(last.asOf).toLocaleTimeString('pt-PT', { hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Lisbon' }) : '';
+    mark(el, day(last.date) + (live ? ', ' + t + ' (live, Lisbon time)' : ' (close)'), { 'data-source': 'history', 'data-field': 'date', 'data-where': 'snap=' + enc(last.snap) });
   });
   const extreme = (name, pick) => dash.draw(name, (el) => {
     const s = mpState();
@@ -858,5 +877,81 @@
       });
       return tr;
     }));
+  });
+  // The Atualizar button: starts the cloud task that fetches the latest prices, then waits for them.
+  // The connector answers JSON, sometimes as text with a note after it.
+  window.mpJson = (answer) => {
+    if (answer && typeof answer === 'object') return answer;
+    const t = String(answer || '');
+    try { return JSON.parse(t); } catch (e) { /* trim a trailing note */ }
+    const end = t.lastIndexOf('}');
+    if (end < 0) throw new Error(t.slice(0, 200) || 'empty answer');
+    return JSON.parse(t.slice(t.indexOf('{'), end + 1));
+  };
+  dash.loader('refresh_status', {
+    description: 'The task’s last run as one row: status and when it started and finished.',
+    fn: ({ answer }) => {
+      const j = mpJson(answer);
+      const r = ((j && (j.trigger || j)) || {}).last_run || {};
+      return [{ status: r.status || '', fired_at: r.fired_at || '', finished_at: r.finished_at || '' }];
+    },
+  });
+  dash.loader('refresh_run', {
+    description: 'The started run as one row.',
+    fn: ({ answer }) => {
+      const j = mpJson(answer);
+      return [{ session: (j && j.session_id) || '' }];
+    },
+  });
+  window.mpRefresh = { state: 'idle', since: 0, latest: null, timer: null, tries: 0 };
+  const latestKey = () => {
+    const h = dash.data('history');
+    if (h.status !== 'ok' || !h.data.length) return null;
+    const l = h.data[h.data.length - 1];
+    return l.snap + '|' + l.asOf + '|' + l.value;
+  };
+  const setRefresh = (st) => {
+    mpRefresh.state = st;
+    for (const el of document.querySelectorAll('.mp-refresh-msg')) el.hidden = el.dataset.state !== st;
+    for (const b of document.querySelectorAll('[data-refresh]')) b.disabled = st === 'running';
+  };
+  const pollRefresh = () => {
+    if (mpRefresh.state !== 'running') return;
+    mpRefresh.tries += 1;
+    const st = dash.data('refresh_status');
+    const r = st.status === 'ok' && st.data[0];
+    if (r && r.finished_at && Date.parse(r.fired_at) >= mpRefresh.since - 120000) {
+      try { dash.refresh('snapshots'); dash.refresh('company_prices'); } catch (e) { /* the page also picks the new files up by itself */ }
+      setRefresh(/SUCCEEDED/.test(r.status) ? 'done' : 'failed');
+      return;
+    }
+    if (mpRefresh.tries > 24) { setRefresh('slow'); return; }
+    try { dash.refresh('refresh_status'); } catch (e) { /* refreshing outside a click may be refused; new prices still arrive */ }
+    mpRefresh.timer = setTimeout(pollRefresh, 10000);
+  };
+  for (const b of document.querySelectorAll('[data-refresh]')) {
+    b.addEventListener('click', () => {
+      if (mpRefresh.state === 'running') return;
+      mpRefresh.since = Date.now();
+      mpRefresh.latest = latestKey();
+      mpRefresh.tries = 0;
+      setRefresh('running');
+      dash.setParams({ refresh_nonce: 'Atualizar ' + new Date(mpRefresh.since).toISOString() });
+      dash.data('refresh_run');
+      dash.data('refresh_status');
+      clearTimeout(mpRefresh.timer);
+      mpRefresh.timer = setTimeout(pollRefresh, 15000);
+    });
+  }
+  // New prices arriving also ends the wait, whether or not polling works.
+  dash.onData(() => {
+    if (mpRefresh.state === 'running' && mpRefresh.latest !== null && latestKey() && latestKey() !== mpRefresh.latest) {
+      clearTimeout(mpRefresh.timer);
+      setRefresh('done');
+    }
+    if (mpRefresh.state === 'running' && dash.data('refresh_run').status === 'error') {
+      clearTimeout(mpRefresh.timer);
+      setRefresh('failed');
+    }
   });
 </script>
