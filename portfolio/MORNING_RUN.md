@@ -24,7 +24,7 @@ Dashboard: https://claude.ai/artifact/5LBRd9Xqxsr6h62pbRWUM3 (dataset document `
    the version from step 2. Put the fields at the top level of `data`, not under a
    nested `data` key:
    `{"source": {"kind": "file", "format": "json", "name": "snapshots.json", "url": "/_blob/<new id>"},
-     "updated": {"at": "<now, ISO>", "by": "Morning run"}}`.
+     "updated": {"at": "<output of date -u +%Y-%m-%dT%H:%M:%SZ>", "by": "Morning run"}}`.
    Don't delete the old blob (unattended runs aren't allowed to); a later manual session cleans up.
 6b. Company prices (for the Companies page): first copy the dashboard's current
    `datasets/company_prices` file over `portfolio/company_prices.json`, the same way as in step 2.
@@ -61,7 +61,7 @@ Keep it quick (the page waits for it) and touch nothing else:
 4. `python3 fetch_company_prices.py` (it prices the live date at the current moment).
 5. Upload `snapshots.json` and `company_prices.json` as assets and repoint `datasets/snapshots` and
    `datasets/company_prices` (pinned with `if_version`, fields at the top level of `data`,
-   `updated.by` = "Atualizar button").
+   `updated.by` = "Atualizar button", and `updated.at` = the real time from `date -u +%Y-%m-%dT%H:%M:%SZ`).
 6. No git commit, no deleting old assets. Final message: the script's `summary` line.
 
 When you trade, update the quantity in `holdings.json` (or ask Claude to). The next
