@@ -1,6 +1,6 @@
 {
 "note": "Company prices in EUR at each snapshot date’s Xetra close (17:30 Frankfurt), converted at Yahoo FX at the same moment.",
-"updated": "2026-11-03T18:07:59+00:00",
+"updated": "2026-11-06T00:41:42+00:00",
 "rows": [
 {
 "date": "2026-10-30",
@@ -155,13 +155,6 @@
 "currency": "TWD",
 "close": 673.0,
 "eur": 18.475815
-},
-{
-"date": "2026-10-30",
-"symbol": "4004.T",
-"currency": "JPY",
-"close": 13070.0,
-"eur": 74.329356
 },
 {
 "date": "2026-10-30",
@@ -844,6 +837,13 @@
 },
 {
 "date": "2026-10-30",
+"symbol": "ABN.AS",
+"currency": "EUR",
+"close": 39.610001,
+"eur": 39.610001
+},
+{
+"date": "2026-10-30",
 "symbol": "ABNB",
 "currency": "USD",
 "close": 166.029999,
@@ -897,6 +897,13 @@
 "currency": "USD",
 "close": 296.299988,
 "eur": 265.336643
+},
+{
+"date": "2026-10-30",
+"symbol": "ADS.DE",
+"currency": "EUR",
+"close": 168.75,
+"eur": 168.75
 },
 {
 "date": "2026-10-30",
@@ -1156,6 +1163,13 @@
 "currency": "USD",
 "close": 172.729996,
 "eur": 154.679713
+},
+{
+"date": "2026-10-30",
+"symbol": "AV.L",
+"currency": "GBp",
+"close": 731.0,
+"eur": 8.772877
 },
 {
 "date": "2026-10-30",
@@ -1583,13 +1597,6 @@
 "currency": "USD",
 "close": 148.600006,
 "eur": 133.071307
-},
-{
-"date": "2026-10-30",
-"symbol": "CRH",
-"currency": "USD",
-"close": 90.279999,
-"eur": 80.84574
 },
 {
 "date": "2026-10-30",
@@ -2979,13 +2986,6 @@
 },
 {
 "date": "2026-10-30",
-"symbol": "NUE",
-"currency": "USD",
-"close": 270.890015,
-"eur": 242.582011
-},
-{
-"date": "2026-10-30",
 "symbol": "NVDA",
 "currency": "USD",
 "close": 204.720001,
@@ -3499,8 +3499,8 @@
 "date": "2026-10-30",
 "symbol": "SCCO",
 "currency": "USD",
-"close": 178.666138,
-"eur": 159.995528
+"close": 178.772278,
+"eur": 160.090577
 },
 {
 "date": "2026-10-30",
@@ -4269,22 +4269,22 @@
 "date": "2026-11-02",
 "symbol": "1605.T",
 "currency": "JPY",
-"close": 4054.0,
-"eur": 22.933496
+"close": 4051.0,
+"eur": 22.916525
 },
 {
 "date": "2026-11-02",
 "symbol": "1878.T",
 "currency": "JPY",
-"close": 3387.0,
-"eur": 19.160274
+"close": 3385.0,
+"eur": 19.14896
 },
 {
 "date": "2026-11-02",
 "symbol": "1925.T",
 "currency": "JPY",
-"close": 2299.5,
-"eur": 13.008282
+"close": 2296.0,
+"eur": 12.988482
 },
 {
 "date": "2026-11-02",
@@ -4318,29 +4318,29 @@
 "date": "2026-11-02",
 "symbol": "2802.T",
 "currency": "JPY",
-"close": 5128.0,
-"eur": 29.009119
+"close": 5109.0,
+"eur": 28.901635
 },
 {
 "date": "2026-11-02",
 "symbol": "285A.T",
 "currency": "JPY",
-"close": 11345.0,
-"eur": 64.178715
+"close": 11200.0,
+"eur": 63.358449
 },
 {
 "date": "2026-11-02",
 "symbol": "2914.T",
 "currency": "JPY",
-"close": 7364.0,
-"eur": 41.65818
+"close": 7332.0,
+"eur": 41.477156
 },
 {
 "date": "2026-11-02",
 "symbol": "3382.T",
 "currency": "JPY",
-"close": 2145.0,
-"eur": 12.134274
+"close": 2140.0,
+"eur": 12.105989
 },
 {
 "date": "2026-11-02",
@@ -4348,13 +4348,6 @@
 "currency": "TWD",
 "close": 676.0,
 "eur": 18.519027
-},
-{
-"date": "2026-11-02",
-"symbol": "4004.T",
-"currency": "JPY",
-"close": 13225.0,
-"eur": 74.813883
 },
 {
 "date": "2026-11-02",
@@ -4367,92 +4360,92 @@
 "date": "2026-11-02",
 "symbol": "4062.T",
 "currency": "JPY",
-"close": 8045.0,
-"eur": 45.5106
+"close": 8072.0,
+"eur": 45.66334
 },
 {
 "date": "2026-11-02",
 "symbol": "4063.T",
 "currency": "JPY",
-"close": 5921.0,
-"eur": 33.495123
+"close": 5906.0,
+"eur": 33.410268
 },
 {
 "date": "2026-11-02",
 "symbol": "4307.T",
 "currency": "JPY",
-"close": 6198.0,
-"eur": 35.062113
+"close": 6167.0,
+"eur": 34.886746
 },
 {
 "date": "2026-11-02",
 "symbol": "4452.T",
 "currency": "JPY",
-"close": 3766.0,
-"eur": 21.304279
+"close": 3757.0,
+"eur": 21.253366
 },
 {
 "date": "2026-11-02",
 "symbol": "4502.T",
 "currency": "JPY",
-"close": 6647.0,
-"eur": 37.602108
+"close": 6656.0,
+"eur": 37.653021
 },
 {
 "date": "2026-11-02",
 "symbol": "4503.T",
 "currency": "JPY",
-"close": 2569.0,
-"eur": 14.532844
+"close": 2562.0,
+"eur": 14.493245
 },
 {
 "date": "2026-11-02",
 "symbol": "4519.T",
 "currency": "JPY",
-"close": 6843.0,
-"eur": 38.710881
+"close": 6836.0,
+"eur": 38.671282
 },
 {
 "date": "2026-11-02",
 "symbol": "4543.T",
 "currency": "JPY",
-"close": 2391.5,
-"eur": 13.528726
+"close": 2397.0,
+"eur": 13.55984
 },
 {
 "date": "2026-11-02",
 "symbol": "4568.T",
 "currency": "JPY",
-"close": 2892.5,
-"eur": 16.362885
+"close": 2879.0,
+"eur": 16.286516
 },
 {
 "date": "2026-11-02",
 "symbol": "4578.T",
 "currency": "JPY",
-"close": 11770.0,
-"eur": 66.582942
+"close": 11760.0,
+"eur": 66.526372
 },
 {
 "date": "2026-11-02",
 "symbol": "4661.T",
 "currency": "JPY",
-"close": 3482.0,
-"eur": 19.697689
+"close": 3481.0,
+"eur": 19.692032
 },
 {
 "date": "2026-11-02",
 "symbol": "4684.T",
 "currency": "JPY",
-"close": 6059.0,
-"eur": 34.27579
+"close": 6037.0,
+"eur": 34.151336
 },
 {
 "date": "2026-11-02",
 "symbol": "4901.T",
 "currency": "JPY",
-"close": 3470.0,
-"eur": 19.629805
+"close": 3475.0,
+"eur": 19.65809
 },
 {
 "date": "2026-11-02",
@@ -4465,78 +4458,78 @@
 "date": "2026-11-02",
 "symbol": "5020.T",
 "currency": "JPY",
-"close": 1407.0,
-"eur": 7.959405
+"close": 1397.0,
+"eur": 7.902835
 },
 {
 "date": "2026-11-02",
 "symbol": "5108.T",
 "currency": "JPY",
-"close": 4033.0,
-"eur": 22.814699
+"close": 4017.0,
+"eur": 22.724187
 },
 {
 "date": "2026-11-02",
 "symbol": "5401.T",
 "currency": "JPY",
-"close": 657.299988,
-"eur": 3.718349
+"close": 658.599976,
+"eur": 3.725703
 },
 {
 "date": "2026-11-02",
 "symbol": "5802.T",
 "currency": "JPY",
-"close": 1663.0,
-"eur": 9.407598
+"close": 1654.5,
+"eur": 9.359514
 },
 {
 "date": "2026-11-02",
 "symbol": "5803.T",
 "currency": "JPY",
-"close": 3900.0,
-"eur": 22.062317
+"close": 3905.0,
+"eur": 22.090602
 },
 {
 "date": "2026-11-02",
 "symbol": "6098.T",
 "currency": "JPY",
-"close": 17970.0,
-"eur": 101.656369
+"close": 17945.0,
+"eur": 101.514944
 },
 {
 "date": "2026-11-02",
 "symbol": "6146.T",
 "currency": "JPY",
-"close": 50240.0,
-"eur": 284.207901
+"close": 50380.0,
+"eur": 284.999882
 },
 {
 "date": "2026-11-02",
 "symbol": "6178.T",
 "currency": "JPY",
-"close": 2348.5,
-"eur": 13.285475
+"close": 2341.5,
+"eur": 13.245876
 },
 {
 "date": "2026-11-02",
 "symbol": "6273.T",
 "currency": "JPY",
-"close": 62710.0,
-"eur": 354.750746
+"close": 62590.0,
+"eur": 354.071905
 },
 {
 "date": "2026-11-02",
 "symbol": "6301.T",
 "currency": "JPY",
-"close": 6213.0,
-"eur": 35.146968
+"close": 6196.0,
+"eur": 35.050799
 },
 {
 "date": "2026-11-02",
 "symbol": "6326.T",
 "currency": "JPY",
-"close": 2641.5,
-"eur": 14.942977
+"close": 2633.5,
+"eur": 14.897721
 },
 {
 "date": "2026-11-02",
@@ -4556,36 +4549,36 @@
 "date": "2026-11-02",
 "symbol": "6503.T",
 "currency": "JPY",
-"close": 4756.0,
-"eur": 26.904713
+"close": 4773.0,
+"eur": 27.000882
 },
 {
 "date": "2026-11-02",
 "symbol": "6701.T",
 "currency": "JPY",
-"close": 4852.0,
-"eur": 27.447785
+"close": 4840.0,
+"eur": 27.379901
 },
 {
 "date": "2026-11-02",
 "symbol": "6702.T",
 "currency": "JPY",
-"close": 3514.0,
-"eur": 19.878713
+"close": 3472.0,
+"eur": 19.641119
 },
 {
 "date": "2026-11-02",
 "symbol": "6723.T",
 "currency": "JPY",
-"close": 2860.0,
-"eur": 16.179033
+"close": 2874.5,
+"eur": 16.261059
 },
 {
 "date": "2026-11-02",
 "symbol": "6752.T",
 "currency": "JPY",
-"close": 3740.0,
-"eur": 21.157196
+"close": 3732.0,
+"eur": 21.11194
 },
 {
 "date": "2026-11-02",
@@ -4598,29 +4591,29 @@
 "date": "2026-11-02",
 "symbol": "6762.T",
 "currency": "JPY",
-"close": 2515.0,
-"eur": 14.227366
+"close": 2498.5,
+"eur": 14.134025
 },
 {
 "date": "2026-11-02",
 "symbol": "6857.T",
 "currency": "JPY",
-"close": 35770.0,
-"eur": 202.351047
+"close": 35860.0,
+"eur": 202.860178
 },
 {
 "date": "2026-11-02",
 "symbol": "6861.T",
 "currency": "JPY",
-"close": 74890.0,
-"eur": 423.65306
+"close": 75020.0,
+"eur": 424.38847
 },
 {
 "date": "2026-11-02",
 "symbol": "6902.T",
 "currency": "JPY",
-"close": 1860.5,
-"eur": 10.524857
+"close": 1851.5,
+"eur": 10.473944
 },
 {
 "date": "2026-11-02",
@@ -4633,85 +4626,85 @@
 "date": "2026-11-02",
 "symbol": "6954.T",
 "currency": "JPY",
-"close": 5648.0,
-"eur": 31.950761
+"close": 5668.0,
+"eur": 32.063901
 },
 {
 "date": "2026-11-02",
 "symbol": "6971.T",
 "currency": "JPY",
-"close": 3269.0,
-"eur": 18.492747
+"close": 3237.0,
+"eur": 18.311723
 },
 {
 "date": "2026-11-02",
 "symbol": "6981.T",
 "currency": "JPY",
-"close": 6340.0,
-"eur": 35.865408
+"close": 6332.0,
+"eur": 35.820152
 },
 {
 "date": "2026-11-02",
 "symbol": "6988.T",
 "currency": "JPY",
-"close": 3315.0,
-"eur": 18.75297
+"close": 3327.0,
+"eur": 18.820854
 },
 {
 "date": "2026-11-02",
 "symbol": "7011.T",
 "currency": "JPY",
-"close": 3363.0,
-"eur": 19.024506
+"close": 3374.0,
+"eur": 19.086733
 },
 {
 "date": "2026-11-02",
 "symbol": "7013.T",
 "currency": "JPY",
-"close": 2306.0,
-"eur": 13.045052
+"close": 2317.5,
+"eur": 13.110108
 },
 {
 "date": "2026-11-02",
 "symbol": "7182.T",
 "currency": "JPY",
-"close": 2990.0,
-"eur": 16.914443
+"close": 2991.0,
+"eur": 16.9201
 },
 {
 "date": "2026-11-02",
 "symbol": "7203.T",
 "currency": "JPY",
-"close": 3051.0,
-"eur": 17.25952
+"close": 3046.0,
+"eur": 17.231235
 },
 {
 "date": "2026-11-02",
 "symbol": "7267.T",
 "currency": "JPY",
-"close": 1799.0,
-"eur": 10.176951
+"close": 1791.0,
+"eur": 10.131695
 },
 {
 "date": "2026-11-02",
 "symbol": "7269.T",
 "currency": "JPY",
-"close": 2096.0,
-"eur": 11.857081
+"close": 2088.5,
+"eur": 11.814654
 },
 {
 "date": "2026-11-02",
 "symbol": "7453.T",
 "currency": "JPY",
-"close": 4729.0,
-"eur": 26.751974
+"close": 4754.0,
+"eur": 26.893399
 },
 {
 "date": "2026-11-02",
 "symbol": "7735.T",
 "currency": "JPY",
-"close": 9218.0,
-"eur": 52.146267
+"close": 9157.0,
+"eur": 51.801189
 },
 {
 "date": "2026-11-02",
@@ -4724,274 +4717,274 @@
 "date": "2026-11-02",
 "symbol": "7751.T",
 "currency": "JPY",
-"close": 4672.0,
-"eur": 26.429525
+"close": 4671.0,
+"eur": 26.423868
 },
 {
 "date": "2026-11-02",
 "symbol": "7832.T",
 "currency": "JPY",
-"close": 6208.0,
-"eur": 35.118683
+"close": 6191.0,
+"eur": 35.022514
 },
 {
 "date": "2026-11-02",
 "symbol": "7936.T",
 "currency": "JPY",
-"close": 4797.0,
-"eur": 27.13665
+"close": 4782.0,
+"eur": 27.051795
 },
 {
 "date": "2026-11-02",
 "symbol": "7974.T",
 "currency": "JPY",
-"close": 8149.0,
-"eur": 46.098929
+"close": 8132.0,
+"eur": 46.00276
 },
 {
 "date": "2026-11-02",
 "symbol": "8001.T",
 "currency": "JPY",
-"close": 2271.0,
-"eur": 12.847057
+"close": 2260.5,
+"eur": 12.787658
 },
 {
 "date": "2026-11-02",
 "symbol": "8002.T",
 "currency": "JPY",
-"close": 4821.0,
-"eur": 27.272418
+"close": 4815.0,
+"eur": 27.238476
 },
 {
 "date": "2026-11-02",
 "symbol": "8015.T",
 "currency": "JPY",
-"close": 6618.0,
-"eur": 37.438055
+"close": 6612.0,
+"eur": 37.404113
 },
 {
 "date": "2026-11-02",
 "symbol": "8031.T",
 "currency": "JPY",
-"close": 4917.0,
-"eur": 27.815491
+"close": 4912.0,
+"eur": 27.787206
 },
 {
 "date": "2026-11-02",
 "symbol": "8035.T",
 "currency": "JPY",
-"close": 10005.0,
-"eur": 56.598329
+"close": 10105.0,
+"eur": 57.164029
 },
 {
 "date": "2026-11-02",
 "symbol": "8053.T",
 "currency": "JPY",
-"close": 1664.5,
-"eur": 9.416084
+"close": 1654.0,
+"eur": 9.356685
 },
 {
 "date": "2026-11-02",
 "symbol": "8058.T",
 "currency": "JPY",
-"close": 4772.0,
-"eur": 26.995225
+"close": 4748.0,
+"eur": 26.859457
 },
 {
 "date": "2026-11-02",
 "symbol": "8267.T",
 "currency": "JPY",
-"close": 1204.5,
-"eur": 6.813862
+"close": 1203.5,
+"eur": 6.808205
 },
 {
 "date": "2026-11-02",
 "symbol": "8306.T",
 "currency": "JPY",
-"close": 3383.0,
-"eur": 19.137646
+"close": 3375.0,
+"eur": 19.09239
 },
 {
 "date": "2026-11-02",
 "symbol": "8308.T",
 "currency": "JPY",
-"close": 2220.0,
-"eur": 12.55855
+"close": 2226.0,
+"eur": 12.592492
 },
 {
 "date": "2026-11-02",
 "symbol": "8309.T",
 "currency": "JPY",
-"close": 1627.0,
-"eur": 9.203946
+"close": 1618.5,
+"eur": 9.155862
 },
 {
 "date": "2026-11-02",
 "symbol": "8316.T",
 "currency": "JPY",
-"close": 3155.0,
-"eur": 17.847849
+"close": 3151.0,
+"eur": 17.825221
 },
 {
 "date": "2026-11-02",
 "symbol": "8411.T",
 "currency": "JPY",
-"close": 7587.0,
-"eur": 42.919692
+"close": 7583.0,
+"eur": 42.897064
 },
 {
 "date": "2026-11-02",
 "symbol": "8591.T",
 "currency": "JPY",
-"close": 5747.0,
-"eur": 32.510804
+"close": 5753.0,
+"eur": 32.544746
 },
 {
 "date": "2026-11-02",
 "symbol": "8604.T",
 "currency": "JPY",
-"close": 1501.0,
-"eur": 8.491164
+"close": 1503.5,
+"eur": 8.505306
 },
 {
 "date": "2026-11-02",
 "symbol": "8630.T",
 "currency": "JPY",
-"close": 7083.0,
-"eur": 40.068562
+"close": 7081.0,
+"eur": 40.057248
 },
 {
 "date": "2026-11-02",
 "symbol": "8697.T",
 "currency": "JPY",
-"close": 2101.5,
-"eur": 11.888195
+"close": 2097.5,
+"eur": 11.865567
 },
 {
 "date": "2026-11-02",
 "symbol": "8725.T",
 "currency": "JPY",
-"close": 5210.0,
-"eur": 29.472993
+"close": 5216.0,
+"eur": 29.506935
 },
 {
 "date": "2026-11-02",
 "symbol": "8750.T",
 "currency": "JPY",
-"close": 1792.0,
-"eur": 10.137352
+"close": 1790.0,
+"eur": 10.126038
 },
 {
 "date": "2026-11-02",
 "symbol": "8766.T",
 "currency": "JPY",
-"close": 575.599976,
-"eur": 3.256172
+"close": 575.799988,
+"eur": 3.257303
 },
 {
 "date": "2026-11-02",
 "symbol": "8795.T",
 "currency": "JPY",
-"close": 4820.0,
-"eur": 27.266761
+"close": 4796.0,
+"eur": 27.130993
 },
 {
 "date": "2026-11-02",
 "symbol": "8801.T",
 "currency": "JPY",
-"close": 1589.0,
-"eur": 8.98898
+"close": 1598.0,
+"eur": 9.039893
 },
 {
 "date": "2026-11-02",
 "symbol": "8802.T",
 "currency": "JPY",
-"close": 3813.0,
-"eur": 21.570158
+"close": 3814.0,
+"eur": 21.575815
 },
 {
 "date": "2026-11-02",
 "symbol": "9020.T",
 "currency": "JPY",
-"close": 3694.0,
-"eur": 20.896974
+"close": 3692.0,
+"eur": 20.88566
 },
 {
 "date": "2026-11-02",
 "symbol": "9022.T",
 "currency": "JPY",
-"close": 3975.0,
-"eur": 22.486592
+"close": 3985.0,
+"eur": 22.543163
 },
 {
 "date": "2026-11-02",
 "symbol": "9101.T",
 "currency": "JPY",
-"close": 7371.0,
-"eur": 41.697779
+"close": 7365.0,
+"eur": 41.663837
 },
 {
 "date": "2026-11-02",
 "symbol": "9104.T",
 "currency": "JPY",
-"close": 7579.0,
-"eur": 42.874436
+"close": 7578.0,
+"eur": 42.868779
 },
 {
 "date": "2026-11-02",
 "symbol": "9432.T",
 "currency": "JPY",
-"close": 174.5,
-"eur": 0.987147
+"close": 174.199997,
+"eur": 0.98545
 },
 {
 "date": "2026-11-02",
 "symbol": "9433.T",
 "currency": "JPY",
-"close": 2839.5,
-"eur": 16.063064
+"close": 2827.5,
+"eur": 15.99518
 },
 {
 "date": "2026-11-02",
 "symbol": "9434.T",
 "currency": "JPY",
-"close": 234.899994,
-"eur": 1.32883
+"close": 233.800003,
+"eur": 1.322608
 },
 {
 "date": "2026-11-02",
 "symbol": "9503.T",
 "currency": "JPY",
-"close": 2654.5,
-"eur": 15.016518
+"close": 2648.5,
+"eur": 14.982576
 },
 {
 "date": "2026-11-02",
 "symbol": "9735.T",
 "currency": "JPY",
-"close": 6807.0,
-"eur": 38.507229
+"close": 6796.0,
+"eur": 38.445002
 },
 {
 "date": "2026-11-02",
 "symbol": "9766.T",
 "currency": "JPY",
-"close": 26105.0,
-"eur": 147.6761
+"close": 25975.0,
+"eur": 146.940689
 },
 {
 "date": "2026-11-02",
 "symbol": "9983.T",
 "currency": "JPY",
-"close": 75360.0,
-"eur": 426.311852
+"close": 75130.0,
+"eur": 425.010741
 },
 {
 "date": "2026-11-02",
 "symbol": "9984.T",
 "currency": "JPY",
-"close": 4410.0,
-"eur": 24.947389
+"close": 4407.0,
+"eur": 24.930418
 },
 {
 "date": "2026-11-02",
@@ -5034,6 +5027,13 @@
 "currency": "EUR",
 "close": 73.739998,
 "eur": 73.739998
+},
+{
+"date": "2026-11-02",
+"symbol": "ABN.AS",
+"currency": "EUR",
+"close": 40.099998,
+"eur": 40.099998
 },
 {
 "date": "2026-11-02",
@@ -5090,6 +5090,13 @@
 "currency": "USD",
 "close": 299.700012,
 "eur": 267.512219
+},
+{
+"date": "2026-11-02",
+"symbol": "ADS.DE",
+"currency": "EUR",
+"close": 172.25,
+"eur": 172.25
 },
 {
 "date": "2026-11-02",
@@ -5349,6 +5356,13 @@
 "currency": "USD",
 "close": 172.899994,
 "eur": 154.330527
+},
+{
+"date": "2026-11-02",
+"symbol": "AV.L",
+"currency": "GBp",
+"close": 731.400024,
+"eur": 8.762745
 },
 {
 "date": "2026-11-02",
@@ -5776,13 +5790,6 @@
 "currency": "USD",
 "close": 147.25,
 "eur": 131.435344
-},
-{
-"date": "2026-11-02",
-"symbol": "CRH",
-"currency": "USD",
-"close": 96.514999,
-"eur": 86.149285
 },
 {
 "date": "2026-11-02",
@@ -7172,13 +7179,6 @@
 },
 {
 "date": "2026-11-02",
-"symbol": "NUE",
-"currency": "USD",
-"close": 285.899994,
-"eur": 255.194323
-},
-{
-"date": "2026-11-02",
 "symbol": "NVDA",
 "currency": "USD",
 "close": 206.899994,
@@ -7692,8 +7692,8 @@
 "date": "2026-11-02",
 "symbol": "SCCO",
 "currency": "USD",
-"close": 181.49614,
-"eur": 162.003447
+"close": 181.603958,
+"eur": 162.099686
 },
 {
 "date": "2026-11-02",
@@ -8406,8 +8406,8 @@
 "date": "2026-11-03",
 "symbol": "000660.KS",
 "currency": "KRW",
-"close": 1398000.0,
-"eur": 929.830396
+"close": 1397000.0,
+"eur": 929.165281
 },
 {
 "date": "2026-11-03",
@@ -8420,8 +8420,8 @@
 "date": "2026-11-03",
 "symbol": "005930.KS",
 "currency": "KRW",
-"close": 219500.0,
-"eur": 145.992684
+"close": 220000.0,
+"eur": 146.325241
 },
 {
 "date": "2026-11-03",
@@ -8455,29 +8455,29 @@
 "date": "2026-11-03",
 "symbol": "105560.KS",
 "currency": "KRW",
-"close": 151400.0,
-"eur": 100.69837
+"close": 151700.0,
+"eur": 100.897905
 },
 {
 "date": "2026-11-03",
 "symbol": "1605.T",
 "currency": "JPY",
-"close": 4054.0,
-"eur": 22.853857
+"close": 4051.0,
+"eur": 22.836945
 },
 {
 "date": "2026-11-03",
 "symbol": "1878.T",
 "currency": "JPY",
-"close": 3387.0,
-"eur": 19.093738
+"close": 3385.0,
+"eur": 19.082463
 },
 {
 "date": "2026-11-03",
 "symbol": "1925.T",
 "currency": "JPY",
-"close": 2299.5,
-"eur": 12.963109
+"close": 2296.0,
+"eur": 12.943378
 },
 {
 "date": "2026-11-03",
@@ -8490,162 +8490,155 @@
 "date": "2026-11-03",
 "symbol": "2317.TW",
 "currency": "TWD",
-"close": 245.5,
-"eur": 6.68009
+"close": 244.0,
+"eur": 6.639275
 },
 {
 "date": "2026-11-03",
 "symbol": "2330.TW",
 "currency": "TWD",
-"close": 2295.0,
-"eur": 62.447281
+"close": 2285.0,
+"eur": 62.17518
 },
 {
 "date": "2026-11-03",
 "symbol": "2454.TW",
 "currency": "TWD",
-"close": 3675.0,
-"eur": 99.99728
+"close": 3670.0,
+"eur": 99.86123
 },
 {
 "date": "2026-11-03",
 "symbol": "2802.T",
 "currency": "JPY",
-"close": 5128.0,
-"eur": 28.908382
+"close": 5109.0,
+"eur": 28.801272
 },
 {
 "date": "2026-11-03",
 "symbol": "285A.T",
 "currency": "JPY",
-"close": 11345.0,
-"eur": 63.955848
+"close": 11200.0,
+"eur": 63.138431
 },
 {
 "date": "2026-11-03",
 "symbol": "2914.T",
 "currency": "JPY",
-"close": 7364.0,
-"eur": 41.513518
+"close": 7332.0,
+"eur": 41.333123
 },
 {
 "date": "2026-11-03",
 "symbol": "3382.T",
 "currency": "JPY",
-"close": 2145.0,
-"eur": 12.092137
+"close": 2140.0,
+"eur": 12.06395
 },
 {
 "date": "2026-11-03",
 "symbol": "3711.TW",
 "currency": "TWD",
-"close": 616.0,
-"eur": 16.761449
-},
-{
-"date": "2026-11-03",
-"symbol": "4004.T",
-"currency": "JPY",
-"close": 13225.0,
-"eur": 74.554085
+"close": 614.0,
+"eur": 16.707029
 },
 {
 "date": "2026-11-03",
 "symbol": "402340.KS",
 "currency": "KRW",
-"close": 899000.0,
-"eur": 597.938144
+"close": 896000.0,
+"eur": 595.9428
 },
 {
 "date": "2026-11-03",
 "symbol": "4062.T",
 "currency": "JPY",
-"close": 8045.0,
-"eur": 45.35256
+"close": 8072.0,
+"eur": 45.504769
 },
 {
 "date": "2026-11-03",
 "symbol": "4063.T",
 "currency": "JPY",
-"close": 5921.0,
-"eur": 33.378808
+"close": 5906.0,
+"eur": 33.294248
 },
 {
 "date": "2026-11-03",
 "symbol": "4307.T",
 "currency": "JPY",
-"close": 6198.0,
-"eur": 34.940357
+"close": 6167.0,
+"eur": 34.765598
 },
 {
 "date": "2026-11-03",
 "symbol": "4452.T",
 "currency": "JPY",
-"close": 3766.0,
-"eur": 21.230297
+"close": 3757.0,
+"eur": 21.179561
 },
 {
 "date": "2026-11-03",
 "symbol": "4502.T",
 "currency": "JPY",
-"close": 6647.0,
-"eur": 37.471531
+"close": 6656.0,
+"eur": 37.522267
 },
 {
 "date": "2026-11-03",
 "symbol": "4503.T",
 "currency": "JPY",
-"close": 2569.0,
-"eur": 14.482378
+"close": 2562.0,
+"eur": 14.442916
 },
 {
 "date": "2026-11-03",
 "symbol": "4519.T",
 "currency": "JPY",
-"close": 6843.0,
-"eur": 38.576454
+"close": 6836.0,
+"eur": 38.536992
 },
 {
 "date": "2026-11-03",
 "symbol": "4543.T",
 "currency": "JPY",
-"close": 2391.5,
-"eur": 13.481746
+"close": 2397.0,
+"eur": 13.512752
 },
 {
 "date": "2026-11-03",
 "symbol": "4568.T",
 "currency": "JPY",
-"close": 2892.5,
-"eur": 16.306063
+"close": 2879.0,
+"eur": 16.229959
 },
 {
 "date": "2026-11-03",
 "symbol": "4578.T",
 "currency": "JPY",
-"close": 11770.0,
-"eur": 66.351726
+"close": 11760.0,
+"eur": 66.295352
 },
 {
 "date": "2026-11-03",
 "symbol": "4661.T",
 "currency": "JPY",
-"close": 3482.0,
-"eur": 19.629287
+"close": 3481.0,
+"eur": 19.62365
 },
 {
 "date": "2026-11-03",
 "symbol": "4684.T",
 "currency": "JPY",
-"close": 6059.0,
-"eur": 34.156764
+"close": 6037.0,
+"eur": 34.032742
 },
 {
 "date": "2026-11-03",
 "symbol": "4901.T",
 "currency": "JPY",
-"close": 3470.0,
-"eur": 19.561639
+"close": 3475.0,
+"eur": 19.589826
 },
 {
 "date": "2026-11-03",
@@ -8658,78 +8651,78 @@
 "date": "2026-11-03",
 "symbol": "5020.T",
 "currency": "JPY",
-"close": 1407.0,
-"eur": 7.931765
+"close": 1397.0,
+"eur": 7.875392
 },
 {
 "date": "2026-11-03",
 "symbol": "5108.T",
 "currency": "JPY",
-"close": 4033.0,
-"eur": 22.735472
+"close": 4017.0,
+"eur": 22.645275
 },
 {
 "date": "2026-11-03",
 "symbol": "5401.T",
 "currency": "JPY",
-"close": 657.299988,
-"eur": 3.705437
+"close": 658.599976,
+"eur": 3.712765
 },
 {
 "date": "2026-11-03",
 "symbol": "5802.T",
 "currency": "JPY",
-"close": 1663.0,
-"eur": 9.37493
+"close": 1654.5,
+"eur": 9.327012
 },
 {
 "date": "2026-11-03",
 "symbol": "5803.T",
 "currency": "JPY",
-"close": 3900.0,
-"eur": 21.985704
+"close": 3905.0,
+"eur": 22.01389
 },
 {
 "date": "2026-11-03",
 "symbol": "6098.T",
 "currency": "JPY",
-"close": 17970.0,
-"eur": 101.303357
+"close": 17945.0,
+"eur": 101.162423
 },
 {
 "date": "2026-11-03",
 "symbol": "6146.T",
 "currency": "JPY",
-"close": 50240.0,
-"eur": 283.220961
+"close": 50380.0,
+"eur": 284.010192
 },
 {
 "date": "2026-11-03",
 "symbol": "6178.T",
 "currency": "JPY",
-"close": 2348.5,
-"eur": 13.23934
+"close": 2341.5,
+"eur": 13.199878
 },
 {
 "date": "2026-11-03",
 "symbol": "6273.T",
 "currency": "JPY",
-"close": 62710.0,
-"eur": 353.518839
+"close": 62590.0,
+"eur": 352.842356
 },
 {
 "date": "2026-11-03",
 "symbol": "6301.T",
 "currency": "JPY",
-"close": 6213.0,
-"eur": 35.024917
+"close": 6196.0,
+"eur": 34.929082
 },
 {
 "date": "2026-11-03",
 "symbol": "6326.T",
 "currency": "JPY",
-"close": 2641.5,
-"eur": 14.891086
+"close": 2633.5,
+"eur": 14.845987
 },
 {
 "date": "2026-11-03",
@@ -8749,36 +8742,36 @@
 "date": "2026-11-03",
 "symbol": "6503.T",
 "currency": "JPY",
-"close": 4756.0,
-"eur": 26.811284
+"close": 4773.0,
+"eur": 26.907119
 },
 {
 "date": "2026-11-03",
 "symbol": "6701.T",
 "currency": "JPY",
-"close": 4852.0,
-"eur": 27.35247
+"close": 4840.0,
+"eur": 27.284822
 },
 {
 "date": "2026-11-03",
 "symbol": "6702.T",
 "currency": "JPY",
-"close": 3514.0,
-"eur": 19.809683
+"close": 3472.0,
+"eur": 19.572914
 },
 {
 "date": "2026-11-03",
 "symbol": "6723.T",
 "currency": "JPY",
-"close": 2860.0,
-"eur": 16.122849
+"close": 2874.5,
+"eur": 16.204591
 },
 {
 "date": "2026-11-03",
 "symbol": "6752.T",
 "currency": "JPY",
-"close": 3740.0,
-"eur": 21.083726
+"close": 3732.0,
+"eur": 21.038627
 },
 {
 "date": "2026-11-03",
@@ -8791,29 +8784,29 @@
 "date": "2026-11-03",
 "symbol": "6762.T",
 "currency": "JPY",
-"close": 2515.0,
-"eur": 14.17796
+"close": 2498.5,
+"eur": 14.084944
 },
 {
 "date": "2026-11-03",
 "symbol": "6857.T",
 "currency": "JPY",
-"close": 35770.0,
-"eur": 201.648363
+"close": 35860.0,
+"eur": 202.155726
 },
 {
 "date": "2026-11-03",
 "symbol": "6861.T",
 "currency": "JPY",
-"close": 74890.0,
-"eur": 422.181883
+"close": 75020.0,
+"eur": 422.914739
 },
 {
 "date": "2026-11-03",
 "symbol": "6902.T",
 "currency": "JPY",
-"close": 1860.5,
-"eur": 10.488308
+"close": 1851.5,
+"eur": 10.437572
 },
 {
 "date": "2026-11-03",
@@ -8826,85 +8819,85 @@
 "date": "2026-11-03",
 "symbol": "6954.T",
 "currency": "JPY",
-"close": 5648.0,
-"eur": 31.839809
+"close": 5668.0,
+"eur": 31.952556
 },
 {
 "date": "2026-11-03",
 "symbol": "6971.T",
 "currency": "JPY",
-"close": 3269.0,
-"eur": 18.42853
+"close": 3237.0,
+"eur": 18.248134
 },
 {
 "date": "2026-11-03",
 "symbol": "6981.T",
 "currency": "JPY",
-"close": 6340.0,
-"eur": 35.740862
+"close": 6332.0,
+"eur": 35.695763
 },
 {
 "date": "2026-11-03",
 "symbol": "6988.T",
 "currency": "JPY",
-"close": 3315.0,
-"eur": 18.687848
+"close": 3327.0,
+"eur": 18.755496
 },
 {
 "date": "2026-11-03",
 "symbol": "7011.T",
 "currency": "JPY",
-"close": 3363.0,
-"eur": 18.958441
+"close": 3374.0,
+"eur": 19.020452
 },
 {
 "date": "2026-11-03",
 "symbol": "7013.T",
 "currency": "JPY",
-"close": 2306.0,
-"eur": 12.999752
+"close": 2317.5,
+"eur": 13.064582
 },
 {
 "date": "2026-11-03",
 "symbol": "7182.T",
 "currency": "JPY",
-"close": 2990.0,
-"eur": 16.855706
+"close": 2991.0,
+"eur": 16.861343
 },
 {
 "date": "2026-11-03",
 "symbol": "7203.T",
 "currency": "JPY",
-"close": 3051.0,
-"eur": 17.199585
+"close": 3046.0,
+"eur": 17.171398
 },
 {
 "date": "2026-11-03",
 "symbol": "7267.T",
 "currency": "JPY",
-"close": 1799.0,
-"eur": 10.14161
+"close": 1791.0,
+"eur": 10.096512
 },
 {
 "date": "2026-11-03",
 "symbol": "7269.T",
 "currency": "JPY",
-"close": 2096.0,
-"eur": 11.815906
+"close": 2088.5,
+"eur": 11.773626
 },
 {
 "date": "2026-11-03",
 "symbol": "7453.T",
 "currency": "JPY",
-"close": 4729.0,
-"eur": 26.659075
+"close": 4754.0,
+"eur": 26.800009
 },
 {
 "date": "2026-11-03",
 "symbol": "7735.T",
 "currency": "JPY",
-"close": 9218.0,
-"eur": 51.965184
+"close": 9157.0,
+"eur": 51.621305
 },
 {
 "date": "2026-11-03",
@@ -8917,274 +8910,274 @@
 "date": "2026-11-03",
 "symbol": "7751.T",
 "currency": "JPY",
-"close": 4672.0,
-"eur": 26.337745
+"close": 4671.0,
+"eur": 26.332108
 },
 {
 "date": "2026-11-03",
 "symbol": "7832.T",
 "currency": "JPY",
-"close": 6208.0,
-"eur": 34.99673
+"close": 6191.0,
+"eur": 34.900895
 },
 {
 "date": "2026-11-03",
 "symbol": "7936.T",
 "currency": "JPY",
-"close": 4797.0,
-"eur": 27.042415
+"close": 4782.0,
+"eur": 26.957855
 },
 {
 "date": "2026-11-03",
 "symbol": "7974.T",
 "currency": "JPY",
-"close": 8149.0,
-"eur": 45.938846
+"close": 8132.0,
+"eur": 45.843011
 },
 {
 "date": "2026-11-03",
 "symbol": "8001.T",
 "currency": "JPY",
-"close": 2271.0,
-"eur": 12.802444
+"close": 2260.5,
+"eur": 12.743252
 },
 {
 "date": "2026-11-03",
 "symbol": "8002.T",
 "currency": "JPY",
-"close": 4821.0,
-"eur": 27.177712
+"close": 4815.0,
+"eur": 27.143888
 },
 {
 "date": "2026-11-03",
 "symbol": "8015.T",
 "currency": "JPY",
-"close": 6618.0,
-"eur": 37.308048
+"close": 6612.0,
+"eur": 37.274224
 },
 {
 "date": "2026-11-03",
 "symbol": "8031.T",
 "currency": "JPY",
-"close": 4917.0,
-"eur": 27.718899
+"close": 4912.0,
+"eur": 27.690712
 },
 {
 "date": "2026-11-03",
 "symbol": "8035.T",
 "currency": "JPY",
-"close": 10005.0,
-"eur": 56.401786
+"close": 10105.0,
+"eur": 56.965522
 },
 {
 "date": "2026-11-03",
 "symbol": "8053.T",
 "currency": "JPY",
-"close": 1664.5,
-"eur": 9.383386
+"close": 1654.0,
+"eur": 9.324193
 },
 {
 "date": "2026-11-03",
 "symbol": "8058.T",
 "currency": "JPY",
-"close": 4772.0,
-"eur": 26.901481
+"close": 4748.0,
+"eur": 26.766185
 },
 {
 "date": "2026-11-03",
 "symbol": "8267.T",
 "currency": "JPY",
-"close": 1204.5,
-"eur": 6.7902
+"close": 1203.5,
+"eur": 6.784563
 },
 {
 "date": "2026-11-03",
 "symbol": "8306.T",
 "currency": "JPY",
-"close": 3383.0,
-"eur": 19.071189
+"close": 3375.0,
+"eur": 19.02609
 },
 {
 "date": "2026-11-03",
 "symbol": "8308.T",
 "currency": "JPY",
-"close": 2220.0,
-"eur": 12.514939
+"close": 2226.0,
+"eur": 12.548763
 },
 {
 "date": "2026-11-03",
 "symbol": "8309.T",
 "currency": "JPY",
-"close": 1627.0,
-"eur": 9.171985
+"close": 1618.5,
+"eur": 9.124067
 },
 {
 "date": "2026-11-03",
 "symbol": "8316.T",
 "currency": "JPY",
-"close": 3155.0,
-"eur": 17.78587
+"close": 3151.0,
+"eur": 17.763321
 },
 {
 "date": "2026-11-03",
 "symbol": "8411.T",
 "currency": "JPY",
-"close": 7587.0,
-"eur": 42.77065
+"close": 7583.0,
+"eur": 42.7481
 },
 {
 "date": "2026-11-03",
 "symbol": "8591.T",
 "currency": "JPY",
-"close": 5747.0,
-"eur": 32.397907
+"close": 5753.0,
+"eur": 32.431731
 },
 {
 "date": "2026-11-03",
 "symbol": "8604.T",
 "currency": "JPY",
-"close": 1501.0,
-"eur": 8.461677
+"close": 1503.5,
+"eur": 8.475771
 },
 {
 "date": "2026-11-03",
 "symbol": "8630.T",
 "currency": "JPY",
-"close": 7083.0,
-"eur": 39.92942
+"close": 7081.0,
+"eur": 39.918145
 },
 {
 "date": "2026-11-03",
 "symbol": "8697.T",
 "currency": "JPY",
-"close": 2101.5,
-"eur": 11.846912
+"close": 2097.5,
+"eur": 11.824362
 },
 {
 "date": "2026-11-03",
 "symbol": "8725.T",
 "currency": "JPY",
-"close": 5210.0,
-"eur": 29.370645
+"close": 5216.0,
+"eur": 29.404469
 },
 {
 "date": "2026-11-03",
 "symbol": "8750.T",
 "currency": "JPY",
-"close": 1792.0,
-"eur": 10.102149
+"close": 1790.0,
+"eur": 10.090874
 },
 {
 "date": "2026-11-03",
 "symbol": "8766.T",
 "currency": "JPY",
-"close": 575.599976,
-"eur": 3.244864
+"close": 575.799988,
+"eur": 3.245992
 },
 {
 "date": "2026-11-03",
 "symbol": "8795.T",
 "currency": "JPY",
-"close": 4820.0,
-"eur": 27.172075
+"close": 4796.0,
+"eur": 27.036778
 },
 {
 "date": "2026-11-03",
 "symbol": "8801.T",
 "currency": "JPY",
-"close": 1589.0,
-"eur": 8.957765
+"close": 1598.0,
+"eur": 9.008501
 },
 {
 "date": "2026-11-03",
 "symbol": "8802.T",
 "currency": "JPY",
-"close": 3813.0,
-"eur": 21.495253
+"close": 3814.0,
+"eur": 21.500891
 },
 {
 "date": "2026-11-03",
 "symbol": "9020.T",
 "currency": "JPY",
-"close": 3694.0,
-"eur": 20.824407
+"close": 3692.0,
+"eur": 20.813133
 },
 {
 "date": "2026-11-03",
 "symbol": "9022.T",
 "currency": "JPY",
-"close": 3975.0,
-"eur": 22.408506
+"close": 3985.0,
+"eur": 22.464879
 },
 {
 "date": "2026-11-03",
 "symbol": "9101.T",
 "currency": "JPY",
-"close": 7371.0,
-"eur": 41.55298
+"close": 7365.0,
+"eur": 41.519156
 },
 {
 "date": "2026-11-03",
 "symbol": "9104.T",
 "currency": "JPY",
-"close": 7579.0,
-"eur": 42.725551
+"close": 7578.0,
+"eur": 42.719913
 },
 {
 "date": "2026-11-03",
 "symbol": "9432.T",
 "currency": "JPY",
-"close": 174.5,
-"eur": 0.983719
+"close": 174.199997,
+"eur": 0.982028
 },
 {
 "date": "2026-11-03",
 "symbol": "9433.T",
 "currency": "JPY",
-"close": 2839.5,
-"eur": 16.007283
+"close": 2827.5,
+"eur": 15.939635
 },
 {
 "date": "2026-11-03",
 "symbol": "9434.T",
 "currency": "JPY",
-"close": 234.899994,
-"eur": 1.324216
+"close": 233.800003,
+"eur": 1.318015
 },
 {
 "date": "2026-11-03",
 "symbol": "9503.T",
 "currency": "JPY",
-"close": 2654.5,
-"eur": 14.964372
+"close": 2648.5,
+"eur": 14.930548
 },
 {
 "date": "2026-11-03",
 "symbol": "9735.T",
 "currency": "JPY",
-"close": 6807.0,
-"eur": 38.373509
+"close": 6796.0,
+"eur": 38.311498
 },
 {
 "date": "2026-11-03",
 "symbol": "9766.T",
 "currency": "JPY",
-"close": 26105.0,
-"eur": 147.16328
+"close": 25975.0,
+"eur": 146.430423
 },
 {
 "date": "2026-11-03",
 "symbol": "9983.T",
 "currency": "JPY",
-"close": 75360.0,
-"eur": 424.831442
+"close": 75130.0,
+"eur": 423.534849
 },
 {
 "date": "2026-11-03",
 "symbol": "9984.T",
 "currency": "JPY",
-"close": 4410.0,
-"eur": 24.860757
+"close": 4407.0,
+"eur": 24.843845
 },
 {
 "date": "2026-11-03",
@@ -9227,6 +9220,13 @@
 "currency": "EUR",
 "close": 73.080002,
 "eur": 73.080002
+},
+{
+"date": "2026-11-03",
+"symbol": "ABN.AS",
+"currency": "EUR",
+"close": 39.82,
+"eur": 39.82
 },
 {
 "date": "2026-11-03",
@@ -9283,6 +9283,13 @@
 "currency": "USD",
 "close": 297.309998,
 "eur": 265.497827
+},
+{
+"date": "2026-11-03",
+"symbol": "ADS.DE",
+"currency": "EUR",
+"close": 168.949997,
+"eur": 168.949997
 },
 {
 "date": "2026-11-03",
@@ -9344,8 +9351,8 @@
 "date": "2026-11-03",
 "symbol": "AKRBP.OL",
 "currency": "NOK",
-"close": 364.100006,
-"eur": 35.012276
+"close": 362.899994,
+"eur": 34.896881
 },
 {
 "date": "2026-11-03",
@@ -9542,6 +9549,13 @@
 "currency": "USD",
 "close": 174.729996,
 "eur": 156.033886
+},
+{
+"date": "2026-11-03",
+"symbol": "AV.L",
+"currency": "GBp",
+"close": 730.400024,
+"eur": 8.75475
 },
 {
 "date": "2026-11-03",
@@ -9969,13 +9983,6 @@
 "currency": "USD",
 "close": 149.0,
 "eur": 133.056999
-},
-{
-"date": "2026-11-03",
-"symbol": "CRH",
-"currency": "USD",
-"close": 95.169998,
-"eur": 84.986808
 },
 {
 "date": "2026-11-03",
@@ -10933,8 +10940,8 @@
 "date": "2026-11-03",
 "symbol": "KOG.OL",
 "currency": "NOK",
-"close": 360.399994,
-"eur": 34.656478
+"close": 357.799988,
+"eur": 34.406459
 },
 {
 "date": "2026-11-03",
@@ -11362,13 +11369,6 @@
 "currency": "USD",
 "close": 11.48,
 "eur": 10.25164
-},
-{
-"date": "2026-11-03",
-"symbol": "NUE",
-"currency": "USD",
-"close": 273.345001,
-"eur": 244.097085
 },
 {
 "date": "2026-11-03",
@@ -12580,6 +12580,8392 @@
 "currency": "CHF",
 "close": 625.599976,
 "eur": 681.036316
+},
+{
+"date": "2026-11-04",
+"symbol": "0002.HK",
+"currency": "HKD",
+"close": 79.800003,
+"eur": 9.062807
+},
+{
+"date": "2026-11-04",
+"symbol": "0006.HK",
+"currency": "HKD",
+"close": 64.199997,
+"eur": 7.29113
+},
+{
+"date": "2026-11-04",
+"symbol": "000660.KS",
+"currency": "KRW",
+"close": 1386000.0,
+"eur": 920.196551
+},
+{
+"date": "2026-11-04",
+"symbol": "0016.HK",
+"currency": "HKD",
+"close": 113.599998,
+"eur": 12.901438
+},
+{
+"date": "2026-11-04",
+"symbol": "005930.KS",
+"currency": "KRW",
+"close": 216250.0,
+"eur": 143.573235
+},
+{
+"date": "2026-11-04",
+"symbol": "009150.KS",
+"currency": "KRW",
+"close": 1105000.0,
+"eur": 733.634335
+},
+{
+"date": "2026-11-04",
+"symbol": "0388.HK",
+"currency": "HKD",
+"close": 384.0,
+"eur": 43.610496
+},
+{
+"date": "2026-11-04",
+"symbol": "0700.HK",
+"currency": "HKD",
+"close": 401.600006,
+"eur": 45.609312
+},
+{
+"date": "2026-11-04",
+"symbol": "0939.HK",
+"currency": "HKD",
+"close": 10.25,
+"eur": 1.164082
+},
+{
+"date": "2026-11-04",
+"symbol": "105560.KS",
+"currency": "KRW",
+"close": 151800.0,
+"eur": 100.783432
+},
+{
+"date": "2026-11-04",
+"symbol": "1605.T",
+"currency": "JPY",
+"close": 3879.0,
+"eur": 21.812967
+},
+{
+"date": "2026-11-04",
+"symbol": "1878.T",
+"currency": "JPY",
+"close": 3413.0,
+"eur": 19.192487
+},
+{
+"date": "2026-11-04",
+"symbol": "1925.T",
+"currency": "JPY",
+"close": 2295.0,
+"eur": 12.905584
+},
+{
+"date": "2026-11-04",
+"symbol": "2308.TW",
+"currency": "TWD",
+"close": 1225.0,
+"eur": 33.174458
+},
+{
+"date": "2026-11-04",
+"symbol": "2317.TW",
+"currency": "TWD",
+"close": 240.0,
+"eur": 6.499486
+},
+{
+"date": "2026-11-04",
+"symbol": "2330.TW",
+"currency": "TWD",
+"close": 2270.0,
+"eur": 61.474302
+},
+{
+"date": "2026-11-04",
+"symbol": "2454.TW",
+"currency": "TWD",
+"close": 3700.0,
+"eur": 100.200404
+},
+{
+"date": "2026-11-04",
+"symbol": "2802.T",
+"currency": "JPY",
+"close": 4942.0,
+"eur": 27.790586
+},
+{
+"date": "2026-11-04",
+"symbol": "285A.T",
+"currency": "JPY",
+"close": 10640.0,
+"eur": 59.832424
+},
+{
+"date": "2026-11-04",
+"symbol": "2914.T",
+"currency": "JPY",
+"close": 7350.0,
+"eur": 41.331608
+},
+{
+"date": "2026-11-04",
+"symbol": "3382.T",
+"currency": "JPY",
+"close": 2159.5,
+"eur": 12.14362
+},
+{
+"date": "2026-11-04",
+"symbol": "3711.TW",
+"currency": "TWD",
+"close": 628.0,
+"eur": 17.006988
+},
+{
+"date": "2026-11-04",
+"symbol": "402340.KS",
+"currency": "KRW",
+"close": 887000.0,
+"eur": 588.899236
+},
+{
+"date": "2026-11-04",
+"symbol": "4062.T",
+"currency": "JPY",
+"close": 7989.0,
+"eur": 44.924928
+},
+{
+"date": "2026-11-04",
+"symbol": "4063.T",
+"currency": "JPY",
+"close": 5801.0,
+"eur": 32.621042
+},
+{
+"date": "2026-11-04",
+"symbol": "4307.T",
+"currency": "JPY",
+"close": 6036.0,
+"eur": 33.942529
+},
+{
+"date": "2026-11-04",
+"symbol": "4452.T",
+"currency": "JPY",
+"close": 3736.0,
+"eur": 21.008828
+},
+{
+"date": "2026-11-04",
+"symbol": "4502.T",
+"currency": "JPY",
+"close": 6552.0,
+"eur": 36.844177
+},
+{
+"date": "2026-11-04",
+"symbol": "4503.T",
+"currency": "JPY",
+"close": 2497.0,
+"eur": 14.0415
+},
+{
+"date": "2026-11-04",
+"symbol": "4519.T",
+"currency": "JPY",
+"close": 6857.0,
+"eur": 38.559298
+},
+{
+"date": "2026-11-04",
+"symbol": "4543.T",
+"currency": "JPY",
+"close": 2377.0,
+"eur": 13.366698
+},
+{
+"date": "2026-11-04",
+"symbol": "4568.T",
+"currency": "JPY",
+"close": 2892.0,
+"eur": 16.262723
+},
+{
+"date": "2026-11-04",
+"symbol": "4578.T",
+"currency": "JPY",
+"close": 11885.0,
+"eur": 66.833492
+},
+{
+"date": "2026-11-04",
+"symbol": "4661.T",
+"currency": "JPY",
+"close": 3526.0,
+"eur": 19.827925
+},
+{
+"date": "2026-11-04",
+"symbol": "4684.T",
+"currency": "JPY",
+"close": 6093.0,
+"eur": 34.26306
+},
+{
+"date": "2026-11-04",
+"symbol": "4901.T",
+"currency": "JPY",
+"close": 3430.0,
+"eur": 19.288084
+},
+{
+"date": "2026-11-04",
+"symbol": "4BRZ.DE",
+"currency": "USD",
+"close": 45.299999,
+"eur": 40.353238
+},
+{
+"date": "2026-11-04",
+"symbol": "5020.T",
+"currency": "JPY",
+"close": 1345.0,
+"eur": 7.563403
+},
+{
+"date": "2026-11-04",
+"symbol": "5108.T",
+"currency": "JPY",
+"close": 4009.0,
+"eur": 22.544002
+},
+{
+"date": "2026-11-04",
+"symbol": "5401.T",
+"currency": "JPY",
+"close": 659.599976,
+"eur": 3.70916
+},
+{
+"date": "2026-11-04",
+"symbol": "5802.T",
+"currency": "JPY",
+"close": 1542.5,
+"eur": 8.674014
+},
+{
+"date": "2026-11-04",
+"symbol": "5803.T",
+"currency": "JPY",
+"close": 3663.0,
+"eur": 20.598324
+},
+{
+"date": "2026-11-04",
+"symbol": "6098.T",
+"currency": "JPY",
+"close": 17505.0,
+"eur": 98.436708
+},
+{
+"date": "2026-11-04",
+"symbol": "6146.T",
+"currency": "JPY",
+"close": 47110.0,
+"eur": 264.915928
+},
+{
+"date": "2026-11-04",
+"symbol": "6178.T",
+"currency": "JPY",
+"close": 2383.0,
+"eur": 13.400438
+},
+{
+"date": "2026-11-04",
+"symbol": "6273.T",
+"currency": "JPY",
+"close": 61500.0,
+"eur": 345.835907
+},
+{
+"date": "2026-11-04",
+"symbol": "6301.T",
+"currency": "JPY",
+"close": 6237.0,
+"eur": 35.072822
+},
+{
+"date": "2026-11-04",
+"symbol": "6326.T",
+"currency": "JPY",
+"close": 2649.0,
+"eur": 14.896249
+},
+{
+"date": "2026-11-04",
+"symbol": "6367.T",
+"currency": "JPY",
+"close": 21010.0,
+"eur": 118.146543
+},
+{
+"date": "2026-11-04",
+"symbol": "6501.T",
+"currency": "JPY",
+"close": 4878.0,
+"eur": 27.430692
+},
+{
+"date": "2026-11-04",
+"symbol": "6503.T",
+"currency": "JPY",
+"close": 4793.0,
+"eur": 26.952707
+},
+{
+"date": "2026-11-04",
+"symbol": "6701.T",
+"currency": "JPY",
+"close": 4639.0,
+"eur": 26.086712
+},
+{
+"date": "2026-11-04",
+"symbol": "6702.T",
+"currency": "JPY",
+"close": 3405.0,
+"eur": 19.1475
+},
+{
+"date": "2026-11-04",
+"symbol": "6723.T",
+"currency": "JPY",
+"close": 2788.0,
+"eur": 15.677894
+},
+{
+"date": "2026-11-04",
+"symbol": "6752.T",
+"currency": "JPY",
+"close": 3466.0,
+"eur": 19.490524
+},
+{
+"date": "2026-11-04",
+"symbol": "6758.T",
+"currency": "JPY",
+"close": 3947.0,
+"eur": 22.195355
+},
+{
+"date": "2026-11-04",
+"symbol": "6762.T",
+"currency": "JPY",
+"close": 2439.0,
+"eur": 13.715346
+},
+{
+"date": "2026-11-04",
+"symbol": "6857.T",
+"currency": "JPY",
+"close": 34390.0,
+"eur": 193.386941
+},
+{
+"date": "2026-11-04",
+"symbol": "6861.T",
+"currency": "JPY",
+"close": 75220.0,
+"eur": 422.988243
+},
+{
+"date": "2026-11-04",
+"symbol": "6902.T",
+"currency": "JPY",
+"close": 1833.5,
+"eur": 10.310409
+},
+{
+"date": "2026-11-04",
+"symbol": "6920.T",
+"currency": "JPY",
+"close": 39080.0,
+"eur": 219.760443
+},
+{
+"date": "2026-11-04",
+"symbol": "6954.T",
+"currency": "JPY",
+"close": 5591.0,
+"eur": 31.440139
+},
+{
+"date": "2026-11-04",
+"symbol": "6971.T",
+"currency": "JPY",
+"close": 2997.5,
+"eur": 16.855986
+},
+{
+"date": "2026-11-04",
+"symbol": "6981.T",
+"currency": "JPY",
+"close": 5987.0,
+"eur": 33.666985
+},
+{
+"date": "2026-11-04",
+"symbol": "6988.T",
+"currency": "JPY",
+"close": 3413.0,
+"eur": 19.192487
+},
+{
+"date": "2026-11-04",
+"symbol": "7011.T",
+"currency": "JPY",
+"close": 3253.0,
+"eur": 18.292751
+},
+{
+"date": "2026-11-04",
+"symbol": "7013.T",
+"currency": "JPY",
+"close": 2392.5,
+"eur": 13.45386
+},
+{
+"date": "2026-11-04",
+"symbol": "7182.T",
+"currency": "JPY",
+"close": 3020.0,
+"eur": 16.982511
+},
+{
+"date": "2026-11-04",
+"symbol": "7203.T",
+"currency": "JPY",
+"close": 3023.0,
+"eur": 16.999381
+},
+{
+"date": "2026-11-04",
+"symbol": "7267.T",
+"currency": "JPY",
+"close": 1801.5,
+"eur": 10.130462
+},
+{
+"date": "2026-11-04",
+"symbol": "7269.T",
+"currency": "JPY",
+"close": 2096.5,
+"eur": 11.789349
+},
+{
+"date": "2026-11-04",
+"symbol": "7453.T",
+"currency": "JPY",
+"close": 4833.0,
+"eur": 27.177641
+},
+{
+"date": "2026-11-04",
+"symbol": "7735.T",
+"currency": "JPY",
+"close": 8940.0,
+"eur": 50.272732
+},
+{
+"date": "2026-11-04",
+"symbol": "7741.T",
+"currency": "JPY",
+"close": 24425.0,
+"eur": 137.350277
+},
+{
+"date": "2026-11-04",
+"symbol": "7751.T",
+"currency": "JPY",
+"close": 4629.0,
+"eur": 26.030478
+},
+{
+"date": "2026-11-04",
+"symbol": "7832.T",
+"currency": "JPY",
+"close": 6246.0,
+"eur": 35.123432
+},
+{
+"date": "2026-11-04",
+"symbol": "7936.T",
+"currency": "JPY",
+"close": 4852.0,
+"eur": 27.284485
+},
+{
+"date": "2026-11-04",
+"symbol": "7974.T",
+"currency": "JPY",
+"close": 8336.0,
+"eur": 46.87623
+},
+{
+"date": "2026-11-04",
+"symbol": "8001.T",
+"currency": "JPY",
+"close": 2260.5,
+"eur": 12.711578
+},
+{
+"date": "2026-11-04",
+"symbol": "8002.T",
+"currency": "JPY",
+"close": 4739.0,
+"eur": 26.649047
+},
+{
+"date": "2026-11-04",
+"symbol": "8015.T",
+"currency": "JPY",
+"close": 6416.0,
+"eur": 36.079401
+},
+{
+"date": "2026-11-04",
+"symbol": "8031.T",
+"currency": "JPY",
+"close": 4876.0,
+"eur": 27.419445
+},
+{
+"date": "2026-11-04",
+"symbol": "8035.T",
+"currency": "JPY",
+"close": 9584.0,
+"eur": 53.894168
+},
+{
+"date": "2026-11-04",
+"symbol": "8053.T",
+"currency": "JPY",
+"close": 1656.0,
+"eur": 9.312264
+},
+{
+"date": "2026-11-04",
+"symbol": "8058.T",
+"currency": "JPY",
+"close": 5097.0,
+"eur": 28.662205
+},
+{
+"date": "2026-11-04",
+"symbol": "8267.T",
+"currency": "JPY",
+"close": 1218.0,
+"eur": 6.849238
+},
+{
+"date": "2026-11-04",
+"symbol": "8306.T",
+"currency": "JPY",
+"close": 3359.0,
+"eur": 18.888826
+},
+{
+"date": "2026-11-04",
+"symbol": "8308.T",
+"currency": "JPY",
+"close": 2213.0,
+"eur": 12.444469
+},
+{
+"date": "2026-11-04",
+"symbol": "8309.T",
+"currency": "JPY",
+"close": 1617.5,
+"eur": 9.095766
+},
+{
+"date": "2026-11-04",
+"symbol": "8316.T",
+"currency": "JPY",
+"close": 3133.0,
+"eur": 17.61795
+},
+{
+"date": "2026-11-04",
+"symbol": "8411.T",
+"currency": "JPY",
+"close": 7497.0,
+"eur": 42.158241
+},
+{
+"date": "2026-11-04",
+"symbol": "8591.T",
+"currency": "JPY",
+"close": 5706.0,
+"eur": 32.086824
+},
+{
+"date": "2026-11-04",
+"symbol": "8604.T",
+"currency": "JPY",
+"close": 1492.5,
+"eur": 8.392847
+},
+{
+"date": "2026-11-04",
+"symbol": "8630.T",
+"currency": "JPY",
+"close": 7113.0,
+"eur": 39.998875
+},
+{
+"date": "2026-11-04",
+"symbol": "8697.T",
+"currency": "JPY",
+"close": 2093.0,
+"eur": 11.769668
+},
+{
+"date": "2026-11-04",
+"symbol": "8725.T",
+"currency": "JPY",
+"close": 5195.0,
+"eur": 29.213293
+},
+{
+"date": "2026-11-04",
+"symbol": "8750.T",
+"currency": "JPY",
+"close": 1788.5,
+"eur": 10.057358
+},
+{
+"date": "2026-11-04",
+"symbol": "8766.T",
+"currency": "JPY",
+"close": 576.099976,
+"eur": 3.239611
+},
+{
+"date": "2026-11-04",
+"symbol": "8795.T",
+"currency": "JPY",
+"close": 4856.0,
+"eur": 27.306978
+},
+{
+"date": "2026-11-04",
+"symbol": "8801.T",
+"currency": "JPY",
+"close": 1633.5,
+"eur": 9.185739
+},
+{
+"date": "2026-11-04",
+"symbol": "8802.T",
+"currency": "JPY",
+"close": 3897.0,
+"eur": 21.914187
+},
+{
+"date": "2026-11-04",
+"symbol": "9020.T",
+"currency": "JPY",
+"close": 3744.0,
+"eur": 21.053815
+},
+{
+"date": "2026-11-04",
+"symbol": "9022.T",
+"currency": "JPY",
+"close": 4095.0,
+"eur": 23.02761
+},
+{
+"date": "2026-11-04",
+"symbol": "9101.T",
+"currency": "JPY",
+"close": 7414.0,
+"eur": 41.691503
+},
+{
+"date": "2026-11-04",
+"symbol": "9104.T",
+"currency": "JPY",
+"close": 7594.0,
+"eur": 42.703705
+},
+{
+"date": "2026-11-04",
+"symbol": "9432.T",
+"currency": "JPY",
+"close": 164.300003,
+"eur": 0.923916
+},
+{
+"date": "2026-11-04",
+"symbol": "9433.T",
+"currency": "JPY",
+"close": 2822.0,
+"eur": 15.869088
+},
+{
+"date": "2026-11-04",
+"symbol": "9434.T",
+"currency": "JPY",
+"close": 232.199997,
+"eur": 1.305741
+},
+{
+"date": "2026-11-04",
+"symbol": "9503.T",
+"currency": "JPY",
+"close": 2675.0,
+"eur": 15.042456
+},
+{
+"date": "2026-11-04",
+"symbol": "9735.T",
+"currency": "JPY",
+"close": 6782.0,
+"eur": 38.137547
+},
+{
+"date": "2026-11-04",
+"symbol": "9766.T",
+"currency": "JPY",
+"close": 26055.0,
+"eur": 146.516334
+},
+{
+"date": "2026-11-04",
+"symbol": "9983.T",
+"currency": "JPY",
+"close": 77360.0,
+"eur": 435.022208
+},
+{
+"date": "2026-11-04",
+"symbol": "9984.T",
+"currency": "JPY",
+"close": 4247.0,
+"eur": 23.882359
+},
+{
+"date": "2026-11-04",
+"symbol": "9988.HK",
+"currency": "HKD",
+"close": 100.599998,
+"eur": 11.425041
+},
+{
+"date": "2026-11-04",
+"symbol": "AAL.L",
+"currency": "GBp",
+"close": 3783.0,
+"eur": 45.387466
+},
+{
+"date": "2026-11-04",
+"symbol": "AAPL",
+"currency": "USD",
+"close": 351.255005,
+"eur": 312.897945
+},
+{
+"date": "2026-11-04",
+"symbol": "ABBN.SW",
+"currency": "CHF",
+"close": 70.860001,
+"eur": 77.261923
+},
+{
+"date": "2026-11-04",
+"symbol": "ABBV",
+"currency": "USD",
+"close": 289.154999,
+"eur": 257.579262
+},
+{
+"date": "2026-11-04",
+"symbol": "ABI.BR",
+"currency": "EUR",
+"close": 75.300003,
+"eur": 75.300003
+},
+{
+"date": "2026-11-04",
+"symbol": "ABN.AS",
+"currency": "EUR",
+"close": 41.610001,
+"eur": 41.610001
+},
+{
+"date": "2026-11-04",
+"symbol": "ABNB",
+"currency": "USD",
+"close": 176.910004,
+"eur": 157.591424
+},
+{
+"date": "2026-11-04",
+"symbol": "ABT",
+"currency": "USD",
+"close": 114.714996,
+"eur": 102.188114
+},
+{
+"date": "2026-11-04",
+"symbol": "ACGL",
+"currency": "USD",
+"close": 109.720001,
+"eur": 97.738573
+},
+{
+"date": "2026-11-04",
+"symbol": "ACN",
+"currency": "USD",
+"close": 265.609985,
+"eur": 236.605365
+},
+{
+"date": "2026-11-04",
+"symbol": "ADBE",
+"currency": "USD",
+"close": 252.081696,
+"eur": 224.554364
+},
+{
+"date": "2026-11-04",
+"symbol": "ADI",
+"currency": "USD",
+"close": 400.540009,
+"eur": 356.801024
+},
+{
+"date": "2026-11-04",
+"symbol": "ADM.L",
+"currency": "GBp",
+"close": 3954.0,
+"eur": 47.439081
+},
+{
+"date": "2026-11-04",
+"symbol": "ADP",
+"currency": "USD",
+"close": 303.269989,
+"eur": 270.152894
+},
+{
+"date": "2026-11-04",
+"symbol": "ADS.DE",
+"currency": "EUR",
+"close": 175.300003,
+"eur": 175.300003
+},
+{
+"date": "2026-11-04",
+"symbol": "ADSK",
+"currency": "USD",
+"close": 271.325012,
+"eur": 241.69631
+},
+{
+"date": "2026-11-04",
+"symbol": "ADYEN.AS",
+"currency": "EUR",
+"close": 856.700012,
+"eur": 856.700012
+},
+{
+"date": "2026-11-04",
+"symbol": "AEP",
+"currency": "USD",
+"close": 127.014999,
+"eur": 113.144956
+},
+{
+"date": "2026-11-04",
+"symbol": "AFL",
+"currency": "USD",
+"close": 124.940002,
+"eur": 111.296549
+},
+{
+"date": "2026-11-04",
+"symbol": "AI.PA",
+"currency": "EUR",
+"close": 188.259995,
+"eur": 188.259995
+},
+{
+"date": "2026-11-04",
+"symbol": "AIG",
+"currency": "USD",
+"close": 79.82,
+"eur": 71.103653
+},
+{
+"date": "2026-11-04",
+"symbol": "AIR.PA",
+"currency": "EUR",
+"close": 200.300003,
+"eur": 200.300003
+},
+{
+"date": "2026-11-04",
+"symbol": "AJG",
+"currency": "USD",
+"close": 288.095001,
+"eur": 256.635016
+},
+{
+"date": "2026-11-04",
+"symbol": "AKRBP.OL",
+"currency": "NOK",
+"close": 352.200012,
+"eur": 33.816903
+},
+{
+"date": "2026-11-04",
+"symbol": "ALAB",
+"currency": "USD",
+"close": 215.740005,
+"eur": 192.181188
+},
+{
+"date": "2026-11-04",
+"symbol": "ALC.SW",
+"currency": "CHF",
+"close": 63.18,
+"eur": 68.888065
+},
+{
+"date": "2026-11-04",
+"symbol": "ALL",
+"currency": "USD",
+"close": 267.565002,
+"eur": 238.346894
+},
+{
+"date": "2026-11-04",
+"symbol": "ALL.AX",
+"currency": "AUD",
+"close": 64.93,
+"eur": 40.525527
+},
+{
+"date": "2026-11-04",
+"symbol": "ALV.DE",
+"currency": "EUR",
+"close": 459.600006,
+"eur": 459.600006
+},
+{
+"date": "2026-11-04",
+"symbol": "AMAT",
+"currency": "USD",
+"close": 367.459991,
+"eur": 327.333346
+},
+{
+"date": "2026-11-04",
+"symbol": "AMD",
+"currency": "USD",
+"close": 483.149994,
+"eur": 430.389996
+},
+{
+"date": "2026-11-04",
+"symbol": "AME",
+"currency": "USD",
+"close": 233.195007,
+"eur": 207.730103
+},
+{
+"date": "2026-11-04",
+"symbol": "AMGN",
+"currency": "USD",
+"close": 472.769989,
+"eur": 421.143488
+},
+{
+"date": "2026-11-04",
+"symbol": "AMP",
+"currency": "USD",
+"close": 522.340027,
+"eur": 465.300475
+},
+{
+"date": "2026-11-04",
+"symbol": "AMT",
+"currency": "USD",
+"close": 195.134995,
+"eur": 173.826245
+},
+{
+"date": "2026-11-04",
+"symbol": "AMXB.MX",
+"currency": "MXN",
+"close": 23.559999,
+"eur": 1.125991
+},
+{
+"date": "2026-11-04",
+"symbol": "AMZN",
+"currency": "USD",
+"close": 265.345001,
+"eur": 236.369317
+},
+{
+"date": "2026-11-04",
+"symbol": "ANET",
+"currency": "USD",
+"close": 178.389999,
+"eur": 158.909804
+},
+{
+"date": "2026-11-04",
+"symbol": "AON",
+"currency": "USD",
+"close": 344.410004,
+"eur": 306.800418
+},
+{
+"date": "2026-11-04",
+"symbol": "APD",
+"currency": "USD",
+"close": 317.420013,
+"eur": 282.757735
+},
+{
+"date": "2026-11-04",
+"symbol": "APH",
+"currency": "USD",
+"close": 77.915001,
+"eur": 69.40668
+},
+{
+"date": "2026-11-04",
+"symbol": "APO",
+"currency": "USD",
+"close": 119.900002,
+"eur": 106.806917
+},
+{
+"date": "2026-11-04",
+"symbol": "APP",
+"currency": "USD",
+"close": 270.429993,
+"eur": 240.899027
+},
+{
+"date": "2026-11-04",
+"symbol": "ARGX.BR",
+"currency": "EUR",
+"close": 813.200012,
+"eur": 813.200012
+},
+{
+"date": "2026-11-04",
+"symbol": "ARM",
+"currency": "USD",
+"close": 193.020004,
+"eur": 171.942212
+},
+{
+"date": "2026-11-04",
+"symbol": "ASM.AS",
+"currency": "EUR",
+"close": 683.0,
+"eur": 683.0
+},
+{
+"date": "2026-11-04",
+"symbol": "ASML",
+"currency": "USD",
+"close": 1493.540039,
+"eur": 1330.445408
+},
+{
+"date": "2026-11-04",
+"symbol": "ASML.AS",
+"currency": "EUR",
+"close": 1331.199951,
+"eur": 1331.199951
+},
+{
+"date": "2026-11-04",
+"symbol": "ASSA-B.ST",
+"currency": "SEK",
+"close": 398.700012,
+"eur": 36.375216
+},
+{
+"date": "2026-11-04",
+"symbol": "ATCO-A.ST",
+"currency": "SEK",
+"close": 185.899994,
+"eur": 16.960502
+},
+{
+"date": "2026-11-04",
+"symbol": "ATCO-B.ST",
+"currency": "SEK",
+"close": 160.75,
+"eur": 14.665954
+},
+{
+"date": "2026-11-04",
+"symbol": "ATO",
+"currency": "USD",
+"close": 174.869995,
+"eur": 155.774185
+},
+{
+"date": "2026-11-04",
+"symbol": "AV.L",
+"currency": "GBp",
+"close": 747.599976,
+"eur": 8.969513
+},
+{
+"date": "2026-11-04",
+"symbol": "AVGO",
+"currency": "USD",
+"close": 325.784912,
+"eur": 290.209187
+},
+{
+"date": "2026-11-04",
+"symbol": "AXON",
+"currency": "USD",
+"close": 419.105011,
+"eur": 373.338727
+},
+{
+"date": "2026-11-04",
+"symbol": "AXP",
+"currency": "USD",
+"close": 331.350006,
+"eur": 295.166572
+},
+{
+"date": "2026-11-04",
+"symbol": "AZN.L",
+"currency": "GBp",
+"close": 14032.0,
+"eur": 168.352347
+},
+{
+"date": "2026-11-04",
+"symbol": "BA",
+"currency": "USD",
+"close": 176.5,
+"eur": 157.226193
+},
+{
+"date": "2026-11-04",
+"symbol": "BA.L",
+"currency": "GBp",
+"close": 2006.0,
+"eur": 24.067475
+},
+{
+"date": "2026-11-04",
+"symbol": "BAC",
+"currency": "USD",
+"close": 51.279999,
+"eur": 45.680221
+},
+{
+"date": "2026-11-04",
+"symbol": "BAP",
+"currency": "USD",
+"close": 354.475006,
+"eur": 315.766321
+},
+{
+"date": "2026-11-04",
+"symbol": "BARC.L",
+"currency": "GBp",
+"close": 435.950012,
+"eur": 5.230417
+},
+{
+"date": "2026-11-04",
+"symbol": "BAS.DE",
+"currency": "EUR",
+"close": 54.57,
+"eur": 54.57
+},
+{
+"date": "2026-11-04",
+"symbol": "BATS.L",
+"currency": "GBp",
+"close": 4647.0,
+"eur": 55.753517
+},
+{
+"date": "2026-11-04",
+"symbol": "BAYN.DE",
+"currency": "EUR",
+"close": 53.939999,
+"eur": 53.939999
+},
+{
+"date": "2026-11-04",
+"symbol": "BBVA.MC",
+"currency": "EUR",
+"close": 22.469999,
+"eur": 22.469999
+},
+{
+"date": "2026-11-04",
+"symbol": "BBY",
+"currency": "USD",
+"close": 99.809998,
+"eur": 88.910742
+},
+{
+"date": "2026-11-04",
+"symbol": "BE",
+"currency": "USD",
+"close": 193.494995,
+"eur": 172.365334
+},
+{
+"date": "2026-11-04",
+"symbol": "BESI.AS",
+"currency": "EUR",
+"close": 151.350006,
+"eur": 151.350006
+},
+{
+"date": "2026-11-04",
+"symbol": "BHP.AX",
+"currency": "AUD",
+"close": 55.560001,
+"eur": 34.677319
+},
+{
+"date": "2026-11-04",
+"symbol": "BKNG",
+"currency": "USD",
+"close": 170.759995,
+"eur": 152.112996
+},
+{
+"date": "2026-11-04",
+"symbol": "BKR",
+"currency": "USD",
+"close": 49.775002,
+"eur": 44.339569
+},
+{
+"date": "2026-11-04",
+"symbol": "BLK",
+"currency": "USD",
+"close": 1218.040039,
+"eur": 1085.030019
+},
+{
+"date": "2026-11-04",
+"symbol": "BMY",
+"currency": "USD",
+"close": 62.959999,
+"eur": 56.084765
+},
+{
+"date": "2026-11-04",
+"symbol": "BN.PA",
+"currency": "EUR",
+"close": 67.760002,
+"eur": 67.760002
+},
+{
+"date": "2026-11-04",
+"symbol": "BNP.PA",
+"currency": "EUR",
+"close": 91.919998,
+"eur": 91.919998
+},
+{
+"date": "2026-11-04",
+"symbol": "BNY",
+"currency": "USD",
+"close": 149.669998,
+"eur": 133.326028
+},
+{
+"date": "2026-11-04",
+"symbol": "BP.L",
+"currency": "GBp",
+"close": 573.299988,
+"eur": 6.878307
+},
+{
+"date": "2026-11-04",
+"symbol": "BR",
+"currency": "USD",
+"close": 192.710007,
+"eur": 171.666066
+},
+{
+"date": "2026-11-04",
+"symbol": "BRK-B",
+"currency": "USD",
+"close": 572.669983,
+"eur": 510.134398
+},
+{
+"date": "2026-11-04",
+"symbol": "BRO",
+"currency": "USD",
+"close": 73.714996,
+"eur": 65.665316
+},
+{
+"date": "2026-11-04",
+"symbol": "BX",
+"currency": "USD",
+"close": 124.855003,
+"eur": 111.220832
+},
+{
+"date": "2026-11-04",
+"symbol": "C",
+"currency": "USD",
+"close": 124.555466,
+"eur": 110.954004
+},
+{
+"date": "2026-11-04",
+"symbol": "CABK.MC",
+"currency": "EUR",
+"close": 11.915,
+"eur": 11.915
+},
+{
+"date": "2026-11-04",
+"symbol": "CAP.PA",
+"currency": "EUR",
+"close": 130.0,
+"eur": 130.0
+},
+{
+"date": "2026-11-04",
+"symbol": "CARR",
+"currency": "USD",
+"close": 56.34,
+"eur": 50.18767
+},
+{
+"date": "2026-11-04",
+"symbol": "CAT",
+"currency": "USD",
+"close": 583.75,
+"eur": 520.004477
+},
+{
+"date": "2026-11-04",
+"symbol": "CB",
+"currency": "USD",
+"close": 372.790009,
+"eur": 332.081325
+},
+{
+"date": "2026-11-04",
+"symbol": "CBA.AX",
+"currency": "AUD",
+"close": 166.259995,
+"eur": 103.769811
+},
+{
+"date": "2026-11-04",
+"symbol": "CBOE",
+"currency": "USD",
+"close": 342.459991,
+"eur": 305.063347
+},
+{
+"date": "2026-11-04",
+"symbol": "CBRE",
+"currency": "USD",
+"close": 141.080002,
+"eur": 125.67406
+},
+{
+"date": "2026-11-04",
+"symbol": "CDNS",
+"currency": "USD",
+"close": 322.424988,
+"eur": 287.216166
+},
+{
+"date": "2026-11-04",
+"symbol": "CDW",
+"currency": "USD",
+"close": 164.759995,
+"eur": 146.768197
+},
+{
+"date": "2026-11-04",
+"symbol": "CEG",
+"currency": "USD",
+"close": 240.289993,
+"eur": 214.050317
+},
+{
+"date": "2026-11-04",
+"symbol": "CEMEXCPO.MX",
+"currency": "MXN",
+"close": 20.4,
+"eur": 0.974967
+},
+{
+"date": "2026-11-04",
+"symbol": "CFR.SW",
+"currency": "CHF",
+"close": 173.399994,
+"eur": 189.066001
+},
+{
+"date": "2026-11-04",
+"symbol": "CI",
+"currency": "USD",
+"close": 303.625,
+"eur": 270.469138
+},
+{
+"date": "2026-11-04",
+"symbol": "CIEN",
+"currency": "USD",
+"close": 275.105011,
+"eur": 245.063533
+},
+{
+"date": "2026-11-04",
+"symbol": "CL",
+"currency": "USD",
+"close": 99.25,
+"eur": 88.411896
+},
+{
+"date": "2026-11-04",
+"symbol": "CLS.TO",
+"currency": "CAD",
+"close": 326.119995,
+"eur": 208.143985
+},
+{
+"date": "2026-11-04",
+"symbol": "CMCSA",
+"currency": "USD",
+"close": 24.805,
+"eur": 22.096293
+},
+{
+"date": "2026-11-04",
+"symbol": "CME",
+"currency": "USD",
+"close": 305.244995,
+"eur": 271.91223
+},
+{
+"date": "2026-11-04",
+"symbol": "CMG",
+"currency": "USD",
+"close": 34.525002,
+"eur": 30.75487
+},
+{
+"date": "2026-11-04",
+"symbol": "CMI",
+"currency": "USD",
+"close": 474.928986,
+"eur": 423.066722
+},
+{
+"date": "2026-11-04",
+"symbol": "CNQ.TO",
+"currency": "CAD",
+"close": 71.059998,
+"eur": 45.353585
+},
+{
+"date": "2026-11-04",
+"symbol": "CNYA.L",
+"currency": "USD",
+"close": 5.3,
+"eur": 4.72124
+},
+{
+"date": "2026-11-04",
+"symbol": "COF",
+"currency": "USD",
+"close": 203.884995,
+"eur": 181.620745
+},
+{
+"date": "2026-11-04",
+"symbol": "COHR",
+"currency": "USD",
+"close": 189.440002,
+"eur": 168.753147
+},
+{
+"date": "2026-11-04",
+"symbol": "COP",
+"currency": "USD",
+"close": 137.559998,
+"eur": 122.53844
+},
+{
+"date": "2026-11-04",
+"symbol": "COR",
+"currency": "USD",
+"close": 350.214996,
+"eur": 311.971505
+},
+{
+"date": "2026-11-04",
+"symbol": "COST",
+"currency": "USD",
+"close": 1051.089966,
+"eur": 936.3109
+},
+{
+"date": "2026-11-04",
+"symbol": "CPG.L",
+"currency": "USD",
+"close": 34.23,
+"eur": 30.492082
+},
+{
+"date": "2026-11-04",
+"symbol": "CPRT",
+"currency": "USD",
+"close": 32.494999,
+"eur": 28.946544
+},
+{
+"date": "2026-11-04",
+"symbol": "CRDO",
+"currency": "USD",
+"close": 134.154999,
+"eur": 119.505268
+},
+{
+"date": "2026-11-04",
+"symbol": "CRM",
+"currency": "USD",
+"close": 227.3125,
+"eur": 202.489966
+},
+{
+"date": "2026-11-04",
+"symbol": "CRWD",
+"currency": "USD",
+"close": 240.039993,
+"eur": 213.827617
+},
+{
+"date": "2026-11-04",
+"symbol": "CS.PA",
+"currency": "EUR",
+"close": 45.18,
+"eur": 45.18
+},
+{
+"date": "2026-11-04",
+"symbol": "CSCO",
+"currency": "USD",
+"close": 102.1399,
+"eur": 90.986219
+},
+{
+"date": "2026-11-04",
+"symbol": "CSU.TO",
+"currency": "CAD",
+"close": 3451.699951,
+"eur": 2203.025246
+},
+{
+"date": "2026-11-04",
+"symbol": "CSX",
+"currency": "USD",
+"close": 51.294998,
+"eur": 45.693582
+},
+{
+"date": "2026-11-04",
+"symbol": "CTAS",
+"currency": "USD",
+"close": 229.380005,
+"eur": 204.331699
+},
+{
+"date": "2026-11-04",
+"symbol": "CTSH",
+"currency": "USD",
+"close": 66.044998,
+"eur": 58.832882
+},
+{
+"date": "2026-11-04",
+"symbol": "CVS",
+"currency": "USD",
+"close": 80.589996,
+"eur": 71.789566
+},
+{
+"date": "2026-11-04",
+"symbol": "CVX",
+"currency": "USD",
+"close": 217.451004,
+"eur": 193.705346
+},
+{
+"date": "2026-11-04",
+"symbol": "DANSKE.CO",
+"currency": "DKK",
+"close": 355.399994,
+"eur": 47.550874
+},
+{
+"date": "2026-11-04",
+"symbol": "DASH",
+"currency": "USD",
+"close": 196.294998,
+"eur": 174.859577
+},
+{
+"date": "2026-11-04",
+"symbol": "DB1.DE",
+"currency": "EUR",
+"close": 318.100006,
+"eur": 318.100006
+},
+{
+"date": "2026-11-04",
+"symbol": "DBK.DE",
+"currency": "EUR",
+"close": 32.419998,
+"eur": 32.419998
+},
+{
+"date": "2026-11-04",
+"symbol": "DDOG",
+"currency": "USD",
+"close": 190.460007,
+"eur": 169.661766
+},
+{
+"date": "2026-11-04",
+"symbol": "DE",
+"currency": "USD",
+"close": 666.570007,
+"eur": 593.780536
+},
+{
+"date": "2026-11-04",
+"symbol": "DECK",
+"currency": "USD",
+"close": 89.400002,
+"eur": 79.637518
+},
+{
+"date": "2026-11-04",
+"symbol": "DELL",
+"currency": "USD",
+"close": 368.309998,
+"eur": 328.090531
+},
+{
+"date": "2026-11-04",
+"symbol": "DG.PA",
+"currency": "EUR",
+"close": 112.150002,
+"eur": 112.150002
+},
+{
+"date": "2026-11-04",
+"symbol": "DGE.L",
+"currency": "GBp",
+"close": 1811.0,
+"eur": 21.727915
+},
+{
+"date": "2026-11-04",
+"symbol": "DHL.DE",
+"currency": "EUR",
+"close": 60.700001,
+"eur": 60.700001
+},
+{
+"date": "2026-11-04",
+"symbol": "DHR",
+"currency": "USD",
+"close": 232.035004,
+"eur": 206.696772
+},
+{
+"date": "2026-11-04",
+"symbol": "DIS",
+"currency": "USD",
+"close": 119.550003,
+"eur": 106.495138
+},
+{
+"date": "2026-11-04",
+"symbol": "DLR",
+"currency": "USD",
+"close": 180.289993,
+"eur": 160.602319
+},
+{
+"date": "2026-11-04",
+"symbol": "DRI",
+"currency": "USD",
+"close": 226.889999,
+"eur": 202.113603
+},
+{
+"date": "2026-11-04",
+"symbol": "DSV.CO",
+"currency": "DKK",
+"close": 1461.5,
+"eur": 195.541935
+},
+{
+"date": "2026-11-04",
+"symbol": "DSY.PA",
+"currency": "EUR",
+"close": 25.889999,
+"eur": 25.889999
+},
+{
+"date": "2026-11-04",
+"symbol": "DTE.DE",
+"currency": "EUR",
+"close": 26.809999,
+"eur": 26.809999
+},
+{
+"date": "2026-11-04",
+"symbol": "DUK",
+"currency": "USD",
+"close": 129.979996,
+"eur": 115.786175
+},
+{
+"date": "2026-11-04",
+"symbol": "DVN",
+"currency": "USD",
+"close": 45.150002,
+"eur": 40.21962
+},
+{
+"date": "2026-11-04",
+"symbol": "DXCM",
+"currency": "USD",
+"close": 87.760002,
+"eur": 78.176606
+},
+{
+"date": "2026-11-04",
+"symbol": "EBS.VI",
+"currency": "EUR",
+"close": 111.099998,
+"eur": 111.099998
+},
+{
+"date": "2026-11-04",
+"symbol": "ECL",
+"currency": "USD",
+"close": 311.174988,
+"eur": 277.194667
+},
+{
+"date": "2026-11-04",
+"symbol": "ED",
+"currency": "USD",
+"close": 120.599998,
+"eur": 107.430474
+},
+{
+"date": "2026-11-04",
+"symbol": "EL.PA",
+"currency": "EUR",
+"close": 189.550003,
+"eur": 189.550003
+},
+{
+"date": "2026-11-04",
+"symbol": "ELE.MC",
+"currency": "EUR",
+"close": 44.84,
+"eur": 44.84
+},
+{
+"date": "2026-11-04",
+"symbol": "ELV",
+"currency": "USD",
+"close": 428.220001,
+"eur": 381.45836
+},
+{
+"date": "2026-11-04",
+"symbol": "EME",
+"currency": "USD",
+"close": 631.0,
+"eur": 562.094775
+},
+{
+"date": "2026-11-04",
+"symbol": "EMR",
+"currency": "USD",
+"close": 168.440002,
+"eur": 150.046348
+},
+{
+"date": "2026-11-04",
+"symbol": "ENEL.MI",
+"currency": "EUR",
+"close": 9.683,
+"eur": 9.683
+},
+{
+"date": "2026-11-04",
+"symbol": "ENI.MI",
+"currency": "EUR",
+"close": 25.549999,
+"eur": 25.549999
+},
+{
+"date": "2026-11-04",
+"symbol": "ENR.DE",
+"currency": "EUR",
+"close": 120.120003,
+"eur": 120.120003
+},
+{
+"date": "2026-11-04",
+"symbol": "ENX.PA",
+"currency": "EUR",
+"close": 170.699997,
+"eur": 170.699997
+},
+{
+"date": "2026-11-04",
+"symbol": "EOAN.DE",
+"currency": "EUR",
+"close": 18.834999,
+"eur": 18.834999
+},
+{
+"date": "2026-11-04",
+"symbol": "EOG",
+"currency": "USD",
+"close": 149.389999,
+"eur": 133.076606
+},
+{
+"date": "2026-11-04",
+"symbol": "EQIX",
+"currency": "USD",
+"close": 1021.080017,
+"eur": 909.578039
+},
+{
+"date": "2026-11-04",
+"symbol": "ERIC-B.ST",
+"currency": "SEK",
+"close": 107.349998,
+"eur": 9.794029
+},
+{
+"date": "2026-11-04",
+"symbol": "ETN",
+"currency": "USD",
+"close": 353.042786,
+"eur": 314.4905
+},
+{
+"date": "2026-11-04",
+"symbol": "EVO",
+"currency": "USD",
+"close": 1.5601,
+"eur": 1.389737
+},
+{
+"date": "2026-11-04",
+"symbol": "EXC",
+"currency": "USD",
+"close": 46.2803,
+"eur": 41.22649
+},
+{
+"date": "2026-11-04",
+"symbol": "EXPD",
+"currency": "USD",
+"close": 202.330002,
+"eur": 180.235558
+},
+{
+"date": "2026-11-04",
+"symbol": "EXPN.L",
+"currency": "GBp",
+"close": 3110.0,
+"eur": 37.312985
+},
+{
+"date": "2026-11-04",
+"symbol": "FANG",
+"currency": "USD",
+"close": 185.815002,
+"eur": 165.523997
+},
+{
+"date": "2026-11-04",
+"symbol": "FAST",
+"currency": "USD",
+"close": 53.064999,
+"eur": 47.270299
+},
+{
+"date": "2026-11-04",
+"symbol": "FBK.MI",
+"currency": "EUR",
+"close": 22.290001,
+"eur": 22.290001
+},
+{
+"date": "2026-11-04",
+"symbol": "FCX",
+"currency": "USD",
+"close": 61.205002,
+"eur": 54.521413
+},
+{
+"date": "2026-11-04",
+"symbol": "FDX",
+"currency": "USD",
+"close": 323.359985,
+"eur": 288.049062
+},
+{
+"date": "2026-11-04",
+"symbol": "FEMSAUBD.MX",
+"currency": "MXN",
+"close": 242.539993,
+"eur": 11.59159
+},
+{
+"date": "2026-11-04",
+"symbol": "FERG",
+"currency": "USD",
+"close": 241.520004,
+"eur": 215.14601
+},
+{
+"date": "2026-11-04",
+"symbol": "FFIV",
+"currency": "USD",
+"close": 325.915009,
+"eur": 290.325077
+},
+{
+"date": "2026-11-04",
+"symbol": "FITB",
+"currency": "USD",
+"close": 54.325001,
+"eur": 48.392709
+},
+{
+"date": "2026-11-04",
+"symbol": "FIX",
+"currency": "USD",
+"close": 1062.400024,
+"eur": 946.3859
+},
+{
+"date": "2026-11-04",
+"symbol": "FLEX",
+"currency": "USD",
+"close": 76.360001,
+"eur": 68.021486
+},
+{
+"date": "2026-11-04",
+"symbol": "FNV.TO",
+"currency": "CAD",
+"close": 333.76001,
+"eur": 213.020175
+},
+{
+"date": "2026-11-04",
+"symbol": "FTNT",
+"currency": "USD",
+"close": 127.779999,
+"eur": 113.826418
+},
+{
+"date": "2026-11-04",
+"symbol": "G.MI",
+"currency": "EUR",
+"close": 44.200001,
+"eur": 44.200001
+},
+{
+"date": "2026-11-04",
+"symbol": "GALD.SW",
+"currency": "CHF",
+"close": 195.25,
+"eur": 212.89007
+},
+{
+"date": "2026-11-04",
+"symbol": "GD",
+"currency": "USD",
+"close": 363.954987,
+"eur": 324.211088
+},
+{
+"date": "2026-11-04",
+"symbol": "GE",
+"currency": "USD",
+"close": 326.049988,
+"eur": 290.445316
+},
+{
+"date": "2026-11-04",
+"symbol": "GEBN.SW",
+"currency": "CHF",
+"close": 586.400024,
+"eur": 639.378961
+},
+{
+"date": "2026-11-04",
+"symbol": "GEHC",
+"currency": "USD",
+"close": 86.480003,
+"eur": 77.036384
+},
+{
+"date": "2026-11-04",
+"symbol": "GEV",
+"currency": "USD",
+"close": 810.534973,
+"eur": 722.024522
+},
+{
+"date": "2026-11-04",
+"symbol": "GFNORTEO.MX",
+"currency": "MXN",
+"close": 210.919998,
+"eur": 10.080392
+},
+{
+"date": "2026-11-04",
+"symbol": "GILD",
+"currency": "USD",
+"close": 173.065002,
+"eur": 154.166297
+},
+{
+"date": "2026-11-04",
+"symbol": "GIVN.SW",
+"currency": "CHF",
+"close": 4063.0,
+"eur": 4430.076072
+},
+{
+"date": "2026-11-04",
+"symbol": "GLE.PA",
+"currency": "EUR",
+"close": 64.160004,
+"eur": 64.160004
+},
+{
+"date": "2026-11-04",
+"symbol": "GLEN.L",
+"currency": "GBp",
+"close": 502.200012,
+"eur": 6.025267
+},
+{
+"date": "2026-11-04",
+"symbol": "GLW",
+"currency": "USD",
+"close": 115.769997,
+"eur": 103.127908
+},
+{
+"date": "2026-11-04",
+"symbol": "GM",
+"currency": "USD",
+"close": 93.184998,
+"eur": 83.009192
+},
+{
+"date": "2026-11-04",
+"symbol": "GMAB.CO",
+"currency": "DKK",
+"close": 3578.0,
+"eur": 478.719839
+},
+{
+"date": "2026-11-04",
+"symbol": "GMEXICOB.MX",
+"currency": "MXN",
+"close": 226.740005,
+"eur": 10.836469
+},
+{
+"date": "2026-11-04",
+"symbol": "GOOGL",
+"currency": "USD",
+"close": 289.630005,
+"eur": 258.002397
+},
+{
+"date": "2026-11-04",
+"symbol": "GRMN",
+"currency": "USD",
+"close": 286.48999,
+"eur": 255.205272
+},
+{
+"date": "2026-11-04",
+"symbol": "GS",
+"currency": "USD",
+"close": 917.51001,
+"eur": 817.317881
+},
+{
+"date": "2026-11-04",
+"symbol": "GSK.L",
+"currency": "GBp",
+"close": 1892.0,
+"eur": 22.699732
+},
+{
+"date": "2026-11-04",
+"symbol": "GWW",
+"currency": "USD",
+"close": 1508.442505,
+"eur": 1343.720524
+},
+{
+"date": "2026-11-04",
+"symbol": "HAL",
+"currency": "USD",
+"close": 32.375,
+"eur": 28.839649
+},
+{
+"date": "2026-11-04",
+"symbol": "HCA",
+"currency": "USD",
+"close": 504.079987,
+"eur": 449.034432
+},
+{
+"date": "2026-11-04",
+"symbol": "HD",
+"currency": "USD",
+"close": 349.899994,
+"eur": 311.690901
+},
+{
+"date": "2026-11-04",
+"symbol": "HDFCBANK.NS",
+"currency": "INR",
+"close": 736.700012,
+"eur": 6.935442
+},
+{
+"date": "2026-11-04",
+"symbol": "HEXA-B.ST",
+"currency": "SEK",
+"close": 109.599998,
+"eur": 9.999306
+},
+{
+"date": "2026-11-04",
+"symbol": "HIG",
+"currency": "USD",
+"close": 136.244995,
+"eur": 121.367036
+},
+{
+"date": "2026-11-04",
+"symbol": "HLMA.L",
+"currency": "GBp",
+"close": 3424.0,
+"eur": 41.080276
+},
+{
+"date": "2026-11-04",
+"symbol": "HLN.L",
+"currency": "GBp",
+"close": 336.0,
+"eur": 4.031242
+},
+{
+"date": "2026-11-04",
+"symbol": "HLT",
+"currency": "USD",
+"close": 368.440002,
+"eur": 328.20634
+},
+{
+"date": "2026-11-04",
+"symbol": "HNR1.DE",
+"currency": "EUR",
+"close": 298.600006,
+"eur": 298.600006
+},
+{
+"date": "2026-11-04",
+"symbol": "HOLN.SW",
+"currency": "CHF",
+"close": 73.68,
+"eur": 80.336699
+},
+{
+"date": "2026-11-04",
+"symbol": "HON",
+"currency": "USD",
+"close": 228.195007,
+"eur": 203.276104
+},
+{
+"date": "2026-11-04",
+"symbol": "HONA",
+"currency": "USD",
+"close": 155.589996,
+"eur": 138.599563
+},
+{
+"date": "2026-11-04",
+"symbol": "HOOD",
+"currency": "USD",
+"close": 86.75,
+"eur": 77.276897
+},
+{
+"date": "2026-11-04",
+"symbol": "HPE",
+"currency": "USD",
+"close": 49.389999,
+"eur": 43.99661
+},
+{
+"date": "2026-11-04",
+"symbol": "HPQ",
+"currency": "USD",
+"close": 30.014999,
+"eur": 26.73736
+},
+{
+"date": "2026-11-04",
+"symbol": "HSBA.L",
+"currency": "GBp",
+"close": 1319.599976,
+"eur": 15.832223
+},
+{
+"date": "2026-11-04",
+"symbol": "HSY",
+"currency": "USD",
+"close": 175.164993,
+"eur": 156.036969
+},
+{
+"date": "2026-11-04",
+"symbol": "HUBB",
+"currency": "USD",
+"close": 432.519989,
+"eur": 385.288789
+},
+{
+"date": "2026-11-04",
+"symbol": "HWM",
+"currency": "USD",
+"close": 208.089996,
+"eur": 185.366561
+},
+{
+"date": "2026-11-04",
+"symbol": "IBE.MC",
+"currency": "EUR",
+"close": 22.700001,
+"eur": 22.700001
+},
+{
+"date": "2026-11-04",
+"symbol": "IBM",
+"currency": "USD",
+"close": 255.660004,
+"eur": 227.741921
+},
+{
+"date": "2026-11-04",
+"symbol": "ICE",
+"currency": "USD",
+"close": 173.669998,
+"eur": 154.705228
+},
+{
+"date": "2026-11-04",
+"symbol": "ICICIBANK.NS",
+"currency": "INR",
+"close": 1424.099976,
+"eur": 13.406763
+},
+{
+"date": "2026-11-04",
+"symbol": "IDXX",
+"currency": "USD",
+"close": 699.01001,
+"eur": 622.678089
+},
+{
+"date": "2026-11-04",
+"symbol": "IFC.TO",
+"currency": "CAD",
+"close": 279.959991,
+"eur": 178.68266
+},
+{
+"date": "2026-11-04",
+"symbol": "IFX.DE",
+"currency": "EUR",
+"close": 50.650002,
+"eur": 50.650002
+},
+{
+"date": "2026-11-04",
+"symbol": "III.L",
+"currency": "GBp",
+"close": 2633.0,
+"eur": 31.590061
+},
+{
+"date": "2026-11-04",
+"symbol": "IMB.L",
+"currency": "GBp",
+"close": 2983.0,
+"eur": 35.789271
+},
+{
+"date": "2026-11-04",
+"symbol": "IMO.TO",
+"currency": "CAD",
+"close": 177.289993,
+"eur": 113.154195
+},
+{
+"date": "2026-11-04",
+"symbol": "INGA.AS",
+"currency": "EUR",
+"close": 29.094999,
+"eur": 29.094999
+},
+{
+"date": "2026-11-04",
+"symbol": "INTC",
+"currency": "USD",
+"close": 57.389999,
+"eur": 51.123009
+},
+{
+"date": "2026-11-04",
+"symbol": "INTU",
+"currency": "USD",
+"close": 361.089996,
+"eur": 321.658955
+},
+{
+"date": "2026-11-04",
+"symbol": "INVE-B.ST",
+"currency": "SEK",
+"close": 434.399994,
+"eur": 39.632287
+},
+{
+"date": "2026-11-04",
+"symbol": "ISP.MI",
+"currency": "EUR",
+"close": 6.313,
+"eur": 6.313
+},
+{
+"date": "2026-11-04",
+"symbol": "ISRG",
+"currency": "USD",
+"close": 483.904999,
+"eur": 431.062554
+},
+{
+"date": "2026-11-04",
+"symbol": "ITW",
+"currency": "USD",
+"close": 293.679993,
+"eur": 261.610126
+},
+{
+"date": "2026-11-04",
+"symbol": "ITX.MC",
+"currency": "EUR",
+"close": 59.040001,
+"eur": 59.040001
+},
+{
+"date": "2026-11-04",
+"symbol": "JBL",
+"currency": "USD",
+"close": 253.990005,
+"eur": 226.254287
+},
+{
+"date": "2026-11-04",
+"symbol": "JCI",
+"currency": "USD",
+"close": 139.089996,
+"eur": 123.901363
+},
+{
+"date": "2026-11-04",
+"symbol": "JNJ",
+"currency": "USD",
+"close": 272.579987,
+"eur": 242.814241
+},
+{
+"date": "2026-11-04",
+"symbol": "JPM",
+"currency": "USD",
+"close": 349.570007,
+"eur": 311.396949
+},
+{
+"date": "2026-11-04",
+"symbol": "KDP",
+"currency": "USD",
+"close": 36.445,
+"eur": 32.465204
+},
+{
+"date": "2026-11-04",
+"symbol": "KEYS",
+"currency": "USD",
+"close": 280.084991,
+"eur": 249.499699
+},
+{
+"date": "2026-11-04",
+"symbol": "KKR",
+"currency": "USD",
+"close": 101.080002,
+"eur": 90.042062
+},
+{
+"date": "2026-11-04",
+"symbol": "KLAC",
+"currency": "USD",
+"close": 149.971405,
+"eur": 133.594522
+},
+{
+"date": "2026-11-04",
+"symbol": "KMI",
+"currency": "USD",
+"close": 31.295,
+"eur": 27.877585
+},
+{
+"date": "2026-11-04",
+"symbol": "KNEBV.HE",
+"currency": "EUR",
+"close": 58.34,
+"eur": 58.34
+},
+{
+"date": "2026-11-04",
+"symbol": "KNIN.SW",
+"currency": "CHF",
+"close": 243.800003,
+"eur": 265.826375
+},
+{
+"date": "2026-11-04",
+"symbol": "KO",
+"currency": "USD",
+"close": 96.095001,
+"eur": 85.601423
+},
+{
+"date": "2026-11-04",
+"symbol": "KOG.OL",
+"currency": "NOK",
+"close": 350.899994,
+"eur": 33.69208
+},
+{
+"date": "2026-11-04",
+"symbol": "LHX",
+"currency": "USD",
+"close": 257.714996,
+"eur": 229.572509
+},
+{
+"date": "2026-11-04",
+"symbol": "LIN",
+"currency": "USD",
+"close": 523.880005,
+"eur": 466.672288
+},
+{
+"date": "2026-11-04",
+"symbol": "LITE",
+"currency": "USD",
+"close": 607.530029,
+"eur": 541.187726
+},
+{
+"date": "2026-11-04",
+"symbol": "LLOY.L",
+"currency": "GBp",
+"close": 97.68,
+"eur": 1.17194
+},
+{
+"date": "2026-11-04",
+"symbol": "LLY",
+"currency": "USD",
+"close": 1429.050049,
+"eur": 1272.997727
+},
+{
+"date": "2026-11-04",
+"symbol": "LMT",
+"currency": "USD",
+"close": 598.054993,
+"eur": 532.747364
+},
+{
+"date": "2026-11-04",
+"symbol": "LOGN.SW",
+"currency": "CHF",
+"close": 82.900002,
+"eur": 90.389691
+},
+{
+"date": "2026-11-04",
+"symbol": "LONN.SW",
+"currency": "CHF",
+"close": 663.400024,
+"eur": 723.335608
+},
+{
+"date": "2026-11-04",
+"symbol": "LOW",
+"currency": "USD",
+"close": 227.779999,
+"eur": 202.906414
+},
+{
+"date": "2026-11-04",
+"symbol": "LR.PA",
+"currency": "EUR",
+"close": 128.199997,
+"eur": 128.199997
+},
+{
+"date": "2026-11-04",
+"symbol": "LRCX",
+"currency": "USD",
+"close": 223.6418,
+"eur": 199.220107
+},
+{
+"date": "2026-11-04",
+"symbol": "LSEG.L",
+"currency": "GBp",
+"close": 9772.0,
+"eur": 117.241957
+},
+{
+"date": "2026-11-04",
+"symbol": "MA",
+"currency": "USD",
+"close": 669.424988,
+"eur": 596.323753
+},
+{
+"date": "2026-11-04",
+"symbol": "MAR",
+"currency": "USD",
+"close": 418.421692,
+"eur": 372.730027
+},
+{
+"date": "2026-11-04",
+"symbol": "MC.PA",
+"currency": "EUR",
+"close": 418.0,
+"eur": 418.0
+},
+{
+"date": "2026-11-04",
+"symbol": "MCD",
+"currency": "USD",
+"close": 276.480011,
+"eur": 246.288383
+},
+{
+"date": "2026-11-04",
+"symbol": "MCHP",
+"currency": "USD",
+"close": 75.294998,
+"eur": 67.072781
+},
+{
+"date": "2026-11-04",
+"symbol": "MCK",
+"currency": "USD",
+"close": 1026.660034,
+"eur": 914.548718
+},
+{
+"date": "2026-11-04",
+"symbol": "MCO",
+"currency": "USD",
+"close": 528.22998,
+"eur": 470.547246
+},
+{
+"date": "2026-11-04",
+"symbol": "MDLZ",
+"currency": "USD",
+"close": 68.004997,
+"eur": 60.578849
+},
+{
+"date": "2026-11-04",
+"symbol": "MDT",
+"currency": "USD",
+"close": 104.349998,
+"eur": 92.954975
+},
+{
+"date": "2026-11-04",
+"symbol": "MELI",
+"currency": "USD",
+"close": 1750.915039,
+"eur": 1559.715048
+},
+{
+"date": "2026-11-04",
+"symbol": "MET",
+"currency": "USD",
+"close": 101.459999,
+"eur": 90.380563
+},
+{
+"date": "2026-11-04",
+"symbol": "META",
+"currency": "USD",
+"close": 625.559998,
+"eur": 557.248821
+},
+{
+"date": "2026-11-04",
+"symbol": "MFC.TO",
+"currency": "CAD",
+"close": 63.849998,
+"eur": 40.75185
+},
+{
+"date": "2026-11-04",
+"symbol": "MMM",
+"currency": "USD",
+"close": 192.526596,
+"eur": 171.502684
+},
+{
+"date": "2026-11-04",
+"symbol": "MNST",
+"currency": "USD",
+"close": 48.73,
+"eur": 43.408682
+},
+{
+"date": "2026-11-04",
+"symbol": "MO",
+"currency": "USD",
+"close": 78.400002,
+"eur": 69.838718
+},
+{
+"date": "2026-11-04",
+"symbol": "MONC.MI",
+"currency": "EUR",
+"close": 47.02,
+"eur": 47.02
+},
+{
+"date": "2026-11-04",
+"symbol": "MPC",
+"currency": "USD",
+"close": 385.675415,
+"eur": 343.559645
+},
+{
+"date": "2026-11-04",
+"symbol": "MPWR",
+"currency": "USD",
+"close": 1267.800049,
+"eur": 1129.356234
+},
+{
+"date": "2026-11-04",
+"symbol": "MRK",
+"currency": "USD",
+"close": 148.119995,
+"eur": 131.945286
+},
+{
+"date": "2026-11-04",
+"symbol": "MRNA",
+"currency": "USD",
+"close": 247.229996,
+"eur": 220.23247
+},
+{
+"date": "2026-11-04",
+"symbol": "MRSH",
+"currency": "USD",
+"close": 209.559998,
+"eur": 186.676038
+},
+{
+"date": "2026-11-04",
+"symbol": "MRVL",
+"currency": "USD",
+"close": 157.335007,
+"eur": 140.154018
+},
+{
+"date": "2026-11-04",
+"symbol": "MS",
+"currency": "USD",
+"close": 191.110001,
+"eur": 170.240781
+},
+{
+"date": "2026-11-04",
+"symbol": "MSCI",
+"currency": "USD",
+"close": 670.549988,
+"eur": 597.325903
+},
+{
+"date": "2026-11-04",
+"symbol": "MSFT",
+"currency": "USD",
+"close": 552.73999,
+"eur": 492.380762
+},
+{
+"date": "2026-11-04",
+"symbol": "MSI",
+"currency": "USD",
+"close": 490.277496,
+"eur": 436.739174
+},
+{
+"date": "2026-11-04",
+"symbol": "MSTR",
+"currency": "USD",
+"close": 143.654999,
+"eur": 127.967867
+},
+{
+"date": "2026-11-04",
+"symbol": "MTX.DE",
+"currency": "EUR",
+"close": 343.299988,
+"eur": 343.299988
+},
+{
+"date": "2026-11-04",
+"symbol": "MU",
+"currency": "USD",
+"close": 803.515015,
+"eur": 715.771143
+},
+{
+"date": "2026-11-04",
+"symbol": "MUV2.DE",
+"currency": "EUR",
+"close": 584.799988,
+"eur": 584.799988
+},
+{
+"date": "2026-11-04",
+"symbol": "NBIS",
+"currency": "USD",
+"close": 141.100006,
+"eur": 125.69188
+},
+{
+"date": "2026-11-04",
+"symbol": "NDA-FI.HE",
+"currency": "EUR",
+"close": 16.370001,
+"eur": 16.370001
+},
+{
+"date": "2026-11-04",
+"symbol": "NDAQ",
+"currency": "USD",
+"close": 108.785004,
+"eur": 96.905677
+},
+{
+"date": "2026-11-04",
+"symbol": "NEE",
+"currency": "USD",
+"close": 88.199997,
+"eur": 78.568554
+},
+{
+"date": "2026-11-04",
+"symbol": "NEM",
+"currency": "USD",
+"close": 114.57,
+"eur": 102.058951
+},
+{
+"date": "2026-11-04",
+"symbol": "NESN.SW",
+"currency": "CHF",
+"close": 86.129997,
+"eur": 93.911504
+},
+{
+"date": "2026-11-04",
+"symbol": "NET",
+"currency": "USD",
+"close": 258.829987,
+"eur": 230.565742
+},
+{
+"date": "2026-11-04",
+"symbol": "NFLX",
+"currency": "USD",
+"close": 66.044998,
+"eur": 58.832882
+},
+{
+"date": "2026-11-04",
+"symbol": "NG.L",
+"currency": "GBp",
+"close": 1260.802979,
+"eur": 15.126792
+},
+{
+"date": "2026-11-04",
+"symbol": "NOC",
+"currency": "USD",
+"close": 527.140015,
+"eur": 469.576304
+},
+{
+"date": "2026-11-04",
+"symbol": "NOKIA.HE",
+"currency": "EUR",
+"close": 7.402,
+"eur": 7.402
+},
+{
+"date": "2026-11-04",
+"symbol": "NOVN.SW",
+"currency": "CHF",
+"close": 134.080002,
+"eur": 146.193603
+},
+{
+"date": "2026-11-04",
+"symbol": "NOVO-B.CO",
+"currency": "DKK",
+"close": 285.200012,
+"eur": 38.158442
+},
+{
+"date": "2026-11-04",
+"symbol": "NOW",
+"currency": "USD",
+"close": 109.375,
+"eur": 97.431246
+},
+{
+"date": "2026-11-04",
+"symbol": "NSC",
+"currency": "USD",
+"close": 341.109985,
+"eur": 303.860762
+},
+{
+"date": "2026-11-04",
+"symbol": "NTAP",
+"currency": "USD",
+"close": 185.839996,
+"eur": 165.546261
+},
+{
+"date": "2026-11-04",
+"symbol": "NTGY.MC",
+"currency": "EUR",
+"close": 29.4,
+"eur": 29.4
+},
+{
+"date": "2026-11-04",
+"symbol": "NU",
+"currency": "USD",
+"close": 11.8801,
+"eur": 10.582793
+},
+{
+"date": "2026-11-04",
+"symbol": "NVDA",
+"currency": "USD",
+"close": 201.852005,
+"eur": 179.809758
+},
+{
+"date": "2026-11-04",
+"symbol": "NVR",
+"currency": "USD",
+"close": 6451.762695,
+"eur": 5747.229955
+},
+{
+"date": "2026-11-04",
+"symbol": "NWG.L",
+"currency": "GBp",
+"close": 611.700012,
+"eur": 7.33902
+},
+{
+"date": "2026-11-04",
+"symbol": "NXPI",
+"currency": "USD",
+"close": 264.125,
+"eur": 235.28254
+},
+{
+"date": "2026-11-04",
+"symbol": "NXT.L",
+"currency": "GBp",
+"close": 15715.0,
+"eur": 188.54455
+},
+{
+"date": "2026-11-04",
+"symbol": "ODFL",
+"currency": "USD",
+"close": 177.610001,
+"eur": 158.214982
+},
+{
+"date": "2026-11-04",
+"symbol": "OKTA",
+"currency": "USD",
+"close": 183.985001,
+"eur": 163.893831
+},
+{
+"date": "2026-11-04",
+"symbol": "OMC",
+"currency": "USD",
+"close": 86.68,
+"eur": 77.214541
+},
+{
+"date": "2026-11-04",
+"symbol": "ON",
+"currency": "USD",
+"close": 70.07,
+"eur": 62.418353
+},
+{
+"date": "2026-11-04",
+"symbol": "OR.PA",
+"currency": "EUR",
+"close": 446.200012,
+"eur": 446.200012
+},
+{
+"date": "2026-11-04",
+"symbol": "ORCL",
+"currency": "USD",
+"close": 125.764999,
+"eur": 112.031457
+},
+{
+"date": "2026-11-04",
+"symbol": "ORLY",
+"currency": "USD",
+"close": 92.720001,
+"eur": 82.594973
+},
+{
+"date": "2026-11-04",
+"symbol": "P",
+"currency": "USD",
+"close": 111.300003,
+"eur": 99.146038
+},
+{
+"date": "2026-11-04",
+"symbol": "PANW",
+"currency": "USD",
+"close": 347.459991,
+"eur": 309.517347
+},
+{
+"date": "2026-11-04",
+"symbol": "PAYX",
+"currency": "USD",
+"close": 119.135002,
+"eur": 106.125455
+},
+{
+"date": "2026-11-04",
+"symbol": "PCAR",
+"currency": "USD",
+"close": 104.285004,
+"eur": 92.897077
+},
+{
+"date": "2026-11-04",
+"symbol": "PDD",
+"currency": "USD",
+"close": 83.495003,
+"eur": 74.377345
+},
+{
+"date": "2026-11-04",
+"symbol": "PEP",
+"currency": "USD",
+"close": 143.529999,
+"eur": 127.856517
+},
+{
+"date": "2026-11-04",
+"symbol": "PFE",
+"currency": "USD",
+"close": 30.530001,
+"eur": 27.196123
+},
+{
+"date": "2026-11-04",
+"symbol": "PG",
+"currency": "USD",
+"close": 167.759995,
+"eur": 149.440597
+},
+{
+"date": "2026-11-04",
+"symbol": "PGHN.SW",
+"currency": "CHF",
+"close": 686.599976,
+"eur": 748.631583
+},
+{
+"date": "2026-11-04",
+"symbol": "PGR",
+"currency": "USD",
+"close": 234.869995,
+"eur": 209.222182
+},
+{
+"date": "2026-11-04",
+"symbol": "PH",
+"currency": "USD",
+"close": 907.734985,
+"eur": 808.610289
+},
+{
+"date": "2026-11-04",
+"symbol": "PHM",
+"currency": "USD",
+"close": 136.854996,
+"eur": 121.910425
+},
+{
+"date": "2026-11-04",
+"symbol": "PKO.WA",
+"currency": "PLN",
+"close": 115.639999,
+"eur": 26.319082
+},
+{
+"date": "2026-11-04",
+"symbol": "PLD",
+"currency": "USD",
+"close": 128.195007,
+"eur": 114.196107
+},
+{
+"date": "2026-11-04",
+"symbol": "PLTR",
+"currency": "USD",
+"close": 169.820007,
+"eur": 151.275656
+},
+{
+"date": "2026-11-04",
+"symbol": "PM",
+"currency": "USD",
+"close": 211.514999,
+"eur": 188.417553
+},
+{
+"date": "2026-11-04",
+"symbol": "PNC",
+"currency": "USD",
+"close": 231.345001,
+"eur": 206.082118
+},
+{
+"date": "2026-11-04",
+"symbol": "PNDORA.CO",
+"currency": "DKK",
+"close": 919.799988,
+"eur": 123.064981
+},
+{
+"date": "2026-11-04",
+"symbol": "PPG",
+"currency": "USD",
+"close": 127.209999,
+"eur": 113.318662
+},
+{
+"date": "2026-11-04",
+"symbol": "PRU.L",
+"currency": "GBp",
+"close": 965.200012,
+"eur": 11.580223
+},
+{
+"date": "2026-11-04",
+"symbol": "PRX.AS",
+"currency": "EUR",
+"close": 36.990002,
+"eur": 36.990002
+},
+{
+"date": "2026-11-04",
+"symbol": "PRY.MI",
+"currency": "EUR",
+"close": 104.400002,
+"eur": 104.400002
+},
+{
+"date": "2026-11-04",
+"symbol": "PSA",
+"currency": "USD",
+"close": 342.869995,
+"eur": 305.428578
+},
+{
+"date": "2026-11-04",
+"symbol": "PSX",
+"currency": "USD",
+"close": 256.237396,
+"eur": 228.256262
+},
+{
+"date": "2026-11-04",
+"symbol": "PTC",
+"currency": "USD",
+"close": 195.164993,
+"eur": 173.852968
+},
+{
+"date": "2026-11-04",
+"symbol": "PWR",
+"currency": "USD",
+"close": 573.789978,
+"eur": 511.13209
+},
+{
+"date": "2026-11-04",
+"symbol": "PYPL",
+"currency": "USD",
+"close": 60.77,
+"eur": 54.133914
+},
+{
+"date": "2026-11-04",
+"symbol": "Q",
+"currency": "USD",
+"close": 114.25,
+"eur": 101.773896
+},
+{
+"date": "2026-11-04",
+"symbol": "QBE.AX",
+"currency": "AUD",
+"close": 25.950001,
+"eur": 16.19648
+},
+{
+"date": "2026-11-04",
+"symbol": "QCOM",
+"currency": "USD",
+"close": 165.990005,
+"eur": 147.86389
+},
+{
+"date": "2026-11-04",
+"symbol": "RACE.MI",
+"currency": "EUR",
+"close": 381.649994,
+"eur": 381.649994
+},
+{
+"date": "2026-11-04",
+"symbol": "RCL",
+"currency": "USD",
+"close": 324.390015,
+"eur": 288.966612
+},
+{
+"date": "2026-11-04",
+"symbol": "REGN",
+"currency": "USD",
+"close": 957.48999,
+"eur": 852.932046
+},
+{
+"date": "2026-11-04",
+"symbol": "REL.L",
+"currency": "GBp",
+"close": 3069.0,
+"eur": 36.821077
+},
+{
+"date": "2026-11-04",
+"symbol": "RELIANCE.NS",
+"currency": "INR",
+"close": 1311.0,
+"eur": 12.342018
+},
+{
+"date": "2026-11-04",
+"symbol": "REP.MC",
+"currency": "EUR",
+"close": 29.75,
+"eur": 29.75
+},
+{
+"date": "2026-11-04",
+"symbol": "RF",
+"currency": "USD",
+"close": 28.976698,
+"eur": 25.812441
+},
+{
+"date": "2026-11-04",
+"symbol": "RHM.DE",
+"currency": "EUR",
+"close": 1009.599976,
+"eur": 1009.599976
+},
+{
+"date": "2026-11-04",
+"symbol": "RIO.AX",
+"currency": "AUD",
+"close": 143.050003,
+"eur": 89.283485
+},
+{
+"date": "2026-11-04",
+"symbol": "RIO.L",
+"currency": "GBp",
+"close": 6184.0,
+"eur": 74.19405
+},
+{
+"date": "2026-11-04",
+"symbol": "RJF",
+"currency": "USD",
+"close": 166.669998,
+"eur": 148.469628
+},
+{
+"date": "2026-11-04",
+"symbol": "RKT.L",
+"currency": "GBp",
+"close": 5646.0,
+"eur": 67.739264
+},
+{
+"date": "2026-11-04",
+"symbol": "RMD",
+"currency": "USD",
+"close": 239.729996,
+"eur": 213.551471
+},
+{
+"date": "2026-11-04",
+"symbol": "RMS.PA",
+"currency": "EUR",
+"close": 1377.0,
+"eur": 1377.0
+},
+{
+"date": "2026-11-04",
+"symbol": "RO.SW",
+"currency": "CHF",
+"close": 401.200012,
+"eur": 437.446856
+},
+{
+"date": "2026-11-04",
+"symbol": "ROK",
+"currency": "USD",
+"close": 436.339996,
+"eur": 388.691652
+},
+{
+"date": "2026-11-04",
+"symbol": "ROP",
+"currency": "USD",
+"close": 490.049988,
+"eur": 436.53651
+},
+{
+"date": "2026-11-04",
+"symbol": "ROP.SW",
+"currency": "CHF",
+"close": 395.0,
+"eur": 430.686697
+},
+{
+"date": "2026-11-04",
+"symbol": "ROST",
+"currency": "USD",
+"close": 245.229996,
+"eur": 218.450871
+},
+{
+"date": "2026-11-04",
+"symbol": "RR.L",
+"currency": "GBp",
+"close": 1260.0,
+"eur": 15.117158
+},
+{
+"date": "2026-11-04",
+"symbol": "RSG",
+"currency": "USD",
+"close": 245.952499,
+"eur": 219.094477
+},
+{
+"date": "2026-11-04",
+"symbol": "RTX",
+"currency": "USD",
+"close": 195.595001,
+"eur": 174.236019
+},
+{
+"date": "2026-11-04",
+"symbol": "RWE.DE",
+"currency": "EUR",
+"close": 57.32,
+"eur": 57.32
+},
+{
+"date": "2026-11-04",
+"symbol": "RY.TO",
+"currency": "CAD",
+"close": 290.130005,
+"eur": 185.173606
+},
+{
+"date": "2026-11-04",
+"symbol": "SAF.PA",
+"currency": "EUR",
+"close": 292.399994,
+"eur": 292.399994
+},
+{
+"date": "2026-11-04",
+"symbol": "SAMPO.HE",
+"currency": "EUR",
+"close": 9.85,
+"eur": 9.85
+},
+{
+"date": "2026-11-04",
+"symbol": "SAN.MC",
+"currency": "EUR",
+"close": 10.726,
+"eur": 10.726
+},
+{
+"date": "2026-11-04",
+"symbol": "SAN.PA",
+"currency": "EUR",
+"close": 83.879997,
+"eur": 83.879997
+},
+{
+"date": "2026-11-04",
+"symbol": "SAND.ST",
+"currency": "SEK",
+"close": 362.100006,
+"eur": 33.036031
+},
+{
+"date": "2026-11-04",
+"symbol": "SAP.DE",
+"currency": "EUR",
+"close": 214.899994,
+"eur": 214.899994
+},
+{
+"date": "2026-11-04",
+"symbol": "SBUX",
+"currency": "USD",
+"close": 108.580002,
+"eur": 96.723061
+},
+{
+"date": "2026-11-04",
+"symbol": "SCCO",
+"currency": "USD",
+"close": 171.75,
+"eur": 152.994893
+},
+{
+"date": "2026-11-04",
+"symbol": "SCHP.SW",
+"currency": "CHF",
+"close": 311.600006,
+"eur": 339.751841
+},
+{
+"date": "2026-11-04",
+"symbol": "SCHW",
+"currency": "USD",
+"close": 92.480003,
+"eur": 82.381183
+},
+{
+"date": "2026-11-04",
+"symbol": "SDZ.SW",
+"currency": "CHF",
+"close": 82.779999,
+"eur": 90.258846
+},
+{
+"date": "2026-11-04",
+"symbol": "SEB-A.ST",
+"currency": "SEK",
+"close": 214.699997,
+"eur": 19.588057
+},
+{
+"date": "2026-11-04",
+"symbol": "SGE.L",
+"currency": "GBp",
+"close": 1193.5,
+"eur": 14.319308
+},
+{
+"date": "2026-11-04",
+"symbol": "SGO.PA",
+"currency": "EUR",
+"close": 72.580002,
+"eur": 72.580002
+},
+{
+"date": "2026-11-04",
+"symbol": "SGRO.L",
+"currency": "GBp",
+"close": 909.200012,
+"eur": 10.908349
+},
+{
+"date": "2026-11-04",
+"symbol": "SHEL.L",
+"currency": "GBp",
+"close": 3800.5,
+"eur": 45.597427
+},
+{
+"date": "2026-11-04",
+"symbol": "SHELL.AS",
+"currency": "EUR",
+"close": 45.735001,
+"eur": 45.735001
+},
+{
+"date": "2026-11-04",
+"symbol": "SHOP",
+"currency": "USD",
+"close": 151.259995,
+"eur": 134.742397
+},
+{
+"date": "2026-11-04",
+"symbol": "SHW",
+"currency": "USD",
+"close": 362.149994,
+"eur": 322.6032
+},
+{
+"date": "2026-11-04",
+"symbol": "SIE.DE",
+"currency": "EUR",
+"close": 275.700012,
+"eur": 275.700012
+},
+{
+"date": "2026-11-04",
+"symbol": "SIKA.SW",
+"currency": "CHF",
+"close": 187.25,
+"eur": 204.167301
+},
+{
+"date": "2026-11-04",
+"symbol": "SLB",
+"currency": "USD",
+"close": 49.654999,
+"eur": 44.232671
+},
+{
+"date": "2026-11-04",
+"symbol": "SLF.TO",
+"currency": "CAD",
+"close": 113.82,
+"eur": 72.644881
+},
+{
+"date": "2026-11-04",
+"symbol": "SLHN.SW",
+"currency": "CHF",
+"close": 986.599976,
+"eur": 1075.735404
+},
+{
+"date": "2026-11-04",
+"symbol": "SNA",
+"currency": "USD",
+"close": 372.119995,
+"eur": 331.484477
+},
+{
+"date": "2026-11-04",
+"symbol": "SNDK",
+"currency": "USD",
+"close": 1027.410034,
+"eur": 915.216818
+},
+{
+"date": "2026-11-04",
+"symbol": "SNOW",
+"currency": "USD",
+"close": 285.820007,
+"eur": 254.608451
+},
+{
+"date": "2026-11-04",
+"symbol": "SNPS",
+"currency": "USD",
+"close": 455.524994,
+"eur": 405.781647
+},
+{
+"date": "2026-11-04",
+"symbol": "SO",
+"currency": "USD",
+"close": 92.25,
+"eur": 82.176296
+},
+{
+"date": "2026-11-04",
+"symbol": "SPCX",
+"currency": "USD",
+"close": 135.300003,
+"eur": 120.525237
+},
+{
+"date": "2026-11-04",
+"symbol": "SPG",
+"currency": "USD",
+"close": 227.139999,
+"eur": 202.336303
+},
+{
+"date": "2026-11-04",
+"symbol": "SPGI",
+"currency": "USD",
+"close": 483.445007,
+"eur": 430.652794
+},
+{
+"date": "2026-11-04",
+"symbol": "SREN.SW",
+"currency": "CHF",
+"close": 156.100006,
+"eur": 170.203028
+},
+{
+"date": "2026-11-04",
+"symbol": "SSE.L",
+"currency": "GBp",
+"close": 2635.0,
+"eur": 31.614056
+},
+{
+"date": "2026-11-04",
+"symbol": "STAN.L",
+"currency": "GBp",
+"close": 2131.0,
+"eur": 25.567193
+},
+{
+"date": "2026-11-04",
+"symbol": "STMMI.MI",
+"currency": "EUR",
+"close": 40.810001,
+"eur": 40.810001
+},
+{
+"date": "2026-11-04",
+"symbol": "STX",
+"currency": "USD",
+"close": 561.965027,
+"eur": 500.598424
+},
+{
+"date": "2026-11-04",
+"symbol": "SU.PA",
+"currency": "EUR",
+"close": 231.649994,
+"eur": 231.649994
+},
+{
+"date": "2026-11-04",
+"symbol": "SU.TO",
+"currency": "CAD",
+"close": 100.989998,
+"eur": 64.456215
+},
+{
+"date": "2026-11-04",
+"symbol": "SWED-A.ST",
+"currency": "SEK",
+"close": 402.200012,
+"eur": 36.694537
+},
+{
+"date": "2026-11-04",
+"symbol": "SWKS",
+"currency": "USD",
+"close": 80.485001,
+"eur": 71.696035
+},
+{
+"date": "2026-11-04",
+"symbol": "SYK",
+"currency": "USD",
+"close": 334.744995,
+"eur": 298.190828
+},
+{
+"date": "2026-11-04",
+"symbol": "T",
+"currency": "USD",
+"close": 22.0,
+"eur": 19.597599
+},
+{
+"date": "2026-11-04",
+"symbol": "TDG",
+"currency": "USD",
+"close": 1208.26001,
+"eur": 1076.317969
+},
+{
+"date": "2026-11-04",
+"symbol": "TDY",
+"currency": "USD",
+"close": 620.0,
+"eur": 552.295976
+},
+{
+"date": "2026-11-04",
+"symbol": "TEL",
+"currency": "USD",
+"close": 216.035004,
+"eur": 192.443973
+},
+{
+"date": "2026-11-04",
+"symbol": "TER",
+"currency": "USD",
+"close": 251.309998,
+"eur": 223.866936
+},
+{
+"date": "2026-11-04",
+"symbol": "TFC",
+"currency": "USD",
+"close": 50.525002,
+"eur": 45.007669
+},
+{
+"date": "2026-11-04",
+"symbol": "TGT",
+"currency": "USD",
+"close": 161.080002,
+"eur": 143.490059
+},
+{
+"date": "2026-11-04",
+"symbol": "TJX",
+"currency": "USD",
+"close": 144.610001,
+"eur": 128.818583
+},
+{
+"date": "2026-11-04",
+"symbol": "TMO",
+"currency": "USD",
+"close": 698.580017,
+"eur": 622.295052
+},
+{
+"date": "2026-11-04",
+"symbol": "TMUS",
+"currency": "USD",
+"close": 160.220001,
+"eur": 142.723971
+},
+{
+"date": "2026-11-04",
+"symbol": "TPL",
+"currency": "USD",
+"close": 292.341003,
+"eur": 260.417354
+},
+{
+"date": "2026-11-04",
+"symbol": "TRGP",
+"currency": "USD",
+"close": 283.98999,
+"eur": 252.978272
+},
+{
+"date": "2026-11-04",
+"symbol": "TROW",
+"currency": "USD",
+"close": 111.580002,
+"eur": 99.395461
+},
+{
+"date": "2026-11-04",
+"symbol": "TRV",
+"currency": "USD",
+"close": 404.709991,
+"eur": 360.515644
+},
+{
+"date": "2026-11-04",
+"symbol": "TSCO",
+"currency": "USD",
+"close": 37.215,
+"eur": 33.151121
+},
+{
+"date": "2026-11-04",
+"symbol": "TSCO.L",
+"currency": "GBp",
+"close": 553.599976,
+"eur": 6.641951
+},
+{
+"date": "2026-11-04",
+"symbol": "TSLA",
+"currency": "USD",
+"close": 382.450012,
+"eur": 340.686456
+},
+{
+"date": "2026-11-04",
+"symbol": "TT",
+"currency": "USD",
+"close": 407.190002,
+"eur": 362.724838
+},
+{
+"date": "2026-11-04",
+"symbol": "TTE.PA",
+"currency": "EUR",
+"close": 81.68,
+"eur": 81.68
+},
+{
+"date": "2026-11-04",
+"symbol": "TTWO",
+"currency": "USD",
+"close": 208.315002,
+"eur": 185.566996
+},
+{
+"date": "2026-11-04",
+"symbol": "TWLO",
+"currency": "USD",
+"close": 206.970001,
+"eur": 184.368869
+},
+{
+"date": "2026-11-04",
+"symbol": "TXN",
+"currency": "USD",
+"close": 309.170013,
+"eur": 275.408636
+},
+{
+"date": "2026-11-04",
+"symbol": "UBER",
+"currency": "USD",
+"close": 71.68,
+"eur": 63.852541
+},
+{
+"date": "2026-11-04",
+"symbol": "UBSG.SW",
+"currency": "CHF",
+"close": 41.25,
+"eur": 44.976775
+},
+{
+"date": "2026-11-04",
+"symbol": "UCB.BR",
+"currency": "EUR",
+"close": 282.0,
+"eur": 282.0
+},
+{
+"date": "2026-11-04",
+"symbol": "UCG.MI",
+"currency": "EUR",
+"close": 78.330002,
+"eur": 78.330002
+},
+{
+"date": "2026-11-04",
+"symbol": "ULTA",
+"currency": "USD",
+"close": 659.0,
+"eur": 587.037174
+},
+{
+"date": "2026-11-04",
+"symbol": "ULVR.L",
+"currency": "GBp",
+"close": 4975.5,
+"eur": 59.694776
+},
+{
+"date": "2026-11-04",
+"symbol": "UMG.AS",
+"currency": "EUR",
+"close": 17.605,
+"eur": 17.605
+},
+{
+"date": "2026-11-04",
+"symbol": "UNH",
+"currency": "USD",
+"close": 404.795013,
+"eur": 360.591382
+},
+{
+"date": "2026-11-04",
+"symbol": "UNP",
+"currency": "USD",
+"close": 305.529999,
+"eur": 272.166111
+},
+{
+"date": "2026-11-04",
+"symbol": "UPS",
+"currency": "USD",
+"close": 113.669998,
+"eur": 101.25723
+},
+{
+"date": "2026-11-04",
+"symbol": "URI",
+"currency": "USD",
+"close": 1087.944946,
+"eur": 969.141315
+},
+{
+"date": "2026-11-04",
+"symbol": "USB",
+"currency": "USD",
+"close": 60.564999,
+"eur": 53.951298
+},
+{
+"date": "2026-11-04",
+"symbol": "V",
+"currency": "USD",
+"close": 432.665009,
+"eur": 385.417973
+},
+{
+"date": "2026-11-04",
+"symbol": "VACN.SW",
+"currency": "CHF",
+"close": 541.200012,
+"eur": 590.095305
+},
+{
+"date": "2026-11-04",
+"symbol": "VLO",
+"currency": "USD",
+"close": 358.022491,
+"eur": 318.926421
+},
+{
+"date": "2026-11-04",
+"symbol": "VLTO",
+"currency": "USD",
+"close": 117.510002,
+"eur": 104.677905
+},
+{
+"date": "2026-11-04",
+"symbol": "VMRK",
+"currency": "USD",
+"close": 63.375,
+"eur": 56.454448
+},
+{
+"date": "2026-11-04",
+"symbol": "VOD.L",
+"currency": "GBp",
+"close": 120.800003,
+"eur": 1.449328
+},
+{
+"date": "2026-11-04",
+"symbol": "VOLV-B.ST",
+"currency": "SEK",
+"close": 311.5,
+"eur": 28.419562
+},
+{
+"date": "2026-11-04",
+"symbol": "VRSN",
+"currency": "USD",
+"close": 318.045013,
+"eur": 283.314485
+},
+{
+"date": "2026-11-04",
+"symbol": "VRT",
+"currency": "USD",
+"close": 204.845001,
+"eur": 182.475919
+},
+{
+"date": "2026-11-04",
+"symbol": "VRTX",
+"currency": "USD",
+"close": 541.289978,
+"eur": 482.181091
+},
+{
+"date": "2026-11-04",
+"symbol": "VWS.CO",
+"currency": "DKK",
+"close": 203.100006,
+"eur": 27.173841
+},
+{
+"date": "2026-11-04",
+"symbol": "VZ",
+"currency": "USD",
+"close": 46.415001,
+"eur": 41.346481
+},
+{
+"date": "2026-11-04",
+"symbol": "WAB",
+"currency": "USD",
+"close": 289.475006,
+"eur": 257.864324
+},
+{
+"date": "2026-11-04",
+"symbol": "WALMEX.MX",
+"currency": "MXN",
+"close": 52.119999,
+"eur": 2.490944
+},
+{
+"date": "2026-11-04",
+"symbol": "WAT",
+"currency": "USD",
+"close": 461.484985,
+"eur": 411.090807
+},
+{
+"date": "2026-11-04",
+"symbol": "WDAY",
+"currency": "USD",
+"close": 202.929993,
+"eur": 180.770029
+},
+{
+"date": "2026-11-04",
+"symbol": "WDC",
+"currency": "USD",
+"close": 325.505005,
+"eur": 289.959846
+},
+{
+"date": "2026-11-04",
+"symbol": "WELL",
+"currency": "USD",
+"close": 247.054993,
+"eur": 220.076578
+},
+{
+"date": "2026-11-04",
+"symbol": "WES.AX",
+"currency": "AUD",
+"close": 78.660004,
+"eur": 49.094996
+},
+{
+"date": "2026-11-04",
+"symbol": "WFC",
+"currency": "USD",
+"close": 86.669998,
+"eur": 77.205631
+},
+{
+"date": "2026-11-04",
+"symbol": "WM",
+"currency": "USD",
+"close": 238.940002,
+"eur": 212.847745
+},
+{
+"date": "2026-11-04",
+"symbol": "WMB",
+"currency": "USD",
+"close": 67.589996,
+"eur": 60.209166
+},
+{
+"date": "2026-11-04",
+"symbol": "WMT",
+"currency": "USD",
+"close": 130.059998,
+"eur": 115.857441
+},
+{
+"date": "2026-11-04",
+"symbol": "WPM.TO",
+"currency": "CAD",
+"close": 177.669998,
+"eur": 113.396731
+},
+{
+"date": "2026-11-04",
+"symbol": "WRB",
+"currency": "USD",
+"close": 76.510002,
+"eur": 68.155107
+},
+{
+"date": "2026-11-04",
+"symbol": "WSM",
+"currency": "USD",
+"close": 264.36499,
+"eur": 235.496323
+},
+{
+"date": "2026-11-04",
+"symbol": "WTW",
+"currency": "USD",
+"close": 337.140015,
+"eur": 300.324312
+},
+{
+"date": "2026-11-04",
+"symbol": "XEL",
+"currency": "USD",
+"close": 80.339996,
+"eur": 71.566866
+},
+{
+"date": "2026-11-04",
+"symbol": "XOM",
+"currency": "USD",
+"close": 170.729996,
+"eur": 152.086273
+},
+{
+"date": "2026-11-04",
+"symbol": "ZTS",
+"currency": "USD",
+"close": 87.389999,
+"eur": 77.847008
+},
+{
+"date": "2026-11-04",
+"symbol": "ZURN.SW",
+"currency": "CHF",
+"close": 639.799988,
+"eur": 697.603401
+},
+{
+"date": "2026-11-05",
+"symbol": "0002.HK",
+"currency": "HKD",
+"close": 80.0,
+"eur": 9.089979
+},
+{
+"date": "2026-11-05",
+"symbol": "0006.HK",
+"currency": "HKD",
+"close": 64.5,
+"eur": 7.328796
+},
+{
+"date": "2026-11-05",
+"symbol": "000660.KS",
+"currency": "KRW",
+"close": 1255000.0,
+"eur": 827.399762
+},
+{
+"date": "2026-11-05",
+"symbol": "0016.HK",
+"currency": "HKD",
+"close": 119.0,
+"eur": 13.521344
+},
+{
+"date": "2026-11-05",
+"symbol": "005930.KS",
+"currency": "KRW",
+"close": 199900.0,
+"eur": 131.790608
+},
+{
+"date": "2026-11-05",
+"symbol": "009150.KS",
+"currency": "KRW",
+"close": 937000.0,
+"eur": 617.74787
+},
+{
+"date": "2026-11-05",
+"symbol": "0388.HK",
+"currency": "HKD",
+"close": 394.600006,
+"eur": 44.836322
+},
+{
+"date": "2026-11-05",
+"symbol": "0700.HK",
+"currency": "HKD",
+"close": 430.399994,
+"eur": 48.904086
+},
+{
+"date": "2026-11-05",
+"symbol": "0939.HK",
+"currency": "HKD",
+"close": 10.48,
+"eur": 1.190787
+},
+{
+"date": "2026-11-05",
+"symbol": "105560.KS",
+"currency": "KRW",
+"close": 155700.0,
+"eur": 102.650313
+},
+{
+"date": "2026-11-05",
+"symbol": "1605.T",
+"currency": "JPY",
+"close": 3595.0,
+"eur": 20.284719
+},
+{
+"date": "2026-11-05",
+"symbol": "1878.T",
+"currency": "JPY",
+"close": 3544.0,
+"eur": 19.996952
+},
+{
+"date": "2026-11-05",
+"symbol": "1925.T",
+"currency": "JPY",
+"close": 2394.5,
+"eur": 13.510921
+},
+{
+"date": "2026-11-05",
+"symbol": "2308.TW",
+"currency": "TWD",
+"close": 1130.0,
+"eur": 30.463146
+},
+{
+"date": "2026-11-05",
+"symbol": "2317.TW",
+"currency": "TWD",
+"close": 235.0,
+"eur": 6.335256
+},
+{
+"date": "2026-11-05",
+"symbol": "2330.TW",
+"currency": "TWD",
+"close": 2240.0,
+"eur": 60.387122
+},
+{
+"date": "2026-11-05",
+"symbol": "2454.TW",
+"currency": "TWD",
+"close": 3460.0,
+"eur": 93.276536
+},
+{
+"date": "2026-11-05",
+"symbol": "2802.T",
+"currency": "JPY",
+"close": 4888.0,
+"eur": 27.580447
+},
+{
+"date": "2026-11-05",
+"symbol": "285A.T",
+"currency": "JPY",
+"close": 9324.0,
+"eur": 52.610492
+},
+{
+"date": "2026-11-05",
+"symbol": "2914.T",
+"currency": "JPY",
+"close": 7769.0,
+"eur": 43.836435
+},
+{
+"date": "2026-11-05",
+"symbol": "3382.T",
+"currency": "JPY",
+"close": 2265.5,
+"eur": 12.783041
+},
+{
+"date": "2026-11-05",
+"symbol": "3711.TW",
+"currency": "TWD",
+"close": 572.0,
+"eur": 15.420283
+},
+{
+"date": "2026-11-05",
+"symbol": "402340.KS",
+"currency": "KRW",
+"close": 797000.0,
+"eur": 525.448295
+},
+{
+"date": "2026-11-05",
+"symbol": "4062.T",
+"currency": "JPY",
+"close": 6726.0,
+"eur": 37.951327
+},
+{
+"date": "2026-11-05",
+"symbol": "4063.T",
+"currency": "JPY",
+"close": 5710.0,
+"eur": 32.218566
+},
+{
+"date": "2026-11-05",
+"symbol": "4307.T",
+"currency": "JPY",
+"close": 6263.0,
+"eur": 35.338858
+},
+{
+"date": "2026-11-05",
+"symbol": "4452.T",
+"currency": "JPY",
+"close": 3924.0,
+"eur": 22.141095
+},
+{
+"date": "2026-11-05",
+"symbol": "4502.T",
+"currency": "JPY",
+"close": 6905.0,
+"eur": 38.961331
+},
+{
+"date": "2026-11-05",
+"symbol": "4503.T",
+"currency": "JPY",
+"close": 2671.5,
+"eur": 15.073888
+},
+{
+"date": "2026-11-05",
+"symbol": "4519.T",
+"currency": "JPY",
+"close": 7233.0,
+"eur": 40.812065
+},
+{
+"date": "2026-11-05",
+"symbol": "4543.T",
+"currency": "JPY",
+"close": 2636.0,
+"eur": 14.87358
+},
+{
+"date": "2026-11-05",
+"symbol": "4568.T",
+"currency": "JPY",
+"close": 3061.0,
+"eur": 17.271634
+},
+{
+"date": "2026-11-05",
+"symbol": "4578.T",
+"currency": "JPY",
+"close": 12515.0,
+"eur": 70.615649
+},
+{
+"date": "2026-11-05",
+"symbol": "4661.T",
+"currency": "JPY",
+"close": 3732.0,
+"eur": 21.057739
+},
+{
+"date": "2026-11-05",
+"symbol": "4684.T",
+"currency": "JPY",
+"close": 6284.0,
+"eur": 35.45735
+},
+{
+"date": "2026-11-05",
+"symbol": "4901.T",
+"currency": "JPY",
+"close": 3494.0,
+"eur": 19.714828
+},
+{
+"date": "2026-11-05",
+"symbol": "4BRZ.DE",
+"currency": "USD",
+"close": 45.049999,
+"eur": 40.130538
+},
+{
+"date": "2026-11-05",
+"symbol": "5020.T",
+"currency": "JPY",
+"close": 1278.5,
+"eur": 7.213912
+},
+{
+"date": "2026-11-05",
+"symbol": "5108.T",
+"currency": "JPY",
+"close": 4265.0,
+"eur": 24.065181
+},
+{
+"date": "2026-11-05",
+"symbol": "5401.T",
+"currency": "JPY",
+"close": 664.799988,
+"eur": 3.751121
+},
+{
+"date": "2026-11-05",
+"symbol": "5802.T",
+"currency": "JPY",
+"close": 1419.0,
+"eur": 8.00668
+},
+{
+"date": "2026-11-05",
+"symbol": "5803.T",
+"currency": "JPY",
+"close": 3260.0,
+"eur": 18.394488
+},
+{
+"date": "2026-11-05",
+"symbol": "6098.T",
+"currency": "JPY",
+"close": 18150.0,
+"eur": 102.411029
+},
+{
+"date": "2026-11-05",
+"symbol": "6146.T",
+"currency": "JPY",
+"close": 41150.0,
+"eur": 232.188091
+},
+{
+"date": "2026-11-05",
+"symbol": "6178.T",
+"currency": "JPY",
+"close": 2433.0,
+"eur": 13.728156
+},
+{
+"date": "2026-11-05",
+"symbol": "6273.T",
+"currency": "JPY",
+"close": 58740.0,
+"eur": 331.439331
+},
+{
+"date": "2026-11-05",
+"symbol": "6301.T",
+"currency": "JPY",
+"close": 6233.0,
+"eur": 35.169584
+},
+{
+"date": "2026-11-05",
+"symbol": "6326.T",
+"currency": "JPY",
+"close": 2718.5,
+"eur": 15.339084
+},
+{
+"date": "2026-11-05",
+"symbol": "6367.T",
+"currency": "JPY",
+"close": 21455.0,
+"eur": 121.059429
+},
+{
+"date": "2026-11-05",
+"symbol": "6501.T",
+"currency": "JPY",
+"close": 4750.0,
+"eur": 26.801785
+},
+{
+"date": "2026-11-05",
+"symbol": "6503.T",
+"currency": "JPY",
+"close": 4716.0,
+"eur": 26.60994
+},
+{
+"date": "2026-11-05",
+"symbol": "6701.T",
+"currency": "JPY",
+"close": 4724.0,
+"eur": 26.65508
+},
+{
+"date": "2026-11-05",
+"symbol": "6702.T",
+"currency": "JPY",
+"close": 3418.0,
+"eur": 19.286
+},
+{
+"date": "2026-11-05",
+"symbol": "6723.T",
+"currency": "JPY",
+"close": 2609.5,
+"eur": 14.724054
+},
+{
+"date": "2026-11-05",
+"symbol": "6752.T",
+"currency": "JPY",
+"close": 3165.0,
+"eur": 17.858452
+},
+{
+"date": "2026-11-05",
+"symbol": "6758.T",
+"currency": "JPY",
+"close": 4220.0,
+"eur": 23.81127
+},
+{
+"date": "2026-11-05",
+"symbol": "6762.T",
+"currency": "JPY",
+"close": 2239.0,
+"eur": 12.633515
+},
+{
+"date": "2026-11-05",
+"symbol": "6857.T",
+"currency": "JPY",
+"close": 29375.0,
+"eur": 165.747878
+},
+{
+"date": "2026-11-05",
+"symbol": "6861.T",
+"currency": "JPY",
+"close": 72550.0,
+"eur": 409.361993
+},
+{
+"date": "2026-11-05",
+"symbol": "6902.T",
+"currency": "JPY",
+"close": 1921.0,
+"eur": 10.839206
+},
+{
+"date": "2026-11-05",
+"symbol": "6920.T",
+"currency": "JPY",
+"close": 33560.0,
+"eur": 189.361661
+},
+{
+"date": "2026-11-05",
+"symbol": "6954.T",
+"currency": "JPY",
+"close": 5642.0,
+"eur": 31.834878
+},
+{
+"date": "2026-11-05",
+"symbol": "6971.T",
+"currency": "JPY",
+"close": 2950.0,
+"eur": 16.645319
+},
+{
+"date": "2026-11-05",
+"symbol": "6981.T",
+"currency": "JPY",
+"close": 5032.0,
+"eur": 28.392964
+},
+{
+"date": "2026-11-05",
+"symbol": "6988.T",
+"currency": "JPY",
+"close": 3604.0,
+"eur": 20.335501
+},
+{
+"date": "2026-11-05",
+"symbol": "7011.T",
+"currency": "JPY",
+"close": 3037.0,
+"eur": 17.136215
+},
+{
+"date": "2026-11-05",
+"symbol": "7013.T",
+"currency": "JPY",
+"close": 2413.5,
+"eur": 13.618128
+},
+{
+"date": "2026-11-05",
+"symbol": "7182.T",
+"currency": "JPY",
+"close": 3071.0,
+"eur": 17.328059
+},
+{
+"date": "2026-11-05",
+"symbol": "7203.T",
+"currency": "JPY",
+"close": 3497.0,
+"eur": 19.731756
+},
+{
+"date": "2026-11-05",
+"symbol": "7267.T",
+"currency": "JPY",
+"close": 1945.0,
+"eur": 10.974625
+},
+{
+"date": "2026-11-05",
+"symbol": "7269.T",
+"currency": "JPY",
+"close": 2283.5,
+"eur": 12.884605
+},
+{
+"date": "2026-11-05",
+"symbol": "7453.T",
+"currency": "JPY",
+"close": 5131.0,
+"eur": 28.95157
+},
+{
+"date": "2026-11-05",
+"symbol": "7735.T",
+"currency": "JPY",
+"close": 7734.0,
+"eur": 43.638948
+},
+{
+"date": "2026-11-05",
+"symbol": "7741.T",
+"currency": "JPY",
+"close": 23960.0,
+"eur": 135.193844
+},
+{
+"date": "2026-11-05",
+"symbol": "7751.T",
+"currency": "JPY",
+"close": 4891.0,
+"eur": 27.597374
+},
+{
+"date": "2026-11-05",
+"symbol": "7832.T",
+"currency": "JPY",
+"close": 6810.0,
+"eur": 38.425295
+},
+{
+"date": "2026-11-05",
+"symbol": "7936.T",
+"currency": "JPY",
+"close": 5161.0,
+"eur": 29.120844
+},
+{
+"date": "2026-11-05",
+"symbol": "7974.T",
+"currency": "JPY",
+"close": 8837.0,
+"eur": 49.862604
+},
+{
+"date": "2026-11-05",
+"symbol": "8001.T",
+"currency": "JPY",
+"close": 2393.5,
+"eur": 13.505278
+},
+{
+"date": "2026-11-05",
+"symbol": "8002.T",
+"currency": "JPY",
+"close": 5113.0,
+"eur": 28.850005
+},
+{
+"date": "2026-11-05",
+"symbol": "8015.T",
+"currency": "JPY",
+"close": 6785.0,
+"eur": 38.284233
+},
+{
+"date": "2026-11-05",
+"symbol": "8031.T",
+"currency": "JPY",
+"close": 5025.0,
+"eur": 28.353467
+},
+{
+"date": "2026-11-05",
+"symbol": "8035.T",
+"currency": "JPY",
+"close": 8690.0,
+"eur": 49.033159
+},
+{
+"date": "2026-11-05",
+"symbol": "8053.T",
+"currency": "JPY",
+"close": 1740.5,
+"eur": 9.820738
+},
+{
+"date": "2026-11-05",
+"symbol": "8058.T",
+"currency": "JPY",
+"close": 5256.0,
+"eur": 29.65688
+},
+{
+"date": "2026-11-05",
+"symbol": "8267.T",
+"currency": "JPY",
+"close": 1303.0,
+"eur": 7.352153
+},
+{
+"date": "2026-11-05",
+"symbol": "8306.T",
+"currency": "JPY",
+"close": 3456.0,
+"eur": 19.500414
+},
+{
+"date": "2026-11-05",
+"symbol": "8308.T",
+"currency": "JPY",
+"close": 2254.5,
+"eur": 12.720973
+},
+{
+"date": "2026-11-05",
+"symbol": "8309.T",
+"currency": "JPY",
+"close": 1653.0,
+"eur": 9.327021
+},
+{
+"date": "2026-11-05",
+"symbol": "8316.T",
+"currency": "JPY",
+"close": 3202.0,
+"eur": 18.067224
+},
+{
+"date": "2026-11-05",
+"symbol": "8411.T",
+"currency": "JPY",
+"close": 7700.0,
+"eur": 43.447103
+},
+{
+"date": "2026-11-05",
+"symbol": "8591.T",
+"currency": "JPY",
+"close": 5873.0,
+"eur": 33.138291
+},
+{
+"date": "2026-11-05",
+"symbol": "8604.T",
+"currency": "JPY",
+"close": 1571.0,
+"eur": 8.864338
+},
+{
+"date": "2026-11-05",
+"symbol": "8630.T",
+"currency": "JPY",
+"close": 7330.0,
+"eur": 41.359385
+},
+{
+"date": "2026-11-05",
+"symbol": "8697.T",
+"currency": "JPY",
+"close": 2192.0,
+"eur": 12.368318
+},
+{
+"date": "2026-11-05",
+"symbol": "8725.T",
+"currency": "JPY",
+"close": 5260.0,
+"eur": 29.67945
+},
+{
+"date": "2026-11-05",
+"symbol": "8750.T",
+"currency": "JPY",
+"close": 1829.5,
+"eur": 10.322919
+},
+{
+"date": "2026-11-05",
+"symbol": "8766.T",
+"currency": "JPY",
+"close": 608.099976,
+"eur": 3.431193
+},
+{
+"date": "2026-11-05",
+"symbol": "8795.T",
+"currency": "JPY",
+"close": 5048.0,
+"eur": 28.483244
+},
+{
+"date": "2026-11-05",
+"symbol": "8801.T",
+"currency": "JPY",
+"close": 1746.0,
+"eur": 9.851772
+},
+{
+"date": "2026-11-05",
+"symbol": "8802.T",
+"currency": "JPY",
+"close": 4329.0,
+"eur": 24.4263
+},
+{
+"date": "2026-11-05",
+"symbol": "9020.T",
+"currency": "JPY",
+"close": 4004.0,
+"eur": 22.592494
+},
+{
+"date": "2026-11-05",
+"symbol": "9022.T",
+"currency": "JPY",
+"close": 4370.0,
+"eur": 24.657642
+},
+{
+"date": "2026-11-05",
+"symbol": "9101.T",
+"currency": "JPY",
+"close": 7073.0,
+"eur": 39.909268
+},
+{
+"date": "2026-11-05",
+"symbol": "9104.T",
+"currency": "JPY",
+"close": 6983.0,
+"eur": 39.401444
+},
+{
+"date": "2026-11-05",
+"symbol": "9432.T",
+"currency": "JPY",
+"close": 164.899994,
+"eur": 0.930445
+},
+{
+"date": "2026-11-05",
+"symbol": "9433.T",
+"currency": "JPY",
+"close": 2934.5,
+"eur": 16.55786
+},
+{
+"date": "2026-11-05",
+"symbol": "9434.T",
+"currency": "JPY",
+"close": 243.800003,
+"eur": 1.375637
+},
+{
+"date": "2026-11-05",
+"symbol": "9503.T",
+"currency": "JPY",
+"close": 2705.5,
+"eur": 15.265732
+},
+{
+"date": "2026-11-05",
+"symbol": "9735.T",
+"currency": "JPY",
+"close": 6995.0,
+"eur": 39.469154
+},
+{
+"date": "2026-11-05",
+"symbol": "9766.T",
+"currency": "JPY",
+"close": 29200.0,
+"eur": 164.760444
+},
+{
+"date": "2026-11-05",
+"symbol": "9983.T",
+"currency": "JPY",
+"close": 81840.0,
+"eur": 461.780641
+},
+{
+"date": "2026-11-05",
+"symbol": "9984.T",
+"currency": "JPY",
+"close": 3967.0,
+"eur": 22.383722
+},
+{
+"date": "2026-11-05",
+"symbol": "9988.HK",
+"currency": "HKD",
+"close": 109.099998,
+"eur": 12.396459
+},
+{
+"date": "2026-11-05",
+"symbol": "AAL.L",
+"currency": "GBp",
+"close": 3690.0,
+"eur": 44.298251
+},
+{
+"date": "2026-11-05",
+"symbol": "AAPL",
+"currency": "USD",
+"close": 347.13501,
+"eur": 309.227853
+},
+{
+"date": "2026-11-05",
+"symbol": "ABBN.SW",
+"currency": "CHF",
+"close": 67.339996,
+"eur": 73.623785
+},
+{
+"date": "2026-11-05",
+"symbol": "ABBV",
+"currency": "USD",
+"close": 294.584991,
+"eur": 262.416299
+},
+{
+"date": "2026-11-05",
+"symbol": "ABI.BR",
+"currency": "EUR",
+"close": 75.900002,
+"eur": 75.900002
+},
+{
+"date": "2026-11-05",
+"symbol": "ABN.AS",
+"currency": "EUR",
+"close": 41.27,
+"eur": 41.27
+},
+{
+"date": "2026-11-05",
+"symbol": "ABNB",
+"currency": "USD",
+"close": 169.080002,
+"eur": 150.616459
+},
+{
+"date": "2026-11-05",
+"symbol": "ABT",
+"currency": "USD",
+"close": 114.0,
+"eur": 101.551196
+},
+{
+"date": "2026-11-05",
+"symbol": "ACGL",
+"currency": "USD",
+"close": 111.504997,
+"eur": 99.328647
+},
+{
+"date": "2026-11-05",
+"symbol": "ACN",
+"currency": "USD",
+"close": 267.980011,
+"eur": 238.716583
+},
+{
+"date": "2026-11-05",
+"symbol": "ADBE",
+"currency": "USD",
+"close": 248.029999,
+"eur": 220.945113
+},
+{
+"date": "2026-11-05",
+"symbol": "ADI",
+"currency": "USD",
+"close": 380.674988,
+"eur": 339.105264
+},
+{
+"date": "2026-11-05",
+"symbol": "ADM.L",
+"currency": "GBp",
+"close": 4064.76123,
+"eur": 48.79724
+},
+{
+"date": "2026-11-05",
+"symbol": "ADP",
+"currency": "USD",
+"close": 306.329987,
+"eur": 272.87874
+},
+{
+"date": "2026-11-05",
+"symbol": "ADS.DE",
+"currency": "EUR",
+"close": 179.550003,
+"eur": 179.550003
+},
+{
+"date": "2026-11-05",
+"symbol": "ADSK",
+"currency": "USD",
+"close": 273.600006,
+"eur": 243.722875
+},
+{
+"date": "2026-11-05",
+"symbol": "ADYEN.AS",
+"currency": "EUR",
+"close": 893.200012,
+"eur": 893.200012
+},
+{
+"date": "2026-11-05",
+"symbol": "AEP",
+"currency": "USD",
+"close": 129.289993,
+"eur": 115.171521
+},
+{
+"date": "2026-11-05",
+"symbol": "AFL",
+"currency": "USD",
+"close": 128.050003,
+"eur": 114.066938
+},
+{
+"date": "2026-11-05",
+"symbol": "AI.PA",
+"currency": "EUR",
+"close": 189.720001,
+"eur": 189.720001
+},
+{
+"date": "2026-11-05",
+"symbol": "AIG",
+"currency": "USD",
+"close": 81.705002,
+"eur": 72.782812
+},
+{
+"date": "2026-11-05",
+"symbol": "AIR.PA",
+"currency": "EUR",
+"close": 198.399994,
+"eur": 198.399994
+},
+{
+"date": "2026-11-05",
+"symbol": "AJG",
+"currency": "USD",
+"close": 288.415009,
+"eur": 256.920078
+},
+{
+"date": "2026-11-05",
+"symbol": "AKRBP.OL",
+"currency": "NOK",
+"close": 319.299988,
+"eur": 30.627091
+},
+{
+"date": "2026-11-05",
+"symbol": "ALAB",
+"currency": "USD",
+"close": 189.660004,
+"eur": 168.949124
+},
+{
+"date": "2026-11-05",
+"symbol": "ALC.SW",
+"currency": "CHF",
+"close": 62.880001,
+"eur": 68.747608
+},
+{
+"date": "2026-11-05",
+"symbol": "ALL",
+"currency": "USD",
+"close": 276.940002,
+"eur": 246.698143
+},
+{
+"date": "2026-11-05",
+"symbol": "ALL.AX",
+"currency": "AUD",
+"close": 66.050003,
+"eur": 40.963781
+},
+{
+"date": "2026-11-05",
+"symbol": "ALV.DE",
+"currency": "EUR",
+"close": 465.299988,
+"eur": 465.299988
+},
+{
+"date": "2026-11-05",
+"symbol": "AMAT",
+"currency": "USD",
+"close": 333.970001,
+"eur": 297.500464
+},
+{
+"date": "2026-11-05",
+"symbol": "AMD",
+"currency": "USD",
+"close": 428.920013,
+"eur": 382.081931
+},
+{
+"date": "2026-11-05",
+"symbol": "AME",
+"currency": "USD",
+"close": 227.460007,
+"eur": 202.621365
+},
+{
+"date": "2026-11-05",
+"symbol": "AMGN",
+"currency": "USD",
+"close": 468.579987,
+"eur": 417.411034
+},
+{
+"date": "2026-11-05",
+"symbol": "AMP",
+"currency": "USD",
+"close": 514.840027,
+"eur": 458.619476
+},
+{
+"date": "2026-11-05",
+"symbol": "AMT",
+"currency": "USD",
+"close": 194.589996,
+"eur": 173.340761
+},
+{
+"date": "2026-11-05",
+"symbol": "AMXB.MX",
+"currency": "MXN",
+"close": 23.51,
+"eur": 1.119948
+},
+{
+"date": "2026-11-05",
+"symbol": "AMZN",
+"currency": "USD",
+"close": 260.0,
+"eur": 231.60799
+},
+{
+"date": "2026-11-05",
+"symbol": "ANET",
+"currency": "USD",
+"close": 165.130005,
+"eur": 147.097802
+},
+{
+"date": "2026-11-05",
+"symbol": "AON",
+"currency": "USD",
+"close": 343.11499,
+"eur": 305.64682
+},
+{
+"date": "2026-11-05",
+"symbol": "APD",
+"currency": "USD",
+"close": 311.424988,
+"eur": 277.417367
+},
+{
+"date": "2026-11-05",
+"symbol": "APH",
+"currency": "USD",
+"close": 73.669998,
+"eur": 65.625231
+},
+{
+"date": "2026-11-05",
+"symbol": "APO",
+"currency": "USD",
+"close": 116.419998,
+"eur": 103.70693
+},
+{
+"date": "2026-11-05",
+"symbol": "APP",
+"currency": "USD",
+"close": 351.540009,
+"eur": 313.151826
+},
+{
+"date": "2026-11-05",
+"symbol": "ARGX.BR",
+"currency": "EUR",
+"close": 815.0,
+"eur": 815.0
+},
+{
+"date": "2026-11-05",
+"symbol": "ARM",
+"currency": "USD",
+"close": 170.75,
+"eur": 152.104093
+},
+{
+"date": "2026-11-05",
+"symbol": "ASM.AS",
+"currency": "EUR",
+"close": 632.799988,
+"eur": 632.799988
+},
+{
+"date": "2026-11-05",
+"symbol": "ASML",
+"currency": "USD",
+"close": 1396.829956,
+"eur": 1244.29607
+},
+{
+"date": "2026-11-05",
+"symbol": "ASML.AS",
+"currency": "EUR",
+"close": 1244.400024,
+"eur": 1244.400024
+},
+{
+"date": "2026-11-05",
+"symbol": "ASSA-B.ST",
+"currency": "SEK",
+"close": 401.799988,
+"eur": 36.567395
+},
+{
+"date": "2026-11-05",
+"symbol": "ATCO-A.ST",
+"currency": "SEK",
+"close": 185.25,
+"eur": 16.859408
+},
+{
+"date": "2026-11-05",
+"symbol": "ATCO-B.ST",
+"currency": "SEK",
+"close": 161.100006,
+"eur": 14.661542
+},
+{
+"date": "2026-11-05",
+"symbol": "ATO",
+"currency": "USD",
+"close": 177.029999,
+"eur": 157.698316
+},
+{
+"date": "2026-11-05",
+"symbol": "AV.L",
+"currency": "GBp",
+"close": 754.200012,
+"eur": 9.054131
+},
+{
+"date": "2026-11-05",
+"symbol": "AVGO",
+"currency": "USD",
+"close": 305.700012,
+"eur": 272.317559
+},
+{
+"date": "2026-11-05",
+"symbol": "AXON",
+"currency": "USD",
+"close": 417.910004,
+"eur": 372.274215
+},
+{
+"date": "2026-11-05",
+"symbol": "AXP",
+"currency": "USD",
+"close": 329.149994,
+"eur": 293.206802
+},
+{
+"date": "2026-11-05",
+"symbol": "AZN.L",
+"currency": "GBp",
+"close": 14108.0,
+"eur": 169.365781
+},
+{
+"date": "2026-11-05",
+"symbol": "BA",
+"currency": "USD",
+"close": 171.699997,
+"eur": 152.950351
+},
+{
+"date": "2026-11-05",
+"symbol": "BA.L",
+"currency": "GBp",
+"close": 1874.0,
+"eur": 22.497269
+},
+{
+"date": "2026-11-05",
+"symbol": "BAC",
+"currency": "USD",
+"close": 50.77,
+"eur": 45.225914
+},
+{
+"date": "2026-11-05",
+"symbol": "BAP",
+"currency": "USD",
+"close": 350.690002,
+"eur": 312.39464
+},
+{
+"date": "2026-11-05",
+"symbol": "BARC.L",
+"currency": "GBp",
+"close": 424.600006,
+"eur": 5.0973
+},
+{
+"date": "2026-11-05",
+"symbol": "BAS.DE",
+"currency": "EUR",
+"close": 56.110001,
+"eur": 56.110001
+},
+{
+"date": "2026-11-05",
+"symbol": "BATS.L",
+"currency": "GBp",
+"close": 4717.0,
+"eur": 56.627331
+},
+{
+"date": "2026-11-05",
+"symbol": "BAYN.DE",
+"currency": "EUR",
+"close": 56.279999,
+"eur": 56.279999
+},
+{
+"date": "2026-11-05",
+"symbol": "BBVA.MC",
+"currency": "EUR",
+"close": 22.84,
+"eur": 22.84
+},
+{
+"date": "2026-11-05",
+"symbol": "BBY",
+"currency": "USD",
+"close": 100.510002,
+"eur": 89.534306
+},
+{
+"date": "2026-11-05",
+"symbol": "BE",
+"currency": "USD",
+"close": 171.720001,
+"eur": 152.96817
+},
+{
+"date": "2026-11-05",
+"symbol": "BESI.AS",
+"currency": "EUR",
+"close": 139.899994,
+"eur": 139.899994
+},
+{
+"date": "2026-11-05",
+"symbol": "BHP.AX",
+"currency": "AUD",
+"close": 59.0,
+"eur": 36.591415
+},
+{
+"date": "2026-11-05",
+"symbol": "BKNG",
+"currency": "USD",
+"close": 166.149994,
+"eur": 148.006408
+},
+{
+"date": "2026-11-05",
+"symbol": "BKR",
+"currency": "USD",
+"close": 48.169998,
+"eur": 42.909832
+},
+{
+"date": "2026-11-05",
+"symbol": "BLK",
+"currency": "USD",
+"close": 1174.920044,
+"eur": 1046.618729
+},
+{
+"date": "2026-11-05",
+"symbol": "BMY",
+"currency": "USD",
+"close": 63.924999,
+"eur": 56.944387
+},
+{
+"date": "2026-11-05",
+"symbol": "BN.PA",
+"currency": "EUR",
+"close": 68.580002,
+"eur": 68.580002
+},
+{
+"date": "2026-11-05",
+"symbol": "BNP.PA",
+"currency": "EUR",
+"close": 92.110001,
+"eur": 92.110001
+},
+{
+"date": "2026-11-05",
+"symbol": "BNY",
+"currency": "USD",
+"close": 148.539993,
+"eur": 132.31942
+},
+{
+"date": "2026-11-05",
+"symbol": "BP.L",
+"currency": "GBp",
+"close": 567.599976,
+"eur": 6.814007
+},
+{
+"date": "2026-11-05",
+"symbol": "BR",
+"currency": "USD",
+"close": 191.005005,
+"eur": 170.147251
+},
+{
+"date": "2026-11-05",
+"symbol": "BRK-B",
+"currency": "USD",
+"close": 581.627502,
+"eur": 518.113756
+},
+{
+"date": "2026-11-05",
+"symbol": "BRO",
+"currency": "USD",
+"close": 74.210098,
+"eur": 66.106353
+},
+{
+"date": "2026-11-05",
+"symbol": "BX",
+"currency": "USD",
+"close": 119.919998,
+"eur": 106.82473
+},
+{
+"date": "2026-11-05",
+"symbol": "C",
+"currency": "USD",
+"close": 119.230003,
+"eur": 106.210082
+},
+{
+"date": "2026-11-05",
+"symbol": "CABK.MC",
+"currency": "EUR",
+"close": 11.85,
+"eur": 11.85
+},
+{
+"date": "2026-11-05",
+"symbol": "CAP.PA",
+"currency": "EUR",
+"close": 130.399994,
+"eur": 130.399994
+},
+{
+"date": "2026-11-05",
+"symbol": "CARR",
+"currency": "USD",
+"close": 54.349998,
+"eur": 48.414977
+},
+{
+"date": "2026-11-05",
+"symbol": "CAT",
+"currency": "USD",
+"close": 569.369995,
+"eur": 507.194769
+},
+{
+"date": "2026-11-05",
+"symbol": "CB",
+"currency": "USD",
+"close": 378.494995,
+"eur": 337.163327
+},
+{
+"date": "2026-11-05",
+"symbol": "CBA.AX",
+"currency": "AUD",
+"close": 166.289993,
+"eur": 103.131969
+},
+{
+"date": "2026-11-05",
+"symbol": "CBOE",
+"currency": "USD",
+"close": 346.540009,
+"eur": 308.697826
+},
+{
+"date": "2026-11-05",
+"symbol": "CBRE",
+"currency": "USD",
+"close": 137.070007,
+"eur": 122.101957
+},
+{
+"date": "2026-11-05",
+"symbol": "CDNS",
+"currency": "USD",
+"close": 320.679993,
+"eur": 285.661725
+},
+{
+"date": "2026-11-05",
+"symbol": "CDW",
+"currency": "USD",
+"close": 170.0,
+"eur": 151.435993
+},
+{
+"date": "2026-11-05",
+"symbol": "CEG",
+"currency": "USD",
+"close": 237.419998,
+"eur": 211.493725
+},
+{
+"date": "2026-11-05",
+"symbol": "CEMEXCPO.MX",
+"currency": "MXN",
+"close": 19.950001,
+"eur": 0.95036
+},
+{
+"date": "2026-11-05",
+"symbol": "CFR.SW",
+"currency": "CHF",
+"close": 171.350006,
+"eur": 187.339421
+},
+{
+"date": "2026-11-05",
+"symbol": "CI",
+"currency": "USD",
+"close": 310.679993,
+"eur": 276.753725
+},
+{
+"date": "2026-11-05",
+"symbol": "CIEN",
+"currency": "USD",
+"close": 237.380005,
+"eur": 211.458099
+},
+{
+"date": "2026-11-05",
+"symbol": "CL",
+"currency": "USD",
+"close": 99.57,
+"eur": 88.696952
+},
+{
+"date": "2026-11-05",
+"symbol": "CLS.TO",
+"currency": "CAD",
+"close": 292.059998,
+"eur": 186.033776
+},
+{
+"date": "2026-11-05",
+"symbol": "CMCSA",
+"currency": "USD",
+"close": 24.77,
+"eur": 22.065115
+},
+{
+"date": "2026-11-05",
+"symbol": "CME",
+"currency": "USD",
+"close": 307.429993,
+"eur": 273.858625
+},
+{
+"date": "2026-11-05",
+"symbol": "CMG",
+"currency": "USD",
+"close": 34.764999,
+"eur": 30.96866
+},
+{
+"date": "2026-11-05",
+"symbol": "CMI",
+"currency": "USD",
+"close": 472.590088,
+"eur": 420.983232
+},
+{
+"date": "2026-11-05",
+"symbol": "CNQ.TO",
+"currency": "CAD",
+"close": 70.25,
+"eur": 44.747219
+},
+{
+"date": "2026-11-05",
+"symbol": "CNYA.L",
+"currency": "USD",
+"close": 5.285,
+"eur": 4.707878
+},
+{
+"date": "2026-11-05",
+"symbol": "COF",
+"currency": "USD",
+"close": 204.979996,
+"eur": 182.596172
+},
+{
+"date": "2026-11-05",
+"symbol": "COHR",
+"currency": "USD",
+"close": 171.160004,
+"eur": 152.469325
+},
+{
+"date": "2026-11-05",
+"symbol": "COP",
+"currency": "USD",
+"close": 138.990005,
+"eur": 123.812291
+},
+{
+"date": "2026-11-05",
+"symbol": "COR",
+"currency": "USD",
+"close": 345.329987,
+"eur": 307.619938
+},
+{
+"date": "2026-11-05",
+"symbol": "COST",
+"currency": "USD",
+"close": 1070.540039,
+"eur": 953.637025
+},
+{
+"date": "2026-11-05",
+"symbol": "CPG.L",
+"currency": "USD",
+"close": 33.880001,
+"eur": 30.180304
+},
+{
+"date": "2026-11-05",
+"symbol": "CPRT",
+"currency": "USD",
+"close": 31.74,
+"eur": 28.273991
+},
+{
+"date": "2026-11-05",
+"symbol": "CRDO",
+"currency": "USD",
+"close": 118.995003,
+"eur": 106.000744
+},
+{
+"date": "2026-11-05",
+"symbol": "CRM",
+"currency": "USD",
+"close": 224.740005,
+"eur": 200.198388
+},
+{
+"date": "2026-11-05",
+"symbol": "CRWD",
+"currency": "USD",
+"close": 221.149994,
+"eur": 197.000406
+},
+{
+"date": "2026-11-05",
+"symbol": "CS.PA",
+"currency": "EUR",
+"close": 45.75,
+"eur": 45.75
+},
+{
+"date": "2026-11-05",
+"symbol": "CSCO",
+"currency": "USD",
+"close": 98.225098,
+"eur": 87.498913
+},
+{
+"date": "2026-11-05",
+"symbol": "CSU.TO",
+"currency": "CAD",
+"close": 3444.360107,
+"eur": 2193.95782
+},
+{
+"date": "2026-11-05",
+"symbol": "CSX",
+"currency": "USD",
+"close": 51.825001,
+"eur": 46.165709
+},
+{
+"date": "2026-11-05",
+"symbol": "CTAS",
+"currency": "USD",
+"close": 229.600006,
+"eur": 204.527676
+},
+{
+"date": "2026-11-05",
+"symbol": "CTSH",
+"currency": "USD",
+"close": 66.964996,
+"eur": 59.652416
+},
+{
+"date": "2026-11-05",
+"symbol": "CVS",
+"currency": "USD",
+"close": 81.93,
+"eur": 72.983241
+},
+{
+"date": "2026-11-05",
+"symbol": "CVX",
+"currency": "USD",
+"close": 220.044998,
+"eur": 196.016076
+},
+{
+"date": "2026-11-05",
+"symbol": "DANSKE.CO",
+"currency": "DKK",
+"close": 356.0,
+"eur": 47.62733
+},
+{
+"date": "2026-11-05",
+"symbol": "DASH",
+"currency": "USD",
+"close": 170.774994,
+"eur": 152.126358
+},
+{
+"date": "2026-11-05",
+"symbol": "DB1.DE",
+"currency": "EUR",
+"close": 327.200012,
+"eur": 327.200012
+},
+{
+"date": "2026-11-05",
+"symbol": "DBK.DE",
+"currency": "EUR",
+"close": 32.505001,
+"eur": 32.505001
+},
+{
+"date": "2026-11-05",
+"symbol": "DDOG",
+"currency": "USD",
+"close": 179.475006,
+"eur": 159.876328
+},
+{
+"date": "2026-11-05",
+"symbol": "DE",
+"currency": "USD",
+"close": 676.565002,
+"eur": 602.684078
+},
+{
+"date": "2026-11-05",
+"symbol": "DECK",
+"currency": "USD",
+"close": 87.559998,
+"eur": 77.998442
+},
+{
+"date": "2026-11-05",
+"symbol": "DELL",
+"currency": "USD",
+"close": 334.38501,
+"eur": 297.870154
+},
+{
+"date": "2026-11-05",
+"symbol": "DG.PA",
+"currency": "EUR",
+"close": 113.099998,
+"eur": 113.099998
+},
+{
+"date": "2026-11-05",
+"symbol": "DGE.L",
+"currency": "GBp",
+"close": 1869.0,
+"eur": 22.437244
+},
+{
+"date": "2026-11-05",
+"symbol": "DHL.DE",
+"currency": "EUR",
+"close": 60.439999,
+"eur": 60.439999
+},
+{
+"date": "2026-11-05",
+"symbol": "DHR",
+"currency": "USD",
+"close": 230.639999,
+"eur": 205.454102
+},
+{
+"date": "2026-11-05",
+"symbol": "DIS",
+"currency": "USD",
+"close": 118.32,
+"eur": 105.399451
+},
+{
+"date": "2026-11-05",
+"symbol": "DLR",
+"currency": "USD",
+"close": 177.220001,
+"eur": 157.86757
+},
+{
+"date": "2026-11-05",
+"symbol": "DRI",
+"currency": "USD",
+"close": 228.434998,
+"eur": 203.489887
+},
+{
+"date": "2026-11-05",
+"symbol": "DSV.CO",
+"currency": "DKK",
+"close": 1455.5,
+"eur": 194.723535
+},
+{
+"date": "2026-11-05",
+"symbol": "DSY.PA",
+"currency": "EUR",
+"close": 26.110001,
+"eur": 26.110001
+},
+{
+"date": "2026-11-05",
+"symbol": "DTE.DE",
+"currency": "EUR",
+"close": 26.26,
+"eur": 26.26
+},
+{
+"date": "2026-11-05",
+"symbol": "DUK",
+"currency": "USD",
+"close": 131.125,
+"eur": 116.806145
+},
+{
+"date": "2026-11-05",
+"symbol": "DVN",
+"currency": "USD",
+"close": 44.59,
+"eur": 39.72077
+},
+{
+"date": "2026-11-05",
+"symbol": "DXCM",
+"currency": "USD",
+"close": 85.264999,
+"eur": 75.954058
+},
+{
+"date": "2026-11-05",
+"symbol": "EBS.VI",
+"currency": "EUR",
+"close": 112.300003,
+"eur": 112.300003
+},
+{
+"date": "2026-11-05",
+"symbol": "ECL",
+"currency": "USD",
+"close": 309.100006,
+"eur": 275.346273
+},
+{
+"date": "2026-11-05",
+"symbol": "ED",
+"currency": "USD",
+"close": 120.775002,
+"eur": 107.586367
+},
+{
+"date": "2026-11-05",
+"symbol": "EL.PA",
+"currency": "EUR",
+"close": 191.550003,
+"eur": 191.550003
+},
+{
+"date": "2026-11-05",
+"symbol": "ELE.MC",
+"currency": "EUR",
+"close": 44.66,
+"eur": 44.66
+},
+{
+"date": "2026-11-05",
+"symbol": "ELV",
+"currency": "USD",
+"close": 439.429993,
+"eur": 391.44422
+},
+{
+"date": "2026-11-05",
+"symbol": "EME",
+"currency": "USD",
+"close": 592.359985,
+"eur": 527.674252
+},
+{
+"date": "2026-11-05",
+"symbol": "EMR",
+"currency": "USD",
+"close": 164.330002,
+"eur": 146.385159
+},
+{
+"date": "2026-11-05",
+"symbol": "ENEL.MI",
+"currency": "EUR",
+"close": 9.757,
+"eur": 9.757
+},
+{
+"date": "2026-11-05",
+"symbol": "ENI.MI",
+"currency": "EUR",
+"close": 25.459999,
+"eur": 25.459999
+},
+{
+"date": "2026-11-05",
+"symbol": "ENR.DE",
+"currency": "EUR",
+"close": 113.360001,
+"eur": 113.360001
+},
+{
+"date": "2026-11-05",
+"symbol": "ENX.PA",
+"currency": "EUR",
+"close": 174.100006,
+"eur": 174.100006
+},
+{
+"date": "2026-11-05",
+"symbol": "EOAN.DE",
+"currency": "EUR",
+"close": 19.370001,
+"eur": 19.370001
+},
+{
+"date": "2026-11-05",
+"symbol": "EOG",
+"currency": "USD",
+"close": 149.699997,
+"eur": 133.352751
+},
+{
+"date": "2026-11-05",
+"symbol": "EQIX",
+"currency": "USD",
+"close": 1005.224976,
+"eur": 895.454369
+},
+{
+"date": "2026-11-05",
+"symbol": "ERIC-B.ST",
+"currency": "SEK",
+"close": 102.800003,
+"eur": 9.35572
+},
+{
+"date": "2026-11-05",
+"symbol": "ETN",
+"currency": "USD",
+"close": 335.790009,
+"eur": 299.121726
+},
+{
+"date": "2026-11-05",
+"symbol": "EVO",
+"currency": "USD",
+"close": 1.66,
+"eur": 1.478728
+},
+{
+"date": "2026-11-05",
+"symbol": "EXC",
+"currency": "USD",
+"close": 46.240002,
+"eur": 41.190592
+},
+{
+"date": "2026-11-05",
+"symbol": "EXPD",
+"currency": "USD",
+"close": 195.479996,
+"eur": 174.133573
+},
+{
+"date": "2026-11-05",
+"symbol": "EXPN.L",
+"currency": "GBp",
+"close": 3132.0,
+"eur": 37.599491
+},
+{
+"date": "2026-11-05",
+"symbol": "FANG",
+"currency": "USD",
+"close": 185.800003,
+"eur": 165.510635
+},
+{
+"date": "2026-11-05",
+"symbol": "FAST",
+"currency": "USD",
+"close": 54.099998,
+"eur": 48.192277
+},
+{
+"date": "2026-11-05",
+"symbol": "FBK.MI",
+"currency": "EUR",
+"close": 22.84,
+"eur": 22.84
+},
+{
+"date": "2026-11-05",
+"symbol": "FCX",
+"currency": "USD",
+"close": 59.0,
+"eur": 52.557198
+},
+{
+"date": "2026-11-05",
+"symbol": "FDX",
+"currency": "USD",
+"close": 325.170013,
+"eur": 289.661435
+},
+{
+"date": "2026-11-05",
+"symbol": "FEMSAUBD.MX",
+"currency": "MXN",
+"close": 241.850006,
+"eur": 11.521028
+},
+{
+"date": "2026-11-05",
+"symbol": "FERG",
+"currency": "USD",
+"close": 238.975006,
+"eur": 212.878926
+},
+{
+"date": "2026-11-05",
+"symbol": "FFIV",
+"currency": "USD",
+"close": 319.575012,
+"eur": 284.677408
+},
+{
+"date": "2026-11-05",
+"symbol": "FITB",
+"currency": "USD",
+"close": 54.080002,
+"eur": 48.174464
+},
+{
+"date": "2026-11-05",
+"symbol": "FIX",
+"currency": "USD",
+"close": 992.570007,
+"eur": 884.181323
+},
+{
+"date": "2026-11-05",
+"symbol": "FLEX",
+"currency": "USD",
+"close": 69.120003,
+"eur": 61.572096
+},
+{
+"date": "2026-11-05",
+"symbol": "FNV.TO",
+"currency": "CAD",
+"close": 347.440002,
+"eur": 221.309238
+},
+{
+"date": "2026-11-05",
+"symbol": "FTNT",
+"currency": "USD",
+"close": 125.095001,
+"eur": 111.434622
+},
+{
+"date": "2026-11-05",
+"symbol": "G.MI",
+"currency": "EUR",
+"close": 44.400002,
+"eur": 44.400002
+},
+{
+"date": "2026-11-05",
+"symbol": "GALD.SW",
+"currency": "CHF",
+"close": 195.75,
+"eur": 214.016285
+},
+{
+"date": "2026-11-05",
+"symbol": "GD",
+"currency": "USD",
+"close": 368.910004,
+"eur": 328.625017
+},
+{
+"date": "2026-11-05",
+"symbol": "GE",
+"currency": "USD",
+"close": 318.595001,
+"eur": 283.804415
+},
+{
+"date": "2026-11-05",
+"symbol": "GEBN.SW",
+"currency": "CHF",
+"close": 592.0,
+"eur": 647.242098
+},
+{
+"date": "2026-11-05",
+"symbol": "GEHC",
+"currency": "USD",
+"close": 84.5,
+"eur": 75.272597
+},
+{
+"date": "2026-11-05",
+"symbol": "GEV",
+"currency": "USD",
+"close": 789.02002,
+"eur": 702.859002
+},
+{
+"date": "2026-11-05",
+"symbol": "GFNORTEO.MX",
+"currency": "MXN",
+"close": 208.110001,
+"eur": 9.913753
+},
+{
+"date": "2026-11-05",
+"symbol": "GILD",
+"currency": "USD",
+"close": 172.119995,
+"eur": 153.324485
+},
+{
+"date": "2026-11-05",
+"symbol": "GIVN.SW",
+"currency": "CHF",
+"close": 4121.0,
+"eur": 4505.548457
+},
+{
+"date": "2026-11-05",
+"symbol": "GLE.PA",
+"currency": "EUR",
+"close": 64.199997,
+"eur": 64.199997
+},
+{
+"date": "2026-11-05",
+"symbol": "GLEN.L",
+"currency": "GBp",
+"close": 495.75,
+"eur": 5.951452
+},
+{
+"date": "2026-11-05",
+"symbol": "GLW",
+"currency": "USD",
+"close": 106.309998,
+"eur": 94.700942
+},
+{
+"date": "2026-11-05",
+"symbol": "GM",
+"currency": "USD",
+"close": 89.900002,
+"eur": 80.082918
+},
+{
+"date": "2026-11-05",
+"symbol": "GMAB.CO",
+"currency": "DKK",
+"close": 3635.0,
+"eur": 486.307144
+},
+{
+"date": "2026-11-05",
+"symbol": "GMEXICOB.MX",
+"currency": "MXN",
+"close": 220.559998,
+"eur": 10.506835
+},
+{
+"date": "2026-11-05",
+"symbol": "GOOGL",
+"currency": "USD",
+"close": 285.179993,
+"eur": 254.038326
+},
+{
+"date": "2026-11-05",
+"symbol": "GRMN",
+"currency": "USD",
+"close": 290.464996,
+"eur": 258.746207
+},
+{
+"date": "2026-11-05",
+"symbol": "GS",
+"currency": "USD",
+"close": 874.0,
+"eur": 778.559166
+},
+{
+"date": "2026-11-05",
+"symbol": "GSK.L",
+"currency": "GBp",
+"close": 1890.0,
+"eur": 22.689348
+},
+{
+"date": "2026-11-05",
+"symbol": "GWW",
+"currency": "USD",
+"close": 1478.280029,
+"eur": 1316.851792
+},
+{
+"date": "2026-11-05",
+"symbol": "HAL",
+"currency": "USD",
+"close": 32.939999,
+"eur": 29.342949
+},
+{
+"date": "2026-11-05",
+"symbol": "HCA",
+"currency": "USD",
+"close": 508.76001,
+"eur": 453.203397
+},
+{
+"date": "2026-11-05",
+"symbol": "HD",
+"currency": "USD",
+"close": 351.717499,
+"eur": 313.309934
+},
+{
+"date": "2026-11-05",
+"symbol": "HDFCBANK.NS",
+"currency": "INR",
+"close": 760.0,
+"eur": 7.169459
+},
+{
+"date": "2026-11-05",
+"symbol": "HEXA-B.ST",
+"currency": "SEK",
+"close": 108.949997,
+"eur": 9.915425
+},
+{
+"date": "2026-11-05",
+"symbol": "HIG",
+"currency": "USD",
+"close": 138.744995,
+"eur": 123.594036
+},
+{
+"date": "2026-11-05",
+"symbol": "HLMA.L",
+"currency": "GBp",
+"close": 3308.0,
+"eur": 39.712362
+},
+{
+"date": "2026-11-05",
+"symbol": "HLN.L",
+"currency": "GBp",
+"close": 340.100006,
+"eur": 4.082882
+},
+{
+"date": "2026-11-05",
+"symbol": "HLT",
+"currency": "USD",
+"close": 368.576904,
+"eur": 328.328292
+},
+{
+"date": "2026-11-05",
+"symbol": "HNR1.DE",
+"currency": "EUR",
+"close": 305.600006,
+"eur": 305.600006
+},
+{
+"date": "2026-11-05",
+"symbol": "HOLN.SW",
+"currency": "CHF",
+"close": 74.040001,
+"eur": 80.948996
+},
+{
+"date": "2026-11-05",
+"symbol": "HON",
+"currency": "USD",
+"close": 220.809998,
+"eur": 196.697537
+},
+{
+"date": "2026-11-05",
+"symbol": "HONA",
+"currency": "USD",
+"close": 154.259995,
+"eur": 137.414797
+},
+{
+"date": "2026-11-05",
+"symbol": "HOOD",
+"currency": "USD",
+"close": 79.300003,
+"eur": 70.64044
+},
+{
+"date": "2026-11-05",
+"symbol": "HPE",
+"currency": "USD",
+"close": 45.849998,
+"eur": 40.843177
+},
+{
+"date": "2026-11-05",
+"symbol": "HPQ",
+"currency": "USD",
+"close": 29.49,
+"eur": 26.269691
+},
+{
+"date": "2026-11-05",
+"symbol": "HSBA.L",
+"currency": "GBp",
+"close": 1301.599976,
+"eur": 15.625638
+},
+{
+"date": "2026-11-05",
+"symbol": "HSY",
+"currency": "USD",
+"close": 175.070007,
+"eur": 155.952356
+},
+{
+"date": "2026-11-05",
+"symbol": "HUBB",
+"currency": "USD",
+"close": 421.399994,
+"eur": 375.383098
+},
+{
+"date": "2026-11-05",
+"symbol": "HWM",
+"currency": "USD",
+"close": 206.75,
+"eur": 184.172892
+},
+{
+"date": "2026-11-05",
+"symbol": "IBE.MC",
+"currency": "EUR",
+"close": 22.77,
+"eur": 22.77
+},
+{
+"date": "2026-11-05",
+"symbol": "IBM",
+"currency": "USD",
+"close": 249.929993,
+"eur": 222.637628
+},
+{
+"date": "2026-11-05",
+"symbol": "ICE",
+"currency": "USD",
+"close": 173.839996,
+"eur": 154.856662
+},
+{
+"date": "2026-11-05",
+"symbol": "ICICIBANK.NS",
+"currency": "INR",
+"close": 1500.0,
+"eur": 14.150249
+},
+{
+"date": "2026-11-05",
+"symbol": "IDXX",
+"currency": "USD",
+"close": 672.109985,
+"eur": 598.715549
+},
+{
+"date": "2026-11-05",
+"symbol": "IFC.TO",
+"currency": "CAD",
+"close": 282.0,
+"eur": 179.625848
+},
+{
+"date": "2026-11-05",
+"symbol": "IFX.DE",
+"currency": "EUR",
+"close": 45.904999,
+"eur": 45.904999
+},
+{
+"date": "2026-11-05",
+"symbol": "III.L",
+"currency": "GBp",
+"close": 2578.0,
+"eur": 30.948751
+},
+{
+"date": "2026-11-05",
+"symbol": "IMB.L",
+"currency": "GBp",
+"close": 3061.0,
+"eur": 36.74714
+},
+{
+"date": "2026-11-05",
+"symbol": "IMO.TO",
+"currency": "CAD",
+"close": 180.880005,
+"eur": 115.215334
+},
+{
+"date": "2026-11-05",
+"symbol": "INGA.AS",
+"currency": "EUR",
+"close": 29.129999,
+"eur": 29.129999
+},
+{
+"date": "2026-11-05",
+"symbol": "INTC",
+"currency": "USD",
+"close": 55.57,
+"eur": 49.501754
+},
+{
+"date": "2026-11-05",
+"symbol": "INTU",
+"currency": "USD",
+"close": 355.619995,
+"eur": 316.786278
+},
+{
+"date": "2026-11-05",
+"symbol": "INVE-B.ST",
+"currency": "SEK",
+"close": 433.899994,
+"eur": 39.488783
+},
+{
+"date": "2026-11-05",
+"symbol": "ISP.MI",
+"currency": "EUR",
+"close": 6.265,
+"eur": 6.265
+},
+{
+"date": "2026-11-05",
+"symbol": "ISRG",
+"currency": "USD",
+"close": 470.910004,
+"eur": 419.486613
+},
+{
+"date": "2026-11-05",
+"symbol": "ITW",
+"currency": "USD",
+"close": 291.779999,
+"eur": 259.917611
+},
+{
+"date": "2026-11-05",
+"symbol": "ITX.MC",
+"currency": "EUR",
+"close": 60.02,
+"eur": 60.02
+},
+{
+"date": "2026-11-05",
+"symbol": "JBL",
+"currency": "USD",
+"close": 243.384995,
+"eur": 216.807344
+},
+{
+"date": "2026-11-05",
+"symbol": "JCI",
+"currency": "USD",
+"close": 136.529999,
+"eur": 121.620918
+},
+{
+"date": "2026-11-05",
+"symbol": "JNJ",
+"currency": "USD",
+"close": 276.899994,
+"eur": 246.662504
+},
+{
+"date": "2026-11-05",
+"symbol": "JPM",
+"currency": "USD",
+"close": 341.467987,
+"eur": 304.179669
+},
+{
+"date": "2026-11-05",
+"symbol": "KDP",
+"currency": "USD",
+"close": 37.474998,
+"eur": 33.382727
+},
+{
+"date": "2026-11-05",
+"symbol": "KEYS",
+"currency": "USD",
+"close": 266.315002,
+"eur": 237.233394
+},
+{
+"date": "2026-11-05",
+"symbol": "KKR",
+"currency": "USD",
+"close": 96.904999,
+"eur": 86.322969
+},
+{
+"date": "2026-11-05",
+"symbol": "KLAC",
+"currency": "USD",
+"close": 135.970001,
+"eur": 121.122072
+},
+{
+"date": "2026-11-05",
+"symbol": "KMI",
+"currency": "USD",
+"close": 31.290001,
+"eur": 27.873132
+},
+{
+"date": "2026-11-05",
+"symbol": "KNEBV.HE",
+"currency": "EUR",
+"close": 58.98,
+"eur": 58.98
+},
+{
+"date": "2026-11-05",
+"symbol": "KNIN.SW",
+"currency": "CHF",
+"close": 244.899994,
+"eur": 267.752679
+},
+{
+"date": "2026-11-05",
+"symbol": "KO",
+"currency": "USD",
+"close": 96.355003,
+"eur": 85.833033
+},
+{
+"date": "2026-11-05",
+"symbol": "KOG.OL",
+"currency": "NOK",
+"close": 339.399994,
+"eur": 32.555073
+},
+{
+"date": "2026-11-05",
+"symbol": "LHX",
+"currency": "USD",
+"close": 259.785095,
+"eur": 231.416553
+},
+{
+"date": "2026-11-05",
+"symbol": "LIN",
+"currency": "USD",
+"close": 526.164978,
+"eur": 468.707742
+},
+{
+"date": "2026-11-05",
+"symbol": "LITE",
+"currency": "USD",
+"close": 545.674988,
+"eur": 486.087258
+},
+{
+"date": "2026-11-05",
+"symbol": "LLOY.L",
+"currency": "GBp",
+"close": 96.720001,
+"eur": 1.161118
+},
+{
+"date": "2026-11-05",
+"symbol": "LLY",
+"currency": "USD",
+"close": 1411.390015,
+"eur": 1257.26617
+},
+{
+"date": "2026-11-05",
+"symbol": "LMT",
+"currency": "USD",
+"close": 597.60498,
+"eur": 532.346493
+},
+{
+"date": "2026-11-05",
+"symbol": "LOGN.SW",
+"currency": "CHF",
+"close": 80.32,
+"eur": 87.815009
+},
+{
+"date": "2026-11-05",
+"symbol": "LONN.SW",
+"currency": "CHF",
+"close": 672.400024,
+"eur": 735.144599
+},
+{
+"date": "2026-11-05",
+"symbol": "LOW",
+"currency": "USD",
+"close": 227.649994,
+"eur": 202.790606
+},
+{
+"date": "2026-11-05",
+"symbol": "LR.PA",
+"currency": "EUR",
+"close": 127.900002,
+"eur": 127.900002
+},
+{
+"date": "2026-11-05",
+"symbol": "LRCX",
+"currency": "USD",
+"close": 197.119995,
+"eur": 175.594484
+},
+{
+"date": "2026-11-05",
+"symbol": "LSEG.L",
+"currency": "GBp",
+"close": 9782.0,
+"eur": 117.432383
+},
+{
+"date": "2026-11-05",
+"symbol": "MA",
+"currency": "USD",
+"close": 665.237488,
+"eur": 592.593528
+},
+{
+"date": "2026-11-05",
+"symbol": "MAR",
+"currency": "USD",
+"close": 419.734985,
+"eur": 373.899908
+},
+{
+"date": "2026-11-05",
+"symbol": "MC.PA",
+"currency": "EUR",
+"close": 416.5,
+"eur": 416.5
+},
+{
+"date": "2026-11-05",
+"symbol": "MCD",
+"currency": "USD",
+"close": 276.910004,
+"eur": 246.67142
+},
+{
+"date": "2026-11-05",
+"symbol": "MCHP",
+"currency": "USD",
+"close": 71.010002,
+"eur": 63.255707
+},
+{
+"date": "2026-11-05",
+"symbol": "MCK",
+"currency": "USD",
+"close": 1095.27002,
+"eur": 975.66649
+},
+{
+"date": "2026-11-05",
+"symbol": "MCO",
+"currency": "USD",
+"close": 516.48999,
+"eur": 460.089263
+},
+{
+"date": "2026-11-05",
+"symbol": "MDLZ",
+"currency": "USD",
+"close": 67.559998,
+"eur": 60.182443
+},
+{
+"date": "2026-11-05",
+"symbol": "MDT",
+"currency": "USD",
+"close": 104.349998,
+"eur": 92.954975
+},
+{
+"date": "2026-11-05",
+"symbol": "MELI",
+"currency": "USD",
+"close": 1509.800049,
+"eur": 1344.929824
+},
+{
+"date": "2026-11-05",
+"symbol": "MET",
+"currency": "USD",
+"close": 102.995003,
+"eur": 91.747944
+},
+{
+"date": "2026-11-05",
+"symbol": "META",
+"currency": "USD",
+"close": 609.094971,
+"eur": 542.581776
+},
+{
+"date": "2026-11-05",
+"symbol": "MFC.TO",
+"currency": "CAD",
+"close": 62.82,
+"eur": 40.014524
+},
+{
+"date": "2026-11-05",
+"symbol": "MMM",
+"currency": "USD",
+"close": 192.300003,
+"eur": 171.300835
+},
+{
+"date": "2026-11-05",
+"symbol": "MNST",
+"currency": "USD",
+"close": 48.5,
+"eur": 43.203798
+},
+{
+"date": "2026-11-05",
+"symbol": "MO",
+"currency": "USD",
+"close": 78.540001,
+"eur": 69.96343
+},
+{
+"date": "2026-11-05",
+"symbol": "MONC.MI",
+"currency": "EUR",
+"close": 45.869999,
+"eur": 45.869999
+},
+{
+"date": "2026-11-05",
+"symbol": "MPC",
+"currency": "USD",
+"close": 393.309998,
+"eur": 350.36053
+},
+{
+"date": "2026-11-05",
+"symbol": "MPWR",
+"currency": "USD",
+"close": 1167.969971,
+"eur": 1040.427604
+},
+{
+"date": "2026-11-05",
+"symbol": "MRK",
+"currency": "USD",
+"close": 150.399994,
+"eur": 133.976309
+},
+{
+"date": "2026-11-05",
+"symbol": "MRNA",
+"currency": "USD",
+"close": 246.5,
+"eur": 219.58219
+},
+{
+"date": "2026-11-05",
+"symbol": "MRSH",
+"currency": "USD",
+"close": 209.949997,
+"eur": 187.023449
+},
+{
+"date": "2026-11-05",
+"symbol": "MRVL",
+"currency": "USD",
+"close": 142.610001,
+"eur": 127.036983
+},
+{
+"date": "2026-11-05",
+"symbol": "MS",
+"currency": "USD",
+"close": 182.875,
+"eur": 162.905043
+},
+{
+"date": "2026-11-05",
+"symbol": "MSCI",
+"currency": "USD",
+"close": 659.580017,
+"eur": 587.553853
+},
+{
+"date": "2026-11-05",
+"symbol": "MSFT",
+"currency": "USD",
+"close": 544.694214,
+"eur": 485.213584
+},
+{
+"date": "2026-11-05",
+"symbol": "MSI",
+"currency": "USD",
+"close": 535.255005,
+"eur": 476.805137
+},
+{
+"date": "2026-11-05",
+"symbol": "MSTR",
+"currency": "USD",
+"close": 131.25,
+"eur": 116.917495
+},
+{
+"date": "2026-11-05",
+"symbol": "MTX.DE",
+"currency": "EUR",
+"close": 343.100006,
+"eur": 343.100006
+},
+{
+"date": "2026-11-05",
+"symbol": "MU",
+"currency": "USD",
+"close": 710.27002,
+"eur": 632.708505
+},
+{
+"date": "2026-11-05",
+"symbol": "MUV2.DE",
+"currency": "EUR",
+"close": 596.0,
+"eur": 596.0
+},
+{
+"date": "2026-11-05",
+"symbol": "NBIS",
+"currency": "USD",
+"close": 121.9627,
+"eur": 108.644368
+},
+{
+"date": "2026-11-05",
+"symbol": "NDA-FI.HE",
+"currency": "EUR",
+"close": 16.5,
+"eur": 16.5
+},
+{
+"date": "2026-11-05",
+"symbol": "NDAQ",
+"currency": "USD",
+"close": 108.445,
+"eur": 96.602801
+},
+{
+"date": "2026-11-05",
+"symbol": "NEE",
+"currency": "USD",
+"close": 88.220001,
+"eur": 78.586374
+},
+{
+"date": "2026-11-05",
+"symbol": "NEM",
+"currency": "USD",
+"close": 118.898102,
+"eur": 105.914424
+},
+{
+"date": "2026-11-05",
+"symbol": "NESN.SW",
+"currency": "CHF",
+"close": 87.209999,
+"eur": 95.347944
+},
+{
+"date": "2026-11-05",
+"symbol": "NET",
+"currency": "USD",
+"close": 243.5,
+"eur": 216.90979
+},
+{
+"date": "2026-11-05",
+"symbol": "NFLX",
+"currency": "USD",
+"close": 65.744003,
+"eur": 58.564756
+},
+{
+"date": "2026-11-05",
+"symbol": "NG.L",
+"currency": "GBp",
+"close": 1284.0,
+"eur": 15.414351
+},
+{
+"date": "2026-11-05",
+"symbol": "NOC",
+"currency": "USD",
+"close": 532.515015,
+"eur": 474.364354
+},
+{
+"date": "2026-11-05",
+"symbol": "NOKIA.HE",
+"currency": "EUR",
+"close": 6.846,
+"eur": 6.846
+},
+{
+"date": "2026-11-05",
+"symbol": "NOVN.SW",
+"currency": "CHF",
+"close": 134.720001,
+"eur": 147.291311
+},
+{
+"date": "2026-11-05",
+"symbol": "NOVO-B.CO",
+"currency": "DKK",
+"close": 271.25,
+"eur": 36.289082
+},
+{
+"date": "2026-11-05",
+"symbol": "NOW",
+"currency": "USD",
+"close": 105.510002,
+"eur": 93.988306
+},
+{
+"date": "2026-11-05",
+"symbol": "NSC",
+"currency": "USD",
+"close": 333.459991,
+"eur": 297.046147
+},
+{
+"date": "2026-11-05",
+"symbol": "NTAP",
+"currency": "USD",
+"close": 175.985001,
+"eur": 156.767432
+},
+{
+"date": "2026-11-05",
+"symbol": "NTGY.MC",
+"currency": "EUR",
+"close": 29.780001,
+"eur": 29.780001
+},
+{
+"date": "2026-11-05",
+"symbol": "NU",
+"currency": "USD",
+"close": 11.63,
+"eur": 10.360004
+},
+{
+"date": "2026-11-05",
+"symbol": "NVDA",
+"currency": "USD",
+"close": 186.615005,
+"eur": 166.23664
+},
+{
+"date": "2026-11-05",
+"symbol": "NVR",
+"currency": "USD",
+"close": 6342.77002,
+"eur": 5650.139284
+},
+{
+"date": "2026-11-05",
+"symbol": "NWG.L",
+"currency": "GBp",
+"close": 590.599976,
+"eur": 7.090121
+},
+{
+"date": "2026-11-05",
+"symbol": "NXPI",
+"currency": "USD",
+"close": 250.600006,
+"eur": 223.234476
+},
+{
+"date": "2026-11-05",
+"symbol": "NXT.L",
+"currency": "GBp",
+"close": 16050.0,
+"eur": 192.679386
+},
+{
+"date": "2026-11-05",
+"symbol": "ODFL",
+"currency": "USD",
+"close": 178.820007,
+"eur": 159.292855
+},
+{
+"date": "2026-11-05",
+"symbol": "OKTA",
+"currency": "USD",
+"close": 174.0,
+"eur": 154.999193
+},
+{
+"date": "2026-11-05",
+"symbol": "OMC",
+"currency": "USD",
+"close": 87.625,
+"eur": 78.056347
+},
+{
+"date": "2026-11-05",
+"symbol": "ON",
+"currency": "USD",
+"close": 65.650002,
+"eur": 58.481019
+},
+{
+"date": "2026-11-05",
+"symbol": "OR.PA",
+"currency": "EUR",
+"close": 453.299988,
+"eur": 453.299988
+},
+{
+"date": "2026-11-05",
+"symbol": "ORCL",
+"currency": "USD",
+"close": 115.084999,
+"eur": 102.517713
+},
+{
+"date": "2026-11-05",
+"symbol": "ORLY",
+"currency": "USD",
+"close": 91.620003,
+"eur": 81.615095
+},
+{
+"date": "2026-11-05",
+"symbol": "P",
+"currency": "USD",
+"close": 96.809998,
+"eur": 86.238342
+},
+{
+"date": "2026-11-05",
+"symbol": "PANW",
+"currency": "USD",
+"close": 322.765015,
+"eur": 287.519062
+},
+{
+"date": "2026-11-05",
+"symbol": "PAYX",
+"currency": "USD",
+"close": 120.364998,
+"eur": 107.221135
+},
+{
+"date": "2026-11-05",
+"symbol": "PCAR",
+"currency": "USD",
+"close": 106.470001,
+"eur": 94.843473
+},
+{
+"date": "2026-11-05",
+"symbol": "PDD",
+"currency": "USD",
+"close": 83.330002,
+"eur": 74.230362
+},
+{
+"date": "2026-11-05",
+"symbol": "PEP",
+"currency": "USD",
+"close": 143.199997,
+"eur": 127.562552
+},
+{
+"date": "2026-11-05",
+"symbol": "PFE",
+"currency": "USD",
+"close": 30.695,
+"eur": 27.343105
+},
+{
+"date": "2026-11-05",
+"symbol": "PG",
+"currency": "USD",
+"close": 168.039993,
+"eur": 149.690019
+},
+{
+"date": "2026-11-05",
+"symbol": "PGHN.SW",
+"currency": "CHF",
+"close": 672.400024,
+"eur": 735.144599
+},
+{
+"date": "2026-11-05",
+"symbol": "PGR",
+"currency": "USD",
+"close": 237.675003,
+"eur": 211.720883
+},
+{
+"date": "2026-11-05",
+"symbol": "PH",
+"currency": "USD",
+"close": 921.349976,
+"eur": 820.738522
+},
+{
+"date": "2026-11-05",
+"symbol": "PHM",
+"currency": "USD",
+"close": 134.425003,
+"eur": 119.745787
+},
+{
+"date": "2026-11-05",
+"symbol": "PKO.WA",
+"currency": "PLN",
+"close": 116.599998,
+"eur": 26.540413
+},
+{
+"date": "2026-11-05",
+"symbol": "PLD",
+"currency": "USD",
+"close": 130.149994,
+"eur": 115.937609
+},
+{
+"date": "2026-11-05",
+"symbol": "PLTR",
+"currency": "USD",
+"close": 157.210007,
+"eur": 140.042668
+},
+{
+"date": "2026-11-05",
+"symbol": "PM",
+"currency": "USD",
+"close": 206.589996,
+"eur": 184.030361
+},
+{
+"date": "2026-11-05",
+"symbol": "PNC",
+"currency": "USD",
+"close": 230.089996,
+"eur": 204.96416
+},
+{
+"date": "2026-11-05",
+"symbol": "PNDORA.CO",
+"currency": "DKK",
+"close": 894.200012,
+"eur": 119.630221
+},
+{
+"date": "2026-11-05",
+"symbol": "PPG",
+"currency": "USD",
+"close": 122.625,
+"eur": 109.234345
+},
+{
+"date": "2026-11-05",
+"symbol": "PRU.L",
+"currency": "GBp",
+"close": 929.799988,
+"eur": 11.162199
+},
+{
+"date": "2026-11-05",
+"symbol": "PRX.AS",
+"currency": "EUR",
+"close": 37.965,
+"eur": 37.965
+},
+{
+"date": "2026-11-05",
+"symbol": "PRY.MI",
+"currency": "EUR",
+"close": 100.849998,
+"eur": 100.849998
+},
+{
+"date": "2026-11-05",
+"symbol": "PSA",
+"currency": "USD",
+"close": 337.940002,
+"eur": 301.036941
+},
+{
+"date": "2026-11-05",
+"symbol": "PSX",
+"currency": "USD",
+"close": 258.25,
+"eur": 230.04909
+},
+{
+"date": "2026-11-05",
+"symbol": "PTC",
+"currency": "USD",
+"close": 194.679993,
+"eur": 173.42093
+},
+{
+"date": "2026-11-05",
+"symbol": "PWR",
+"currency": "USD",
+"close": 520.469971,
+"eur": 463.634629
+},
+{
+"date": "2026-11-05",
+"symbol": "PYPL",
+"currency": "USD",
+"close": 58.990002,
+"eur": 52.548291
+},
+{
+"date": "2026-11-05",
+"symbol": "Q",
+"currency": "USD",
+"close": 112.589996,
+"eur": 100.295164
+},
+{
+"date": "2026-11-05",
+"symbol": "QBE.AX",
+"currency": "AUD",
+"close": 25.889999,
+"eur": 16.056809
+},
+{
+"date": "2026-11-05",
+"symbol": "QCOM",
+"currency": "USD",
+"close": 153.285004,
+"eur": 136.546275
+},
+{
+"date": "2026-11-05",
+"symbol": "RACE.MI",
+"currency": "EUR",
+"close": 374.75,
+"eur": 374.75
+},
+{
+"date": "2026-11-05",
+"symbol": "RCL",
+"currency": "USD",
+"close": 322.25,
+"eur": 287.060287
+},
+{
+"date": "2026-11-05",
+"symbol": "REGN",
+"currency": "USD",
+"close": 920.549988,
+"eur": 820.025893
+},
+{
+"date": "2026-11-05",
+"symbol": "REL.L",
+"currency": "GBp",
+"close": 3093.0,
+"eur": 37.131299
+},
+{
+"date": "2026-11-05",
+"symbol": "RELIANCE.NS",
+"currency": "INR",
+"close": 1313.400024,
+"eur": 12.389958
+},
+{
+"date": "2026-11-05",
+"symbol": "REP.MC",
+"currency": "EUR",
+"close": 30.139999,
+"eur": 30.139999
+},
+{
+"date": "2026-11-05",
+"symbol": "RF",
+"currency": "USD",
+"close": 28.67,
+"eur": 25.539235
+},
+{
+"date": "2026-11-05",
+"symbol": "RHM.DE",
+"currency": "EUR",
+"close": 844.700012,
+"eur": 844.700012
+},
+{
+"date": "2026-11-05",
+"symbol": "RIO.AX",
+"currency": "AUD",
+"close": 153.039993,
+"eur": 94.914406
+},
+{
+"date": "2026-11-05",
+"symbol": "RIO.L",
+"currency": "GBp",
+"close": 6262.0,
+"eur": 75.174973
+},
+{
+"date": "2026-11-05",
+"symbol": "RJF",
+"currency": "USD",
+"close": 166.190002,
+"eur": 148.042048
+},
+{
+"date": "2026-11-05",
+"symbol": "RKT.L",
+"currency": "GBp",
+"close": 5620.0,
+"eur": 67.467797
+},
+{
+"date": "2026-11-05",
+"symbol": "RMD",
+"currency": "USD",
+"close": 236.595001,
+"eur": 210.758818
+},
+{
+"date": "2026-11-05",
+"symbol": "RMS.PA",
+"currency": "EUR",
+"close": 1378.0,
+"eur": 1378.0
+},
+{
+"date": "2026-11-05",
+"symbol": "RO.SW",
+"currency": "CHF",
+"close": 399.399994,
+"eur": 436.669747
+},
+{
+"date": "2026-11-05",
+"symbol": "ROK",
+"currency": "USD",
+"close": 396.940002,
+"eur": 353.594139
+},
+{
+"date": "2026-11-05",
+"symbol": "ROP",
+"currency": "USD",
+"close": 497.019989,
+"eur": 442.745387
+},
+{
+"date": "2026-11-05",
+"symbol": "ROP.SW",
+"currency": "CHF",
+"close": 392.200012,
+"eur": 428.797903
+},
+{
+"date": "2026-11-05",
+"symbol": "ROST",
+"currency": "USD",
+"close": 235.919998,
+"eur": 210.157525
+},
+{
+"date": "2026-11-05",
+"symbol": "RR.L",
+"currency": "GBp",
+"close": 1225.400024,
+"eur": 14.710861
+},
+{
+"date": "2026-11-05",
+"symbol": "RSG",
+"currency": "USD",
+"close": 249.789993,
+"eur": 222.512916
+},
+{
+"date": "2026-11-05",
+"symbol": "RTX",
+"currency": "USD",
+"close": 197.039993,
+"eur": 175.523218
+},
+{
+"date": "2026-11-05",
+"symbol": "RWE.DE",
+"currency": "EUR",
+"close": 57.02,
+"eur": 57.02
+},
+{
+"date": "2026-11-05",
+"symbol": "RY.TO",
+"currency": "CAD",
+"close": 289.579987,
+"eur": 184.45408
+},
+{
+"date": "2026-11-05",
+"symbol": "SAF.PA",
+"currency": "EUR",
+"close": 296.100006,
+"eur": 296.100006
+},
+{
+"date": "2026-11-05",
+"symbol": "SAMPO.HE",
+"currency": "EUR",
+"close": 9.952,
+"eur": 9.952
+},
+{
+"date": "2026-11-05",
+"symbol": "SAN.MC",
+"currency": "EUR",
+"close": 10.784,
+"eur": 10.784
+},
+{
+"date": "2026-11-05",
+"symbol": "SAN.PA",
+"currency": "EUR",
+"close": 84.690002,
+"eur": 84.690002
+},
+{
+"date": "2026-11-05",
+"symbol": "SAND.ST",
+"currency": "SEK",
+"close": 358.899994,
+"eur": 32.663112
+},
+{
+"date": "2026-11-05",
+"symbol": "SAP.DE",
+"currency": "EUR",
+"close": 216.75,
+"eur": 216.75
+},
+{
+"date": "2026-11-05",
+"symbol": "SBUX",
+"currency": "USD",
+"close": 108.639999,
+"eur": 96.776507
+},
+{
+"date": "2026-11-05",
+"symbol": "SCCO",
+"currency": "USD",
+"close": 169.860001,
+"eur": 151.311282
+},
+{
+"date": "2026-11-05",
+"symbol": "SCHP.SW",
+"currency": "CHF",
+"close": 310.799988,
+"eur": 339.802088
+},
+{
+"date": "2026-11-05",
+"symbol": "SCHW",
+"currency": "USD",
+"close": 93.050003,
+"eur": 82.888939
+},
+{
+"date": "2026-11-05",
+"symbol": "SDZ.SW",
+"currency": "CHF",
+"close": 83.419998,
+"eur": 91.204281
+},
+{
+"date": "2026-11-05",
+"symbol": "SEB-A.ST",
+"currency": "SEK",
+"close": 216.199997,
+"eur": 19.676135
+},
+{
+"date": "2026-11-05",
+"symbol": "SGE.L",
+"currency": "GBp",
+"close": 1201.5,
+"eur": 14.423943
+},
+{
+"date": "2026-11-05",
+"symbol": "SGO.PA",
+"currency": "EUR",
+"close": 74.260002,
+"eur": 74.260002
+},
+{
+"date": "2026-11-05",
+"symbol": "SGRO.L",
+"currency": "GBp",
+"close": 917.599976,
+"eur": 11.015738
+},
+{
+"date": "2026-11-05",
+"symbol": "SHEL.L",
+"currency": "GBp",
+"close": 3782.5,
+"eur": 45.408709
+},
+{
+"date": "2026-11-05",
+"symbol": "SHELL.AS",
+"currency": "EUR",
+"close": 45.525002,
+"eur": 45.525002
+},
+{
+"date": "2026-11-05",
+"symbol": "SHOP",
+"currency": "USD",
+"close": 143.544998,
+"eur": 127.869879
+},
+{
+"date": "2026-11-05",
+"symbol": "SHW",
+"currency": "USD",
+"close": 353.418488,
+"eur": 314.825175
+},
+{
+"date": "2026-11-05",
+"symbol": "SIE.DE",
+"currency": "EUR",
+"close": 272.25,
+"eur": 272.25
+},
+{
+"date": "2026-11-05",
+"symbol": "SIKA.SW",
+"currency": "CHF",
+"close": 188.050003,
+"eur": 205.597768
+},
+{
+"date": "2026-11-05",
+"symbol": "SLB",
+"currency": "USD",
+"close": 50.695,
+"eur": 45.159104
+},
+{
+"date": "2026-11-05",
+"symbol": "SLF.TO",
+"currency": "CAD",
+"close": 105.93,
+"eur": 67.474348
+},
+{
+"date": "2026-11-05",
+"symbol": "SLHN.SW",
+"currency": "CHF",
+"close": 987.400024,
+"eur": 1079.538621
+},
+{
+"date": "2026-11-05",
+"symbol": "SNA",
+"currency": "USD",
+"close": 367.570007,
+"eur": 327.431348
+},
+{
+"date": "2026-11-05",
+"symbol": "SNDK",
+"currency": "USD",
+"close": 874.86499,
+"eur": 779.329699
+},
+{
+"date": "2026-11-05",
+"symbol": "SNOW",
+"currency": "USD",
+"close": 280.040009,
+"eur": 249.459629
+},
+{
+"date": "2026-11-05",
+"symbol": "SNPS",
+"currency": "USD",
+"close": 446.839996,
+"eur": 398.045051
+},
+{
+"date": "2026-11-05",
+"symbol": "SO",
+"currency": "USD",
+"close": 94.300003,
+"eur": 84.002439
+},
+{
+"date": "2026-11-05",
+"symbol": "SPCX",
+"currency": "USD",
+"close": 126.129997,
+"eur": 112.356597
+},
+{
+"date": "2026-11-05",
+"symbol": "SPG",
+"currency": "USD",
+"close": 227.904999,
+"eur": 203.017764
+},
+{
+"date": "2026-11-05",
+"symbol": "SPGI",
+"currency": "USD",
+"close": 472.910004,
+"eur": 421.268213
+},
+{
+"date": "2026-11-05",
+"symbol": "SREN.SW",
+"currency": "CHF",
+"close": 159.600006,
+"eur": 174.492978
+},
+{
+"date": "2026-11-05",
+"symbol": "SSE.L",
+"currency": "GBp",
+"close": 2648.5,
+"eur": 31.7951
+},
+{
+"date": "2026-11-05",
+"symbol": "STAN.L",
+"currency": "GBp",
+"close": 2082.0,
+"eur": 24.994298
+},
+{
+"date": "2026-11-05",
+"symbol": "STMMI.MI",
+"currency": "EUR",
+"close": 37.049999,
+"eur": 37.049999
+},
+{
+"date": "2026-11-05",
+"symbol": "STX",
+"currency": "USD",
+"close": 484.0,
+"eur": 431.147181
+},
+{
+"date": "2026-11-05",
+"symbol": "SU.PA",
+"currency": "EUR",
+"close": 227.0,
+"eur": 227.0
+},
+{
+"date": "2026-11-05",
+"symbol": "SU.TO",
+"currency": "CAD",
+"close": 101.169998,
+"eur": 64.442364
+},
+{
+"date": "2026-11-05",
+"symbol": "SWED-A.ST",
+"currency": "SEK",
+"close": 406.200012,
+"eur": 36.967837
+},
+{
+"date": "2026-11-05",
+"symbol": "SWKS",
+"currency": "USD",
+"close": 81.775002,
+"eur": 72.845168
+},
+{
+"date": "2026-11-05",
+"symbol": "SYK",
+"currency": "USD",
+"close": 336.209991,
+"eur": 299.495847
+},
+{
+"date": "2026-11-05",
+"symbol": "T",
+"currency": "USD",
+"close": 21.885,
+"eur": 19.495157
+},
+{
+"date": "2026-11-05",
+"symbol": "TDG",
+"currency": "USD",
+"close": 1196.109985,
+"eur": 1065.494728
+},
+{
+"date": "2026-11-05",
+"symbol": "TDY",
+"currency": "USD",
+"close": 603.52002,
+"eur": 537.61561
+},
+{
+"date": "2026-11-05",
+"symbol": "TEL",
+"currency": "USD",
+"close": 213.710007,
+"eur": 190.372866
+},
+{
+"date": "2026-11-05",
+"symbol": "TER",
+"currency": "USD",
+"close": 223.410004,
+"eur": 199.013622
+},
+{
+"date": "2026-11-05",
+"symbol": "TFC",
+"currency": "USD",
+"close": 50.419998,
+"eur": 44.914132
+},
+{
+"date": "2026-11-05",
+"symbol": "TGT",
+"currency": "USD",
+"close": 159.902405,
+"eur": 142.441056
+},
+{
+"date": "2026-11-05",
+"symbol": "TJX",
+"currency": "USD",
+"close": 140.580002,
+"eur": 125.22866
+},
+{
+"date": "2026-11-05",
+"symbol": "TMO",
+"currency": "USD",
+"close": 696.513306,
+"eur": 620.454025
+},
+{
+"date": "2026-11-05",
+"symbol": "TMUS",
+"currency": "USD",
+"close": 159.710007,
+"eur": 142.269668
+},
+{
+"date": "2026-11-05",
+"symbol": "TPL",
+"currency": "USD",
+"close": 288.309998,
+"eur": 256.826534
+},
+{
+"date": "2026-11-05",
+"symbol": "TRGP",
+"currency": "USD",
+"close": 282.459991,
+"eur": 251.615349
+},
+{
+"date": "2026-11-05",
+"symbol": "TROW",
+"currency": "USD",
+"close": 109.339996,
+"eur": 97.400064
+},
+{
+"date": "2026-11-05",
+"symbol": "TRV",
+"currency": "USD",
+"close": 411.045013,
+"eur": 366.158882
+},
+{
+"date": "2026-11-05",
+"symbol": "TSCO",
+"currency": "USD",
+"close": 36.125,
+"eur": 32.180149
+},
+{
+"date": "2026-11-05",
+"symbol": "TSCO.L",
+"currency": "GBp",
+"close": 561.200012,
+"eur": 6.737176
+},
+{
+"date": "2026-11-05",
+"symbol": "TSLA",
+"currency": "USD",
+"close": 349.869995,
+"eur": 311.664178
+},
+{
+"date": "2026-11-05",
+"symbol": "TT",
+"currency": "USD",
+"close": 406.329987,
+"eur": 361.958736
+},
+{
+"date": "2026-11-05",
+"symbol": "TTE.PA",
+"currency": "EUR",
+"close": 81.559998,
+"eur": 81.559998
+},
+{
+"date": "2026-11-05",
+"symbol": "TTWO",
+"currency": "USD",
+"close": 208.774994,
+"eur": 185.976756
+},
+{
+"date": "2026-11-05",
+"symbol": "TWLO",
+"currency": "USD",
+"close": 203.899994,
+"eur": 181.634107
+},
+{
+"date": "2026-11-05",
+"symbol": "TXN",
+"currency": "USD",
+"close": 293.897491,
+"eur": 261.803874
+},
+{
+"date": "2026-11-05",
+"symbol": "UBER",
+"currency": "USD",
+"close": 68.580002,
+"eur": 61.091063
+},
+{
+"date": "2026-11-05",
+"symbol": "UBSG.SW",
+"currency": "CHF",
+"close": 39.73,
+"eur": 43.437379
+},
+{
+"date": "2026-11-05",
+"symbol": "UCB.BR",
+"currency": "EUR",
+"close": 291.100006,
+"eur": 291.100006
+},
+{
+"date": "2026-11-05",
+"symbol": "UCG.MI",
+"currency": "EUR",
+"close": 77.099998,
+"eur": 77.099998
+},
+{
+"date": "2026-11-05",
+"symbol": "ULTA",
+"currency": "USD",
+"close": 656.530029,
+"eur": 584.836924
+},
+{
+"date": "2026-11-05",
+"symbol": "ULVR.L",
+"currency": "GBp",
+"close": 5029.0,
+"eur": 60.372874
+},
+{
+"date": "2026-11-05",
+"symbol": "UMG.AS",
+"currency": "EUR",
+"close": 17.73,
+"eur": 17.73
+},
+{
+"date": "2026-11-05",
+"symbol": "UNH",
+"currency": "USD",
+"close": 406.869995,
+"eur": 362.439776
+},
+{
+"date": "2026-11-05",
+"symbol": "UNP",
+"currency": "USD",
+"close": 302.265015,
+"eur": 269.257663
+},
+{
+"date": "2026-11-05",
+"symbol": "UPS",
+"currency": "USD",
+"close": 113.300003,
+"eur": 100.927638
+},
+{
+"date": "2026-11-05",
+"symbol": "URI",
+"currency": "USD",
+"close": 1088.859985,
+"eur": 969.956432
+},
+{
+"date": "2026-11-05",
+"symbol": "USB",
+"currency": "USD",
+"close": 60.110001,
+"eur": 53.545986
+},
+{
+"date": "2026-11-05",
+"symbol": "V",
+"currency": "USD",
+"close": 430.679993,
+"eur": 383.649721
+},
+{
+"date": "2026-11-05",
+"symbol": "VACN.SW",
+"currency": "CHF",
+"close": 517.799988,
+"eur": 566.11816
+},
+{
+"date": "2026-11-05",
+"symbol": "VLO",
+"currency": "USD",
+"close": 365.679993,
+"eur": 325.747723
+},
+{
+"date": "2026-11-05",
+"symbol": "VLTO",
+"currency": "USD",
+"close": 117.629997,
+"eur": 104.784797
+},
+{
+"date": "2026-11-05",
+"symbol": "VMRK",
+"currency": "USD",
+"close": 64.794998,
+"eur": 57.719382
+},
+{
+"date": "2026-11-05",
+"symbol": "VOD.L",
+"currency": "GBp",
+"close": 119.599998,
+"eur": 1.435792
+},
+{
+"date": "2026-11-05",
+"symbol": "VOLV-B.ST",
+"currency": "SEK",
+"close": 316.799988,
+"eur": 28.831634
+},
+{
+"date": "2026-11-05",
+"symbol": "VRSN",
+"currency": "USD",
+"close": 315.029999,
+"eur": 280.628711
+},
+{
+"date": "2026-11-05",
+"symbol": "VRT",
+"currency": "USD",
+"close": 180.259995,
+"eur": 160.575596
+},
+{
+"date": "2026-11-05",
+"symbol": "VRTX",
+"currency": "USD",
+"close": 541.109985,
+"eur": 482.020754
+},
+{
+"date": "2026-11-05",
+"symbol": "VWS.CO",
+"currency": "DKK",
+"close": 205.199997,
+"eur": 27.452606
+},
+{
+"date": "2026-11-05",
+"symbol": "VZ",
+"currency": "USD",
+"close": 46.375,
+"eur": 41.310848
+},
+{
+"date": "2026-11-05",
+"symbol": "WAB",
+"currency": "USD",
+"close": 288.549988,
+"eur": 257.040318
+},
+{
+"date": "2026-11-05",
+"symbol": "WALMEX.MX",
+"currency": "MXN",
+"close": 52.759998,
+"eur": 2.513332
+},
+{
+"date": "2026-11-05",
+"symbol": "WAT",
+"currency": "USD",
+"close": 458.859985,
+"eur": 408.752457
+},
+{
+"date": "2026-11-05",
+"symbol": "WDAY",
+"currency": "USD",
+"close": 203.789993,
+"eur": 181.536118
+},
+{
+"date": "2026-11-05",
+"symbol": "WDC",
+"currency": "USD",
+"close": 277.230011,
+"eur": 246.956483
+},
+{
+"date": "2026-11-05",
+"symbol": "WELL",
+"currency": "USD",
+"close": 246.320007,
+"eur": 219.421853
+},
+{
+"date": "2026-11-05",
+"symbol": "WES.AX",
+"currency": "AUD",
+"close": 81.540001,
+"eur": 50.570577
+},
+{
+"date": "2026-11-05",
+"symbol": "WFC",
+"currency": "USD",
+"close": 85.209999,
+"eur": 75.905064
+},
+{
+"date": "2026-11-05",
+"symbol": "WM",
+"currency": "USD",
+"close": 243.186798,
+"eur": 216.63079
+},
+{
+"date": "2026-11-05",
+"symbol": "WMB",
+"currency": "USD",
+"close": 66.529999,
+"eur": 59.26492
+},
+{
+"date": "2026-11-05",
+"symbol": "WMT",
+"currency": "USD",
+"close": 129.585007,
+"eur": 115.434319
+},
+{
+"date": "2026-11-05",
+"symbol": "WPM.TO",
+"currency": "CAD",
+"close": 184.240005,
+"eur": 117.355558
+},
+{
+"date": "2026-11-05",
+"symbol": "WRB",
+"currency": "USD",
+"close": 77.794998,
+"eur": 69.299781
+},
+{
+"date": "2026-11-05",
+"symbol": "WSM",
+"currency": "USD",
+"close": 261.980011,
+"eur": 233.371783
+},
+{
+"date": "2026-11-05",
+"symbol": "WTW",
+"currency": "USD",
+"close": 337.220001,
+"eur": 300.395564
+},
+{
+"date": "2026-11-05",
+"symbol": "XEL",
+"currency": "USD",
+"close": 80.095001,
+"eur": 71.348624
+},
+{
+"date": "2026-11-05",
+"symbol": "XOM",
+"currency": "USD",
+"close": 171.505005,
+"eur": 152.776652
+},
+{
+"date": "2026-11-05",
+"symbol": "ZTS",
+"currency": "USD",
+"close": 83.790001,
+"eur": 74.64013
+},
+{
+"date": "2026-11-05",
+"symbol": "ZURN.SW",
+"currency": "CHF",
+"close": 644.200012,
+"eur": 704.313121
 }
 ]
 }

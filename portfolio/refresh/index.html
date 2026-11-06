@@ -1,0 +1,145 @@
+<title>Atualizar Carteira</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+  /* Layout: one centred control card, the button as the single strong element. */
+  :root {
+    --bg: #f4f6f5; --panel: #ffffff; --fg: #18211d; --muted: #5d6a64; --line: #dbe2de;
+    --accent: #1f6b4f; --accent-fg: #ffffff; --ok: #1f7a4d; --warn: #a3650b; --bad: #b3261e;
+    --font-body: "Hanken Grotesk", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #111614; --panel: #19201d; --fg: #e5ece8; --muted: #9aa8a1; --line: #2c3631;
+      --accent: #4fbf8d; --accent-fg: #0d1512; --ok: #5ccf96; --warn: #e3a64a; --bad: #f2867d; color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #111614; --panel: #19201d; --fg: #e5ece8; --muted: #9aa8a1; --line: #2c3631;
+    --accent: #4fbf8d; --accent-fg: #0d1512; --ok: #5ccf96; --warn: #e3a64a; --bad: #f2867d; color-scheme: dark;
+  }
+  body { background: var(--bg); color: var(--fg); font-family: var(--font-body); font-size: 15px; line-height: 1.5; }
+  .wrap { max-width: 34rem; margin-inline: auto; padding-block: 48px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); display: grid; gap: 20px; }
+  h1 { margin: 0; font-size: 1.6rem; font-weight: 600; letter-spacing: -0.01em; text-wrap: balance; }
+  .lede { margin: 0; color: var(--muted); }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 24px; display: grid; gap: 16px; }
+  button { font: inherit; font-weight: 600; font-size: 1.05rem; color: var(--accent-fg); background: var(--accent); border: 0; border-radius: 8px; padding: 14px 20px; cursor: pointer; }
+  button:hover { filter: brightness(1.06); }
+  button:focus-visible { outline: 3px solid var(--fg); outline-offset: 2px; }
+  button:disabled { opacity: .55; cursor: progress; }
+  .status { margin: 0; min-height: 1.5em; }
+  .status[data-tone="run"] { color: var(--warn); }
+  .status[data-tone="ok"] { color: var(--ok); }
+  .status[data-tone="bad"] { color: var(--bad); }
+  .meta { display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; margin: 0; font-size: .9rem; }
+  .meta dt { color: var(--muted); }
+  .meta dd { margin: 0; font-family: var(--font-mono); font-size: .85rem; }
+  .bar { height: 4px; border-radius: 2px; background: var(--line); overflow: hidden; }
+  .bar span { display: block; height: 100%; width: 0; background: var(--warn); transition: width .8s linear; }
+  a { color: var(--accent); font-weight: 500; }
+  .note { margin: 0; color: var(--muted); font-size: .85rem; }
+</style>
+
+<main class="wrap">
+  <h1>Atualizar a carteira</h1>
+  <p class="lede">Vai buscar os preços deste momento (em horário de bolsa, preços em tempo real) e compara-os com o fecho anterior no dashboard. Demora cerca de 1–2 minutos.</p>
+
+  <section class="card" aria-live="polite">
+    <button id="go" disabled>Atualizar agora</button>
+    <div class="bar" id="bar" hidden><span id="barFill"></span></div>
+    <p class="status" id="status">A ligar…</p>
+    <dl class="meta">
+      <dt>Última atualização</dt><dd id="last">—</dd>
+      <dt>Estado</dt><dd id="state">—</dd>
+    </dl>
+    <p><a id="dash" href="https://claude.ai/artifact/5LBRd9Xqxsr6h62pbRWUM3" target="_blank" rel="noopener">Abrir o dashboard ↗</a></p>
+  </section>
+
+  <p class="note">Cada atualização corre uma tarefa do Claude na cloud. Na primeira vez, o claude.ai pede autorização para esta página usar o conector Claude Code Remote.</p>
+</main>
+
+<script>
+  const SERVER = 'Claude Code Remote';
+  const TRIGGER = 'trig_012fcuwoWZJpk85xQcmYwANP';
+  const $ = (id) => document.getElementById(id);
+  const fmt = (iso) => iso ? new Date(iso).toLocaleString('pt-PT', { timeZone: 'Europe/Lisbon', day: '2-digit', month: 'short', hour: '2-digit', minute: '2-digit' }) : '—';
+  const STATES = { ROUTINE_RUN_STATUS_PENDING: 'a arrancar', ROUTINE_RUN_STATUS_RUNNING: 'a correr', ROUTINE_RUN_STATUS_SUCCEEDED: 'concluída', ROUTINE_RUN_STATUS_FAILED: 'falhou' };
+  let mcp = null, polling = false, startedAt = 0;
+
+  const say = (text, tone) => { $('status').textContent = text; $('status').dataset.tone = tone || ''; };
+  const errText = (e) => {
+    switch (e && e.code) {
+      case 'not_in_manifest': return 'Esta página não tem autorização para usar o Claude Code Remote. Volta a clicar e escolhe Permitir.';
+      case 'approval_required': case 'consent_required': return 'É preciso autorizar o Claude Code Remote para esta página. Clica outra vez e escolhe Permitir.';
+      case 'server_not_connected': return 'O conector Claude Code Remote não está disponível na tua conta (claude.ai → Settings → Connectors).';
+      case 'needs_reauth': return 'O conector Claude Code Remote precisa de ser religado em claude.ai → Settings → Connectors.';
+      case 'server_unavailable': return 'O serviço não respondeu. Espera um pouco e tenta de novo.';
+      case 'tool_error': return 'A tarefa recusou o pedido: ' + (e.message || 'sem detalhe') + '.';
+      case 'not_granted': case 'capability_disabled': case 'capability_removed': return 'Esta vista não pode usar conectores. Abre a página no claude.ai.';
+      default: return 'Não foi possível concluir (' + ((e && e.code) || 'erro') + '). Tenta de novo.';
+    }
+  };
+  const lastRun = (payload) => (((payload && (payload.trigger || payload)) || {}).last_run) || {};
+  const show = (run) => {
+    $('last').textContent = run.finished_at ? fmt(run.finished_at) : (run.fired_at ? 'a decorrer desde ' + fmt(run.fired_at) : '—');
+    $('state').textContent = STATES[run.status] || (run.status ? run.status.replace('ROUTINE_RUN_STATUS_', '').toLowerCase() : '—');
+  };
+  const readRun = async () => lastRun((await mcp.callTool(SERVER, 'get_trigger', { trigger_id: TRIGGER }, { cache: false })).payload);
+  const running = (run) => /PENDING|RUNNING/.test(run.status || '') && !run.finished_at;
+
+  const poll = async () => {
+    polling = true;
+    $('go').disabled = true;
+    $('bar').hidden = false;
+    for (let i = 0; i < 30; i += 1) {
+      $('barFill').style.width = Math.min(95, ((Date.now() - startedAt) / 120000) * 100) + '%';
+      await new Promise((r) => setTimeout(r, 8000));
+      let run;
+      try { run = await readRun(); } catch (e) { if (e && e.retryable) continue; say(errText(e), 'bad'); break; }
+      show(run);
+      const fired = Date.parse(run.fired_at || 0);
+      if (run.finished_at && fired >= startedAt - 120000) {
+        $('barFill').style.width = '100%';
+        if (/SUCCEEDED/.test(run.status)) say('Concluído às ' + fmt(run.finished_at) + '. Abre (ou recarrega) o dashboard para ver os números novos.', 'ok');
+        else say('A tarefa terminou com erro. Tenta de novo daqui a um minuto.', 'bad');
+        polling = false; $('go').disabled = false; return;
+      }
+      say('A atualizar… (' + Math.round((Date.now() - startedAt) / 1000) + ' s)', 'run');
+    }
+    if (polling) say('Ainda a correr na cloud. Os números aparecem no dashboard quando terminar.', 'run');
+    polling = false; $('go').disabled = false;
+  };
+
+  $('go').addEventListener('click', async () => {
+    if (!mcp || polling) return;
+    $('go').disabled = true;
+    say('A lançar a atualização…', 'run');
+    try {
+      const before = await readRun().catch(() => ({}));
+      if (running(before)) { startedAt = Date.parse(before.fired_at) || Date.now(); say('Já há uma atualização a correr. A acompanhar…', 'run'); poll(); return; }
+      startedAt = Date.now();
+      await mcp.callTool(SERVER, 'fire_trigger', { trigger_id: TRIGGER, text: 'Atualizar button ' + new Date(startedAt).toISOString() }, { cache: false });
+      say('A atualizar… (0 s)', 'run');
+      poll();
+    } catch (e) {
+      say(errText(e), 'bad');
+      $('go').disabled = false;
+    }
+  });
+
+  (async () => {
+    mcp = await window.claude?.use?.('mcp');
+    if (!mcp) { say('Esta vista não pode usar conectores. Abre a página no claude.ai para atualizar.', 'bad'); return; }
+    $('go').disabled = false;
+    say('Pronto.', '');
+    try {
+      const run = await readRun();
+      show(run);
+      if (running(run)) { startedAt = Date.parse(run.fired_at) || Date.now(); say('Há uma atualização a correr. A acompanhar…', 'run'); poll(); }
+    } catch (e) {
+      if (!['approval_required', 'not_in_manifest', 'consent_required'].includes(e && e.code)) say(errText(e), 'bad');
+    }
+  })();
+</script>

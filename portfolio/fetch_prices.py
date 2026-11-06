@@ -64,6 +64,13 @@ def last_close(symbol, on=None):
     session_end = ((meta.get("currentTradingPeriod") or {}).get("regular") or {}).get("end", 0)
     closed_today = now.timestamp() > session_end > 0
     bars = [(dt.datetime.fromtimestamp(t, tz).date(), c) for t, c in zip(ts, closes) if c is not None]
+    # Overnight Yahoo often has not filled in the last session's daily close yet: its last
+    # traded price (the closing auction) stands in for it once that session is over.
+    rmt, rmp = meta.get("regularMarketTime"), meta.get("regularMarketPrice")
+    if rmt and rmp:
+        d_rmt = dt.datetime.fromtimestamp(rmt, tz).date()
+        if (not bars or bars[-1][0] < d_rmt) and (d_rmt < now.date() or closed_today):
+            bars.append((d_rmt, rmp))
     if on:
         bars = [b for b in bars if b[0].isoformat() == on]
         return (on, float(bars[-1][1]), meta.get("currency")) if bars else None

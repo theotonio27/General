@@ -1200,7 +1200,307 @@
    "qty": 135.2772907,
    "price": 124.22,
    "stale": false
+  },
+  {
+   "snap": "2026-11-05",
+   "date": "2026-11-05",
+   "kind": "close",
+   "ticker": "79U0",
+   "name": "Amundi S&P 500 II EUR Hedged",
+   "qty": 21.75604258,
+   "price": 201.1,
+   "stale": false
+  },
+  {
+   "snap": "2026-11-05",
+   "date": "2026-11-05",
+   "kind": "close",
+   "ticker": "AMEL",
+   "name": "Amundi MSCI Emerging Markets Latin America",
+   "qty": 53.77545528,
+   "price": 19.968,
+   "stale": false
+  },
+  {
+   "snap": "2026-11-05",
+   "date": "2026-11-05",
+   "kind": "close",
+   "ticker": "AUM5",
+   "name": "Amundi S&P 500 ETF (Acc)",
+   "qty": 102.84319097,
+   "price": 133.425,
+   "stale": false
+  },
+  {
+   "snap": "2026-11-05",
+   "date": "2026-11-05",
+   "kind": "close",
+   "ticker": "DBXJ",
+   "name": "Xtrackers MSCI Japan (Acc)",
+   "qty": 46.36938789,
+   "price": 101.39,
+   "stale": false
+  },
+  {
+   "snap": "2026-11-05",
+   "date": "2026-11-05",
+   "kind": "close",
+   "ticker": "EBUY",
+   "name": "Amundi MSCI Digital Economy and Metaverse",
+   "qty": 56.12132212,
+   "price": 20.295,
+   "stale": false
+  },
+  {
+   "snap": "2026-11-05",
+   "date": "2026-11-05",
+   "kind": "close",
+   "ticker": "EFRW",
+   "name": "iShares S&P 500 Equal Weight",
+   "qty": 184.97650501,
+   "price": 6.353,
+   "stale": false
+  },
+  {
+   "snap": "2026-11-05",
+   "date": "2026-11-05",
+   "kind": "close",
+   "ticker": "EMBH",
+   "name": "Amundi USD Emerging Markets Govt Bond",
+   "qty": 97.18389138,
+   "price": 64.17,
+   "stale": false
+  },
+  {
+   "snap": "2026-11-05",
+   "date": "2026-11-05",
+   "kind": "close",
+   "ticker": "EUNA",
+   "name": "iShares Global Aggregate Bond Acc",
+   "qty": 277.34755157,
+   "price": 4.9,
+   "stale": false
+  },
+  {
+   "snap": "2026-11-05",
+   "date": "2026-11-05",
+   "kind": "close",
+   "ticker": "EUNL",
+   "name": "iShares Core MSCI World Acc",
+   "qty": 16.0150169,
+   "price": 127.79,
+   "stale": false
+  },
+  {
+   "snap": "2026-11-05",
+   "date": "2026-11-05",
+   "kind": "close",
+   "ticker": "EXI2",
+   "name": "iShares Dow Jones Global Titans 50",
+   "qty": 178.22120682,
+   "price": 110.58,
+   "stale": false
+  },
+  {
+   "snap": "2026-11-05",
+   "date": "2026-11-05",
+   "kind": "close",
+   "ticker": "IBCD",
+   "name": "iShares Corporate Bond Dist",
+   "qty": 40.02339196,
+   "price": 86.998,
+   "stale": false
+  },
+  {
+   "snap": "2026-11-05",
+   "date": "2026-11-05",
+   "kind": "close",
+   "ticker": "IS3C",
+   "name": "iShares J.P. Morgan USD EM Bond",
+   "qty": 119.64658656,
+   "price": 65.014,
+   "stale": false
+  },
+  {
+   "snap": "2026-11-05",
+   "date": "2026-11-05",
+   "kind": "close",
+   "ticker": "IS3K",
+   "name": "iShares High Yield Corporate Bond Dist",
+   "qty": 250.91427146,
+   "price": 75.592,
+   "stale": false
+  },
+  {
+   "snap": "2026-11-05",
+   "date": "2026-11-05",
+   "kind": "close",
+   "ticker": "IS3Q",
+   "name": "iShares Edge MSCI World Quality Factor",
+   "qty": 300.91408859,
+   "price": 79.99,
+   "stale": false
+  },
+  {
+   "snap": "2026-11-05",
+   "date": "2026-11-05",
+   "kind": "close",
+   "ticker": "LEMA",
+   "name": "Amundi MSCI Emerging Markets",
+   "qty": 48.9993703,
+   "price": 68.112,
+   "stale": false
+  },
+  {
+   "snap": "2026-11-05",
+   "date": "2026-11-05",
+   "kind": "close",
+   "ticker": "LKOR",
+   "name": "Amundi MSCI Korea (Acc)",
+   "qty": 2.53157589,
+   "price": 139.62,
+   "stale": false
+  },
+  {
+   "snap": "2026-11-05",
+   "date": "2026-11-05",
+   "kind": "close",
+   "ticker": "LYMS",
+   "name": "Amundi Nasdaq-100 II",
+   "qty": 81.20783633,
+   "price": 98.7,
+   "stale": false
+  },
+  {
+   "snap": "2026-11-05",
+   "date": "2026-11-05",
+   "kind": "close",
+   "ticker": "LYP6",
+   "name": "Amundi Stoxx Europe 600",
+   "qty": 27.60362725,
+   "price": 324.0,
+   "stale": false
+  },
+  {
+   "snap": "2026-11-05",
+   "date": "2026-11-05",
+   "kind": "close",
+   "ticker": "LYTR",
+   "name": "Amundi Bloomberg Equal-weight Commodity ex-Agri",
+   "qty": 32.529594,
+   "price": 37.005,
+   "stale": false
+  },
+  {
+   "snap": "2026-11-05",
+   "date": "2026-11-05",
+   "kind": "close",
+   "ticker": "PRAJ",
+   "name": "Amundi Prime Japan",
+   "qty": 64.06361287,
+   "price": 36.385,
+   "stale": false
+  },
+  {
+   "snap": "2026-11-05",
+   "date": "2026-11-05",
+   "kind": "close",
+   "ticker": "PRAR",
+   "name": "Amundi Prime Euro Govies",
+   "qty": 352.97666994,
+   "price": 17.7525,
+   "stale": false
+  },
+  {
+   "snap": "2026-11-05",
+   "date": "2026-11-05",
+   "kind": "close",
+   "ticker": "QDVY",
+   "name": "iShares Floating Rate Bond Dist",
+   "qty": 797.54105592,
+   "price": 4.5555,
+   "stale": false
+  },
+  {
+   "snap": "2026-11-05",
+   "date": "2026-11-05",
+   "kind": "close",
+   "ticker": "RARE1",
+   "name": "WisdomTree Energy Transition Metals",
+   "qty": 3.90392593,
+   "price": 38.905,
+   "stale": false
+  },
+  {
+   "snap": "2026-11-05",
+   "date": "2026-11-05",
+   "kind": "close",
+   "ticker": "SEC0",
+   "name": "iShares MSCI Global Semiconductors",
+   "qty": 11.32246376,
+   "price": 13.78,
+   "stale": false
+  },
+  {
+   "snap": "2026-11-05",
+   "date": "2026-11-05",
+   "kind": "close",
+   "ticker": "TRDE",
+   "name": "Invesco US Treasury Bond 7-10 Year",
+   "qty": 33.4081848,
+   "price": 29.468,
+   "stale": false
+  },
+  {
+   "snap": "2026-11-05",
+   "date": "2026-11-05",
+   "kind": "close",
+   "ticker": "VGWD",
+   "name": "Vanguard FTSE All-World High Dividend Yield",
+   "qty": 4.6160962,
+   "price": 82.97,
+   "stale": false
+  },
+  {
+   "snap": "2026-11-05",
+   "date": "2026-11-05",
+   "kind": "close",
+   "ticker": "VUAA",
+   "name": "Vanguard S&P 500 Acc",
+   "qty": 0.39588281,
+   "price": 129.045,
+   "stale": false
+  },
+  {
+   "snap": "2026-11-05",
+   "date": "2026-11-05",
+   "kind": "close",
+   "ticker": "WELK",
+   "name": "Amundi S&P Global Financials ESG",
+   "qty": 59.20603116,
+   "price": 20.54,
+   "stale": false
+  },
+  {
+   "snap": "2026-11-05",
+   "date": "2026-11-05",
+   "kind": "close",
+   "ticker": "XDWI",
+   "name": "Xtrackers MSCI World Industrials",
+   "qty": 15.99436111,
+   "price": 72.5,
+   "stale": false
+  },
+  {
+   "snap": "2026-11-05",
+   "date": "2026-11-05",
+   "kind": "close",
+   "ticker": "XDWT",
+   "name": "Xtrackers MSCI World Information Technology",
+   "qty": 135.2772907,
+   "price": 117.64,
+   "stale": false
   }
  ],
- "updated": "2026-11-04T22:39:36+00:00"
+ "updated": "2026-11-06T00:41:07+00:00"
 }
